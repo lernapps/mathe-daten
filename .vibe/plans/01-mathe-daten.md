@@ -8,7 +8,7 @@ phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: {}
+failedChecks: { checks-pass: 1 }
 ---
 
 # Plan: mathe-daten, first version
@@ -269,8 +269,8 @@ Kapitel-Ids: `umfrage` (Unsere Umfrage), `kennwerte` (Median, Quartile und Boxpl
       change: change the pattern first.
       Creator: Musterseite angenommen, die übrigen Seiten dürfen nach diesem Muster folgen; Änderungen nach der Prüfung unter Review als nicht erneut geprüft; fachlicher Prüfer rechnet vor Veröffentlichen alles nach; Push nach jedem größeren Schritt.
 - [x] Seite umfrage/haeufigkeiten (haeufigkeiten): absolute und relative Häufigkeit als gesetzter Bruch, Kreisdiagramm als SVG, generated mit Fehlerdiagnose, mindestens vier Aufgaben
-- [ ] Seite umfrage/umfrage-durchfuehren (umfragen-erhebungen): Fragen beurteilen und verbessern, Antworten erfassen, generated Rohantworten zählen, mindestens vier Aufgaben
-- [ ] Seite umfrage/mittelwert (mittelwert): Komponente WuerfelTuerme mit Test und nojs, Summe : Anzahl, generated mit Fehlerdiagnose, Deutung, mindestens vier Aufgaben
+- [x] Seite umfrage/umfrage-durchfuehren (umfragen-erhebungen): Fragen beurteilen und verbessern, Antworten erfassen, generated Rohantworten zählen, mindestens vier Aufgaben
+- [x] Seite umfrage/mittelwert (mittelwert): Komponente WuerfelTuerme mit Test und nojs, Summe : Anzahl, generated mit Fehlerdiagnose, Deutung, mindestens vier Aufgaben
 - [ ] Seite umfrage/diagramme-kritisch-lesen (daten-kritisch-lesen): Täuschungs-SVGs, Komponente AchseSchieber mit Test und nojs, benennen, zuordnen, reparieren, Rückblick Kapitel 1
 - [ ] Recap umfrage/vorwissen und Kurztest umfrage/vorwissen-test nach regeln.md Abschnitt 7: Begriffe fett mit Beispiel, Kopf, Checkliste, Selbsttest je Baustein mit Kartenseite; Glossar-Einträge; prüfen, ob eine Seite ohne Kompetenz erlaubt ist (sonst Fund)
 - [ ] Datendateien klassen.yaml (8b, 8c) und schule.yaml (600 Lernende) mit Rechenprobe der Kennwerte (Median, Quartile, Spannweite) als Test oder Selbsttest

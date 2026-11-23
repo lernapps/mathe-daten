@@ -1,4 +1,4 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 title: Unsere Umfrage
 summary: Die Klasse 6a fragt, wie die Kinder zur Schule kommen. Du zählst, stellst dar und rechnest mit.
-pages: [daten-darstellen, haeufigkeiten, umfrage-durchfuehren]
+pages: [daten-darstellen, haeufigkeiten, umfrage-durchfuehren, mittelwert, diagramme-kritisch-lesen]
