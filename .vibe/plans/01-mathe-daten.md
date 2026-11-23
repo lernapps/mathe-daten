@@ -104,6 +104,8 @@ Lernende erheben Daten einer eigenen Klassenumfrage, stellen sie dar, beschreibe
 
 **Funde für Laufzeit und Werkzeug (nicht selbst behoben):** (1) Zahlenfeld nimmt keine Brüche (`1/2`) oder Einheiten („30 Minuten“) an und meldet „Antworte zuerst“. (2) Wahr/Falsch, Ordnen und Zuordnen sagen bei Fehlern nur „Lies dazu noch einmal den Text“; Begründung nur nach der richtigen Antwort. (3) Die Lösung zeigt „(erlaubte Abweichung: 0,001)“. (4) Option und `info` werden mit „: “ verbunden, ein Satzpunkt am Ende der Option macht „.:“. (5) Unter jeder Abbildung stehen Bildunterschrift und „Quelle: … Lizenz: …“. (6) „Neue Aufgabe“ nur als Symbol. (7) Recap-Links zeigen rohe Kennungen („mathematik/zahlen-vergleichen-ordnen“). (8) „Auf Papier, dann Foto“ bei offenen Aufgaben, ohne zu sagen, was mit dem Foto passiert; „Vergleichen“ ist bei leerem Feld nicht gesperrt. (9) `figure` hat kein Säulendiagramm. (10) Chromium-Version (1243 statt 1254). (11) `vue-tsc` meldet Typfehler in `.vue` erst beim Commit-Hook, nicht bei `vp check`.
 
+**Ansicht aller Seiten (360 px und 1280 px):** Alle 12 Seiten (Start, 11 Seiten, Glossar) ohne waagerechten Überlauf, alle Bilder geladen; zwei leere `img`-Elemente auf den Seiten mit offenen Aufgaben stammen aus der Laufzeit (Foto-Vorschau), nicht aus dem Inhalt. Abweichung von den Skizzen: Die Knöpfe unter den Säulen und Türmen stehen übereinander (Plus über Minus, Pfeil links über Pfeil rechts), weil vier bis fünf Spalten sonst bei 360 px nicht Platz haben; die Stichprobe hat Auswahlfelder und eine Tabelle statt der Skizze mit Knopfreihe.
+
 **Offen / geraten:** Quartilsverfahren (Median in die Hälften einbeziehen oder nicht) – Wahl: Hessen-übliches Verfahren, in der App erklärt (guess, vom fachlichen Prüfer zu bestätigen). Namen der Klasse und der Figuren erfinden wir (Klasse 6a/8b/10c, gemischte Namen).
 
 ## Explore
@@ -299,8 +301,8 @@ Kapitel-Ids: `umfrage` (Unsere Umfrage), `kennwerte` (Median, Quartile und Boxpl
 - [x] Seite stichprobe/erhebung-planen (stichproben-erhebungen-planen): Erhebungsplan beurteilen und neu planen, open-task Mein Urteil, Rückblick Kapitel 3 und Gesamtrückblick
 - [x] Zwei Prüfer starten (Lernenden-Prüfer je Stufe, fachlicher Prüfer), Befunde im Plan unter Review, umsetzen; was danach inhaltlich geändert wurde, nochmals prüfen
 <!-- tasks: pages (11 added): the other pages or screens, after the pattern -->
-- [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
-- [ ] Run `npx --no -- lernapps check` until it passes.
+- [x] Update the content guide so that it describes the app as built (`app-content-matches`).
+- [x] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
 - [ ] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
