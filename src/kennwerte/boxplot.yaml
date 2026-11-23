@@ -15,7 +15,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Tom aus der 8b zeichnet für beide Klassen ein Bild aus den Werten, die du auf der Seite davor bestimmt hast, auf derselben Skala. Er
+          Noah aus der 8b zeichnet für beide Klassen ein Bild aus den Werten, die du auf der Seite davor bestimmt hast, auf derselben Skala. Er
           nennt es **Boxplot**: ein Bild für fünf Werte der geordneten Daten. Eine Linie reicht vom kleinsten bis zum größten Wert, in der Mitte liegt eine Box, und ein dicker Strich in der Box zeigt den Median. **Nach dieser Seite kannst du einen Boxplot zeichnen und aus Boxplots Aussagen über die Daten
           ablesen.**
       - type: figure
@@ -54,6 +54,9 @@ blocks:
           Ein **Boxplot** zeichnet fünf Werte der geordneten Daten auf einer Skala: den kleinsten Wert, Q1, den Median, Q3
           und den größten Wert. Die **Box** reicht von Q1 bis Q3. Der dicke Strich in der Box steht beim Median. Eine Linie
           führt von der Box zum kleinsten Wert, eine zum größten. Die fünf Werte teilen die geordneten Daten in vier **Viertel** mit etwa gleich vielen Werten: von min bis Q1, von Q1 bis zum Median, vom Median bis Q3 und von Q3 bis max.
+      - type: definition
+        term: Boxplot
+        explanation: Ein Boxplot ist ein Bild für fünf Werte der geordneten Daten, den kleinsten Wert, Q1, den Median, Q3 und den größten Wert. Die Box reicht von Q1 bis Q3, ein dicker Strich in der Box steht beim Median.
       - type: figure
         image: images/boxplot-8b-erklaert.svg
         alt: Boxplot der Klasse 8b. Die Linie beginnt bei 4 und endet bei 35. Die Box reicht von 7 bis 18, der dicke Strich in der Box steht bei 12.
@@ -163,7 +166,7 @@ blocks:
           - "Die Box umfasst zwei Viertel, also die Hälfte: {{answer}} Werte."
       - type: matching
         id: boxplot-zeichnen
-        text: Die Daten der 9a, der Größe nach geordnet, sind 3, 5, 6, 8, 9, 11, 13, 14, 20. Ordne den Stellen im Boxplot ihre Werte zu.
+        text: Auch die 9a derselben Schule hat ihre Schulwege gemessen. Die Daten der 9a, der Größe nach geordnet, sind 3, 5, 6, 8, 9, 11, 13, 14, 20. Ordne den Stellen im Boxplot ihre Werte zu.
         pairs:
           - left: Linkes Ende der Linie
             right: "3"

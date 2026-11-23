@@ -12,7 +12,7 @@ scope: |
 blocks:
   - type: section
     id: einstieg
-    title: Zwei Klassen, ein Eindruck
+    title: Drei Klassen, ein Eindruck
     blocks:
       - type: text
         text: |

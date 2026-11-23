@@ -17,9 +17,9 @@ blocks:
     blocks:
       - type: text
         text: |
-          Die Schülervertretung plant einen neuen Fahrradständer und braucht eine Zahl: Wie kommen die **600 Lernenden**
+          Die Schülervertretung der Schule, an der die 6a, 8b und 8c lernen, plant einen neuen Fahrradständer und braucht eine Zahl: Wie kommen die **600 Lernenden**
           der Schule zur Schule? Alle, über die man etwas wissen will, heißen die **Gesamtheit**, die Befragten heißen die **Stichprobe**. Die 6a hat schon 24 Kinder befragt. Eine Sprecherin sagt: „Ein Drittel kommt zu Fuß, das
-          haben wir gezählt.“ Unten kannst du selbst Stichproben ziehen: Wähle eine Auswahl, drücke „Stichprobe ziehen“ und vergleiche die Tabelle mit den Anteilen aller 600. **Nach dieser Seite kannst du beurteilen, ob eine Stichprobe für eine Aussage über alle taugt.**
+          haben wir gezählt.“ Unten kannst du selbst Stichproben ziehen: Wähle eine Auswahl, drücke „Stichprobe ziehen“ und vergleiche die Tabelle mit den Anteilen aller 600. Die Anteile stehen in Prozent: 35 % heißt 35 von 100. **Nach dieser Seite kannst du beurteilen, ob eine Stichprobe für eine Aussage über alle taugt.**
       - type: single-choice
         id: gesamtheit-erkennen
         text: Wer gehört zur Gesamtheit, über die die Schülervertretung etwas wissen will?
@@ -65,7 +65,7 @@ blocks:
     blocks:
       - type: definition
         term: Gesamtheit
-        explanation: Die Gesamtheit sind alle, über die man etwas wissen will, hier alle 600 Lernenden der Schule.
+        explanation: Die Gesamtheit sind alle, über die man etwas wissen will, hier alle 600 Lernenden der Schule. Verwechsle sie nicht mit der Gesamtzahl, der Anzahl aller Befragten einer Umfrage.
       - type: definition
         term: Stichprobe
         explanation: Eine Stichprobe ist ein Teil der Gesamtheit, den man wirklich befragt. Man schließt von ihr auf die Gesamtheit.

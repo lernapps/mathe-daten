@@ -40,6 +40,9 @@ blocks:
         text: |
           Ein **Erhebungsplan** legt fest, wer befragt wird und wie. Er hat vier Teile: die Gesamtheit, die Stichprobe, das
           **Erhebungsinstrument**, zum Beispiel einen Fragebogen mit der Frage und den Antwortmöglichkeiten, und die Aussage.
+      - type: definition
+        term: Erhebungsinstrument
+        explanation: Das Erhebungsinstrument ist das, womit du die Daten erhebst, zum Beispiel ein Fragebogen mit einer neutralen Frage und festen Antwortmöglichkeiten.
       - type: table
         caption: Die Teile eines Erhebungsplans
         header: [Teil, Das legst du fest]

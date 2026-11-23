@@ -67,7 +67,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Der Mittelwert liegt immer zwischen dem kleinsten und dem größten Wert. Er muss kein Wert der Liste sein: Hier hat kein Kind genau 7 Minuten. Er sagt nur: So viel hätte
+              Der Mittelwert liegt immer zwischen dem kleinsten und dem größten Wert. Er muss kein Wert der Liste sein: Hier hat kein Kind genau 7 Minuten. Ein sehr großer Wert zieht den Mittelwert nach oben. Er sagt nur: So viel hätte
               jedes Kind, wenn alle gleich lang brauchten und die Summe dieselbe bliebe.
   - type: section
     id: beispiel

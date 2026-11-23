@@ -133,7 +133,7 @@ blocks:
         id: test-bruch
         component: Kurztest
         props:
-          question: "Eine Pizza ist in 12 gleich große Stücke geteilt. Jonas isst 5 Stücke, Mira isst 3 Stücke. Welchen Bruchteil der Pizza haben beide zusammen gegessen?"
+          question: "Eine Pizza ist in 12 gleich große Stücke geteilt. Ida isst 5 Stücke, Finn isst 3 Stücke. Welchen Bruchteil der Pizza haben beide zusammen gegessen?"
           options:
             - {
                 text: "acht Zwölftel",
@@ -153,7 +153,7 @@ blocks:
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Eine Pizza ist in 12 gleich große Stücke geteilt, Jonas isst 5 Stücke und Mira 3 Stücke. Antwort: acht Zwölftel, denn es sind 5 + 3 = 8 Stücke von 12.
+          Kurztest: Eine Pizza ist in 12 gleich große Stücke geteilt, Ida isst 5 Stücke und Finn 3 Stücke. Antwort: acht Zwölftel, denn es sind 5 + 3 = 8 Stücke von 12.
       - type: text
         text: Wenn du nicht sicher warst, schau dir den Baustein „Bruchbegriff“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/brueche-begriff/) an.
   - type: section

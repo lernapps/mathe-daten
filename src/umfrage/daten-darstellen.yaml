@@ -16,7 +16,7 @@ blocks:
       - type: text
         text: |
           Die Klasse 6a hat gefragt: „Wie kommst du zur Schule?“ Jedes Kind hat einen Zettel abgegeben, das sind 24
-          Zettel. Die Antworten auf den Zetteln heißen **Daten**. Mira, Jonas und Ayşe zählen sie mit einer
+          Zettel. Die Antworten auf den Zetteln heißen **Daten**. Mira, Jonas und Ayşe gehen in die 6a, ebenso Tom, Lena und Paul. Mira, Jonas und Ayşe zählen sie mit einer
           **Strichliste**: Für jede Antwort machst du einen Strich. Je fünf Striche werden zu einem **Fünferbündel**
           zusammengefasst, vier senkrechte Striche und ein durchgestrichener. **Nach dieser Seite kannst du Daten in
           einer Tabelle und in einem Säulendiagramm darstellen und sagen, warum die Darstellung passt.**
@@ -50,6 +50,12 @@ blocks:
           Die Anzahlen schreibst du in eine **Tabelle**: Jede Zeile gehört zu einem Verkehrsmittel, das war die Antwort
           auf die Frage. Aus der Tabelle zeichnest du ein **Säulendiagramm**: Jede Zeile der Tabelle wird eine Säule, und
           die Höhe der Säule ist die Anzahl der Kinder.
+      - type: definition
+        term: Säulendiagramm
+        explanation: Ein Säulendiagramm zeigt zu jeder Antwort eine Säule. Die Höhe der Säule ist die Anzahl.
+      - type: definition
+        term: Strichliste
+        explanation: Eine Strichliste zählt Antworten mit Strichen. Je fünf Striche werden zu einem Bündel zusammengefasst.
       - type: table
         caption: Wie kommen die Kinder der 6a zur Schule?
         header: [Verkehrsmittel, Anzahl der Kinder]
@@ -164,7 +170,7 @@ blocks:
         id: saeulen-setzen
         component: SaeulenZeichnen
         props:
-          task: "Die Klasse hat gezählt: {k0}, {k1}, {k2}, {k3}. Setze für jede Antwort eine Säule auf die Anzahl: Mit + machst du eine Säule um 1 höher, mit − um 1 niedriger. Eine Säule kann bis 10 hoch sein."
+          task: "Eine andere Klasse hat gezählt: {k0}, {k1}, {k2}, {k3}. Setze für jede Antwort eine Säule auf die Anzahl: Mit + machst du eine Säule um 1 höher, mit − um 1 niedriger. Eine Säule kann bis 10 hoch sein."
           categories: [Zu Fuß, Fahrrad, Bus, Auto]
           plus: "Säule {name} um 1 höher"
           minus: "Säule {name} um 1 niedriger"

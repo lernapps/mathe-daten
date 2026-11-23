@@ -15,7 +15,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Mira möchte wissen, wie lange die Kinder der 6a für ihren Schulweg brauchen. Jedes Kind schreibt seine Antwort auf einen Zettel. Jonas schlägt vor: „Wir fragen:
+          Die erste Umfrage der 6a ist ausgewertet. Jetzt plant die Klasse eine zweite. Mira möchte wissen, wie lange die Kinder der 6a für ihren Schulweg brauchen. Jedes Kind schreibt seine Antwort auf einen Zettel. Jonas schlägt vor: „Wir fragen:
           ‚Wie ist dein Schulweg?‘“ Lena meint: „Da schreibt jeder etwas anderes.“ **Nach dieser Seite kannst du eine
           Umfrage planen, durchführen und die Antworten in einer Liste aufschreiben.**
       - type: single-choice
@@ -47,7 +47,7 @@ blocks:
           - type: text
             text: |
               Jedes Kind soll **genau eine** passende Antwortmöglichkeit finden. Dafür dürfen sich die Gruppen nicht
-              überschneiden, und es darf keine Lücke geben.
+              überschneiden, und es darf keine Lücke geben. Eine gute Frage legt außerdem keine Antwort nahe: Nicht „Du fährst doch auch mit dem Rad, oder?“, sondern „Wie kommst du zur Schule?“. Die Zeiten, die die Kinder aufschreiben, brauchst du auf der nächsten Seite.
   - type: section
     id: beispiel
     title: Ein Beispiel für gute Antwortgruppen
@@ -86,20 +86,20 @@ blocks:
         explanation: Gute Gruppen überschneiden sich nicht und lassen keine Lücke.
       - type: number
         id: antworten-zaehlen
-        text: Wie oft steht „Rad“ auf den Zetteln?
+        text: Wie oft steht „Fahrrad“ auf den Zetteln?
         material:
           - type: text
-            text: "Antworten der Zettel, der Reihe nach: Bus, Rad, Zu Fuß, Rad, Auto, Bus, Zu Fuß, Rad, Bus, Zu Fuß, Rad, Zu Fuß."
+            text: "Antworten der Zettel, der Reihe nach: Bus, Fahrrad, Zu Fuß, Fahrrad, Auto, Bus, Zu Fuß, Fahrrad, Bus, Zu Fuß, Fahrrad, Zu Fuß."
         answer: 4
         tolerance: 0
         unit: mal
         mistakes:
           - answer: 3
-            message: Das ist die Anzahl für „Bus“. Zähle nur die Zettel mit „Rad“.
+            message: Das ist die Anzahl für „Bus“. Zähle nur die Zettel mit „Fahrrad“.
           - answer: 12
-            message: Das ist die Anzahl aller Zettel. Gesucht ist, wie oft nur „Rad“ vorkommt.
-        hint: Mache zu jedem „Rad“ einen Strich und zähle die Striche.
-        explanation: Auf dem zweiten, vierten, achten und elften Zettel steht „Rad“. Das sind 4 Zettel.
+            message: Das ist die Anzahl aller Zettel. Gesucht ist, wie oft nur „Fahrrad“ vorkommt.
+        hint: Mache zu jedem „Fahrrad“ einen Strich und zähle die Striche.
+        explanation: Auf dem zweiten, vierten, achten und elften Zettel steht „Fahrrad“. Das sind 4 Zettel.
       - type: generated
         id: liste-kontrollieren
         given:

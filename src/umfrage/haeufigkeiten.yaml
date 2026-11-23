@@ -65,7 +65,7 @@ blocks:
         licence: CC-BY-4.0
       - type: text
         text: |
-          Einen Bruch kannst du auch als Division ausrechnen: $\frac{6}{24}$ bedeutet 6 : 24 = 0,25. So kannst du relative Häufigkeiten als Dezimalzahl angeben.
+          Einen Bruch kannst du auch als Division ausrechnen: $\frac{6}{24}$ bedeutet 6 : 24 = 0,25. So kannst du relative Häufigkeiten als Dezimalzahl angeben. 0,25 sind 25 von 100, das schreibt man auch als 25 %: Prozent heißt „von hundert“.
       - type: note
         title: Merke
         blocks:
@@ -94,18 +94,18 @@ blocks:
     blocks:
       - type: single-choice
         id: absolut-oder-relativ
-        text: In der 6b wurden 20 Kinder befragt. 5 von ihnen kommen mit dem Fahrrad. Wie lautet die relative Häufigkeit von „Fahrrad“ in der 6b?
+        text: In der 6b wurden 20 Kinder befragt. 7 von ihnen kommen mit dem Fahrrad. Wie lautet die relative Häufigkeit von „Fahrrad“ in der 6b?
         options:
-          - text: $\frac{5}{20}$
+          - text: $\frac{7}{20}$
             correct: true
             info: Die Anzahl der Antwort „Fahrrad“ steht im Zähler, die Gesamtzahl 20 im Nenner.
-          - text: "5"
+          - text: "7"
             correct: false
-            info: Die Zahl 5 ist die absolute Häufigkeit. Die relative Häufigkeit ist ein Anteil an allen Kindern, also ein Bruch.
-          - text: $\frac{20}{5}$
+            info: Die Zahl 7 ist die absolute Häufigkeit. Die relative Häufigkeit ist ein Anteil an allen Kindern, also ein Bruch.
+          - text: $\frac{20}{7}$
             correct: false
             info: Hier stehen Zähler und Nenner vertauscht. Die Gesamtzahl gehört in den Nenner.
-        explanation: Relative Häufigkeit = Anzahl der Antwort über Gesamtzahl, also $\frac{5}{20}$.
+        explanation: Relative Häufigkeit = Anzahl der Antwort über Gesamtzahl, also $\frac{7}{20}$.
       - type: single-choice
         id: antwort-zum-bruch
         text: Welche Antwort der 6a hat die kleinste relative Häufigkeit?
