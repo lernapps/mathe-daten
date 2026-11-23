@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: explore
+phase: plan
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -123,9 +123,10 @@ Lernende erheben Daten einer eigenen Klassenumfrage, stellen sie dar, beschreibe
       off), and which misconception the feedback catches.
 - [x] Write under "Notes" the scope: what is in, what is out and why, the data range (for example "all main-group
       elements", never a silent "1–20"), the languages.
-- [ ] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
+- [x] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
       approach, the scope, every "(guess)", the sources and what is unchecked, the archetype and its reason. Stop and
       wait. Changes: change them, then ask again.
+      Creator: Recherche freigegeben. Kap. 1 Reihenfolge nach Karte prüfen; Recap als Seite mit Begriffen, Beispielen, Kopf, Checkliste plus eigene Kurztest-Seite; Quartile: erklärtes Verfahren, vom fachlichen Prüfer bestätigt, überall gleich; Musterseite 'Unsere Umfrage' mit Lernenden-Prüfer Klasse 5; Plan auf work pushen.
 
 ### Answers
 
@@ -153,15 +154,15 @@ Quelle der Antworten: Issue lernapps/apps#400 (Auftrag fertig entworfen) und `re
 
 ### Tasks
 
-- [ ] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
+- [x] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
       "Content method".
-- [ ] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
-- [ ] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
+- [x] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
+- [x] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
       opening task, the change of activity, the reward, the story.
-- [ ] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
+- [x] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
       screen, `npx --no -- lernapps plan add --at pattern "<task>"`. Then the others, one call each:
       `npx --no -- lernapps plan add --at pages "<task>"`. Each task says what it builds and what it shows.
-- [ ] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
+- [x] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
       learners see after each. Keep the files in `.vibe/sketches/`.
 - [ ] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
       plain words (what learners see and do, what the app cannot do). At most 2 questions.
@@ -175,6 +176,65 @@ checks and what it cannot; how a later agent adds a chapter. It becomes the cont
 <!-- An explainer: per figure, model and component its learning action in two to four sentences
 (`explainer-representation-explained`); per page its prerequisites the app does not practise, and which get a recap
 page, which a link. -->
+
+**Geschichte:** Eine erfundene Klasse fragt „Wie kommen wir zur Schule?“ (Schulweg). Kap. 1: Klasse 6a, 24 Kinder, gezeichnete Kinder (Mira, Jonas, Ayşe, Tom, Lena, Paul), eine Szene je Seite, Aussehen einmal im Content-Guide festgelegt (Vorlage `story-characters.svg`). Kap. 2 (7-8): die Klassen 8b und 8c als Chat-Nachrichten, derselbe Schulweg als Zahl in Minuten. Kap. 3 (9-10): ein realistischer Fall ohne erfundene Kinder: Schule mit 600 Lernenden, die Schülervertretung will eine Aussage über alle. Der Datensatz wächst: gleiche Frage, andere Zahlenart, andere Gruppen.
+
+**Reihenfolge (Karte hat Vorrang vor dem Vorschlag des Orchestrators):** Die Karte verlangt `daten-darstellen` vor `umfragen-erhebungen`. Kap. 1 daher: Recap → Daten darstellen → Häufigkeiten → Umfrage durchführen → Mittelwert → Diagramme kritisch lesen. Seite 1 beginnt mit der Umfrage der 6a (Frage steht, Strichliste wird gezählt, dann dargestellt); „Umfrage durchführen“ (Fragen formulieren, Antworten erfassen) folgt als Seite für eine zweite Umfrage der Klasse. Kein `ahead` nötig.
+
+**Seiten und Bausteine (eine Kompetenz je Seite):**
+
+| Nr | Seite (id) | Kompetenz | Von außen, nicht geübt |
+|---|---|---|---|
+| 0a | `umfrage/vorwissen` Recap „Das brauchst du hier“ (Begriffe, Beispiele, Kopf, Checkliste) | `recap:` mathematik/zahlen-vergleichen-ordnen, brueche-begriff, dezimalbrueche-rechnen | alle drei |
+| 0b | `umfrage/vorwissen-test` Kurztest direkt dahinter, ohne `recap:` (ob das Werkzeug eine Seite ohne Kompetenz erlaubt, prüfe ich in Code; sonst Fund) | – | – |
+| 1 | `umfrage/daten-darstellen` Unsere Umfrage: Daten darstellen | `daten-darstellen` | Zahlen ordnen (Recap) |
+| 2 | `umfrage/haeufigkeiten` Wie oft kommt was vor? | `haeufigkeiten` | Bruchbegriff (Recap) |
+| 3 | `umfrage/umfrage-durchfuehren` Eine eigene Umfrage durchführen | `umfragen-erhebungen` | – |
+| 4 | `umfrage/mittelwert` Der Mittelwert: gerecht verteilen | `mittelwert` | Dezimalrechnen (Recap) |
+| 5 | `umfrage/diagramme-kritisch-lesen` Wie Diagramme täuschen | `daten-kritisch-lesen` | – |
+| 6 | `kennwerte/median-quartile` Median, Spannweite und Quartile | `kenngroessen-lage-streumasse` | – |
+| 7 | `kennwerte/boxplot` Zwei Klassen im Boxplot-Vergleich | `boxplot` | – |
+| 8 | `stichprobe/klein-oder-einseitig` Spricht die Klasse für die ganze Schule? | `stichproben-erhebungen-planen` | – |
+| 9 | `stichprobe/erhebung-planen` Eine Erhebung neu planen | `stichproben-erhebungen-planen` | – |
+
+Kapitel-Ids: `umfrage` (Unsere Umfrage), `kennwerte` (Median, Quartile und Boxplot), `stichprobe` (Spricht die Stichprobe für alle?). Recap nur in Kap. 1 (Kap. 2 und 3 brauchen nichts von außen). Alle Seiten haben `scope` (wegen `open-task` „Mein Urteil“ auf den Seiten 8 und 9; `scope` gilt dann für alle). Nur Deutsch (`languages: [de]`).
+
+**Abschnitt-Ids (gleich auf allen Seiten):** `einstieg` (Ziel, Szene, erste leichte Aufgabe), `erklaerung`, `beispiel`, `merke`, `uebung`; Kap. 3 zusätzlich `urteil`. Titel sagen, was der Abschnitt tut.
+
+**Muster je Kompetenz:**
+
+- Daten darstellen: Strichliste → Tabelle (`table`) → Säulendiagramm. Muster „Tabelle ↔ Diagramm“: Säulen aus einer Tabelle setzen (Exercise-Komponente `SaeulenZeichnen`), aus einem Diagramm (`image`) ablesen (`number`, `single-choice`), die Darstellung begründen (`single-choice`: Säulen oder Kreis für diese Frage). Fehler: Höhe ≠ Anzahl, Säule ohne Beschriftung.
+- Häufigkeiten: Strichliste zählen = absolute Häufigkeit; relative Häufigkeit als Bruch Anzahl über Gesamtzahl (`formula`), dann als Kreisdiagramm (`image`). `generated` mit Zählungen aus `src/data/umfragen.yaml`; Fehler: durch die falsche Zahl geteilt, absolut und relativ verwechselt. Bruch gekürzt oder nicht: der Wert zählt.
+- Umfrage durchführen: Fragen beurteilen und verbessern (`single-choice`/`multiple-choice`, Begründung je Option), Antwortmöglichkeiten festlegen, Rohantworten in die Strichliste übertragen (`generated`: Antworten zählen). Fehler: Doppelzählung, Antwort vergessen.
+- Mittelwert: Würfeltürme einebnen (`WuerfelTuerme`, Nicht-Exercise-Komponente, Würfel verschieben), danach Summe : Anzahl (`formula`); `generated` (4 bis 8 Werte, Ergebnis `decimal` mit 1 Stelle), Deutung „der Mittelwert muss kein Wert der Liste sein“ (`true-false`). Fehler: durch die falsche Anzahl geteilt, nur addiert.
+- Diagramme kritisch lesen: je Täuschung ein eigenes SVG (abgeschnittene Achse, verzerrtes Bild, andere Skalenteilung); Täuschung benennen (`single-choice`, Begründung im `info`), Problem ↔ Reparatur (`matching`), Schritte zum Reparieren (`ordering`); `AchseSchieber` (Nicht-Exercise-Komponente: Nullpunkt der Achse an/aus, dieselben Daten, zwei Wirkungen). Fehler: Höhe statt Fläche gelesen.
+- Median, Spannweite, Quartile: Perlenkette (`Perlenkette`, Nicht-Exercise-Komponente: Werte der Größe nach ordnen, halbieren, Mitte markieren; nojs: Beispiel mit 11 Werten ausgerechnet). **Verfahren, überall gleich (guess, fachlicher Prüfer bestätigt):** Daten ordnen; Median = mittlerer Wert, bei gerader Anzahl Mittel der beiden mittleren; Q1 = Median der unteren Hälfte, Q3 = Median der oberen Hälfte; bei ungerader Anzahl gehört der Median **nicht** zu den Hälften; Spannweite = größter minus kleinster Wert. `generated` (7 bis 12 Werte, `sortBy`); Fehler: nicht geordnet, bei gerader Anzahl nur ein mittlerer Wert, Median in beide Hälften gerechnet, Mittelwert statt Median.
+- Boxplot: Fünf-Werte-Zusammenfassung → Boxplot (`image` je Klasse) und Aussagen über zwei Klassen (`true-false`/`single-choice`, Begründung); Boxplot aus Daten zeichnen: `generated`, das die fünf Werte verlangt (Komponente `BoxplotZeichnen` nur, wenn Zeit bleibt, sonst nicht). Fehler: Boxlänge als Anzahl gedeutet, „50 % der Daten liegen in der Box“ falsch erklärt.
+- Stichproben: `StichprobeZiehen` (Nicht-Exercise-Komponente: Gesamtheit aus `src/data/schule.yaml`, Stichprobengröße 5/30/100 oder „nur die Klasse 6a“ wählen, Anteil gegen die Gesamtheit, wiederholbar); Urteil als `open-task` (Punkte: Größe, Auswahl, Aussage begrenzen) mit Musterlösung; `matching`/`single-choice` Stichprobe oder Erhebungsplan beurteilen. Fehler: „große Stichprobe ist automatisch repräsentativ“, „zufällig = beliebig“.
+
+**Figuren:** Alle Diagramme (Säulen, Kreis, Boxplot, Täuschungsbeispiele) sind eigene SVG in `src/images/`, `source: eigene Zeichnung`, `licence: CC-BY-4.0`, aus den Zahlen der Datendateien gezeichnet (kleines Skript außerhalb des Repos, die SVG werden eingecheckt), mit `alt` und Bildunterschrift; Farben, Achsen, Beschriftung einheitlich (Content-Guide „Figures“). Der Block `figure` mit `bar` taugt nicht (nur ein Streifen), `hundred-grid` ebenso. Zahlenstrahl (nur ab 0) nur im Recap.
+
+**Datendateien:** `src/data/umfragen.yaml` (Antworten der 6a: Verkehrsmittel und Schulweg in Minuten, 24 Kinder), `src/data/klassen.yaml` (8b und 8c: Minuten, je 11 bis 13 Werte), `src/data/schule.yaml` (Gesamtheit 600 Lernende). Jede Tatsache einmal.
+
+**Komponenten (Begründung, `prefer-built-in-block`):** kein Block kann Würfel verschieben, Werte in einer Kette ordnen, Säulen setzen oder eine Stichprobe ziehen. Je Komponente `.vue`, `.ts`, `.test.ts` und `nojs`-Text. Exercise nur `SaeulenZeichnen` (Seite 1) und eventuell `BoxplotZeichnen`. Nicht-Exercise: `WuerfelTuerme` (Mittelwert, Seite 4), `AchseSchieber` (Seite 5), `Perlenkette` (Seite 6), `StichprobeZiehen` (Seite 8).
+
+**Engagement je Seite:**
+
+- Recap (0a/0b): Kopf „Das brauchst du für dieses Kapitel“, je Baustein ein Abschnitt mit fetten Begriffen und Zahlenbeispiel, Selbsttest auf der Kurztest-Seite, Schluss als Checkliste. Keine Geschichte außer einem Satz zur 6a.
+- 1 Daten darstellen: Öffnung: die 6a hat 24 Zettel („Bus“, „Rad“ …), die Kinder zählen eine Spalte der Strichliste nach. Wechsel: Zettel → Strichliste → Tabelle → Säulen (setzen, ablesen). Belohnung: ihr Säulendiagramm der 6a. Ende: „Wie oft kam jedes Verkehrsmittel vor?“.
+- 2 Häufigkeiten: Öffnung: „Wie viele von 24 gehen zu Fuß?“. Wechsel: zählen → Bruch → Kreisdiagramm. Belohnung: Tabelle mit absolut und relativ, fertig. Ende: „Und wie lange sind die Kinder unterwegs?“.
+- 3 Umfrage durchführen: Öffnung: zwei Fragen, welche ist besser? Wechsel: beurteilen → verbessern → Antworten übertragen. Belohnung: eine eigene Frage mit Antwortmöglichkeiten. Ende: die neuen Zahlen der Klasse (Schulwegzeit).
+- 4 Mittelwert: Öffnung: fünf Würfeltürme, gleich hoch machen. Wechsel: verschieben → Summe : Anzahl → Aufgaben. Belohnung: „So lang ist der Schulweg im Durchschnitt“. Ende: ein Diagramm, das etwas anderes behauptet.
+- 5 Diagramme kritisch lesen: Öffnung: zwei Diagramme zu denselben Daten, welches sieht dramatischer aus? Wechsel: Regler → benennen → reparieren. Belohnung: Rückblick Kap. 1 (Checkliste „Ich kann …“). Ende: Kap. 2, die 8b und 8c.
+- 6 Median/Quartile: Öffnung: ein Ausreißer (35 Minuten) in der Kette, was macht der Mittelwert? Wechsel: ordnen → halbieren → rechnen. Belohnung: Fünf-Werte-Zusammenfassung der 8b. Ende: „Wie sieht das als Bild aus?“.
+- 7 Boxplot: Öffnung: Boxplot der 8b lesen. Wechsel: aus Zahlen bauen → zwei Klassen vergleichen → Aussagen prüfen. Belohnung: Rückblick Kap. 2, ein Urteil über den Vergleich. Ende: Kap. 3, die ganze Schule.
+- 8 Klein oder einseitig: Öffnung: „Die 6a sagt: 70 % fahren Rad. Stimmt das für alle?“. Wechsel: Stichprobe ziehen → vergleichen → beurteilen. Belohnung: Mein Urteil (`open-task`). Ende: „Wie müsste man es besser machen?“.
+- 9 Erhebung planen: Öffnung: ein schlechter Erhebungsplan, was ist falsch? Wechsel: Fehler finden → neu planen → Plan prüfen. Belohnung: eigener Plan, Mein Urteil, Rückblick Kap. 3. Ende: letzte Seite, Hinweis auf die Karte.
+
+**Aufgaben:** mindestens vier je Seite (`explainer-interaction`), mindestens drei je Baustein, steigend: erkennen/ablesen → anwenden mit anderen Zahlen → neue Situation (umgekehrte Frage, Begründung). Rückmeldung inhaltlich mit Fehlertyp (Regeln §3.2); Werte werden geprüft: `0,5`, `0.5`, `1/2` gelten, wo erlaubt; Rundung steht in der Aufgabe. Brüche in Text gesetzt; in `mistakes` und Rückmeldungen von Komponenten ist `a/b` erlaubt (Regeln §2, Fund W28), jede solche Stelle wird im Plan gezählt: bisher 0.
+
+**Wie ein späterer Agent ein Kapitel ergänzt:** neue Seite = neue YAML in `src/<kapitel>/`, in `chapter.yaml` eintragen, Daten in `src/data/`, Figuren-Konventionen und das Quartilsverfahren stehen im Content-Guide; Grenze zu #401 (relative Häufigkeit als Schätzwert für Wahrscheinlichkeit) ebenfalls.
+
 
 ## Code
 
@@ -199,11 +259,23 @@ page, which a link. -->
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [ ] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-<!-- tasks: pattern: the one page or screen that is the pattern for the others -->
+- [ ] Muster: App-Gerüst (app.yaml, drei Kapitel, Datendatei umfragen.yaml, Figuren-Konventionen) und die Seite umfrage/daten-darstellen komplett: Einstieg mit Zettelzählung, Strichliste, Tabelle, Säulendiagramm als eigene SVG, Exercise-Komponente SaeulenZeichnen, mindestens vier Aufgaben mit Fehlerrückmeldung
+<!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-<!-- tasks: pages: the other pages or screens, after the pattern -->
+- [ ] Seite umfrage/haeufigkeiten (haeufigkeiten): absolute und relative Häufigkeit als gesetzter Bruch, Kreisdiagramm als SVG, generated mit Fehlerdiagnose, mindestens vier Aufgaben
+- [ ] Seite umfrage/umfrage-durchfuehren (umfragen-erhebungen): Fragen beurteilen und verbessern, Antworten erfassen, generated Rohantworten zählen, mindestens vier Aufgaben
+- [ ] Seite umfrage/mittelwert (mittelwert): Komponente WuerfelTuerme mit Test und nojs, Summe : Anzahl, generated mit Fehlerdiagnose, Deutung, mindestens vier Aufgaben
+- [ ] Seite umfrage/diagramme-kritisch-lesen (daten-kritisch-lesen): Täuschungs-SVGs, Komponente AchseSchieber mit Test und nojs, benennen, zuordnen, reparieren, Rückblick Kapitel 1
+- [ ] Recap umfrage/vorwissen und Kurztest umfrage/vorwissen-test nach regeln.md Abschnitt 7: Begriffe fett mit Beispiel, Kopf, Checkliste, Selbsttest je Baustein mit Kartenseite; Glossar-Einträge; prüfen, ob eine Seite ohne Kompetenz erlaubt ist (sonst Fund)
+- [ ] Datendateien klassen.yaml (8b, 8c) und schule.yaml (600 Lernende) mit Rechenprobe der Kennwerte (Median, Quartile, Spannweite) als Test oder Selbsttest
+- [ ] Seite kennwerte/median-quartile (kenngroessen-lage-streumasse): Komponente Perlenkette mit Test und nojs, Quartilsverfahren eindeutig, generated mit Fehlerdiagnose, mindestens vier Aufgaben
+- [ ] Seite kennwerte/boxplot (boxplot): Boxplot-SVGs aus den Daten von 8b und 8c, Fünf-Werte-Zusammenfassung, Aussagen prüfen, generated, Rückblick Kapitel 2
+- [ ] Seite stichprobe/klein-oder-einseitig (stichproben-erhebungen-planen): Komponente StichprobeZiehen mit Test und nojs, Vergleich mit der Gesamtheit, open-task Mein Urteil, scope auf allen Seiten
+- [ ] Seite stichprobe/erhebung-planen (stichproben-erhebungen-planen): Erhebungsplan beurteilen und neu planen, open-task Mein Urteil, Rückblick Kapitel 3 und Gesamtrückblick
+- [ ] Zwei Prüfer starten (Lernenden-Prüfer je Stufe, fachlicher Prüfer), Befunde im Plan unter Review, umsetzen; was danach inhaltlich geändert wurde, nochmals prüfen
+<!-- tasks: pages (11 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
