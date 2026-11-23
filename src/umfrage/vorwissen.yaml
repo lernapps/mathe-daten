@@ -13,7 +13,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Dieses Kapitel braucht drei Dinge: Zahlen vergleichen und ordnen, Brüche und Dezimalzahlen. Zu jedem gibt es eine
+          Dieses Kapitel braucht drei Dinge: Zahlen vergleichen und ordnen, Brüche und Dezimalzahlen. Für Tabellen und Diagramme brauchst du das Ordnen von Zahlen, für Häufigkeiten Brüche und für den Mittelwert das Rechnen mit Dezimalzahlen. Zu jedem gibt es eine
           kurze Wiederholung und einen Kurztest. Am Ende steht eine Checkliste.
   - type: section
     id: zahlen
@@ -23,6 +23,9 @@ blocks:
         text: |
           Ich kann natürliche Zahlen vergleichen, am Zahlenstrahl ablesen und der Größe nach ordnen. Beim **Vergleichen**
           sagst du, welche Zahl größer ist. Beim **Ordnen** stellst du Zahlen der Größe nach hintereinander.
+      - type: definition
+        term: Natürliche Zahlen
+        explanation: Die natürlichen Zahlen sind die Zahlen zum Zählen, also 0, 1, 2, 3 und immer so weiter.
       - type: definition
         term: Zahlenstrahl
         explanation: Der Zahlenstrahl beginnt bei 0 und geht nach rechts. Je weiter rechts eine Zahl liegt, desto größer ist sie. Zum Beispiel liegt 3 links von 7, also ist 3 kleiner als 7.
@@ -70,6 +73,31 @@ blocks:
           wrong: Nicht richtig.
         nojs: |
           Kurztest: Welche Zahl ist die größte, 45 007, 40 570, 40 705 oder 40 075? Antwort: 45 007, denn sie hat als einzige 5 Tausender.
+      - type: vue-component
+        id: test-ordnen
+        component: Kurztest
+        props:
+          question: "Welche Reihe ist der Größe nach geordnet, die kleinste Zahl zuerst?"
+          options:
+            - {
+                text: "3 099, 3 190, 3 910, 9 013",
+                correct: true,
+                info: "Die Zahlen steigen von links nach rechts: erst 3 Tausender mit wenigen Hundertern, dann mehr Hunderter, zuletzt 9 Tausender.",
+              }
+            - {
+                text: "3 190, 3 099, 3 910, 9 013",
+                correct: false,
+                info: "3 099 ist kleiner als 3 190: Bei gleichen Tausendern entscheiden die Hunderter, 0 ist weniger als 1.",
+              }
+            - {
+                text: "9 013, 3 910, 3 190, 3 099",
+                correct: false,
+                info: "Das ist von groß nach klein geordnet. Gefragt ist die kleinste Zahl zuerst.",
+              }
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: |
+          Kurztest: Welche Reihe ist der Größe nach geordnet, die kleinste Zahl zuerst? Antwort: 3 099, 3 190, 3 910, 9 013.
       - type: text
         text: Wenn du nicht sicher warst, schau dir den Baustein „Zahlen vergleichen und ordnen“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/) an.
   - type: section
@@ -134,7 +162,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Ich kann mit Dezimalbrüchen rechnen. Eine **Dezimalzahl** hat ein Komma. Die Stellen hinter dem Komma sind Zehntel,
+          Ich kann mit Dezimalbrüchen rechnen. Eine **Dezimalzahl** hat ein Komma; man nennt sie auch **Dezimalbruch**. Die Stellen hinter dem Komma sind Zehntel,
           Hundertstel und so weiter. Beim Addieren schreibst du Komma unter Komma, beim Teilen rechnest du wie mit
           ganzen Zahlen und machst Zehntel und Hundertstel, wenn ein Rest bleibt (siehe Beispiel).
       - type: definition
@@ -185,4 +213,4 @@ blocks:
           - Brüche als Teil eines Ganzen deuten und darstellen kannst,
           - mit Dezimalbrüchen rechnen kannst.
 
-          Dann geht es mit der Umfrage der Klasse 6a weiter.
+          Bei einem Punkt unsicher? Lies den Abschnitt oben noch einmal und schau dir den Baustein auf der Lernlandkarte an (Link unter dem Kurztest). Sonst geht es mit der Umfrage der Klasse 6a weiter.

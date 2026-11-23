@@ -23,7 +23,7 @@ blocks:
         props:
           values: [3, 9, 6, 12, 5]
           names: [Mira, Jonas, Ayşe, Tom, Lena]
-          tower: "{name}: {n}"
+          tower: "{name}: {n} Min."
           left: "{name} gibt einen Würfel nach links ab"
           right: "{name} gibt einen Würfel nach rechts ab"
           hint: "Gib mit den Pfeilen Würfel an den Nachbarn ab, bis alle Türme gleich hoch sind."
@@ -52,19 +52,22 @@ blocks:
     blocks:
       - type: definition
         term: Mittelwert
-        explanation: Der Mittelwert (genauer das arithmetische Mittel) ist der Wert, den jedes Kind hätte, wenn man alle Werte gerecht verteilt. Du rechnest ihn aus, indem du die Summe aller Werte durch ihre Anzahl teilst.
+        explanation: Der Mittelwert (genauer das arithmetische Mittel, im Alltag auch Durchschnitt genannt) ist der Wert, den jedes Kind hätte, wenn man alle Werte gerecht verteilt. Du rechnest ihn aus, indem du die Summe aller Werte durch ihre Anzahl teilst.
       - type: text
         text: |
           Beim Einebnen sind 35 Würfel auf 5 Türme verteilt worden. Jeder Turm hat danach 35 : 5 = 7 Würfel. Das ist der
           Mittelwert, hier 7 Minuten.
       - type: formula
         formula: '\text{Mittelwert} = \frac{\text{Summe aller Werte}}{\text{Anzahl der Werte}}'
+      - type: text
+        text: |
+          Du kannst auch rückwärts rechnen: Kennst du den Mittelwert und die Anzahl der Werte, ist die Summe aller Werte der Mittelwert mal die Anzahl. Bei 5 Kindern und dem Mittelwert 7 Minuten sind es 5 · 7 = 35 Minuten zusammen.
       - type: note
         title: Merke
         blocks:
           - type: text
             text: |
-              Der Mittelwert muss kein Wert der Liste sein. Hier hat kein Kind genau 7 Minuten. Er sagt nur: So viel hätte
+              Der Mittelwert liegt immer zwischen dem kleinsten und dem größten Wert. Er muss kein Wert der Liste sein: Hier hat kein Kind genau 7 Minuten. Er sagt nur: So viel hätte
               jedes Kind, wenn alle gleich lang brauchten und die Summe dieselbe bliebe.
   - type: section
     id: beispiel
@@ -92,12 +95,8 @@ blocks:
           d: { int: [2, 20] }
         where: ["decimals((a + b + c + d) / 4) <= 2"]
         task:
-          text: "Vier Kinder brauchen für ihren Schulweg {{a}}, {{b}}, {{c}} und {{d}} Minuten. Wie viele Minuten sind das im Mittel? Gib das Ergebnis genau an."
-        answer:
-          {
-            value: "(a + b + c + d) / 4",
-            compare: { number: { format: decimal, decimals: 2, tolerance: 0.001, unit: min } },
-          }
+          text: "Vier Kinder brauchen für ihren Schulweg {{a}}, {{b}}, {{c}} und {{d}} Minuten. Wie viele Minuten sind das im Mittel? Gib das Ergebnis genau an, wenn nötig mit Komma."
+        answer: { value: "(a + b + c + d) / 4", compare: { number: { format: decimal, decimals: 2, unit: min } } }
         mistakes:
           - value: "a + b + c + d"
             message: "Du hast nur addiert. Teile die Summe noch durch die Anzahl der Werte."
@@ -112,13 +111,13 @@ blocks:
         id: mittelwert-deuten
         text: Der Mittelwert der Schulwege von Mira, Jonas, Ayşe, Tom und Lena ist 7 Minuten. Was sagt das?
         options:
-          - text: So lang wäre der Weg für jedes Kind, wenn alle gleich lang brauchten und die Summe dieselbe bliebe.
+          - text: So lang wäre der Weg für jedes Kind, wenn alle gleich lang brauchten und die Summe dieselbe bliebe
             correct: true
             info: Das ist die Idee vom Einebnen der Türme. Die Summe von 35 Minuten wird gerecht auf 5 Kinder verteilt.
-          - text: Das ist die Zeit des Kindes mit dem längsten Weg.
+          - text: Das ist die Zeit des Kindes mit dem längsten Weg
             correct: false
             info: Das längste Kind ist Tom mit 12 Minuten. Der Mittelwert liegt zwischen dem kleinsten und dem größten Wert.
-          - text: Mindestens ein Kind braucht genau 7 Minuten.
+          - text: Mindestens ein Kind braucht genau 7 Minuten
             correct: false
             info: Die Zeiten sind 3, 9, 6, 12 und 5 Minuten. Keines davon ist 7. Der Mittelwert muss kein Wert der Liste sein.
         explanation: Der Mittelwert beschreibt die gleichmäßig verteilte Menge, nicht ein Kind und nicht den größten Wert.

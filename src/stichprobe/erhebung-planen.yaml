@@ -22,13 +22,13 @@ blocks:
         id: plan-fehler
         text: Was ist an diesem Plan ein Problem? Wähle alle Antworten aus, die stimmen.
         options:
-          - text: Die Frage legt eine Antwort nahe („… doch auch mit dem Rad, oder?“).
+          - text: Die Frage legt eine Antwort nahe („… doch auch mit dem Rad, oder?“)
             correct: true
             info: Wer so gefragt wird, antwortet eher „ja“. Eine neutrale Frage legt keine Antwort nahe.
-          - text: Befragt werden nur die Ersten, die am Tor ankommen.
+          - text: Befragt werden nur die Ersten, die am Tor ankommen
             correct: true
             info: Wer früh kommt, kommt vielleicht anders zur Schule als die anderen. Die Auswahl ist einseitig.
-          - text: Die Schule hat Lernende, die nicht befragt werden.
+          - text: Die Schule hat Lernende, die nicht befragt werden
             correct: false
             info: Das ist bei jeder Stichprobe so und kein Fehler des Plans. Wichtig ist, dass die Auswahl der Befragten nicht einseitig ist.
         explanation: "Zwei Dinge verfälschen das Ergebnis: eine Frage, die die Antwort nahelegt, und eine einseitige Auswahl der Befragten."
@@ -65,7 +65,7 @@ blocks:
           - type: text
             text: |
               1. Gesamtheit: alle 600 Lernenden der Schule.
-              2. Stichprobe: 60 Lernende. Aus der Schülerliste wird jede 10. Person gewählt, der Start wird ausgelost.
+              2. Stichprobe: 60 Lernende. Aus der Schülerliste wird jede 10. Person gewählt, der Start unter den ersten zehn Namen wird ausgelost. Weil der Start ausgelost wird, hat jede Person die gleiche Chance, dabei zu sein.
               3. Erhebungsinstrument: „Wie kommst du morgens zur Schule?“ mit den Antworten „Zu Fuß“, „Fahrrad“, „Bus“, „Auto“.
               4. Aussage: „Etwa derselbe Anteil der Lernenden der Schule kommt mit dem Rad wie in der Stichprobe.“
   - type: section
@@ -117,13 +117,13 @@ blocks:
         id: aussage-formulieren
         text: Von 60 zufällig gezogenen Lernenden fahren 22 mit dem Rad. Welche Aussage über alle 600 passt zu diesem Ergebnis?
         options:
-          - text: Ungefähr 37 % der Lernenden fahren mit dem Rad.
+          - text: Ungefähr 37 % der Lernenden fahren mit dem Rad
             correct: true
             info: 22 von 60 sind etwa 37 %. Das Wort „ungefähr“ sagt, dass die Aussage eine Schätzung ist.
-          - text: Genau 220 Lernende fahren mit dem Rad.
+          - text: Genau 220 Lernende fahren mit dem Rad
             correct: false
             info: Eine Stichprobe liefert eine Schätzung und keine genaue Zahl. Eine andere Stichprobe hätte etwas anderes ergeben.
-          - text: Mit dem Rad fahren nur die Kinder der Stichprobe.
+          - text: Mit dem Rad fahren nur die Kinder der Stichprobe
             correct: false
             info: Von den Kindern, die nicht befragt wurden, weiß man es nicht. Man schließt aus der Stichprobe auf alle.
         explanation: "Aus einer guten Stichprobe darf man auf alle schließen, aber vorsichtig: ungefähr, nicht genau."

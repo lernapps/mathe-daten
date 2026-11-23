@@ -15,9 +15,9 @@ blocks:
     blocks:
       - type: text
         text: |
-          Mira möchte wissen, wie lange die Kinder der 6a für ihren Schulweg brauchen. Jonas schlägt vor: „Wir fragen:
+          Mira möchte wissen, wie lange die Kinder der 6a für ihren Schulweg brauchen. Jedes Kind schreibt seine Antwort auf einen Zettel. Jonas schlägt vor: „Wir fragen:
           ‚Wie ist dein Schulweg?‘“ Lena meint: „Da schreibt jeder etwas anderes.“ **Nach dieser Seite kannst du eine
-          Umfrage planen, durchführen und die Antworten in einer Liste erfassen.**
+          Umfrage planen, durchführen und die Antworten in einer Liste aufschreiben.**
       - type: single-choice
         id: frage-waehlen
         text: Welche Frage eignet sich für die Umfrage zur Dauer des Schulwegs am besten?
@@ -131,6 +131,6 @@ blocks:
         explanation: Ohne Frage und feste Antwortmöglichkeiten kann man die Zettel nicht zählen. Die Kontrolle kommt zuletzt, denn erst dann sind alle Anzahlen da.
       - type: true-false
         id: summe-kleiner
-        text: "Die Anzahlen in der Liste ergeben zusammen weniger als die Zahl der Zettel. Dann wurde vielleicht falsch gezählt oder ein Zettel vergessen."
+        text: "Die Anzahlen in der Liste ergeben zusammen weniger als die Zahl der Zettel. Dann stimmt die Liste nicht."
         answer: true
-        explanation: Jeder Zettel hat genau eine Antwort. Wenn die Summe nicht stimmt, wurde ein Zettel nicht gezählt oder falsch gezählt. Dann zählt man noch einmal.
+        explanation: Jeder Zettel hat genau eine Antwort. Wenn die Summe nicht stimmt, wurde ein Zettel nicht gezählt oder falsch gezählt. Dann zählst du noch einmal.

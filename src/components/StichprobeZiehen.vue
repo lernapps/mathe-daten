@@ -2,7 +2,7 @@
 // A simulation: all pupils of a school are known, and the learner draws a sample in one of three ways (at random, one class,
 // those at the bicycle stand) and compares its shares with the shares of all. Its logic is in StichprobeZiehen.ts. It is no
 // exercise: nothing is checked or stored. A sample is drawn only after a click, so the page is the same on every load.
-import { computed, ref } from "vue";
+import { computed, ref, watch } from "vue";
 import { counts, draw, fill, percent, type Choice } from "./StichprobeZiehen.ts";
 
 const props = defineProps<{
@@ -29,8 +29,9 @@ const props = defineProps<{
   colSample: string;
   /** What the learner sees before the first sample. */
   none: string;
-  /** What to notice after a sample. */
+  /** What to notice after a sample drawn at random, and after one that always has the same pupils. */
   notice: string;
+  noticeSame: string;
 }>();
 
 const options: { id: string; choice: Choice }[] = [
@@ -43,6 +44,9 @@ const options: { id: string; choice: Choice }[] = [
 const selected = ref("r30");
 const times = ref(0);
 const sample = ref<string[] | undefined>(undefined);
+watch(selected, () => {
+  sample.value = undefined;
+});
 
 const all = computed(() => props.pupils.map((p) => p.mittel));
 const allCounts = computed(() => counts(all.value, props.categories));
@@ -101,7 +105,9 @@ const cell = (count: number, total: number) => `${percent(count, total)} % (${c
         </tr>
       </tbody>
     </table>
-    <p class="stichprobe-ziehen-status" aria-live="polite">{{ sample ? notice : none }}</p>
+    <p class="stichprobe-ziehen-status" aria-live="polite">
+      {{ sample ? (selected === "class" || selected === "stand" ? noticeSame : notice) : none }}
+    </p>
   </div>
 </template>
 

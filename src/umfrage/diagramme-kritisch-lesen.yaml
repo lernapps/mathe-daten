@@ -41,13 +41,13 @@ blocks:
         id: warum-anders
         text: Das Diagramm zeigt immer dieselben Zahlen. Warum sieht der Unterschied bei „Achse beginnt bei 5“ so viel größer aus?
         options:
-          - text: Die Achse beginnt nicht bei 0, darum sind die Säulen unten abgeschnitten.
+          - text: Die Achse beginnt nicht bei 0, darum sind die Säulen unten abgeschnitten
             correct: true
             info: Von jeder Säule fehlt der Teil unter der Marke 5. Der Rest sieht darum sehr verschieden hoch aus.
-          - text: Die Zahlen haben sich geändert.
+          - text: Die Zahlen haben sich geändert
             correct: false
             info: Die Zahlen 6, 7 und 8 stehen über den Säulen und bleiben gleich. Nur die Achse ist anders.
-          - text: Beim zweiten Diagramm wurden mehr Kinder gezählt.
+          - text: Beim zweiten Diagramm wurden mehr Kinder gezählt
             correct: false
             info: Es sind in beiden Fällen dieselben Kinder. Das Zählen wurde nicht wiederholt.
         explanation: Wenn die Achse nicht bei 0 beginnt, passen die Höhen der Säulen nicht mehr zu den Verhältnissen der Zahlen.
@@ -57,9 +57,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Zeitungen und Werbung zeigen Daten oft so, dass ein kleiner Unterschied groß aussieht. Schau bei einem Diagramm
-          zuerst auf die **Achse**: Beginnt sie bei 0? Schau dann auf die **Zahlen**: Passen die Höhen dazu? Schau
-          zuletzt auf **Bilder**: Sind sie in beide Richtungen vergrößert?
+          Zeitungen und Werbung zeigen Daten oft so, dass ein kleiner Unterschied groß aussieht. Lies bei einem Diagramm zuerst die Überschrift und die Frage. Schau dann auf die **Achse**: Beginnt sie bei 0? Schau auf die **Zahlen**: Passen die Höhen dazu? Schau zuletzt auf **Bilder**: Sind sie in beide Richtungen vergrößert? Repariert wird so: die Achse bei 0 beginnen lassen, ein Bild gleich groß lassen und für mehr einfach mehr Bilder zeichnen, Zahlen über die Säulen und Namen unter die Säulen schreiben.
       - type: figure
         image: images/becher-werbung.svg
         alt: Zwei Becher, der linke klein mit der Beschriftung Schuljahr 1 mit 120, der rechte doppelt so breit und doppelt so hoch mit der Beschriftung Schuljahr 2 mit 240.
@@ -72,7 +70,7 @@ blocks:
           - type: text
             text: |
               Wird ein Bild in der Breite **und** in der Höhe verdoppelt, ist seine Fläche **viermal** so groß. Das Auge
-              vergleicht die Fläche, nicht die Höhe, und glaubt darum an einen viel größeren Unterschied.
+              vergleicht die Fläche, nicht die Höhe, und glaubt darum an einen viel größeren Unterschied. Zum Beispiel braucht ein Quadrat aus einem Kästchen, das doppelt so breit und doppelt so hoch wird, vier Kästchen.
   - type: section
     id: beispiel
     title: "Ein Beispiel: die Becher-Werbung"
@@ -110,22 +108,15 @@ blocks:
         explanation: Die Säule der 6a endet bei 6, die der 6b bei 7. Der Unterschied ist 7 − 6 = 1 Kind. Das Diagramm lässt ihn viel größer aussehen, weil die Achse bei 5 beginnt.
       - type: single-choice
         id: becher-bewerten
-        text: "Die Werbung sagt: „Doppelt so viele Becher verkauft!“ Was täuscht an dem Bild mit den Bechern?"
-        material:
-          - type: figure
-            image: images/becher-werbung.svg
-            alt: Zwei Becher mit den Zahlen 120 und 240. Der rechte Becher ist doppelt so breit und doppelt so hoch gezeichnet wie der linke.
-            caption: Vergleiche die Größe der Becher mit den Zahlen darunter.
-            source: eigene Zeichnung
-            licence: CC-BY-4.0
+        text: "Die Werbung sagt: „Doppelt so viele Becher verkauft!“ Was täuscht an dem Bild mit den Bechern oben?"
         options:
-          - text: Der rechte Becher ist in Breite und Höhe verdoppelt, seine Fläche ist viermal so groß.
+          - text: Der rechte Becher ist in Breite und Höhe verdoppelt, seine Fläche ist viermal so groß
             correct: true
             info: Die Zahl hat sich verdoppelt, die gezeichnete Fläche vervierfacht. Das Bild sieht nach viel mehr aus, als die Zahlen sagen.
-          - text: Die Zahl 240 steht falsch unter dem Becher.
+          - text: Die Zahl 240 steht falsch unter dem Becher
             correct: false
             info: Die Zahlen sind richtig. 240 ist wirklich das Doppelte von 120. Der Trick liegt in der Größe des Bildes.
-          - text: Die Becher haben die falsche Farbe.
+          - text: Die Becher haben die falsche Farbe
             correct: false
             info: Beide Becher haben dieselbe Farbe. Die Farbe verändert die Aussage nicht.
         explanation: Wer ein Bild in beide Richtungen vergrößert, vervierfacht die Fläche. Das Auge vergleicht die Fläche.
@@ -153,8 +144,8 @@ blocks:
         explanation: Erst weißt du, worum es geht, dann prüfst du Achse, Zahlen und Bilder. Am Ende entscheidest du, ob das Diagramm ehrlich ist.
       - type: true-false
         id: falsche-zahlen
-        text: Ein Diagramm mit abgeschnittener Achse zeigt falsche Zahlen.
-        answer: false
+        text: Ein Diagramm mit abgeschnittener Achse kann richtige Zahlen zeigen und trotzdem täuschen.
+        answer: true
         explanation: Die Zahlen können richtig sein. Das Diagramm täuscht trotzdem, weil die Höhen der Säulen nicht zu den Verhältnissen der Zahlen passen.
   - type: section
     id: rueckblick

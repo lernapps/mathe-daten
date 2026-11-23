@@ -18,7 +18,7 @@ blocks:
       - type: text
         text: |
           Die Schülervertretung plant einen neuen Fahrradständer und braucht eine Zahl: Wie kommen die **600 Lernenden**
-          der Schule zur Schule? Die 6a hat schon 24 Kinder befragt. Eine Sprecherin sagt: „Ein Drittel kommt zu Fuß, das
+          der Schule zur Schule? Alle, über die man etwas wissen will, heißen die **Gesamtheit**, die Befragten heißen die **Stichprobe**. Die 6a hat schon 24 Kinder befragt. Eine Sprecherin sagt: „Ein Drittel kommt zu Fuß, das
           haben wir gezählt.“ Unten kannst du selbst Stichproben ziehen: Wähle eine Auswahl, drücke „Stichprobe ziehen“ und vergleiche die Tabelle mit den Anteilen aller 600. **Nach dieser Seite kannst du beurteilen, ob eine Stichprobe für eine Aussage über alle taugt.**
       - type: single-choice
         id: gesamtheit-erkennen
@@ -30,9 +30,9 @@ blocks:
           - text: Die 24 Kinder der 6a
             correct: false
             info: Das ist nur ein Teil der Schule. Die 24 befragten Kinder sind die Stichprobe.
-          - text: Alle Kinder in Hessen
+          - text: Alle Schulen der Stadt
             correct: false
-            info: Das ist viel mehr, als die Schülervertretung wissen will. Die Frage betrifft nur diese Schule.
+            info: Das ist viel mehr, als die Schülervertretung wissen will. Die Frage betrifft nur diese eine Schule.
         explanation: Die Gesamtheit sind alle, über die man etwas sagen will. Die Befragten sind nur eine Auswahl daraus, die Stichprobe.
       - type: vue-component
         id: stichprobe-ziehen
@@ -51,7 +51,8 @@ blocks:
           colAll: "Alle {n} Lernenden"
           colSample: "Stichprobe ({n})"
           none: Noch keine Stichprobe. Wähle eine Auswahl und drücke „Stichprobe ziehen“. In dieser Simulation kennen wir alle 600 Lernenden, in Wirklichkeit wüsste man das nicht.
-          notice: Vergleiche die Anteile der Stichprobe mit den Anteilen aller 600. Ziehe mit derselben Auswahl noch einmal und schau, ob sich die Zahlen verändern.
+          notice: Vergleiche die Anteile der Stichprobe mit den Anteilen aller 600. Ziehe mit derselben Auswahl noch einmal und schau, wie stark sich die Zahlen verändern.
+          noticeSame: Bei dieser Auswahl werden immer dieselben Kinder gefragt, darum ändert sich beim nächsten Ziehen nichts. Vergleiche die Anteile mit denen aller 600.
         nojs: |
           Eine Simulation mit allen 600 Lernenden der Schule: 120 kommen zu Fuß (20 %), 210 mit dem Fahrrad (35 %), 210 mit dem
           Bus (35 %) und 60 mit dem Auto (10 %). Zieht man 5, 30 oder 100 Lernende zufällig, weichen die Anteile der Stichprobe
@@ -70,7 +71,7 @@ blocks:
         explanation: Eine Stichprobe ist ein Teil der Gesamtheit, den man wirklich befragt. Man schließt von ihr auf die Gesamtheit.
       - type: text
         text: |
-          Eine Stichprobe taugt für eine Aussage über alle, wenn sie **nicht zu klein** und **nicht einseitig** ist. Bei einer
+          Eine Stichprobe taugt für eine Aussage über alle, wenn sie **nicht zu klein** und **nicht einseitig** ist. **Zufällig** ausgewählt heißt: Jede und jeder hat die gleiche Chance. **Einseitig** heißt: Bestimmte Gruppen kommen gar nicht oder zu oft vor. Bei einer
           zu kleinen Stichprobe können die Zahlen stark schwanken: Mit 5 Lernenden liegst du bei jedem Ziehen woanders. Bei
           einer einseitigen Auswahl, zum Beispiel nur eine Klasse oder nur die Kinder am Fahrradständer, fehlen ganze Gruppen,
           und mehr Befragte helfen nicht.
@@ -94,7 +95,7 @@ blocks:
               1. Die 6a hat 24 Kinder befragt, 8 kommen zu Fuß: 8 von 24, das ist ein Drittel, rund 33 %.
               2. In der ganzen Schule kommen 120 von 600 zu Fuß, das sind 20 %.
               3. Die Stichprobe der 6a liegt also deutlich daneben.
-              4. Grund: Die Stichprobe ist klein (24 von 600) und einseitig, denn es ist nur eine Klasse.
+              4. Grund: Die Stichprobe ist klein (24 von 600, die Simulation zeigt: schon bei 30 schwanken die Anteile deutlich, erst bei 100 liegen sie meist nah) und einseitig, denn es ist nur eine Klasse.
   - type: section
     id: uebung
     title: Übung

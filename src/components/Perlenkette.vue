@@ -13,6 +13,9 @@ const props = defineProps<{
   middle: string;
   halves: string;
   reset: string;
+  /** The captions under the lower and the upper half of the chain. */
+  lower: string;
+  upper: string;
   /** What the chain shows, for screen readers. */
   alt: string;
   /** What the learner sees after each step; {min}, {q1}, {m}, {q3}, {max} and {range} are filled in. */
@@ -26,6 +29,7 @@ const step = ref(0);
 const chain = computed(() => (step.value >= 1 ? sorted(props.values) : props.values));
 const result = computed(() => five(props.values));
 const n = computed(() => props.values.length);
+const half = computed(() => Math.floor(n.value / 2));
 const gap = computed(() => 340 / n.value);
 const radius = computed(() => Math.min(14, gap.value / 2 - 2));
 const x = (i: number) => 10 + gap.value * (i + 0.5);
@@ -56,7 +60,7 @@ const isMiddleBead = (i: number) => step.value >= 2 && (result.value?.at.median.
 
 <template>
   <div class="perlenkette">
-    <svg viewBox="0 0 360 120" role="img" :aria-label="alt" class="perlenkette-chart">
+    <svg viewBox="0 0 360 150" role="img" :aria-label="alt" class="perlenkette-chart">
       <line x1="10" x2="350" y1="40" y2="40" class="perlenkette-string" />
       <g v-for="(value, i) in chain" :key="`${step}-${i}`">
         <circle
@@ -70,6 +74,14 @@ const isMiddleBead = (i: number) => step.value >= 2 && (result.value?.at.median.
       <g v-for="mark in marks" :key="mark.label">
         <line :x1="mark.at" :x2="mark.at" y1="62" y2="72" class="perlenkette-tick" />
         <text :x="mark.at" y="90" text-anchor="middle" class="perlenkette-label">{{ mark.label }}</text>
+      </g>
+      <g v-if="step >= 3">
+        <line :x1="x(0) - radius" :x2="x(half - 1) + radius" y1="108" y2="108" class="perlenkette-tick" />
+        <text :x="(x(0) + x(half - 1)) / 2" y="126" text-anchor="middle" class="perlenkette-label">{{ lower }}</text>
+        <line :x1="x(n - half) - radius" :x2="x(n - 1) + radius" y1="108" y2="108" class="perlenkette-tick" />
+        <text :x="(x(n - half) + x(n - 1)) / 2" y="126" text-anchor="middle" class="perlenkette-label">
+          {{ upper }}
+        </text>
       </g>
     </svg>
     <div class="perlenkette-buttons">
