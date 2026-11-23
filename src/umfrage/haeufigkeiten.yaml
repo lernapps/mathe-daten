@@ -1,0 +1,176 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Wie oft kommt was vor?
+description: "Absolute und relative Häufigkeit bestimmen: zählen, durch die Gesamtzahl teilen und im Kreisdiagramm zeigen."
+competencies: [haeufigkeiten]
+scope: |
+  Die Strichliste der Klasse 6a liefert zu jeder Antwort eine Anzahl. Diese Anzahl heißt absolute Häufigkeit: So oft kam
+  die Antwort vor. Die relative Häufigkeit ist der Anteil an allen Antworten, ein Bruch: Anzahl der Antwort über Gesamtzahl,
+  zum Beispiel $\frac{8}{24}$ für „Zu Fuß“. Im Kreisdiagramm ist der ganze Kreis die Gesamtzahl, jeder Teil ein Anteil. Mit
+  relativen Häufigkeiten kann man auch Klassen vergleichen, die verschieden groß sind. Häufige Fehler: die Anzahl statt des
+  Bruchs nennen, Nenner und Zähler vertauschen, durch die falsche Zahl teilen.
+blocks:
+  - type: section
+    id: einstieg
+    title: Wie viele von allen?
+    blocks:
+      - type: text
+        text: |
+          Die 6a hat die Strichliste gezählt. Lena fragt: „Wie viele Kinder kommen zu Fuß?“ Tom fragt: „Und welcher Teil
+          der ganzen Klasse ist das?“ **Nach dieser Seite kannst du beides bestimmen: wie oft eine Antwort vorkommt und
+          welchen Anteil sie an allen Antworten hat.**
+      - type: table
+        caption: Die Zählung der 6a von der letzten Seite
+        header: [Verkehrsmittel, Anzahl der Kinder]
+        rows:
+          - [Zu Fuß, "8"]
+          - [Fahrrad, "6"]
+          - [Bus, "7"]
+          - [Auto, "3"]
+      - type: number
+        id: gesamtzahl
+        text: Wie viele Kinder haben bei der Umfrage der 6a insgesamt geantwortet?
+        answer: 24
+        tolerance: 0
+        unit: Kinder
+        mistakes:
+          - answer: 8
+            message: Das ist nur die Zeile „Zu Fuß“. Gesucht sind die Kinder aus allen vier Zeilen zusammen.
+          - answer: 4
+            message: Das sind die vier Zeilen der Tabelle. Gesucht ist, wie viele Kinder in den Zeilen zusammen gezählt wurden.
+        hint: Zähle die Anzahlen aller vier Zeilen zusammen.
+        explanation: 8 + 6 + 7 + 3 = 24. Jedes Kind hat genau einen Zettel abgegeben, also sind es 24 Antworten.
+        links:
+          - title: "Lernlandkarte: Absolute und relative Häufigkeit"
+            url: "https://lernapps.net/apps/map/mathematik/c/haeufigkeiten/"
+  - type: section
+    id: erklaerung
+    title: Anzahl und Anteil
+    blocks:
+      - type: definition
+        term: Absolute Häufigkeit
+        explanation: Die absolute Häufigkeit sagt, wie oft eine Antwort vorkommt. Bei der 6a ist die absolute Häufigkeit von „Zu Fuß“ die Zahl 8.
+      - type: definition
+        term: Relative Häufigkeit
+        explanation: Die relative Häufigkeit ist der Anteil einer Antwort an allen Antworten. Du schreibst ihn als Bruch, wobei die Anzahl der Antwort über der Gesamtzahl steht. Bei der 6a ist die relative Häufigkeit von „Zu Fuß“ der Bruch $\frac{8}{24}$.
+      - type: table
+        caption: Absolute und relative Häufigkeit der 6a
+        header: [Verkehrsmittel, absolute Häufigkeit, relative Häufigkeit]
+        rows:
+          - [Zu Fuß, "8", '$\frac{8}{24}$']
+          - [Fahrrad, "6", '$\frac{6}{24}$']
+          - [Bus, "7", '$\frac{7}{24}$']
+          - [Auto, "3", '$\frac{3}{24}$']
+      - type: figure
+        image: images/kreis-6a.svg
+        alt: Kreisdiagramm der Klasse 6a, in vier Teile geteilt. Zu Fuß 8, Fahrrad 6, Bus 7 und Auto 3. Der ganze Kreis steht für alle 24 Kinder.
+        caption: Der ganze Kreis sind alle 24 Kinder. Ein größerer Teil bedeutet einen größeren Anteil, also eine größere relative Häufigkeit.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Die Gesamtzahl steht im Nenner, die Anzahl der Antwort im Zähler. Alle relativen Häufigkeiten zusammen
+              ergeben das Ganze: $\frac{8}{24} + \frac{6}{24} + \frac{7}{24} + \frac{3}{24} = \frac{24}{24} = 1$.
+  - type: section
+    id: beispiel
+    title: Ein Beispiel zum Vergleichen
+    blocks:
+      - type: example
+        title: Zwei Klassen, verschieden groß
+        blocks:
+          - type: text
+            text: |
+              In der 6b gehen 8 von 20 Kindern zu Fuß. Wo gehen mehr Kinder zu Fuß, in der 6a oder in der 6b? Beide
+              Klassen haben 8 Kinder, aber nicht gleich viele Kinder insgesamt.
+
+              1. Die 6a hat die relative Häufigkeit $\frac{8}{24}$.
+              2. Die 6b hat die relative Häufigkeit $\frac{8}{20}$.
+              3. Bei gleichem Zähler ist der Bruch mit dem kleineren Nenner größer, denn das Ganze ist kleiner.
+              4. $\frac{8}{20}$ ist größer als $\frac{8}{24}$: In der 6b geht ein größerer Teil der Klasse zu Fuß.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: absolut-oder-relativ
+        text: Wie lautet die relative Häufigkeit von „Bus“ in der 6a?
+        material:
+          - type: table
+            caption: Die Zählung der 6a
+            header: [Verkehrsmittel, Anzahl der Kinder]
+            rows:
+              - [Zu Fuß, "8"]
+              - [Fahrrad, "6"]
+              - [Bus, "7"]
+              - [Auto, "3"]
+        options:
+          - text: $\frac{7}{24}$
+            correct: true
+            info: Die Anzahl der Antwort „Bus“ steht im Zähler, die Gesamtzahl 24 im Nenner.
+          - text: "7"
+            correct: false
+            info: Die Zahl 7 ist die absolute Häufigkeit. Die relative Häufigkeit ist ein Anteil an allen Kindern, also ein Bruch.
+          - text: $\frac{24}{7}$
+            correct: false
+            info: Hier stehen Zähler und Nenner vertauscht. Die Gesamtzahl gehört in den Nenner.
+        explanation: Relative Häufigkeit = Anzahl der Antwort über Gesamtzahl, also $\frac{7}{24}$.
+        links:
+          - title: "Lernlandkarte: Absolute und relative Häufigkeit"
+            url: "https://lernapps.net/apps/map/mathematik/c/haeufigkeiten/"
+      - type: generated
+        id: relative-haeufigkeit
+        given:
+          n: { oneOf: [20, 25, 40, 50] }
+          a: { int: [2, 18] }
+        where: ["a * 2 != n", "decimals(a / n) <= 2"]
+        task:
+          text: "In einer Klasse mit {{n}} Kindern haben {{a}} Kinder ein Haustier. Wie groß ist die relative Häufigkeit der Kinder mit Haustier? Gib sie als Dezimalzahl an: Teile die Anzahl durch die Gesamtzahl."
+        answer: { value: "a / n", compare: { number: { format: decimal, decimals: 2, tolerance: 0.001 } } }
+        mistakes:
+          - value: "a"
+            message: "Das ist die absolute Häufigkeit, die Anzahl der Kinder. Die relative Häufigkeit ist der Anteil an allen Kindern."
+          - value: "n / a"
+            message: "Zähler und Nenner sind vertauscht. Die Gesamtzahl der Kinder gehört in den Nenner."
+          - value: "(n - a) / n"
+            message: "Das ist die relative Häufigkeit der Kinder ohne Haustier. Gefragt sind die Kinder mit Haustier."
+        hint: "Die relative Häufigkeit ist der Bruch Anzahl der Kinder mit Haustier über Gesamtzahl der Kinder. Rechne ihn als Division aus."
+        steps:
+          - "Die Anzahl der Kinder mit Haustier ist der Zähler: {{a}}."
+          - "Die Gesamtzahl der Kinder ist der Nenner: {{n}}."
+          - "Die relative Häufigkeit ist der Bruch {{a}} über {{n}}. Als Division: {{a}} : {{n}} = {{answer}}."
+      - type: single-choice
+        id: antwort-zum-bruch
+        text: In der 6a ist die relative Häufigkeit einer Antwort $\frac{6}{24}$. Welche Antwort ist das?
+        material:
+          - type: table
+            caption: Die Zählung der 6a
+            header: [Verkehrsmittel, Anzahl der Kinder]
+            rows:
+              - [Zu Fuß, "8"]
+              - [Fahrrad, "6"]
+              - [Bus, "7"]
+              - [Auto, "3"]
+        options:
+          - text: Fahrrad
+            correct: true
+            info: Beim Fahrrad stehen 6 Kinder in der Tabelle, und 6 ist der Zähler.
+          - text: Zu Fuß
+            correct: false
+            info: Bei „Zu Fuß“ stehen 8 Kinder. Der Bruch dazu ist $\frac{8}{24}$.
+          - text: Auto
+            correct: false
+            info: Bei „Auto“ stehen 3 Kinder. Der Bruch dazu ist $\frac{3}{24}$.
+        explanation: Der Zähler 6 ist die Anzahl der Kinder bei „Fahrrad“, der Nenner 24 ist die Gesamtzahl.
+        links:
+          - title: "Lernlandkarte: Absolute und relative Häufigkeit"
+            url: "https://lernapps.net/apps/map/mathematik/c/haeufigkeiten/"
+      - type: ordering
+        id: nach-anteil-ordnen
+        text: Ordne die Antworten der 6a nach ihrer relativen Häufigkeit, die größte zuerst.
+        items: [Zu Fuß, Bus, Fahrrad, Auto]
+        explanation: Alle Brüche haben den Nenner 24, also entscheidet der Zähler. Der größte Zähler ist 8 bei „Zu Fuß“, dann 7 beim Bus, 6 beim Fahrrad und 3 beim Auto.
+        links:
+          - title: "Lernlandkarte: Absolute und relative Häufigkeit"
+            url: "https://lernapps.net/apps/map/mathematik/c/haeufigkeiten/"
