@@ -77,7 +77,7 @@ Einen Bruch kannst du auch als Division ausrechnen: $\frac{6}{24}$ bedeutet 6 : 
 
 **Merke: Merke**
 
-Die Gesamtzahl steht im Nenner, die Anzahl der Antwort im Zähler. Zählst du alle Anzahlen zusammen, bekommst du die Gesamtzahl. Alle relativen Häufigkeiten zusammen sind darum das ganze Ganze: $\frac{24}{24} = 1$. Lena fragt nach der Anzahl: Die absolute Häufigkeit von „Zu Fuß“ ist 8. Toms Frage beantwortet die relative Häufigkeit: $\frac{8}{24}$.
+Die Gesamtzahl steht im Nenner, die Anzahl der Antwort im Zähler. Zählst du alle Anzahlen zusammen, bekommst du die Gesamtzahl. Alle relativen Häufigkeiten zusammen sind darum das Ganze: $\frac{8}{24} + \frac{6}{24} + \frac{7}{24} + \frac{3}{24} = \frac{24}{24} = 1$. Lena fragt nach der Anzahl: Die absolute Häufigkeit von „Zu Fuß“ ist 8. Toms Frage beantwortet die relative Häufigkeit: $\frac{8}{24}$.
 
 ### Ein Beispiel zum Vergleichen
 
@@ -95,7 +95,7 @@ Klassen gehen 8 Kinder zu Fuß, aber die Klassen sind nicht gleich groß.
 
 - Aufgabe `absolut-oder-relativ` (unten)
 
-- Aufgabe `antwort-zum-bruch` (unten)
+- Aufgabe `kleinste-haeufigkeit` (unten)
 
 - Aufgabe `relative-haeufigkeit` (unten)
 
@@ -125,7 +125,7 @@ Klassen gehen 8 Kinder zu Fuß, aber die Klassen sind nicht gleich groß.
 - Erklärung: Relative Häufigkeit = Anzahl der Antwort über Gesamtzahl, also $\frac{7}{20}$.
 - Link: [../?via=tutor#absolut-oder-relativ](../?via=tutor#absolut-oder-relativ)
 
-### Aufgabe antwort-zum-bruch
+### Aufgabe kleinste-haeufigkeit
 
 - Aufgabe: Welche Antwort der 6a hat die kleinste relative Häufigkeit?
 - Antwortformat: eine Antwort wählen
@@ -135,7 +135,7 @@ Klassen gehen 8 Kinder zu Fuß, aber die Klassen sind nicht gleich groß.
   - ✗ Zu Fuß – Bei „Zu Fuß“ stehen 8 Kinder, das ist die größte Anzahl. Der Bruch ist $\frac{8}{24}$.
 - Lösung: Auto
 - Erklärung: Alle Brüche haben den Nenner 24, also hat der kleinste Zähler die kleinste relative Häufigkeit.
-- Link: [../?via=tutor#antwort-zum-bruch](../?via=tutor#antwort-zum-bruch)
+- Link: [../?via=tutor#kleinste-haeufigkeit](../?via=tutor#kleinste-haeufigkeit)
 
 ### Aufgabe relative-haeufigkeit
 

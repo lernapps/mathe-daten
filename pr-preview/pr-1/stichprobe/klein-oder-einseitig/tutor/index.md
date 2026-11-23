@@ -66,7 +66,7 @@ und mehr Befragte helfen nicht.
 
 **Merke: Merke**
 
-Eine große Stichprobe ist nicht automatisch gut. Wenn jedes Kind die gleiche Chance hat, ausgewählt zu werden
+Eine große Stichprobe ist nicht automatisch gut. Wenn jede und jeder Lernende die gleiche Chance hat, ausgewählt zu werden
 (zufällige Auswahl), und die Stichprobe groß genug ist, liegt sie meist nah an der Gesamtheit. Auch dann ist ihr Ergebnis nur eine
 Schätzung und keine genaue Zahl.
 
@@ -230,7 +230,7 @@ Nr. | n | a | Lösung | F1 | F2
 - Eine gute Antwort enthält (P1, P2 … wie die App sie nennt):
   - P1 (Inhalt) Die Stichprobe ist klein, nur 24 von 600 Lernenden. Quelle: [/stichprobe/klein-oder-einseitig/#erklaerung](../../../stichprobe/klein-oder-einseitig/#erklaerung)
   - P2 (Inhalt) Es ist nur eine einzige Klasse, die Auswahl ist einseitig. Andere Klassen und Stufen fehlen. Quelle: [/stichprobe/klein-oder-einseitig/#erklaerung](../../../stichprobe/klein-oder-einseitig/#erklaerung)
-  - P3 (Inhalt) Die Aussage gilt nur für die 24 Kinder der 6a, nicht für alle 600. Quelle: [/stichprobe/klein-oder-einseitig/#beispiel](../../../stichprobe/klein-oder-einseitig/#beispiel)
+  - P3 (Inhalt) Die Aussage gilt nur für die 24 Kinder der 6a, nicht für alle 600. Quelle: [/stichprobe/klein-oder-einseitig/#uebung](../../../stichprobe/klein-oder-einseitig/#uebung)
   - P4 (Form) Ganze Sätze mit einer Begründung (weil …, darum …).
 - Musterantwort: Die Stichprobe der 6a taugt für diese Aussage nicht. Sie ist klein, denn es sind nur 24 von 600 Lernenden. Außerdem ist es nur eine einzige Klasse, also eine einseitige Auswahl. Darum gilt „ein Drittel“ nur für die 6a. In der ganzen Schule kommen nur 20 % zu Fuß.
 - Tipp der App: Denke an die Größe der Stichprobe und daran, wer alles befragt wurde und wer nicht.

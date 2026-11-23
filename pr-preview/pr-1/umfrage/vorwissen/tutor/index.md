@@ -53,7 +53,7 @@ kurze Wiederholung und einen Kurztest. Am Ende steht eine Checkliste.
 Ich kann natürliche Zahlen vergleichen, am Zahlenstrahl ablesen und der Größe nach ordnen. Beim **Vergleichen**
 sagst du, welche Zahl größer ist. Beim **Ordnen** stellst du Zahlen der Größe nach hintereinander.
 
-- **Natürliche Zahlen**: Die natürlichen Zahlen sind die Zahlen zum Zählen, also 0, 1, 2, 3 und immer so weiter.
+- **Natürliche Zahlen**: Die natürlichen Zahlen sind 0, 1, 2, 3 und immer so weiter.
 
 - **Zahlenstrahl**: Der Zahlenstrahl beginnt bei 0 und geht nach rechts. Je weiter rechts eine Zahl liegt, desto größer ist sie. Zum Beispiel liegt 3 links von 7, also ist 3 kleiner als 7.
 
@@ -67,7 +67,7 @@ Welche Zahl ist größer, 385 oder 358? Vergleiche von links: Beide haben 3 Hund
 
 Interaktiv: Kurztest: Welche Zahl ist die größte, 45 007, 40 570, 40 705 oder 40 075? Antwort: 45 007, denn sie hat als einzige 5 Tausender.
 
-Interaktiv: Kurztest: Welche Reihe ist der Größe nach geordnet, die kleinste Zahl zuerst? Antwort: 3 099, 3 190, 3 910, 9 013.
+Interaktiv: Kurztest: Welche Reihe ist der Größe nach geordnet, die kleinste Zahl zuerst? Antwort: 3099, 3190, 3910, 9013.
 
 Wenn du nicht sicher warst, schau dir den Baustein „Zahlen vergleichen und ordnen“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/) an.
 

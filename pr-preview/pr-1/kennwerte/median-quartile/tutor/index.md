@@ -56,7 +56,7 @@ Interaktiv: Elf Perlen mit den Schulwegzeiten der 8b in Minuten: 4, 5, 7, 8, 10,
 
 ### Die Mitte und die Hälften
 
-- **Median**: Der Median ist der mittlere Wert der Daten, wenn du sie der Größe nach ordnest. Bei gerader Anzahl ist er der Mittelwert der beiden mittleren Werte. In der geordneten Liste stehen links und rechts vom Median gleich viele Werte.
+- **Median**: Der Median ist der mittlere Wert der Daten, wenn du sie der Größe nach ordnest. Bei gerader Anzahl ist er der Mittelwert der beiden mittleren Werte. In der geordneten Liste stehen links und rechts von der Mitte gleich viele Werte.
 
 - **Spannweite**: Die Spannweite ist der Unterschied zwischen dem größten und dem kleinsten Wert, also größter Wert minus kleinster Wert. Sie zeigt, wie weit die Daten auseinanderliegen.
 
@@ -65,7 +65,7 @@ Interaktiv: Elf Perlen mit den Schulwegzeiten der 8b in Minuten: 4, 5, 7, 8, 10,
 **Merke: Merke**
 
 **Zuerst ordnen**, dann die Mitte suchen. Bei gerader Anzahl nimmst du den Mittelwert der beiden mittleren
-Werte. Die Spannweite ist $\text{größter Wert} - \text{kleinster Wert}$. Bei gerader Anzahl hat jede Hälfte gleich viele Werte, zum Beispiel sechs bei zwölf Werten: Der Median ist dann nicht ein Wert der Liste, und keine Hälfte schließt einen Wert in der Mitte aus.
+Werte. Die Spannweite ist $\text{größter Wert} - \text{kleinster Wert}$. Bei gerader Anzahl teilst du die Liste genau in zwei Hälften, bei zwölf Werten je sechs. Kein Wert bleibt übrig. Der Median muss dann kein Wert der Liste sein.
 
 ### Zwei Klassen, zwei Beispiele
 
@@ -263,7 +263,7 @@ Nr. | a.wert | b.wert | c.wert | d.wert | e.wert | f.wert | g.wert | h.wert | L�
 45 | 22 | 38 | 36 | 59 | 10 | 16 | 39 | 15 | 29 | 22 | 34,5
 46 | 54 | 7 | 59 | 20 | 27 | 49 | 43 | 58 | 46 | 43 | 23,5
 47 | 15 | 5 | 23 | 39 | 47 | 27 | 4 | 52 | 25 | 23 | 43
-48 | 57 | 9 | 17 | 12 | 22 | 6 | 27 | 31 | 19,5 | 17 | 17
+48 | 26 | 59 | 42 | 12 | 39 | 49 | 15 | 22 | 32,5 | 26 | 25,5
 49 | 51 | 48 | 16 | 38 | 14 | 43 | 30 | 11 | 34 | 30 | 26
 50 | 20 | 46 | 13 | 44 | 4 | 21 | 22 | 43 | 21,5 | 21 | 24
 51 | 29 | 53 | 35 | 12 | 41 | 54 | 10 | 26 | 32 | 29 | 26,5

@@ -116,7 +116,7 @@ Du hast gefragt, gezählt, gezeichnet und gerechnet, und du hast geprüft, ob ma
 
 ### Aufgabe jede-kte-person
 
-- Aufgabe: „Die Schülerliste hat {n} Namen. Aus ihr wird jede {k}. Person ausgewählt. Wie viele Lernende kommen in die Stichprobe?“
+- Aufgabe: „Eine Schülerliste hat {n} Namen. Aus ihr wird jede {k}. Person ausgewählt. Wie viele Lernende kommen in die Stichprobe?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Teile die Liste in Gruppen von {k} Namen. Aus jeder Gruppe kommt eine Person.“
 - Lösungsweg:
@@ -178,11 +178,11 @@ Nr. | n | k | Lösung | F1 | F2
 - Aufgabe: Die Schülervertretung sagt nach ihrer Erhebung mit dem neuen Plan (60 zufällig gewählte Lernende, neutrale Frage): „Genau 37 % der Schule kommen mit dem Rad.“ Beurteile in zwei bis vier Sätzen, ob diese Aussage zum Plan passt, und begründe dein Urteil.
 - Antwortformat: in eigenen Worten eintippen oder auf Papier schreiben und das Blatt fotografieren
 - Eine gute Antwort enthält (P1, P2 … wie die App sie nennt):
-  - P1 (Inhalt) Der Plan ist gut, denn die Stichprobe ist zufällig und nicht zu klein und die Frage ist neutral. Quelle: [/stichprobe/erhebung-planen/#erklaerung](../../../stichprobe/erhebung-planen/#erklaerung)
+  - P1 (Inhalt) Der Plan ist gut, denn die Stichprobe ist zufällig und deutlich größer als eine Klasse und die Frage ist neutral. Quelle: [/stichprobe/erhebung-planen/#erklaerung](../../../stichprobe/erhebung-planen/#erklaerung)
   - P2 (Inhalt) Das Ergebnis ist trotzdem nur eine Schätzung. Mit einer anderen Stichprobe wären die Zahlen etwas anders. Quelle: [/stichprobe/erhebung-planen/#erklaerung](../../../stichprobe/erhebung-planen/#erklaerung)
   - P3 (Inhalt) Richtig wäre eine vorsichtige Aussage mit „ungefähr“ oder „etwa“, nicht „genau“. Quelle: [/stichprobe/erhebung-planen/#erklaerung](../../../stichprobe/erhebung-planen/#erklaerung)
   - P4 (Form) Ganze Sätze mit einer Begründung (weil …, darum …).
-- Musterantwort: Der Plan ist gut, weil die 60 Lernenden zufällig gewählt wurden und die Frage neutral ist. Trotzdem ist „genau 37 %“ zu sicher gesagt. Eine Stichprobe liefert nur eine Schätzung, eine andere hätte etwas andere Zahlen gegeben. Besser ist: „Ungefähr 37 % der Schule kommen mit dem Rad.“
+- Musterantwort: Der Plan ist gut, weil die 60 Lernenden zufällig gewählt wurden und die Frage neutral ist. Die Zahlen können trotzdem noch um einige Prozentpunkte schwanken. Trotzdem ist „genau 37 %“ zu sicher gesagt. Eine Stichprobe liefert nur eine Schätzung, eine andere hätte etwas andere Zahlen gegeben. Besser ist: „Ungefähr 37 % der Schule kommen mit dem Rad.“
 - Tipp der App: Denke daran, was eine Stichprobe liefern kann und was nicht.
 - So hilfst du: Die App zeigt die Punkte erst nach der Antwort; das Kind hakt selbst ab, welche seine Antwort enthält, und „es fehlen P2, P4“ nennt die anderen. Fehlt dir die Antwort, bitte das Kind, sie einzufügen oder das Foto seines Blatts anzuhängen. Prüf Punkt für Punkt, auch die abgehakten, und sag zuerst, was gelungen ist. Zu einem fehlenden Punkt stell eine Frage, die dorthin führt, und nenn seine Quelle. Verrate die Musterantwort nicht, bevor das Kind es noch einmal versucht hat. Zu einem Punkt der Form zeig an einem Satz des Kindes, wie es besser geht.
 - Link: [../?via=tutor#urteil-plan](../?via=tutor#urteil-plan)

@@ -62,11 +62,11 @@ Mittelwert, hier 7 Minuten.
 
 $\text{Mittelwert} = \frac{\text{Summe aller Werte}}{\text{Anzahl der Werte}}$
 
-Du kannst auch rückwärts rechnen: Kennst du den Mittelwert und die Anzahl der Werte, ist die Summe aller Werte der Mittelwert mal die Anzahl. Bei 5 Kindern und dem Mittelwert 7 Minuten sind es 5 · 7 = 35 Minuten zusammen.
+Du kannst auch rückwärts rechnen: Kennst du den Mittelwert und die Anzahl der Werte, ist die Summe aller Werte der Mittelwert mal die Anzahl. Bei 5 Kindern und dem Mittelwert 7 Minuten sind es 5 · 7 = 35 Minuten zusammen.
 
 **Merke: Merke**
 
-Der Mittelwert liegt immer zwischen dem kleinsten und dem größten Wert. Er muss kein Wert der Liste sein: Hier hat kein Kind genau 7 Minuten. Ein sehr großer Wert zieht den Mittelwert nach oben. Er sagt nur: So viel hätte
+Der Mittelwert liegt immer zwischen dem kleinsten und dem größten Wert. Er muss kein Wert der Liste sein: Hier hat kein Kind genau 7 Minuten. Ein sehr großer Wert zieht den Mittelwert nach oben. Der Mittelwert sagt nur: So viel hätte
 jedes Kind, wenn alle gleich lang brauchten und die Summe dieselbe bliebe.
 
 ### Ein Beispiel Schritt für Schritt
@@ -208,7 +208,7 @@ Nr. | a | b | c | d | Lösung | F1 | F2
 
 ### Aufgabe fehlenden-wert-finden
 
-- Aufgabe: „Fünf Kinder haben im Mittelwert {m} Minuten Schulweg. Vier von ihnen brauchen {a}, {b}, {c} und {d} Minuten. Wie viele Minuten braucht das fünfte Kind?“
+- Aufgabe: „Der Mittelwert der Schulwege von fünf Kindern ist {m} Minuten. Vier von ihnen brauchen {a}, {b}, {c} und {d} Minuten. Wie viele Minuten braucht das fünfte Kind?“
 - Antwortformat: eine Zahl eintippen (min)
 - Tipp der App: „Alle fünf Werte zusammen sind 5 mal der Mittelwert. Ziehe die vier bekannten Werte davon ab.“
 - Lösungsweg:
