@@ -297,7 +297,7 @@ Kapitel-Ids: `umfrage` (Unsere Umfrage), `kennwerte` (Median, Quartile und Boxpl
 - [x] Seite kennwerte/boxplot (boxplot): Boxplot-SVGs aus den Daten von 8b und 8c, Fünf-Werte-Zusammenfassung, Aussagen prüfen, generated, Rückblick Kapitel 2
 - [x] Seite stichprobe/klein-oder-einseitig (stichproben-erhebungen-planen): Komponente StichprobeZiehen mit Test und nojs, Vergleich mit der Gesamtheit, open-task Mein Urteil, scope auf allen Seiten
 - [x] Seite stichprobe/erhebung-planen (stichproben-erhebungen-planen): Erhebungsplan beurteilen und neu planen, open-task Mein Urteil, Rückblick Kapitel 3 und Gesamtrückblick
-- [ ] Zwei Prüfer starten (Lernenden-Prüfer je Stufe, fachlicher Prüfer), Befunde im Plan unter Review, umsetzen; was danach inhaltlich geändert wurde, nochmals prüfen
+- [x] Zwei Prüfer starten (Lernenden-Prüfer je Stufe, fachlicher Prüfer), Befunde im Plan unter Review, umsetzen; was danach inhaltlich geändert wurde, nochmals prüfen
 <!-- tasks: pages (11 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.

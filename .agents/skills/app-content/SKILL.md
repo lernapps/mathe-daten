@@ -52,20 +52,20 @@ Die Exercise-Ids je Seite stehen in der Seite (Abschnitt `uebung`).
 ## Exercise patterns
 
 - *Tabelle ↔ Diagramm* (`daten-darstellen`): Säulen setzen (Exercise-Komponente `SaeulenZeichnen`), aus einem Diagramm ablesen (`number`, `single-choice`), Darstellung begründen (`single-choice`).
-- *Zählen und teilen* (`haeufigkeiten`): `generated` aus `src/data/verkehrsmittel.yaml` (Anzahlen je Verkehrsmittel der 6a) und später `src/data/kinder.yaml` (Minuten je Kind); absolute, relative Häufigkeit als Bruch oder Dezimalzahl; Fehler: durch die falsche Zahl geteilt, absolut und relativ verwechselt.
+- *Zählen und teilen* (`haeufigkeiten`): `single-choice` (Bruch), `generated` `relative-haeufigkeit` (Dezimalzahl, weil das Zahlenfeld keine Brüche annimmt), `ordering`; Fehler: durch die falsche Zahl geteilt, absolut und relativ verwechselt. Daten der 6a: `src/data/verkehrsmittel.yaml`.
 - *Frage beurteilen* (`umfragen-erhebungen`): `single-choice`/`multiple-choice` mit Begründung je Option; `generated` Rohantworten zählen.
 - *Mittelwert* (`mittelwert`): `generated` (4 bis 8 Werte, Ergebnis `decimal`), Fehler: nur addiert, durch die falsche Anzahl geteilt; `true-false` zur Deutung.
 - *Täuschung benennen und reparieren* (`daten-kritisch-lesen`): `single-choice`, `matching`, `ordering`.
-- *Kennwerte aus Liste* (`kenngroessen-lage-streumasse`): `generated` mit `sortBy`; Fehler: nicht geordnet, gerade Anzahl, Median in beiden Hälften.
-- *Boxplot lesen* (`boxplot`): Aussagen über zwei Klassen (`true-false`, `single-choice`), `generated` mit fünf Werten.
-- *Stichprobe beurteilen* (`stichproben-erhebungen-planen`): Komponente `StichprobeZiehen` (keine Exercise), `open-task` „Mein Urteil“, `matching`/`single-choice`.
+- *Kennwerte aus Liste* (`kenngroessen-lage-streumasse`): `generated` mit `sortBy([a, b, …], wert)[k].wert`, die Werte einzeln aus `src/data/werte.yaml` (3 bis 60 Minuten) mit `where`-Bedingungen für verschiedene Werte; Aufgaben `median-ungerade`, `median-gerade`, `spannweite-bestimmen`, `unteres-quartil`, `oberes-quartil-gerade`; Fehler: nicht geordnet, gerade Anzahl, Median in beiden Hälften.
+- *Boxplot lesen und zeichnen* (`boxplot`): Aussagen über zwei Klassen (`single-choice`, `true-false`), `number` mit Toleranz (Median ablesen), `generated` `box-laenge` und `box-anzahl`, `matching` der Stellen eines Boxplots (Zeichnen), `ordering` der Zeichenschritte.
+- *Stichprobe beurteilen* (`stichproben-erhebungen-planen`): Komponente `StichprobeZiehen` (keine Exercise; Daten `src/data/schule.yaml`, 600 Lernende, die ersten 24 sind die 6a), `single-choice`, `generated` `hochrechnen` und `jede-kte-person`, `matching`, `ordering`, `open-task` „Mein Urteil“ (Kap. 3, Abschnitt `urteil`, mit konkreter Punkteliste und Musterlösung).
 - Rückmeldungen nennen den Fehlertyp; Werte werden geprüft, nicht als Text verglichen (`0,5`, `0.5`, `1/2` gelten, wo erlaubt); Rundung steht in der Aufgabe.
 
 ## Figures
 
 - Alle Diagramme (Säulen, Kreis, Boxplot, Täuschungsbeispiele) sind eigene SVG in `src/images/`, aus den Zahlen der Datendateien gezeichnet, `source: eigene Zeichnung`, `licence: CC-BY-4.0`; jedes hat `alt` (was zu sehen ist, ohne die Lösung) und eine Bildunterschrift (wohin schauen). `figure` mit `bar`/`hundred-grid` taugt nicht für Säulen.
 - Konventionen: Achsen beschriftet, Skala sichtbar, Säulen mit Zahl, Kategorien als Wort; eine Farbe je Merkmal plus zweites Merkmal (Muster oder Beschriftung), nie Farbe allein; Dezimalkomma.
-- Komponenten (Begründung: kein Block kann das): `SaeulenZeichnen` (Exercise, Säulen setzen), `WuerfelTuerme` (Würfel verschieben), `AchseSchieber` (Nullpunkt an/aus), `Perlenkette` (Werte ordnen, halbieren), `StichprobeZiehen` (Stichprobe ziehen), `Kurztest` (Selbsttest im Recap, Vorlage aus `docs/mathe-epic/components/`). Jede hat Tastatur, Textalternative (`nojs`/`describe`) und Test.
+- Komponenten (Begründung: kein Block kann das): `SaeulenZeichnen` (Exercise, Säulen setzen; Seite 1), `WuerfelTuerme` (Würfel verschieben; Mittelwert), `AchseSchieber` (Achse bei 0 oder 5; Diagramme kritisch lesen), `Perlenkette` (Werte ordnen, Mitte markieren, Hälften teilen; zweimal auf der Median-Seite, ungerade und gerade Anzahl), `StichprobeZiehen` (Stichprobe ziehen; Seite `klein-oder-einseitig`), `Kurztest` (Selbsttest im Recap, Vorlage aus `docs/mathe-epic/components/`). Jede hat Tastatur, Textalternative (`nojs`/`describe`) und Test; der Text vor ihr sagt, was die Knöpfe tun. Eigene SVG: `strichliste-6a`, `saeulen-6a`, `kreis-6a`, `becher-werbung`, `saeulen-abgeschnitten`, `zahlenstrahl-0-10`, `rechteck-drei-viertel`, `boxplot-8b-8c`, `boxplot-8b-erklaert`.
 
 ## Sources
 
@@ -82,3 +82,10 @@ Lernlandkarte Mathematik (geöffnet), KMK-Bildungsstandards ESA/MSA 2022 (Quelle
 ## Rules learned from mistakes
 
 - Erst die Arbeit, dann `lernapps plan done`: ein vorzeitiges `done` hakt Aufgaben ab, die noch offen sind.
+- Keine `links:` an Aufgaben (Regeln §9.6); der Build besteht ohne sie.
+- Das Zahlenfeld nimmt keine Brüche und keine Einheiten an: Aufgaben verlangen Dezimalzahlen oder ganze Zahlen, die Einheit steht in `unit`.
+- Ein Satzpunkt am Ende einer Antwortoption macht in der Rückmeldung „.:“: Optionen ohne Schlusspunkt schreiben.
+- Zahl und Einheit mit geschütztem Leerzeichen (`12 Minuten`, `37 %`).
+- Aufgabe mit mehreren Listenwerten: `where` gegen gleiche Werte und gegen gleiche `mistakes` (Property-Test), Reihenfolge leicht vor schwer.
+- Neue Darstellung vor der ersten Aufgabe in Worten einführen (Boxplot, Perlenkette); Text vor einer Komponente sagt, was ihre Knöpfe tun.
+- Typfehler in `.vue` zeigt `npx vue-tsc --noEmit`, nicht `vp check`.
