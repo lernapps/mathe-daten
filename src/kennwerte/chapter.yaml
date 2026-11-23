@@ -1,4 +1,4 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 title: Median, Quartile und Boxplot
 summary: Die Klassen 8b und 8c vergleichen ihre Schulwege. Du ordnest die Daten, findest die Mitte und zeichnest Boxplots.
-pages: [median-quartile]
+pages: [median-quartile, boxplot]
