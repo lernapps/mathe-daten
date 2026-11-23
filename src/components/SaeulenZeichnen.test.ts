@@ -6,7 +6,7 @@ const props = {
   categories: ["Zu Fuß", "Fahrrad", "Bus", "Auto"],
   mistakes: ["Zwei Säulen sind vertauscht.", "Jede Säule ist um 1 zu hoch."],
   oneOff: "Bei {name} passt die Säule nicht.",
-  several: "Mehrere Säulen passen nicht.",
+  several: "Erst {n} von 4 Säulen passen.",
 };
 
 test("the right bars are right; swapped and one too high are wrong", () => {
@@ -34,7 +34,8 @@ test("describe fills in the task; typical mistakes get their message, a single w
   expect(reason(task, [3, 5, 8, 2], props)).toBe("Zwei Säulen sind vertauscht.");
   expect(reason(task, [6, 4, 9, 3], props)).toBe("Jede Säule ist um 1 zu hoch.");
   expect(reason(task, [5, 3, 7, 2], props)).toBe("Bei Bus passt die Säule nicht.");
-  expect(reason(task, [0, 0, 0, 0], props)).toBe("Mehrere Säulen passen nicht.");
+  expect(reason(task, [0, 0, 0, 0], props)).toBe("Erst 0 von 4 Säulen passen.");
+  expect(reason(task, [5, 3, 0, 0], props)).toBe("Erst 2 von 4 Säulen passen.");
   expect(reason(task, [0, 0, 0, 0], { task: props.task, categories: props.categories })).toBeUndefined();
   expect(params(task, props, "de")).toEqual({ k0: "Zu Fuß: 5", k1: "Fahrrad: 3", k2: "Bus: 8", k3: "Auto: 2" });
   expect(show([5, 3, 8, 2], task, props)).toBe("Zu Fuß 5, Fahrrad 3, Bus 8, Auto 2");

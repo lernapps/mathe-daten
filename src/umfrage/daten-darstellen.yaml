@@ -15,25 +15,20 @@ blocks:
     blocks:
       - type: text
         text: |
-          Die Klasse 6a hat 24 Zettel eingesammelt. Auf jedem steht, wie ein Kind zur Schule kommt. Mira, Jonas und
-          Ayşe haben die Zettel mit einer Strichliste gezählt. **Nach dieser Seite kannst du Daten in einer Tabelle und
-          in einem Säulendiagramm darstellen und sagen, warum die Darstellung passt.**
+          Die Klasse 6a hat gefragt: „Wie kommst du zur Schule?“ Jedes Kind hat einen Zettel abgegeben, das sind 24
+          Zettel. Die Antworten auf den Zetteln heißen **Daten**. Mira, Jonas und Ayşe zählen sie mit einer
+          **Strichliste**: Für jede Antwort machst du einen Strich. Je fünf Striche werden zu einem **Fünferbündel**
+          zusammengefasst, vier senkrechte Striche und ein durchgestrichener. **Nach dieser Seite kannst du Daten in
+          einer Tabelle und in einem Säulendiagramm darstellen und sagen, warum die Darstellung passt.**
       - type: figure
         image: images/strichliste-6a.svg
         alt: Strichliste der Klasse 6a mit vier Zeilen. Jede Zeile hat Striche in Bündeln zu fünf, vier senkrechte Striche und ein durchgestrichener.
-        caption: Schau auf die Bündel. Ein Bündel sind fünf Striche, einzelne Striche stehen daneben.
+        caption: Jede Zeile ist eine Antwort, jeder Strich ein Kind. Zähle erst die Bündel in Fünferschritten, dann die einzelnen Striche daneben.
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: number
         id: rad-zaehlen
-        text: Wie viele Kinder der 6a kommen mit dem Fahrrad?
-        material:
-          - type: figure
-            image: images/strichliste-6a.svg
-            alt: Strichliste der Klasse 6a mit den Zeilen Zu Fuß, Fahrrad, Bus und Auto.
-            caption: Die Zeile „Fahrrad“ zeigt die Antworten für das Fahrrad.
-            source: eigene Zeichnung
-            licence: CC-BY-4.0
+        text: Schau in die Strichliste oben. Wie viele Kinder der 6a kommen mit dem Fahrrad?
         answer: 6
         tolerance: 0
         unit: Kinder
@@ -42,8 +37,10 @@ blocks:
             message: Du hast nur die Striche außerhalb des Bündels gezählt. Das Bündel gehört dazu und zählt fünf.
           - answer: 5
             message: Das ist nur das Bündel. Neben dem Bündel steht noch ein einzelner Strich.
+          - answer: 7
+            message: Das ist die Zeile „Bus“. Gesucht ist die Zeile „Fahrrad“.
         hint: Zähle in Fünferschritten und rechne dann die einzelnen Striche dazu.
-        explanation: Ein Bündel zählt fünf, dazu kommt ein einzelner Strich. Das sind 5 + 1 = 6 Kinder.
+        explanation: In der Zeile „Fahrrad“ zählt ein Fünferbündel fünf, dazu kommt ein einzelner Strich. Das sind 5 + 1 = 6 Kinder.
         links:
           - title: "Lernlandkarte: Daten darstellen"
             url: "https://lernapps.net/apps/map/mathematik/c/daten-darstellen/"
@@ -53,8 +50,9 @@ blocks:
     blocks:
       - type: text
         text: |
-          Die Anzahlen schreibst du in eine **Tabelle**. Aus der Tabelle zeichnest du ein **Säulendiagramm**: Jede Säule
-          steht für eine Antwort. Die Höhe der Säule ist die Anzahl der Kinder.
+          Die Anzahlen schreibst du in eine **Tabelle**: Jede Zeile gehört zu einem Verkehrsmittel, das war die Antwort
+          auf die Frage. Aus der Tabelle zeichnest du ein **Säulendiagramm**: Jede Zeile der Tabelle wird eine Säule, und
+          die Höhe der Säule ist die Anzahl der Kinder.
       - type: table
         caption: Wie kommen die Kinder der 6a zur Schule?
         header: [Verkehrsmittel, Anzahl der Kinder]
@@ -66,7 +64,7 @@ blocks:
       - type: figure
         image: images/saeulen-6a.svg
         alt: Säulendiagramm mit den vier Säulen Zu Fuß 8, Fahrrad 6, Bus 7 und Auto 3. Die senkrechte Achse zeigt die Anzahl der Kinder von 0 bis 10.
-        caption: Schau auf die Zahl über jeder Säule und auf die Beschriftung darunter.
+        caption: Vergleiche eine Säule mit der Zeile der Tabelle mit demselben Namen. Die Farben halten die Säulen nur auseinander, der Name steht unter jeder Säule.
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: note
@@ -74,20 +72,22 @@ blocks:
         blocks:
           - type: text
             text: |
-              Eine Säule gehört zu **einer** Antwort. Die senkrechte Achse beginnt bei 0. Unter jeder Säule steht, was
-              sie bedeutet, und über oder an ihr, wie hoch sie ist.
+              Die senkrechte Achse beginnt bei 0. Dann gilt: Eine doppelt so hohe Säule bedeutet doppelt so viele Kinder.
+              Willst du wissen, wie viele Kinder mehr es bei einer Säule sind als bei einer anderen, ziehst du die kleinere
+              Zahl von der größeren ab.
   - type: section
     id: beispiel
     title: Ein Beispiel Schritt für Schritt
     blocks:
       - type: example
-        title: Die Zettel der Klasse
+        title: Die Antwort „Bus“ von der Strichliste zur Säule
         blocks:
           - type: text
             text: |
-              Die Strichliste zeigt für „Bus“ ein Bündel und zwei einzelne Striche. Ein Bündel sind fünf Striche, das
-              sind zusammen 5 + 2 = 7 Kinder. In der Tabelle steht bei „Bus“ die Zahl 7, und die Säule für „Bus“ ist
-              bis zur Marke 7 hoch.
+              1. In der Strichliste steht bei „Bus“ ein Fünferbündel und dazu zwei einzelne Striche.
+              2. Das sind 5 + 2 = 7 Striche, also 7 Kinder.
+              3. In der Tabelle steht bei „Bus“ die Zahl 7.
+              4. Die Säule „Bus“ reicht auf der senkrechten Achse bis zur Marke 7.
   - type: section
     id: uebung
     title: Übung
@@ -96,9 +96,9 @@ blocks:
         id: striche-zaehlen
         given:
           a: { int: [1, 4] }
-          b: { int: [1, 4] }
+          b: { int: [2, 4] }
         task:
-          text: "In einer Strichliste stehen {{a}} Fünferbündel und {{b}} einzelne Striche. Wie viele Striche sind das?"
+          text: "In einer Strichliste stehen {{a}} Fünferbündel. Daneben stehen {{b}} einzelne Striche. Wie viele Striche sind das zusammen?"
         answer: { value: "5 * a + b", compare: { number: { format: integer } } }
         mistakes:
           - value: "a + b"
@@ -126,6 +126,8 @@ blocks:
         mistakes:
           - answer: 10
             message: Du hast die beiden Zahlen addiert. Gefragt ist, wie viele mehr es sind, also der Unterschied.
+          - answer: 7
+            message: Das ist nur die Anzahl beim Bus. Gefragt ist der Unterschied zwischen Bus und Auto.
         hint: Lies beide Zahlen über den Säulen ab und vergleiche sie.
         explanation: Beim Bus sind es 7, beim Auto 3. Der Unterschied ist 7 − 3 = 4 Kinder.
         links:
@@ -138,11 +140,13 @@ blocks:
           f: { pick: 1, from: { data: verkehrsmittel } }
         where: ["e.anzahl > f.anzahl"]
         task:
-          text: "Die Tabelle der 6a zeigt: {{e.mittel}} {{e.anzahl}} Kinder, {{f.mittel}} {{f.anzahl}} Kinder. Wie viele Kinder mehr kommen mit „{{e.mittel}}“ als mit „{{f.mittel}}“?"
+          text: "Aus der Tabelle der 6a: {{e.mittel}} {{e.anzahl}} Kinder, {{f.mittel}} {{f.anzahl}} Kinder. Wie viele Kinder mehr kommen mit „{{e.mittel}}“ als mit „{{f.mittel}}“?"
         answer: { value: "e.anzahl - f.anzahl", compare: { number: { format: integer } } }
         mistakes:
           - value: "e.anzahl + f.anzahl"
             message: "Du hast die beiden Anzahlen addiert. Gefragt ist, wie viele mehr es sind, also der Unterschied."
+          - value: "e.anzahl"
+            message: "Das ist nur die größere Anzahl. Gefragt ist der Unterschied zwischen den beiden Anzahlen."
         hint: "Vergleiche die beiden Zahlen: Wie viel größer ist die erste?"
         steps:
           - "Die größere Anzahl: {{e.anzahl}} Kinder bei „{{e.mittel}}“."
@@ -150,7 +154,7 @@ blocks:
           - "Der Unterschied: {{e.anzahl}} − {{f.anzahl}} = {{answer}} Kinder."
       - type: single-choice
         id: darstellung-waehlen
-        text: Die Klasse will zeigen, wie viele Kinder mit welchem Verkehrsmittel kommen. Welche Darstellung passt?
+        text: Die Klasse will anderen zeigen, wie viele Kinder mit welchem Verkehrsmittel kommen. Was zeigt das am schnellsten?
         options:
           - text: Ein Säulendiagramm mit einer Säule je Verkehrsmittel
             correct: true
@@ -158,10 +162,10 @@ blocks:
           - text: Eine einzige Zahl, die Summe aller Kinder
             correct: false
             info: Die Summe ist 24. Sie sagt aber nicht, wie sich die Kinder auf die Verkehrsmittel verteilen.
-          - text: Eine Linie, die alle Zahlen miteinander verbindet
+          - text: Alle 24 Zettel nebeneinander auf den Tisch legen
             correct: false
-            info: Eine Linie passt zu Werten, die nacheinander kommen, etwa Tage. Die Verkehrsmittel haben keine Reihenfolge.
-        explanation: Ein Säulendiagramm eignet sich, wenn man Anzahlen von Antworten vergleichen will, die nebeneinander stehen.
+            info: Man sieht dann 24 einzelne Zettel, aber nicht gleich, welche Antwort wie oft vorkommt. Dafür müsste man erst zählen.
+        explanation: Ein Säulendiagramm eignet sich, wenn man auf einen Blick vergleichen will, wie oft jede Antwort vorkommt.
         links:
           - title: "Lernlandkarte: Daten darstellen"
             url: "https://lernapps.net/apps/map/mathematik/c/daten-darstellen/"
@@ -169,7 +173,7 @@ blocks:
         id: saeulen-setzen
         component: SaeulenZeichnen
         props:
-          task: "Die Klasse hat gezählt: {k0}, {k1}, {k2}, {k3}. Setze für jede Antwort eine Säule auf die Anzahl."
+          task: "Die Klasse hat gezählt: {k0}, {k1}, {k2}, {k3}. Setze für jede Antwort eine Säule auf die Anzahl. Eine Säule kann bis 10 hoch sein."
           categories: [Zu Fuß, Fahrrad, Bus, Auto]
           plus: "Säule {name} um 1 höher"
           minus: "Säule {name} um 1 niedriger"
@@ -178,7 +182,7 @@ blocks:
             - "Zwei Säulen sind vertauscht: Vergleiche die Höhe jeder Säule mit der Zahl neben ihrem Namen."
             - "Alle Säulen sind um 1 zu hoch. Lies die Zahl noch einmal ab: Die Säule soll genau so hoch sein."
           oneOff: "Die Säule „{name}“ passt noch nicht zur Zahl in der Aufgabe."
-          several: "Mehrere Säulen passen noch nicht zu den Zahlen. Vergleiche jede Säule mit der Zahl neben ihrem Namen in der Aufgabe."
+          several: "Erst {n} von 4 Säulen passen zu den Zahlen. Vergleiche jede Säule mit der Zahl neben ihrem Namen in der Aufgabe."
         examples:
           accepted:
             - { answer: [7, 8, 3, 6], seed: 5 }

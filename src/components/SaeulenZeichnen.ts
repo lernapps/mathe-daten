@@ -13,7 +13,7 @@ export interface Props {
   mistakes?: readonly string[];
   /** The message for exactly one bar that does not fit, with {name}. */
   oneOff?: string;
-  /** The message for several bars that do not fit. */
+  /** The message for several bars that do not fit, with {n} for the number of bars that fit. */
   several?: string;
 }
 
@@ -88,7 +88,9 @@ export function reason(task: Task, answer: Answer, props: Props, _lang?: string)
   if (differing.length === 1 && props.oneOff !== undefined) {
     return props.oneOff.replace(/\{name\}/g, props.categories[differing[0] ?? 0] ?? "");
   }
-  if (differing.length > 1 && props.several !== undefined) return props.several;
+  if (differing.length > 1 && props.several !== undefined) {
+    return props.several.replace(/\{n\}/g, String(task.counts.length - differing.length));
+  }
   return undefined;
 }
 

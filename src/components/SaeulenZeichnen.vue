@@ -21,7 +21,7 @@ const props = defineProps<{
   mistakes: string[];
   /** The message for exactly one bar that does not fit, with {name}. */
   oneOff: string;
-  /** The message for several bars that do not fit. */
+  /** The message for several bars that do not fit, with {n} for the number of bars that fit. */
   several: string;
   /** The task number, which the explainer gives. */
   seed: number;
@@ -76,6 +76,13 @@ const text = (template: string, name: string, n = 0) =>
 }
 
 .saeulen-zeichnen-field {
+  background-image: repeating-linear-gradient(
+    to top,
+    transparent 0,
+    transparent 13px,
+    var(--page-border) 13px,
+    var(--page-border) 14px
+  );
   display: flex;
   align-items: flex-end;
   border-bottom: 2px solid var(--page-text);
