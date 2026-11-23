@@ -41,9 +41,6 @@ blocks:
             message: Das ist die Zeile „Bus“. Gesucht ist die Zeile „Fahrrad“.
         hint: Zähle in Fünferschritten und rechne dann die einzelnen Striche dazu.
         explanation: In der Zeile „Fahrrad“ zählt ein Fünferbündel fünf, dazu kommt ein einzelner Strich. Das sind 5 + 1 = 6 Kinder.
-        links:
-          - title: "Lernlandkarte: Daten darstellen"
-            url: "https://lernapps.net/apps/map/mathematik/c/daten-darstellen/"
   - type: section
     id: erklaerung
     title: Von der Strichliste zur Säule
@@ -130,9 +127,6 @@ blocks:
             message: Das ist nur die Anzahl beim Bus. Gefragt ist der Unterschied zwischen Bus und Auto.
         hint: Lies beide Zahlen über den Säulen ab und vergleiche sie.
         explanation: Beim Bus sind es 7, beim Auto 3. Der Unterschied ist 7 − 3 = 4 Kinder.
-        links:
-          - title: "Lernlandkarte: Daten darstellen"
-            url: "https://lernapps.net/apps/map/mathematik/c/daten-darstellen/"
       - type: generated
         id: tabelle-lesen
         given:
@@ -166,14 +160,11 @@ blocks:
             correct: false
             info: Man sieht dann 24 einzelne Zettel, aber nicht gleich, welche Antwort wie oft vorkommt. Dafür müsste man erst zählen.
         explanation: Ein Säulendiagramm eignet sich, wenn man auf einen Blick vergleichen will, wie oft jede Antwort vorkommt.
-        links:
-          - title: "Lernlandkarte: Daten darstellen"
-            url: "https://lernapps.net/apps/map/mathematik/c/daten-darstellen/"
       - type: vue-component
         id: saeulen-setzen
         component: SaeulenZeichnen
         props:
-          task: "Die Klasse hat gezählt: {k0}, {k1}, {k2}, {k3}. Setze für jede Antwort eine Säule auf die Anzahl. Eine Säule kann bis 10 hoch sein."
+          task: "Die Klasse hat gezählt: {k0}, {k1}, {k2}, {k3}. Setze für jede Antwort eine Säule auf die Anzahl: Mit + machst du eine Säule um 1 höher, mit − um 1 niedriger. Eine Säule kann bis 10 hoch sein."
           categories: [Zu Fuß, Fahrrad, Bus, Auto]
           plus: "Säule {name} um 1 höher"
           minus: "Säule {name} um 1 niedriger"

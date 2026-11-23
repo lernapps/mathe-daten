@@ -32,9 +32,6 @@ blocks:
             correct: false
             info: Das sind zwei Fragen in einer. Ein Kind, das lange braucht, aber nicht gern Bus fährt, weiß nicht, was es antworten soll.
         explanation: Eine gute Frage fragt nach einer Sache und lässt sich mit einer Zahl oder einem Wort aus einer festen Auswahl beantworten.
-        links:
-          - title: "Lernlandkarte: Umfragen durchführen"
-            url: "https://lernapps.net/apps/map/mathematik/c/umfragen-erhebungen/"
   - type: section
     id: erklaerung
     title: Von der Frage zur Liste
@@ -87,9 +84,6 @@ blocks:
             correct: false
             info: Ein Kind mit 15 Minuten passt in keine Gruppe. Es gibt eine Lücke.
         explanation: Gute Gruppen überschneiden sich nicht und lassen keine Lücke.
-        links:
-          - title: "Lernlandkarte: Umfragen durchführen"
-            url: "https://lernapps.net/apps/map/mathematik/c/umfragen-erhebungen/"
       - type: number
         id: antworten-zaehlen
         text: Wie oft steht „Rad“ auf den Zetteln?
@@ -106,9 +100,6 @@ blocks:
             message: Das ist die Anzahl aller Zettel. Gesucht ist, wie oft nur „Rad“ vorkommt.
         hint: Mache zu jedem „Rad“ einen Strich und zähle die Striche.
         explanation: Auf dem zweiten, vierten, achten und elften Zettel steht „Rad“. Das sind 4 Zettel.
-        links:
-          - title: "Lernlandkarte: Umfragen durchführen"
-            url: "https://lernapps.net/apps/map/mathematik/c/umfragen-erhebungen/"
       - type: generated
         id: liste-kontrollieren
         given:
@@ -138,14 +129,8 @@ blocks:
           - Zettel einsammeln und die Antworten in einer Liste erfassen
           - Kontrollieren, ob die Anzahlen zusammen die Zahl der Zettel ergeben
         explanation: Ohne Frage und feste Antwortmöglichkeiten kann man die Zettel nicht zählen. Die Kontrolle kommt zuletzt, denn erst dann sind alle Anzahlen da.
-        links:
-          - title: "Lernlandkarte: Umfragen durchführen"
-            url: "https://lernapps.net/apps/map/mathematik/c/umfragen-erhebungen/"
       - type: true-false
         id: summe-kleiner
         text: "Die Anzahlen in der Liste ergeben zusammen weniger als die Zahl der Zettel. Dann wurde vielleicht falsch gezählt oder ein Zettel vergessen."
         answer: true
         explanation: Jeder Zettel hat genau eine Antwort. Wenn die Summe nicht stimmt, wurde ein Zettel nicht gezählt oder falsch gezählt. Dann zählt man noch einmal.
-        links:
-          - title: "Lernlandkarte: Umfragen durchführen"
-            url: "https://lernapps.net/apps/map/mathematik/c/umfragen-erhebungen/"

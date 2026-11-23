@@ -32,9 +32,6 @@ blocks:
             correct: false
             info: Das ist bei jeder Stichprobe so und kein Fehler des Plans. Wichtig ist, dass die Auswahl der Befragten nicht einseitig ist.
         explanation: "Zwei Dinge verfälschen das Ergebnis: eine Frage, die die Antwort nahelegt, und eine einseitige Auswahl der Befragten."
-        links:
-          - title: "Lernlandkarte: Stichproben und Erhebungen"
-            url: "https://lernapps.net/apps/map/mathematik/c/stichproben-erhebungen-planen/"
   - type: section
     id: erklaerung
     title: Was ein guter Erhebungsplan festlegt
@@ -107,9 +104,6 @@ blocks:
           - left: Das Ergebnis wird als „genau“ angegeben
             right: Das Ergebnis als ungefähre Schätzung formulieren
         explanation: Jedes Problem hat seine Verbesserung. Zusammen ergeben sie einen Plan, dem man eher trauen kann.
-        links:
-          - title: "Lernlandkarte: Stichproben und Erhebungen"
-            url: "https://lernapps.net/apps/map/mathematik/c/stichproben-erhebungen-planen/"
       - type: ordering
         id: plan-schritte
         text: Bringe die Schritte der Planung einer Erhebung in eine sinnvolle Reihenfolge.
@@ -119,9 +113,6 @@ blocks:
           - Befragen
           - Das Ergebnis als Schätzung für alle formulieren
         explanation: Erst weißt du, über wen du etwas sagen willst. Dann planst du Stichprobe und Frage. Befragt wird erst, wenn alles feststeht, und zuletzt formulierst du das Ergebnis.
-        links:
-          - title: "Lernlandkarte: Stichproben und Erhebungen"
-            url: "https://lernapps.net/apps/map/mathematik/c/stichproben-erhebungen-planen/"
       - type: single-choice
         id: aussage-formulieren
         text: Von 60 zufällig gezogenen Lernenden fahren 22 mit dem Rad. Welche Aussage über alle 600 passt zu diesem Ergebnis?
@@ -136,9 +127,6 @@ blocks:
             correct: false
             info: Von den Kindern, die nicht befragt wurden, weiß man es nicht. Man schließt aus der Stichprobe auf alle.
         explanation: "Aus einer guten Stichprobe darf man auf alle schließen, aber vorsichtig: ungefähr, nicht genau."
-        links:
-          - title: "Lernlandkarte: Stichproben und Erhebungen"
-            url: "https://lernapps.net/apps/map/mathematik/c/stichproben-erhebungen-planen/"
   - type: section
     id: urteil
     title: Mein Urteil

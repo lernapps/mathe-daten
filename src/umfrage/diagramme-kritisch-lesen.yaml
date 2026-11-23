@@ -17,7 +17,7 @@ blocks:
       - type: text
         text: |
           Die 6a, die 6b und die 6c haben gezählt, wie viele Kinder mit dem Fahrrad kommen: 6a hat 6, 6b hat 7, 6c hat 8. Ayşe
-          zeichnet ein Diagramm für die Schulzeitung. Tom sagt: „Das sieht aber anders aus als meins.“ **Nach dieser Seite
+          zeichnet ein Diagramm für die Schulzeitung. Tom sagt: „Das sieht aber anders aus als meins.“ Mit den zwei Knöpfen unter dem Diagramm stellst du ein, wo die senkrechte Achse beginnt, bei 0 oder bei 5. **Nach dieser Seite
           kannst du erkennen, wie Diagramme täuschen, und sie reparieren.**
       - type: vue-component
         id: achse-schieben
@@ -39,7 +39,7 @@ blocks:
           die der 6a, obwohl die Zahlen dieselben sind.
       - type: single-choice
         id: warum-anders
-        text: Beide Diagramme zeigen dieselben Zahlen. Warum sieht der Unterschied bei „Achse beginnt bei 5“ so viel größer aus?
+        text: Das Diagramm zeigt immer dieselben Zahlen. Warum sieht der Unterschied bei „Achse beginnt bei 5“ so viel größer aus?
         options:
           - text: Die Achse beginnt nicht bei 0, darum sind die Säulen unten abgeschnitten.
             correct: true
@@ -51,9 +51,6 @@ blocks:
             correct: false
             info: Es sind in beiden Fällen dieselben Kinder. Das Zählen wurde nicht wiederholt.
         explanation: Wenn die Achse nicht bei 0 beginnt, passen die Höhen der Säulen nicht mehr zu den Verhältnissen der Zahlen.
-        links:
-          - title: "Lernlandkarte: Diagramme kritisch lesen"
-            url: "https://lernapps.net/apps/map/mathematik/c/daten-kritisch-lesen/"
   - type: section
     id: erklaerung
     title: Wie du Täuschungen erkennst
@@ -111,9 +108,6 @@ blocks:
             message: Du hast die Höhen der Säulen verglichen. Die 6b sieht doppelt so hoch aus, aber die Achse beginnt bei 5. Lies die Zahlen an der Achse ab.
         hint: Schau auf die Achse. Wo endet die Säule der 6a, wo die der 6b?
         explanation: Die Säule der 6a endet bei 6, die der 6b bei 7. Der Unterschied ist 7 − 6 = 1 Kind. Das Diagramm lässt ihn viel größer aussehen, weil die Achse bei 5 beginnt.
-        links:
-          - title: "Lernlandkarte: Diagramme kritisch lesen"
-            url: "https://lernapps.net/apps/map/mathematik/c/daten-kritisch-lesen/"
       - type: single-choice
         id: becher-bewerten
         text: "Die Werbung sagt: „Doppelt so viele Becher verkauft!“ Was täuscht an dem Bild mit den Bechern?"
@@ -135,9 +129,6 @@ blocks:
             correct: false
             info: Beide Becher haben dieselbe Farbe. Die Farbe verändert die Aussage nicht.
         explanation: Wer ein Bild in beide Richtungen vergrößert, vervierfacht die Fläche. Das Auge vergleicht die Fläche.
-        links:
-          - title: "Lernlandkarte: Diagramme kritisch lesen"
-            url: "https://lernapps.net/apps/map/mathematik/c/daten-kritisch-lesen/"
       - type: matching
         id: problem-reparatur
         text: Ordne jedem Problem im Diagramm zu, wie du es reparierst.
@@ -151,9 +142,6 @@ blocks:
         distractors:
           - Die Säulen dicker zeichnen
         explanation: Jedes Problem hat seine eigene Reparatur. Ein Diagramm ist gut, wenn die Höhe zur Zahl passt und man alles lesen kann.
-        links:
-          - title: "Lernlandkarte: Diagramme kritisch lesen"
-            url: "https://lernapps.net/apps/map/mathematik/c/daten-kritisch-lesen/"
       - type: ordering
         id: kritisch-lesen-schritte
         text: Bringe die Schritte beim kritischen Lesen eines Diagramms in eine sinnvolle Reihenfolge.
@@ -163,17 +151,11 @@ blocks:
           - Bilder prüfen und fragen, ob sie in beide Richtungen vergrößert sind
           - Entscheiden, ob das Bild zu den Zahlen passt
         explanation: Erst weißt du, worum es geht, dann prüfst du Achse, Zahlen und Bilder. Am Ende entscheidest du, ob das Diagramm ehrlich ist.
-        links:
-          - title: "Lernlandkarte: Diagramme kritisch lesen"
-            url: "https://lernapps.net/apps/map/mathematik/c/daten-kritisch-lesen/"
       - type: true-false
         id: falsche-zahlen
         text: Ein Diagramm mit abgeschnittener Achse zeigt falsche Zahlen.
         answer: false
         explanation: Die Zahlen können richtig sein. Das Diagramm täuscht trotzdem, weil die Höhen der Säulen nicht zu den Verhältnissen der Zahlen passen.
-        links:
-          - title: "Lernlandkarte: Diagramme kritisch lesen"
-            url: "https://lernapps.net/apps/map/mathematik/c/daten-kritisch-lesen/"
   - type: section
     id: rueckblick
     title: Rückblick auf Kapitel 1

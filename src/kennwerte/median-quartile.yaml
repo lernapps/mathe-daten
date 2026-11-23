@@ -18,7 +18,7 @@ blocks:
         text: |
           Mia aus der 8b schreibt: „Bei uns brauchen die Kinder im Mittel rund 13,3 Minuten.“ Karim aus der 8c antwortet: „Bei
           uns sind es 12,5. Wir haben den kürzeren Weg!“ Mia: „Aber einer von uns braucht 35 Minuten, das zieht den Mittelwert
-          hoch.“ **Nach dieser Seite kannst du Median, Spannweite und Quartile bestimmen und sagen, was sie über die Daten
+          hoch.“ Die Kette unten zeigt die elf Schulwegzeiten der 8b als Perlen: Mit den Knöpfen unter der Kette ordnest du sie, markierst die Mitte und teilst die Hälften. **Nach dieser Seite kannst du Median, Spannweite und Quartile bestimmen und sagen, was sie über die Daten
           verraten.**
       - type: single-choice
         id: ausreisser
@@ -34,9 +34,6 @@ blocks:
             correct: false
             info: Ein größerer Wert macht die Summe größer, nicht kleiner.
         explanation: Der Mittelwert reagiert auf jeden Wert, auch auf einen sehr großen. Dieser Wert zieht den Mittelwert nach oben.
-        links:
-          - title: "Lernlandkarte: Median, Spannweite und Quartile"
-            url: "https://lernapps.net/apps/map/mathematik/c/kenngroessen-lage-streumasse/"
       - type: vue-component
         id: kette
         component: Perlenkette
@@ -329,6 +326,3 @@ blocks:
             correct: false
             info: Das stimmt nicht allgemein. Bei der 8c sind Median und Mittelwert beide 12,5.
         explanation: Der Median hängt von der Mitte der geordneten Werte ab, der Mittelwert von der Summe. Ein sehr großer Wert verändert nur die Summe.
-        links:
-          - title: "Lernlandkarte: Median, Spannweite und Quartile"
-            url: "https://lernapps.net/apps/map/mathematik/c/kenngroessen-lage-streumasse/"

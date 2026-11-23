@@ -15,8 +15,8 @@ blocks:
     blocks:
       - type: text
         text: |
-          Tom aus der 8b zeichnet für beide Klassen ein Bild aus den Zahlen der letzten Seite, auf derselben Skala. Er
-          nennt es Boxplot. **Nach dieser Seite kannst du einen Boxplot zeichnen und aus Boxplots Aussagen über die Daten
+          Tom aus der 8b zeichnet für beide Klassen ein Bild aus den Werten, die du auf der Seite davor bestimmt hast, auf derselben Skala. Er
+          nennt es **Boxplot**: ein Bild für fünf Werte der geordneten Daten. Eine Linie reicht vom kleinsten bis zum größten Wert, in der Mitte liegt eine Box, und ein dicker Strich in der Box zeigt den Median. **Nach dieser Seite kannst du einen Boxplot zeichnen und aus Boxplots Aussagen über die Daten
           ablesen.**
       - type: figure
         image: images/boxplot-8b-8c.svg
@@ -45,9 +45,6 @@ blocks:
             correct: false
             info: Die Linien enden an verschiedenen Stellen der Skala. Die der 8b ist viel länger.
         explanation: Die ganze Linie vom linken bis zum rechten Ende ist die Spannweite. Bei der 8b ist sie größer.
-        links:
-          - title: "Lernlandkarte: Boxplot"
-            url: "https://lernapps.net/apps/map/mathematik/c/boxplot/"
   - type: section
     id: erklaerung
     title: Wie ein Boxplot gebaut ist
@@ -60,7 +57,7 @@ blocks:
       - type: figure
         image: images/boxplot-8b-erklaert.svg
         alt: Boxplot der Klasse 8b. Die Linie beginnt bei 4 und endet bei 35. Die Box reicht von 7 bis 18, der dicke Strich in der Box steht bei 12.
-        caption: Die beschrifteten Stellen sind die fünf Werte der 8b von der letzten Seite. „min“ ist der kleinste Wert, „max“ der größte.
+        caption: Die beschrifteten Stellen sind die fünf Werte der 8b von der Seite davor. „min“ ist der kleinste Wert, „max“ der größte.
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: note
@@ -108,9 +105,6 @@ blocks:
             correct: false
             info: Das gilt für die 8b. Die Linie der 8c endet schon bei 19.
         explanation: Die Länge der Box zeigt, wie weit die mittlere Hälfte der Werte streut. Die 8c streut weniger.
-        links:
-          - title: "Lernlandkarte: Boxplot"
-            url: "https://lernapps.net/apps/map/mathematik/c/boxplot/"
       - type: number
         id: median-ablesen
         text: Lies den Median der 8c an der Skala ab. Bis 1 Minute daneben zählt noch als richtig.
@@ -131,9 +125,6 @@ blocks:
             message: Das ist die rechte Kante der Box, das obere Quartil Q3. Der Median ist der dicke Strich in der Box.
         hint: Suche den dicken Strich in der Box der 8c und gehe senkrecht nach unten zur Skala.
         explanation: Der dicke Strich der 8c steht zwischen 12 und 13, genau bei 12,5 Minuten.
-        links:
-          - title: "Lernlandkarte: Boxplot"
-            url: "https://lernapps.net/apps/map/mathematik/c/boxplot/"
       - type: generated
         id: box-laenge
         given:
@@ -188,9 +179,6 @@ blocks:
         distractors:
           - "11"
         explanation: Bei neun Werten ist der fünfte der Median (9). Die untere Hälfte 3, 5, 6, 8 hat die Mitte 5,5, die obere Hälfte 11, 13, 14, 20 hat die Mitte 13,5. Kleinster und größter Wert sind 3 und 20.
-        links:
-          - title: "Lernlandkarte: Boxplot"
-            url: "https://lernapps.net/apps/map/mathematik/c/boxplot/"
       - type: ordering
         id: schritte-boxplot
         text: Bringe die Schritte zum Zeichnen eines Boxplots in die richtige Reihenfolge.
@@ -200,17 +188,11 @@ blocks:
           - Die Box von Q1 bis Q3 mit dem Strich beim Median zeichnen
           - Die zwei Linien von der Box zum kleinsten und zum größten Wert zeichnen
         explanation: Erst brauchst du die fünf Werte, dann die Skala. Die Zeichnung folgt zuletzt, denn sie braucht beide.
-        links:
-          - title: "Lernlandkarte: Boxplot"
-            url: "https://lernapps.net/apps/map/mathematik/c/boxplot/"
       - type: true-false
         id: laenge-bedeutung
         text: Ist die Linie links von der Box länger als die Box selbst, liegen links mehr Werte als in der Box.
         answer: false
         explanation: Jedes Viertel der Werte hat etwa gleich viele Werte. Eine längere Linie bedeutet nur, dass diese Werte weiter auseinanderliegen.
-        links:
-          - title: "Lernlandkarte: Boxplot"
-            url: "https://lernapps.net/apps/map/mathematik/c/boxplot/"
   - type: section
     id: rueckblick
     title: Rückblick auf Kapitel 2

@@ -19,7 +19,7 @@ blocks:
           der ganzen Klasse ist das?“ **Nach dieser Seite kannst du beides bestimmen: wie oft eine Antwort vorkommt und
           welchen Anteil sie an allen Antworten hat.**
       - type: table
-        caption: Die Zählung der 6a von der letzten Seite
+        caption: Die Zählung der 6a
         header: [Verkehrsmittel, Anzahl der Kinder]
         rows:
           - [Zu Fuß, "8"]
@@ -39,9 +39,6 @@ blocks:
             message: Das sind die vier Zeilen der Tabelle. Gesucht ist, wie viele Kinder in den Zeilen zusammen gezählt wurden.
         hint: Zähle die Anzahlen aller vier Zeilen zusammen.
         explanation: 8 + 6 + 7 + 3 = 24. Jedes Kind hat genau einen Zettel abgegeben, also sind es 24 Antworten.
-        links:
-          - title: "Lernlandkarte: Absolute und relative Häufigkeit"
-            url: "https://lernapps.net/apps/map/mathematik/c/haeufigkeiten/"
   - type: section
     id: erklaerung
     title: Anzahl und Anteil
@@ -116,9 +113,6 @@ blocks:
             correct: false
             info: Hier stehen Zähler und Nenner vertauscht. Die Gesamtzahl gehört in den Nenner.
         explanation: Relative Häufigkeit = Anzahl der Antwort über Gesamtzahl, also $\frac{7}{24}$.
-        links:
-          - title: "Lernlandkarte: Absolute und relative Häufigkeit"
-            url: "https://lernapps.net/apps/map/mathematik/c/haeufigkeiten/"
       - type: single-choice
         id: antwort-zum-bruch
         text: In der 6a ist die relative Häufigkeit einer Antwort $\frac{6}{24}$. Welche Antwort ist das?
@@ -142,9 +136,6 @@ blocks:
             correct: false
             info: Bei „Auto“ stehen 3 Kinder. Der Bruch dazu ist $\frac{3}{24}$.
         explanation: Der Zähler 6 ist die Anzahl der Kinder bei „Fahrrad“, der Nenner 24 ist die Gesamtzahl.
-        links:
-          - title: "Lernlandkarte: Absolute und relative Häufigkeit"
-            url: "https://lernapps.net/apps/map/mathematik/c/haeufigkeiten/"
       - type: generated
         id: relative-haeufigkeit
         given:
@@ -171,6 +162,3 @@ blocks:
         text: Ordne die Antworten der 6a nach ihrer relativen Häufigkeit, die größte zuerst.
         items: [Zu Fuß, Bus, Fahrrad, Auto]
         explanation: Alle Brüche haben den Nenner 24, also entscheidet der Zähler. Der größte Zähler ist 8 bei „Zu Fuß“, dann 7 beim Bus, 6 beim Fahrrad und 3 beim Auto.
-        links:
-          - title: "Lernlandkarte: Absolute und relative Häufigkeit"
-            url: "https://lernapps.net/apps/map/mathematik/c/haeufigkeiten/"

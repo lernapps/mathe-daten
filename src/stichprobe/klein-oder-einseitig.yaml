@@ -19,7 +19,7 @@ blocks:
         text: |
           Die Schülervertretung plant einen neuen Fahrradständer und braucht eine Zahl: Wie kommen die **600 Lernenden**
           der Schule zur Schule? Die 6a hat schon 24 Kinder befragt. Eine Sprecherin sagt: „Ein Drittel kommt zu Fuß, das
-          haben wir gezählt.“ **Nach dieser Seite kannst du beurteilen, ob eine Stichprobe für eine Aussage über alle taugt.**
+          haben wir gezählt.“ Unten kannst du selbst Stichproben ziehen: Wähle eine Auswahl, drücke „Stichprobe ziehen“ und vergleiche die Tabelle mit den Anteilen aller 600. **Nach dieser Seite kannst du beurteilen, ob eine Stichprobe für eine Aussage über alle taugt.**
       - type: single-choice
         id: gesamtheit-erkennen
         text: Wer gehört zur Gesamtheit, über die die Schülervertretung etwas wissen will?
@@ -34,9 +34,6 @@ blocks:
             correct: false
             info: Das ist viel mehr, als die Schülervertretung wissen will. Die Frage betrifft nur diese Schule.
         explanation: Die Gesamtheit sind alle, über die man etwas sagen will. Die Befragten sind nur eine Auswahl daraus, die Stichprobe.
-        links:
-          - title: "Lernlandkarte: Stichproben und Erhebungen"
-            url: "https://lernapps.net/apps/map/mathematik/c/stichproben-erhebungen-planen/"
       - type: vue-component
         id: stichprobe-ziehen
         component: StichprobeZiehen
@@ -116,9 +113,6 @@ blocks:
             correct: false
             info: Das sind nur zwei Klassen einer Stufe. Ältere Lernende fehlen, und die kommen vielleicht anders zur Schule.
         explanation: Zufällig aus allen ausgewählt heißt, dass jede und jeder dieselbe Chance hat und keine Gruppe von vornherein ausgelassen wird.
-        links:
-          - title: "Lernlandkarte: Stichproben und Erhebungen"
-            url: "https://lernapps.net/apps/map/mathematik/c/stichproben-erhebungen-planen/"
       - type: generated
         id: hochrechnen
         given:
@@ -143,9 +137,6 @@ blocks:
         text: Eine zufällige Stichprobe von nur 5 Lernenden zeigt zuverlässig, wie alle 600 zur Schule kommen.
         answer: false
         explanation: Mit nur 5 Lernenden ändern sich die Anteile bei jedem Ziehen stark. Bei 100 Lernenden liegen sie meist nah an den Anteilen aller 600.
-        links:
-          - title: "Lernlandkarte: Stichproben und Erhebungen"
-            url: "https://lernapps.net/apps/map/mathematik/c/stichproben-erhebungen-planen/"
       - type: single-choice
         id: aussage-6a
         text: "Die 6a sagt: „Ein Drittel unserer Schule kommt zu Fuß.“ Für wen gilt diese Aussage nach ihrer Umfrage sicher?"
@@ -160,9 +151,6 @@ blocks:
             correct: false
             info: Eine Klasse einer Schule sagt noch nichts über andere Schulen.
         explanation: Eine Aussage gilt sicher nur für die, die man gefragt hat. Für alle braucht man eine gute Stichprobe.
-        links:
-          - title: "Lernlandkarte: Stichproben und Erhebungen"
-            url: "https://lernapps.net/apps/map/mathematik/c/stichproben-erhebungen-planen/"
   - type: section
     id: urteil
     title: Mein Urteil

@@ -16,7 +16,7 @@ blocks:
         text: |
           Fünf Kinder der 6a haben ihre Schulwegzeit gemessen: Mira 3 Minuten, Jonas 9, Ayşe 6, Tom 12 und Lena 5. Mira
           fragt: „Wie lang ist der Weg bei uns **im Durchschnitt**?“ Stell dir vor, jede Minute ist ein Würfel und jedes
-          Kind hat einen Turm. **Nach dieser Seite kannst du den Mittelwert berechnen und sagen, was er bedeutet.**
+          Kind hat einen Turm. Mit den Pfeilen unter jedem Turm gibst du einen Würfel an den linken oder rechten Nachbarn ab. Mach alle Türme gleich hoch. **Nach dieser Seite kannst du den Mittelwert berechnen und sagen, was er bedeutet.**
       - type: vue-component
         id: tuerme-einebnen
         component: WuerfelTuerme
@@ -46,9 +46,6 @@ blocks:
             message: Das ist die Höhe eines Turms, wenn alle gleich hoch sind. Gesucht ist die Gesamtzahl der Würfel.
         hint: Zähle die Würfel aller Türme zusammen, also die Minuten von Mira, Jonas, Ayşe, Tom und Lena.
         explanation: 3 + 9 + 6 + 12 + 5 = 35. Beim Abgeben von Würfeln bleibt die Summe gleich.
-        links:
-          - title: "Lernlandkarte: Arithmetisches Mittel"
-            url: "https://lernapps.net/apps/map/mathematik/c/mittelwert/"
   - type: section
     id: erklaerung
     title: Aus den Türmen wird eine Rechnung
@@ -125,17 +122,11 @@ blocks:
             correct: false
             info: Die Zeiten sind 3, 9, 6, 12 und 5 Minuten. Keines davon ist 7. Der Mittelwert muss kein Wert der Liste sein.
         explanation: Der Mittelwert beschreibt die gleichmäßig verteilte Menge, nicht ein Kind und nicht den größten Wert.
-        links:
-          - title: "Lernlandkarte: Arithmetisches Mittel"
-            url: "https://lernapps.net/apps/map/mathematik/c/mittelwert/"
       - type: true-false
         id: mittelwert-zwischen
         text: Der Mittelwert von 3, 9, 6, 12 und 5 kann 15 sein.
         answer: false
         explanation: Der größte Wert ist 12. Der Mittelwert liegt zwischen dem kleinsten und dem größten Wert, hier zwischen 3 und 12. Würden alle Kinder gleich lang brauchen, wäre es nicht mehr als beim langsamsten Kind.
-        links:
-          - title: "Lernlandkarte: Arithmetisches Mittel"
-            url: "https://lernapps.net/apps/map/mathematik/c/mittelwert/"
       - type: generated
         id: fehlenden-wert-finden
         given:
