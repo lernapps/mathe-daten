@@ -221,7 +221,7 @@ Kapitel-Ids: `umfrage` (Unsere Umfrage), `kennwerte` (Median, Quartile und Boxpl
 
 **Engagement je Seite:**
 
-- Recap (0): Kopf „Das brauchst du für dieses Kapitel“, je Baustein ein Abschnitt mit fetten Begriffen und Zahlenbeispiel, Selbsttest als Komponente `Kurztest` (Vorbild `src/components/Kurztest.*` im Repo `lernapps/mathe-saetze-entdecken`, Branch `work`: nur diese Komponente kopieren und anpassen), Schluss als Checkliste. Keine Geschichte außer einem Satz zur 6a.
+- Recap (0): Kopf „Das brauchst du für dieses Kapitel“, je Baustein ein Abschnitt mit fetten Begriffen und Zahlenbeispiel, Selbsttest als Komponente `Kurztest` (Vorlage `/tmp/epic/docs/mathe-epic/components/` (Kurztest.ts, .vue, .test.ts): kopieren und anpassen), Schluss als Checkliste. Keine Geschichte außer einem Satz zur 6a.
 - 1 Daten darstellen: Öffnung: die 6a hat 24 Zettel („Bus“, „Rad“ …), die Kinder zählen eine Spalte der Strichliste nach. Wechsel: Zettel → Strichliste → Tabelle → Säulen (setzen, ablesen). Belohnung: ihr Säulendiagramm der 6a. Ende: „Wie oft kam jedes Verkehrsmittel vor?“.
 - 2 Häufigkeiten: Öffnung: „Wie viele von 24 gehen zu Fuß?“. Wechsel: zählen → Bruch → Kreisdiagramm. Belohnung: Tabelle mit absolut und relativ, fertig. Ende: „Und wie lange sind die Kinder unterwegs?“.
 - 3 Umfrage durchführen: Öffnung: zwei Fragen, welche ist besser? Wechsel: beurteilen → verbessern → Antworten übertragen. Belohnung: eine eigene Frage mit Antwortmöglichkeiten. Ende: die neuen Zahlen der Klasse (Schulwegzeit).
