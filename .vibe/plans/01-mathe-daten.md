@@ -82,6 +82,8 @@ Lernende erheben Daten einer eigenen Klassenumfrage, stellen sie dar, beschreibe
 - Kap. 3 „Spricht die Stichprobe für alle?“ (9-10): Seite Stichproben und Erhebungen (eine Seite oder zwei: „zu klein / einseitig“ und „Erhebung planen“; Regel: eine Kompetenz, mehrere Seiten erlaubt).
 - Von außen nicht geübt: `zahlen-vergleichen-ordnen` (Seite Daten darstellen), `brueche-begriff` (Häufigkeiten: relative Häufigkeit als Bruch), `dezimalbrueche-rechnen` (Mittelwert).
 
+**Änderung Recap (Orchestrator, nach dem Plan-Bericht):** Der Recap bleibt eine Seite mit `recap:`; der Selbsttest ist die Komponente `Kurztest` darin, keine eigene Seite `vorwissen-test`. Die Plan-Aufgabe zum Recap nennt noch den Kurztest als Seite: sie gilt in dieser Fassung (Aufgabentext darf nur `lernapps plan` ändern).
+
 **Offen / geraten:** Quartilsverfahren (Median in die Hälften einbeziehen oder nicht) – Wahl: Hessen-übliches Verfahren, in der App erklärt (guess, vom fachlichen Prüfer zu bestätigen). Namen der Klasse und der Figuren erfinden wir (Klasse 6a/8b/10c, gemischte Namen).
 
 ## Explore
@@ -185,8 +187,7 @@ page, which a link. -->
 
 | Nr | Seite (id) | Kompetenz | Von außen, nicht geübt |
 |---|---|---|---|
-| 0a | `umfrage/vorwissen` Recap „Das brauchst du hier“ (Begriffe, Beispiele, Kopf, Checkliste) | `recap:` mathematik/zahlen-vergleichen-ordnen, brueche-begriff, dezimalbrueche-rechnen | alle drei |
-| 0b | `umfrage/vorwissen-test` Kurztest direkt dahinter, ohne `recap:` (ob das Werkzeug eine Seite ohne Kompetenz erlaubt, prüfe ich in Code; sonst Fund) | – | – |
+| 0 | `umfrage/vorwissen` Recap „Das brauchst du hier“ (`recap:`; Begriffe, Beispiele, Kopf, Checkliste, Selbsttest je Baustein als Komponente `Kurztest` in der Seite; Änderung des Orchestrators: kein eigener Kurztest-Seite, Rückfall nur wenn es nicht geht) | `recap:` mathematik/zahlen-vergleichen-ordnen, brueche-begriff, dezimalbrueche-rechnen | alle drei |
 | 1 | `umfrage/daten-darstellen` Unsere Umfrage: Daten darstellen | `daten-darstellen` | Zahlen ordnen (Recap) |
 | 2 | `umfrage/haeufigkeiten` Wie oft kommt was vor? | `haeufigkeiten` | Bruchbegriff (Recap) |
 | 3 | `umfrage/umfrage-durchfuehren` Eine eigene Umfrage durchführen | `umfragen-erhebungen` | – |
@@ -220,7 +221,7 @@ Kapitel-Ids: `umfrage` (Unsere Umfrage), `kennwerte` (Median, Quartile und Boxpl
 
 **Engagement je Seite:**
 
-- Recap (0a/0b): Kopf „Das brauchst du für dieses Kapitel“, je Baustein ein Abschnitt mit fetten Begriffen und Zahlenbeispiel, Selbsttest auf der Kurztest-Seite, Schluss als Checkliste. Keine Geschichte außer einem Satz zur 6a.
+- Recap (0): Kopf „Das brauchst du für dieses Kapitel“, je Baustein ein Abschnitt mit fetten Begriffen und Zahlenbeispiel, Selbsttest als Komponente `Kurztest` (Vorbild `src/components/Kurztest.*` im Repo `lernapps/mathe-saetze-entdecken`, Branch `work`: nur diese Komponente kopieren und anpassen), Schluss als Checkliste. Keine Geschichte außer einem Satz zur 6a.
 - 1 Daten darstellen: Öffnung: die 6a hat 24 Zettel („Bus“, „Rad“ …), die Kinder zählen eine Spalte der Strichliste nach. Wechsel: Zettel → Strichliste → Tabelle → Säulen (setzen, ablesen). Belohnung: ihr Säulendiagramm der 6a. Ende: „Wie oft kam jedes Verkehrsmittel vor?“.
 - 2 Häufigkeiten: Öffnung: „Wie viele von 24 gehen zu Fuß?“. Wechsel: zählen → Bruch → Kreisdiagramm. Belohnung: Tabelle mit absolut und relativ, fertig. Ende: „Und wie lange sind die Kinder unterwegs?“.
 - 3 Umfrage durchführen: Öffnung: zwei Fragen, welche ist besser? Wechsel: beurteilen → verbessern → Antworten übertragen. Belohnung: eine eigene Frage mit Antwortmöglichkeiten. Ende: die neuen Zahlen der Klasse (Schulwegzeit).
