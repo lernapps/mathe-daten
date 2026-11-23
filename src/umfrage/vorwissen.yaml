@@ -25,7 +25,7 @@ blocks:
           sagst du, welche Zahl größer ist. Beim **Ordnen** stellst du Zahlen der Größe nach hintereinander.
       - type: definition
         term: Natürliche Zahlen
-        explanation: Die natürlichen Zahlen sind die Zahlen zum Zählen, also 0, 1, 2, 3 und immer so weiter.
+        explanation: Die natürlichen Zahlen sind 0, 1, 2, 3 und immer so weiter.
       - type: definition
         term: Zahlenstrahl
         explanation: Der Zahlenstrahl beginnt bei 0 und geht nach rechts. Je weiter rechts eine Zahl liegt, desto größer ist sie. Zum Beispiel liegt 3 links von 7, also ist 3 kleiner als 7.
@@ -50,29 +50,29 @@ blocks:
           question: "Welche dieser Zahlen ist die größte?"
           options:
             - {
-                text: "45 007",
+                text: "45 007",
                 correct: true,
                 info: "Sie hat 4 Zehntausender und 5 Tausender. Die anderen haben nur 0 Tausender.",
               }
             - {
-                text: "40 570",
+                text: "40 570",
                 correct: false,
-                info: "Sie hat 0 Tausender. 45 007 hat 5 Tausender und ist deshalb größer.",
+                info: "Sie hat 0 Tausender. 45 007 hat 5 Tausender und ist deshalb größer.",
               }
             - {
-                text: "40 705",
+                text: "40 705",
                 correct: false,
-                info: "Sie hat 0 Tausender. 45 007 hat 5 Tausender und ist deshalb größer.",
+                info: "Sie hat 0 Tausender. 45 007 hat 5 Tausender und ist deshalb größer.",
               }
             - {
-                text: "40 075",
+                text: "40 075",
                 correct: false,
                 info: "Sie hat 0 Tausender und 0 Hunderter. Sie ist die kleinste der vier Zahlen.",
               }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Welche Zahl ist die größte, 45 007, 40 570, 40 705 oder 40 075? Antwort: 45 007, denn sie hat als einzige 5 Tausender.
+          Kurztest: Welche Zahl ist die größte, 45 007, 40 570, 40 705 oder 40 075? Antwort: 45 007, denn sie hat als einzige 5 Tausender.
       - type: vue-component
         id: test-ordnen
         component: Kurztest
@@ -80,24 +80,24 @@ blocks:
           question: "Welche Reihe ist der Größe nach geordnet, die kleinste Zahl zuerst?"
           options:
             - {
-                text: "3 099, 3 190, 3 910, 9 013",
+                text: "3099, 3190, 3910, 9013",
                 correct: true,
                 info: "Die Zahlen steigen von links nach rechts: erst 3 Tausender mit wenigen Hundertern, dann mehr Hunderter, zuletzt 9 Tausender.",
               }
             - {
-                text: "3 190, 3 099, 3 910, 9 013",
+                text: "3190, 3099, 3910, 9013",
                 correct: false,
-                info: "3 099 ist kleiner als 3 190: Bei gleichen Tausendern entscheiden die Hunderter, 0 ist weniger als 1.",
+                info: "3099 ist kleiner als 3190: Bei gleichen Tausendern entscheiden die Hunderter, 0 ist weniger als 1.",
               }
             - {
-                text: "9 013, 3 910, 3 190, 3 099",
+                text: "9013, 3910, 3190, 3099",
                 correct: false,
                 info: "Das ist von groß nach klein geordnet. Gefragt ist die kleinste Zahl zuerst.",
               }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Welche Reihe ist der Größe nach geordnet, die kleinste Zahl zuerst? Antwort: 3 099, 3 190, 3 910, 9 013.
+          Kurztest: Welche Reihe ist der Größe nach geordnet, die kleinste Zahl zuerst? Antwort: 3099, 3190, 3910, 9013.
       - type: text
         text: Wenn du nicht sicher warst, schau dir den Baustein „Zahlen vergleichen und ordnen“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/) an.
   - type: section

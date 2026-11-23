@@ -15,8 +15,8 @@ blocks:
     blocks:
       - type: text
         text: |
-          Noah aus der 8b zeichnet für beide Klassen ein Bild aus den Werten, die du auf der Seite davor bestimmt hast, auf derselben Skala. Er
-          nennt es **Boxplot**: ein Bild für fünf Werte der geordneten Daten. Eine Linie reicht vom kleinsten bis zum größten Wert, in der Mitte liegt eine Box, und ein dicker Strich in der Box zeigt den Median. **Nach dieser Seite kannst du einen Boxplot zeichnen und aus Boxplots Aussagen über die Daten
+          Noah aus der 8b zeichnet für beide Klassen ein Bild aus den Werten, die du auf der Seite davor bestimmt hast, auf derselben Skala. Ein
+          solches Bild heißt **Boxplot**: ein Bild für fünf Werte der geordneten Daten. Eine Linie reicht vom kleinsten bis zum größten Wert, dazwischen liegt eine Box von Q1 bis Q3, und ein dicker Strich in der Box zeigt den Median. **Nach dieser Seite kannst du einen Boxplot zeichnen und aus Boxplots Aussagen über die Daten
           ablesen.**
       - type: figure
         image: images/boxplot-8b-8c.svg
@@ -187,8 +187,7 @@ blocks:
         items:
           - Die Daten der Größe nach ordnen
           - Kleinsten Wert, Q1, Median, Q3 und größten Wert bestimmen und auf einer Skala markieren
-          - Die Box von Q1 bis Q3 mit dem Strich beim Median zeichnen
-          - Die zwei Linien von der Box zum kleinsten und zum größten Wert zeichnen
+          - Die Box von Q1 bis Q3 mit dem Strich beim Median und die zwei Linien zum kleinsten und größten Wert zeichnen
         explanation: Erst brauchst du die fünf Werte, dann die Skala. Die Zeichnung folgt zuletzt, denn sie braucht beide.
       - type: true-false
         id: laenge-bedeutung

@@ -61,7 +61,7 @@ blocks:
     blocks:
       - type: definition
         term: Median
-        explanation: Der Median ist der mittlere Wert der Daten, wenn du sie der Größe nach ordnest. Bei gerader Anzahl ist er der Mittelwert der beiden mittleren Werte. In der geordneten Liste stehen links und rechts vom Median gleich viele Werte.
+        explanation: Der Median ist der mittlere Wert der Daten, wenn du sie der Größe nach ordnest. Bei gerader Anzahl ist er der Mittelwert der beiden mittleren Werte. In der geordneten Liste stehen links und rechts von der Mitte gleich viele Werte.
       - type: definition
         term: Spannweite
         explanation: Die Spannweite ist der Unterschied zwischen dem größten und dem kleinsten Wert, also größter Wert minus kleinster Wert. Sie zeigt, wie weit die Daten auseinanderliegen.
@@ -74,7 +74,7 @@ blocks:
           - type: text
             text: |
               **Zuerst ordnen**, dann die Mitte suchen. Bei gerader Anzahl nimmst du den Mittelwert der beiden mittleren
-              Werte. Die Spannweite ist $\text{größter Wert} - \text{kleinster Wert}$. Bei gerader Anzahl hat jede Hälfte gleich viele Werte, zum Beispiel sechs bei zwölf Werten: Der Median ist dann nicht ein Wert der Liste, und keine Hälfte schließt einen Wert in der Mitte aus.
+              Werte. Die Spannweite ist $\text{größter Wert} - \text{kleinster Wert}$. Bei gerader Anzahl teilst du die Liste genau in zwei Hälften, bei zwölf Werten je sechs. Kein Wert bleibt übrig. Der Median muss dann kein Wert der Liste sein.
   - type: section
     id: beispiel
     title: Zwei Klassen, zwei Beispiele
@@ -212,6 +212,7 @@ blocks:
             "f.wert != h.wert",
             "g.wert != h.wert",
             "(d.wert + e.wert) / 2 != (sortBy([a, b, c, d, e, f, g, h], wert)[3].wert + sortBy([a, b, c, d, e, f, g, h], wert)[4].wert) / 2",
+            "(d.wert + e.wert) / 2 != sortBy([a, b, c, d, e, f, g, h], wert)[3].wert",
           ]
         task:
           text: "Acht Kinder brauchen für den Schulweg (in Minuten): {{a.wert}}, {{b.wert}}, {{c.wert}}, {{d.wert}}, {{e.wert}}, {{f.wert}}, {{g.wert}}, {{h.wert}}. Wie groß ist der Median? Gib eine Dezimalzahl an, wenn nötig."
@@ -390,7 +391,7 @@ blocks:
         steps:
           - "Ordnen: Schreibe die acht Werte der Größe nach auf."
           - "Die obere Hälfte sind die vier größten Werte, also die Plätze 5 bis 8."
-          - "Q3 ist der Mittelwert der beiden mittleren davon, der Plätze 6 und 7: {{answer}} Minuten."
+          - "Q3 ist der Mittelwert der beiden mittleren davon, der Plätze 6 und 7: {{answer}} Minuten."
       - type: single-choice
         id: median-oder-mittel
         text: In der 8b ist der Mittelwert rund 13,3 Minuten, der Median 12 Minuten. Ein Kind braucht 35 Minuten. Warum ist der Median kleiner als der Mittelwert?

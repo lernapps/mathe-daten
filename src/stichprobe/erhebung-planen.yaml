@@ -82,7 +82,7 @@ blocks:
           k: { oneOf: [10, 12, 20, 30] }
         where: ["n / k <= 60"]
         task:
-          text: "Die Schülerliste hat {{n}} Namen. Aus ihr wird jede {{k}}. Person ausgewählt. Wie viele Lernende kommen in die Stichprobe?"
+          text: "Eine Schülerliste hat {{n}} Namen. Aus ihr wird jede {{k}}. Person ausgewählt. Wie viele Lernende kommen in die Stichprobe?"
         answer: { value: "n / k", compare: { number: { format: integer } } }
         mistakes:
           - value: "n * k"
@@ -138,7 +138,7 @@ blocks:
         id: urteil-plan
         task: "Die Schülervertretung sagt nach ihrer Erhebung mit dem neuen Plan (60 zufällig gewählte Lernende, neutrale Frage): „Genau 37 % der Schule kommen mit dem Rad.“ Beurteile in zwei bis vier Sätzen, ob diese Aussage zum Plan passt, und begründe dein Urteil."
         points:
-          - text: Der Plan ist gut, denn die Stichprobe ist zufällig und nicht zu klein und die Frage ist neutral.
+          - text: Der Plan ist gut, denn die Stichprobe ist zufällig und deutlich größer als eine Klasse und die Frage ist neutral.
             source: /stichprobe/erhebung-planen/#erklaerung
           - text: Das Ergebnis ist trotzdem nur eine Schätzung. Mit einer anderen Stichprobe wären die Zahlen etwas anders.
             source: /stichprobe/erhebung-planen/#erklaerung
@@ -147,7 +147,7 @@ blocks:
           - text: Ganze Sätze mit einer Begründung (weil …, darum …).
             kind: form
         solution: |
-          Der Plan ist gut, weil die 60 Lernenden zufällig gewählt wurden und die Frage neutral ist. Trotzdem ist „genau 37 %“ zu
+          Der Plan ist gut, weil die 60 Lernenden zufällig gewählt wurden und die Frage neutral ist. Die Zahlen können trotzdem noch um einige Prozentpunkte schwanken. Trotzdem ist „genau 37 %“ zu
           sicher gesagt. Eine Stichprobe liefert nur eine Schätzung, eine andere hätte etwas andere Zahlen gegeben. Besser ist:
           „Ungefähr 37 % der Schule kommen mit dem Rad.“
         hint: Denke daran, was eine Stichprobe liefern kann und was nicht.

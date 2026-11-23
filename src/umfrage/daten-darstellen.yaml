@@ -119,7 +119,7 @@ blocks:
         material:
           - type: figure
             image: images/saeulen-6a.svg
-            alt: Säulendiagramm mit den Säulen Zu Fuß, Fahrrad, Bus und Auto. Über jeder Säule steht ihre Anzahl.
+            alt: Säulendiagramm mit den Säulen Zu Fuß 8, Fahrrad 6, Bus 7 und Auto 3. Über jeder Säule steht ihre Anzahl.
             caption: Vergleiche die Säulen „Bus“ und „Auto“.
             source: eigene Zeichnung
             licence: CC-BY-4.0

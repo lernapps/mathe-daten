@@ -23,7 +23,7 @@ blocks:
         props:
           values: [3, 9, 6, 12, 5]
           names: [Mira, Jonas, Ayşe, Tom, Lena]
-          tower: "{name}: {n} Min."
+          tower: "{name}: {n} min"
           left: "{name} gibt einen Würfel nach links ab"
           right: "{name} gibt einen Würfel nach rechts ab"
           hint: "Gib mit den Pfeilen Würfel an den Nachbarn ab, bis alle Türme gleich hoch sind."
@@ -61,13 +61,13 @@ blocks:
         formula: '\text{Mittelwert} = \frac{\text{Summe aller Werte}}{\text{Anzahl der Werte}}'
       - type: text
         text: |
-          Du kannst auch rückwärts rechnen: Kennst du den Mittelwert und die Anzahl der Werte, ist die Summe aller Werte der Mittelwert mal die Anzahl. Bei 5 Kindern und dem Mittelwert 7 Minuten sind es 5 · 7 = 35 Minuten zusammen.
+          Du kannst auch rückwärts rechnen: Kennst du den Mittelwert und die Anzahl der Werte, ist die Summe aller Werte der Mittelwert mal die Anzahl. Bei 5 Kindern und dem Mittelwert 7 Minuten sind es 5 · 7 = 35 Minuten zusammen.
       - type: note
         title: Merke
         blocks:
           - type: text
             text: |
-              Der Mittelwert liegt immer zwischen dem kleinsten und dem größten Wert. Er muss kein Wert der Liste sein: Hier hat kein Kind genau 7 Minuten. Ein sehr großer Wert zieht den Mittelwert nach oben. Er sagt nur: So viel hätte
+              Der Mittelwert liegt immer zwischen dem kleinsten und dem größten Wert. Er muss kein Wert der Liste sein: Hier hat kein Kind genau 7 Minuten. Ein sehr großer Wert zieht den Mittelwert nach oben. Der Mittelwert sagt nur: So viel hätte
               jedes Kind, wenn alle gleich lang brauchten und die Summe dieselbe bliebe.
   - type: section
     id: beispiel
@@ -142,7 +142,7 @@ blocks:
             "5 * m - (a + b + c + d) != 2 * m",
           ]
         task:
-          text: "Fünf Kinder haben im Mittelwert {{m}} Minuten Schulweg. Vier von ihnen brauchen {{a}}, {{b}}, {{c}} und {{d}} Minuten. Wie viele Minuten braucht das fünfte Kind?"
+          text: "Der Mittelwert der Schulwege von fünf Kindern ist {{m}} Minuten. Vier von ihnen brauchen {{a}}, {{b}}, {{c}} und {{d}} Minuten. Wie viele Minuten braucht das fünfte Kind?"
         answer: { value: "5 * m - (a + b + c + d)", compare: { number: { format: integer, unit: min } } }
         mistakes:
           - value: "m"
