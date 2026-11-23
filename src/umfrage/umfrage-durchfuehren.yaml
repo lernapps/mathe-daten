@@ -62,12 +62,12 @@ blocks:
             caption: So sortieren die Kinder der 6a ihre Zettel
             header: [Gruppe, Passt für]
             rows:
-              - [bis 10 Minuten, "1 bis 10 Minuten"]
-              - [11 bis 20 Minuten, "11 bis 20 Minuten"]
-              - [über 20 Minuten, "21 Minuten und mehr"]
+              - [bis 10 Minuten, "1 bis 10 Minuten"]
+              - [11 bis 20 Minuten, "11 bis 20 Minuten"]
+              - [über 20 Minuten, "21 Minuten und mehr"]
           - type: text
             text: |
-              Ein Kind mit 10 Minuten gehört nur in die erste Gruppe, ein Kind mit 15 Minuten nur in die zweite. Jeder Zettel
+              Die Zeiten sind in ganzen Minuten angegeben. Ein Kind mit 10 Minuten gehört nur in die erste Gruppe, ein Kind mit 15 Minuten nur in die zweite. Jeder Zettel
               hat genau eine Gruppe.
   - type: section
     id: uebung
@@ -77,15 +77,15 @@ blocks:
         id: gruppen-waehlen
         text: Die 6a teilt die Schulwegzeiten in Gruppen ein. Welche Einteilung ist gut?
         options:
-          - text: bis 10 Minuten, 11 bis 20 Minuten, über 20 Minuten
+          - text: bis 10 Minuten, 11 bis 20 Minuten, über 20 Minuten
             correct: true
             info: Jede Zeit gehört in genau eine Gruppe, und keine Zeit bleibt übrig.
-          - text: bis 10 Minuten, 10 bis 20 Minuten, über 20 Minuten
+          - text: bis 10 Minuten, 10 bis 20 Minuten, über 20 Minuten
             correct: false
-            info: Ein Kind mit 10 Minuten passt in zwei Gruppen. Die Gruppen überschneiden sich.
-          - text: bis 10 Minuten, über 20 Minuten
+            info: Ein Kind mit 10 Minuten passt in zwei Gruppen. Die Gruppen überschneiden sich.
+          - text: bis 10 Minuten, über 20 Minuten
             correct: false
-            info: Ein Kind mit 15 Minuten passt in keine Gruppe. Es gibt eine Lücke.
+            info: Ein Kind mit 15 Minuten passt in keine Gruppe. Es gibt eine Lücke.
         explanation: Gute Gruppen überschneiden sich nicht und lassen keine Lücke.
         links:
           - title: "Lernlandkarte: Umfragen durchführen"
@@ -115,9 +115,9 @@ blocks:
           n: { int: [20, 30] }
           a: { int: [5, 12] }
           b: { int: [4, 10] }
-        where: ["n != 2 * (a + b)", "n - a - b >= 3"]
+        where: ["n != 2 * (a + b)", "n != 2 * a + b", "n - a - b >= 3"]
         task:
-          text: "Die Klasse hat {{n}} Zettel eingesammelt. In der Liste stehen schon „bis 10 Minuten“ {{a}} Mal und „11 bis 20 Minuten“ {{b}} Mal. Wie oft muss „über 20 Minuten“ stehen, damit die Liste stimmt?"
+          text: "Die Klasse hat {{n}} Zettel eingesammelt. In der Liste stehen schon „bis 10 Minuten“ {{a}} Mal und „11 bis 20 Minuten“ {{b}} Mal. Wie oft muss „über 20 Minuten“ stehen, damit die Liste stimmt?"
         answer: { value: "n - a - b", compare: { number: { format: integer } } }
         mistakes:
           - value: "a + b"
@@ -128,7 +128,7 @@ blocks:
         steps:
           - "Schon gezählt: {{a}} + {{b}} Zettel."
           - "Es bleiben {{n}} − ({{a}} + {{b}}) Zettel."
-          - "Also muss „über 20 Minuten“ {{answer}} Mal stehen."
+          - "Also muss „über 20 Minuten“ {{answer}} Mal stehen."
       - type: ordering
         id: schritte-ordnen
         text: Bringe die Schritte einer Umfrage in die richtige Reihenfolge.
@@ -143,7 +143,7 @@ blocks:
             url: "https://lernapps.net/apps/map/mathematik/c/umfragen-erhebungen/"
       - type: true-false
         id: summe-kleiner
-        text: "Die Anzahlen in der Liste ergeben zusammen weniger als die Zahl der Zettel. Dann hat man sich vielleicht verzählt oder Zettel vergessen."
+        text: "Die Anzahlen in der Liste ergeben zusammen weniger als die Zahl der Zettel. Dann wurde vielleicht falsch gezählt oder ein Zettel vergessen."
         answer: true
         explanation: Jeder Zettel hat genau eine Antwort. Wenn die Summe nicht stimmt, wurde ein Zettel nicht gezählt oder falsch gezählt. Dann zählt man noch einmal.
         links:

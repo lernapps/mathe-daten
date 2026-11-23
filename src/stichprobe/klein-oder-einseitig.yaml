@@ -58,7 +58,7 @@ blocks:
         nojs: |
           Eine Simulation mit allen 600 Lernenden der Schule: 120 kommen zu Fuß (20 %), 210 mit dem Fahrrad (35 %), 210 mit dem
           Bus (35 %) und 60 mit dem Auto (10 %). Zieht man 5, 30 oder 100 Lernende zufällig, weichen die Anteile der Stichprobe
-          von diesen Zahlen ab, bei 5 sehr stark, bei 100 nur wenig; jedes neue Ziehen gibt andere Zahlen. Befragt man nur die
+          von diesen Zahlen ab, bei 5 sehr stark, bei 100 weniger stark; jedes neue Ziehen gibt andere Zahlen. Befragt man nur die
           Klasse 6a, kommen 33 % zu Fuß, 25 % mit dem Fahrrad, 29 % mit dem Bus und 13 % mit dem Auto, also andere Anteile als in der
           ganzen Schule. Befragt man nur Kinder am Fahrradständer, kommen alle mit dem Fahrrad.
   - type: section
@@ -83,7 +83,7 @@ blocks:
           - type: text
             text: |
               Eine große Stichprobe ist nicht automatisch gut. Wenn jedes Kind die gleiche Chance hat, ausgewählt zu werden
-              (zufällige Auswahl), liegt die Stichprobe meist nah an der Gesamtheit. Auch dann ist ihr Ergebnis nur eine
+              (zufällige Auswahl), und die Stichprobe groß genug ist, liegt sie meist nah an der Gesamtheit. Auch dann ist ihr Ergebnis nur eine
               Schätzung und keine genaue Zahl.
   - type: section
     id: beispiel
@@ -94,7 +94,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              1. Die 6a hat 24 Kinder befragt, 8 kommen zu Fuß: 8 von 24, das ist ein Drittel (33 %).
+              1. Die 6a hat 24 Kinder befragt, 8 kommen zu Fuß: 8 von 24, das ist ein Drittel, rund 33 %.
               2. In der ganzen Schule kommen 120 von 600 zu Fuß, das sind 20 %.
               3. Die Stichprobe der 6a liegt also deutlich daneben.
               4. Grund: Die Stichprobe ist klein (24 von 600) und einseitig, denn es ist nur eine Klasse.
@@ -112,10 +112,10 @@ blocks:
           - text: Die 30 Lernenden, die morgens als Erste am Schultor stehen
             correct: false
             info: Wer früh kommt, kommt vielleicht eher mit dem Bus oder zu Fuß. Die Auswahl hängt vom Verkehrsmittel ab.
-          - text: Die 30 Lernenden der Klasse 6a und der Klasse 6b
+          - text: 30 Lernende aus den Klassen 6a und 6b
             correct: false
             info: Das sind nur zwei Klassen einer Stufe. Ältere Lernende fehlen, und die kommen vielleicht anders zur Schule.
-        explanation: Zufällig aus allen ausgewählt heißt, dass jede und jeder dieselbe Chance hat und keine Gruppe fehlt.
+        explanation: Zufällig aus allen ausgewählt heißt, dass jede und jeder dieselbe Chance hat und keine Gruppe von vornherein ausgelassen wird.
         links:
           - title: "Lernlandkarte: Stichproben und Erhebungen"
             url: "https://lernapps.net/apps/map/mathematik/c/stichproben-erhebungen-planen/"
@@ -133,7 +133,7 @@ blocks:
             message: "Das ist die Zahl in der Stichprobe. Die Frage ist, wie viele es unter allen 600 wären."
           - value: "600 / a"
             message: "Du hast durch die falsche Zahl geteilt. Rechne erst den Anteil: Anzahl in der Stichprobe geteilt durch Größe der Stichprobe, dann mal 600."
-        hint: "Bestimme den Anteil der Busfahrer in der Stichprobe als Bruch und nimm ihn mal 600."
+        hint: "Bestimme den Anteil der Lernenden, die mit dem Bus fahren, in der Stichprobe als Bruch und nimm ihn mal 600."
         steps:
           - "Der Anteil in der Stichprobe ist {{a}} von {{n}}."
           - "Für alle 600 Lernenden: {{a}} · 600 : {{n}}."

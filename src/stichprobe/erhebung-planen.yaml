@@ -28,9 +28,9 @@ blocks:
           - text: Befragt werden nur die Ersten, die am Tor ankommen.
             correct: true
             info: Wer früh kommt, kommt vielleicht anders zur Schule als die anderen. Die Auswahl ist einseitig.
-          - text: Es gibt in der Schule mehr als 20 Lernende.
+          - text: Die Schule hat Lernende, die nicht befragt werden.
             correct: false
-            info: Das ist richtig, aber kein Fehler des Plans. Eine Stichprobe ist immer kleiner als die Gesamtheit.
+            info: Das ist bei jeder Stichprobe so und kein Fehler des Plans. Wichtig ist, dass die Auswahl der Befragten nicht einseitig ist.
         explanation: "Zwei Dinge verfälschen das Ergebnis: eine Frage, die die Antwort nahelegt, und eine einseitige Auswahl der Befragten."
         links:
           - title: "Lernlandkarte: Stichproben und Erhebungen"
@@ -41,8 +41,8 @@ blocks:
     blocks:
       - type: text
         text: |
-          Ein **Erhebungsplan** legt fest, wer befragt wird und wie. Er hat drei Teile: die Gesamtheit, die Stichprobe und das
-          **Erhebungsinstrument**, also den Fragebogen mit der Frage und den Antwortmöglichkeiten.
+          Ein **Erhebungsplan** legt fest, wer befragt wird und wie. Er hat vier Teile: die Gesamtheit, die Stichprobe, das
+          **Erhebungsinstrument**, zum Beispiel einen Fragebogen mit der Frage und den Antwortmöglichkeiten, und die Aussage.
       - type: table
         caption: Die Teile eines Erhebungsplans
         header: [Teil, Das legst du fest]
@@ -70,7 +70,7 @@ blocks:
               1. Gesamtheit: alle 600 Lernenden der Schule.
               2. Stichprobe: 60 Lernende. Aus der Schülerliste wird jede 10. Person gewählt, der Start wird ausgelost.
               3. Erhebungsinstrument: „Wie kommst du morgens zur Schule?“ mit den Antworten „Zu Fuß“, „Fahrrad“, „Bus“, „Auto“.
-              4. Aussage: „Etwa so viele Lernende der Schule kommen mit dem Rad, wie in der Stichprobe.“
+              4. Aussage: „Etwa derselbe Anteil der Lernenden der Schule kommt mit dem Rad wie in der Stichprobe.“
   - type: section
     id: uebung
     title: Übung
@@ -96,7 +96,7 @@ blocks:
           - "Das sind {{answer}} Lernende."
       - type: matching
         id: problem-verbesserung
-        text: Ordne jedem Problem im Plan zu, wie man es verbessert.
+        text: Ordne jedem Problem im Plan zu, wie du es verbesserst.
         pairs:
           - left: Die Frage legt die Antwort nahe
             right: Eine neutrale Frage mit festen Antwortmöglichkeiten stellen
@@ -115,10 +115,10 @@ blocks:
         text: Bringe die Schritte der Planung einer Erhebung in eine sinnvolle Reihenfolge.
         items:
           - Festlegen, über wen man etwas wissen will
-          - Die Frage und die Antwortmöglichkeiten festlegen
-          - Die Stichprobe zufällig auswählen
-          - Befragen und das Ergebnis als Schätzung für alle formulieren
-        explanation: Erst weißt du, über wen du etwas sagen willst. Dann planst du Frage und Auswahl. Befragt wird erst, wenn alles feststeht.
+          - Die Stichprobe zufällig auswählen und die Frage mit Antwortmöglichkeiten festlegen
+          - Befragen
+          - Das Ergebnis als Schätzung für alle formulieren
+        explanation: Erst weißt du, über wen du etwas sagen willst. Dann planst du Stichprobe und Frage. Befragt wird erst, wenn alles feststeht, und zuletzt formulierst du das Ergebnis.
         links:
           - title: "Lernlandkarte: Stichproben und Erhebungen"
             url: "https://lernapps.net/apps/map/mathematik/c/stichproben-erhebungen-planen/"

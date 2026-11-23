@@ -16,7 +16,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Die 6a und die 6b haben gezählt, wie viele Kinder mit dem Fahrrad kommen: 6a hat 6, 6b hat 7, 6c hat 8. Ayşe
+          Die 6a, die 6b und die 6c haben gezählt, wie viele Kinder mit dem Fahrrad kommen: 6a hat 6, 6b hat 7, 6c hat 8. Ayşe
           zeichnet ein Diagramm für die Schulzeitung. Tom sagt: „Das sieht aber anders aus als meins.“ **Nach dieser Seite
           kannst du erkennen, wie Diagramme täuschen, und sie reparieren.**
       - type: vue-component
@@ -159,10 +159,10 @@ blocks:
         text: Bringe die Schritte beim kritischen Lesen eines Diagramms in eine sinnvolle Reihenfolge.
         items:
           - Überschrift und Frage lesen
-          - Auf die Achse schauen und fragen, ob sie bei 0 beginnt
-          - Die Zahlen an den Säulen oder Bildern lesen
+          - Auf Achse und Zahlen schauen und fragen, ob die Achse bei 0 beginnt
+          - Bilder prüfen und fragen, ob sie in beide Richtungen vergrößert sind
           - Entscheiden, ob das Bild zu den Zahlen passt
-        explanation: Erst weißt du, worum es geht, dann prüfst du die Achse und die Zahlen. Am Ende entscheidest du, ob das Diagramm ehrlich ist.
+        explanation: Erst weißt du, worum es geht, dann prüfst du Achse, Zahlen und Bilder. Am Ende entscheidest du, ob das Diagramm ehrlich ist.
         links:
           - title: "Lernlandkarte: Diagramme kritisch lesen"
             url: "https://lernapps.net/apps/map/mathematik/c/daten-kritisch-lesen/"

@@ -140,7 +140,7 @@ blocks:
           f: { pick: 1, from: { data: verkehrsmittel } }
         where: ["e.anzahl > f.anzahl"]
         task:
-          text: "Aus der Tabelle der 6a: {{e.mittel}} {{e.anzahl}} Kinder, {{f.mittel}} {{f.anzahl}} Kinder. Wie viele Kinder mehr kommen mit „{{e.mittel}}“ als mit „{{f.mittel}}“?"
+          text: "Aus der Tabelle der 6a: {{e.mittel}} {{e.anzahl}} Kinder, {{f.mittel}} {{f.anzahl}} Kinder. Wie viele Kinder mehr haben „{{e.mittel}}“ geantwortet als „{{f.mittel}}“?"
         answer: { value: "e.anzahl - f.anzahl", compare: { number: { format: integer } } }
         mistakes:
           - value: "e.anzahl + f.anzahl"

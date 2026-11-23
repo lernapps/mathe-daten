@@ -4,8 +4,8 @@ description: "Den Mittelwert berechnen und deuten: erst Würfeltürme gleich hoc
 competencies: [mittelwert]
 scope: |
   Die Klasse 6a fragt nach der Dauer des Schulwegs. Der Mittelwert (arithmetisches Mittel) ist der Wert, den alle hätten, wenn
-  man die Summe gerecht verteilt: Summe aller Werte geteilt durch Anzahl der Werte. Fünf Kinder mit 3, 9, 6, 12 und 5 Minuten
-  haben zusammen 35 Minuten, der Mittelwert ist 35 : 5 = 7 Minuten. Der Mittelwert muss kein Wert der Liste sein. Häufige
+  man die Summe gerecht verteilt: Summe aller Werte geteilt durch Anzahl der Werte. Fünf Kinder mit 3, 9, 6, 12 und 5 Minuten
+  haben zusammen 35 Minuten, der Mittelwert ist 35 : 5 = 7 Minuten. Der Mittelwert muss kein Wert der Liste sein. Häufige
   Fehler: nur addieren, durch die falsche Anzahl teilen, den Mittelwert für einen Wert halten, den ein Kind hat.
 blocks:
   - type: section
@@ -14,7 +14,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Fünf Kinder der 6a haben ihre Schulwegzeit gemessen: Mira 3 Minuten, Jonas 9, Ayşe 6, Tom 12 und Lena 5. Mira
+          Fünf Kinder der 6a haben ihre Schulwegzeit gemessen: Mira 3 Minuten, Jonas 9, Ayşe 6, Tom 12 und Lena 5. Mira
           fragt: „Wie lang ist der Weg bei uns **im Durchschnitt**?“ Stell dir vor, jede Minute ist ein Würfel und jedes
           Kind hat einen Turm. **Nach dieser Seite kannst du den Mittelwert berechnen und sagen, was er bedeutet.**
       - type: vue-component
@@ -59,7 +59,7 @@ blocks:
       - type: text
         text: |
           Beim Einebnen sind 35 Würfel auf 5 Türme verteilt worden. Jeder Turm hat danach 35 : 5 = 7 Würfel. Das ist der
-          Mittelwert, hier 7 Minuten.
+          Mittelwert, hier 7 Minuten.
       - type: formula
         formula: '\text{Mittelwert} = \frac{\text{Summe aller Werte}}{\text{Anzahl der Werte}}'
       - type: note
@@ -67,7 +67,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Der Mittelwert muss kein Wert der Liste sein. Hier hat kein Kind genau 7 Minuten. Er sagt nur: So viel hätte
+              Der Mittelwert muss kein Wert der Liste sein. Hier hat kein Kind genau 7 Minuten. Er sagt nur: So viel hätte
               jedes Kind, wenn alle gleich lang brauchten und die Summe dieselbe bliebe.
   - type: section
     id: beispiel
@@ -81,7 +81,7 @@ blocks:
               1. Alle Werte addieren: 3 + 9 + 6 + 12 + 5 = 35.
               2. Die Anzahl der Werte zählen: 5 Kinder.
               3. Die Summe durch die Anzahl teilen: 35 : 5 = 7.
-              4. Antwort: Im Mittel brauchen die Kinder 7 Minuten.
+              4. Antwort: Im Mittel brauchen die Kinder 7 Minuten.
   - type: section
     id: uebung
     title: Übung
@@ -95,7 +95,7 @@ blocks:
           d: { int: [2, 20] }
         where: ["decimals((a + b + c + d) / 4) <= 2"]
         task:
-          text: "Vier Kinder brauchen für ihren Schulweg {{a}}, {{b}}, {{c}} und {{d}} Minuten. Wie viele Minuten sind das im Mittelwert? Gib das Ergebnis genau an."
+          text: "Vier Kinder brauchen für ihren Schulweg {{a}}, {{b}}, {{c}} und {{d}} Minuten. Wie viele Minuten sind das im Mittel? Gib das Ergebnis genau an."
         answer:
           {
             value: "(a + b + c + d) / 4",
@@ -110,42 +110,20 @@ blocks:
         steps:
           - "Die Summe: {{a}} + {{b}} + {{c}} + {{d}}."
           - "Die Anzahl der Werte ist 4."
-          - "Der Mittelwert: Summe : 4 = {{answer}} Minuten."
-      - type: generated
-        id: fehlenden-wert-finden
-        given:
-          m: { int: [6, 12] }
-          a: { int: [3, 15] }
-          b: { int: [3, 15] }
-          c: { int: [3, 15] }
-          d: { int: [3, 15] }
-        where: ["5 * m - (a + b + c + d) >= 2", "5 * m - (a + b + c + d) <= 20", "5 * m - (a + b + c + d) != m"]
-        task:
-          text: "Fünf Kinder haben im Mittelwert {{m}} Minuten Schulweg. Vier von ihnen brauchen {{a}}, {{b}}, {{c}} und {{d}} Minuten. Wie viele Minuten braucht das fünfte Kind?"
-        answer: { value: "5 * m - (a + b + c + d)", compare: { number: { format: integer, unit: min } } }
-        mistakes:
-          - value: "m"
-            message: "Das ist der Mittelwert, nicht die Zeit des fünften Kindes. Rechne erst aus, wie viele Minuten alle fünf zusammen haben."
-          - value: "4 * m - (a + b + c + d)"
-            message: "Es sind fünf Kinder. Die Summe aller Werte ist 5 mal der Mittelwert, nicht 4 mal."
-        hint: "Alle fünf Werte zusammen sind 5 mal der Mittelwert. Ziehe die vier bekannten Werte davon ab."
-        steps:
-          - "Alle fünf Zeiten zusammen: 5 · {{m}} Minuten."
-          - "Die vier bekannten Zeiten sind zusammen {{a}} + {{b}} + {{c}} + {{d}} Minuten."
-          - "Das fünfte Kind braucht die Differenz: {{answer}} Minuten."
+          - "Der Mittelwert: Summe : 4 = {{answer}} Minuten."
       - type: single-choice
         id: mittelwert-deuten
-        text: Der Mittelwert der Schulwege von Mira, Jonas, Ayşe, Tom und Lena ist 7 Minuten. Was sagt das?
+        text: Der Mittelwert der Schulwege von Mira, Jonas, Ayşe, Tom und Lena ist 7 Minuten. Was sagt das?
         options:
           - text: So lang wäre der Weg für jedes Kind, wenn alle gleich lang brauchten und die Summe dieselbe bliebe.
             correct: true
-            info: Das ist die Idee vom Einebnen der Türme. Die Summe von 35 Minuten wird gerecht auf 5 Kinder verteilt.
-          - text: Das ist die Zeit, die das längste Kind braucht.
+            info: Das ist die Idee vom Einebnen der Türme. Die Summe von 35 Minuten wird gerecht auf 5 Kinder verteilt.
+          - text: Das ist die Zeit des Kindes mit dem längsten Weg.
             correct: false
-            info: Das längste Kind ist Tom mit 12 Minuten. Der Mittelwert liegt zwischen dem kleinsten und dem größten Wert.
-          - text: Mindestens ein Kind braucht genau 7 Minuten.
+            info: Das längste Kind ist Tom mit 12 Minuten. Der Mittelwert liegt zwischen dem kleinsten und dem größten Wert.
+          - text: Mindestens ein Kind braucht genau 7 Minuten.
             correct: false
-            info: Die Zeiten sind 3, 9, 6, 12 und 5 Minuten. Keines davon ist 7. Der Mittelwert muss kein Wert der Liste sein.
+            info: Die Zeiten sind 3, 9, 6, 12 und 5 Minuten. Keines davon ist 7. Der Mittelwert muss kein Wert der Liste sein.
         explanation: Der Mittelwert beschreibt die gleichmäßig verteilte Menge, nicht ein Kind und nicht den größten Wert.
         links:
           - title: "Lernlandkarte: Arithmetisches Mittel"
@@ -158,3 +136,31 @@ blocks:
         links:
           - title: "Lernlandkarte: Arithmetisches Mittel"
             url: "https://lernapps.net/apps/map/mathematik/c/mittelwert/"
+      - type: generated
+        id: fehlenden-wert-finden
+        given:
+          m: { int: [6, 12] }
+          a: { int: [3, 15] }
+          b: { int: [3, 15] }
+          c: { int: [3, 15] }
+          d: { int: [3, 15] }
+        where:
+          [
+            "5 * m - (a + b + c + d) >= 2",
+            "5 * m - (a + b + c + d) <= 20",
+            "5 * m - (a + b + c + d) != m",
+            "5 * m - (a + b + c + d) != 2 * m",
+          ]
+        task:
+          text: "Fünf Kinder haben im Mittelwert {{m}} Minuten Schulweg. Vier von ihnen brauchen {{a}}, {{b}}, {{c}} und {{d}} Minuten. Wie viele Minuten braucht das fünfte Kind?"
+        answer: { value: "5 * m - (a + b + c + d)", compare: { number: { format: integer, unit: min } } }
+        mistakes:
+          - value: "m"
+            message: "Das ist der Mittelwert, nicht die Zeit des fünften Kindes. Rechne erst aus, wie viele Minuten alle fünf zusammen haben."
+          - value: "4 * m - (a + b + c + d)"
+            message: "Es sind fünf Kinder. Die Summe aller Werte ist 5 mal der Mittelwert, nicht 4 mal."
+        hint: "Alle fünf Werte zusammen sind 5 mal der Mittelwert. Ziehe die vier bekannten Werte davon ab."
+        steps:
+          - "Alle fünf Zeiten zusammen: 5 · {{m}} Minuten."
+          - "Die vier bekannten Zeiten sind zusammen {{a}} + {{b}} + {{c}} + {{d}} Minuten."
+          - "Das fünfte Kind braucht die Differenz: {{answer}} Minuten."

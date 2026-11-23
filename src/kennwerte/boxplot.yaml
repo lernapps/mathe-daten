@@ -5,7 +5,7 @@ competencies: [boxplot]
 scope: |
   Ein Boxplot zeigt fünf Werte der geordneten Daten: den kleinsten Wert, das untere Quartil Q1, den Median, das obere Quartil
   Q3 und den größten Wert. Die Box reicht von Q1 bis Q3, ein dicker Strich in der Box steht beim Median, zwei Linien reichen
-  bis zum kleinsten und zum größten Wert. In der Box liegen die mittleren zwei Viertel der Werte, also die Hälfte. Eine lange
+  bis zum kleinsten und zum größten Wert. In der Box liegen die mittleren zwei Viertel der Werte, also etwa die Hälfte. Eine lange
   Linie oder Box bedeutet: Die Werte streuen dort weit, nicht, dass dort mehr Werte liegen. Zwei Boxplots auf derselben Skala
   lassen sich vergleichen. Häufige Fehler: die Länge der Box als Anzahl deuten, die Skala nicht beachten.
 blocks:
@@ -20,7 +20,7 @@ blocks:
           ablesen.**
       - type: figure
         image: images/boxplot-8b-8c.svg
-        alt: Zwei Boxplots untereinander auf derselben Skala von 0 bis 40 Minuten. Die 8b hat eine breite Box und eine lange Linie nach rechts bis 35. Die 8c hat eine kürzere Box und eine kürzere Linie.
+        alt: Zwei Boxplots untereinander auf derselben Skala von 0 bis 40 Minuten. Die 8b hat eine breite Box und eine lange Linie nach rechts bis 35. Die 8c hat eine kürzere Box und eine kürzere Linie.
         caption: Beide Bilder haben dieselbe Skala. Vergleiche, wie weit die Linien und die Boxen reichen.
         source: eigene Zeichnung
         licence: CC-BY-4.0
@@ -60,7 +60,7 @@ blocks:
       - type: figure
         image: images/boxplot-8b-erklaert.svg
         alt: Boxplot der Klasse 8b. Die Linie beginnt bei 4 und endet bei 35. Die Box reicht von 7 bis 18, der dicke Strich in der Box steht bei 12.
-        caption: Die beschrifteten Stellen sind die fünf Werte der 8b von der letzten Seite.
+        caption: Die beschrifteten Stellen sind die fünf Werte der 8b von der letzten Seite. „min“ ist der kleinste Wert, „max“ der größte.
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: note
@@ -68,8 +68,8 @@ blocks:
         blocks:
           - type: text
             text: |
-              In der Box liegen die mittleren zwei Viertel der Werte, also die Hälfte. Ein Stück, das lang ist, heißt nicht, dass
-              dort mehr Werte liegen: Jedes Viertel hat gleich viele Werte. Es heißt, dass die Werte dort weiter streuen.
+              In der Box liegen die mittleren zwei Viertel der Werte, also etwa die Hälfte. Ein Stück, das lang ist, heißt nicht, dass
+              dort mehr Werte liegen: Jedes Viertel hat etwa gleich viele Werte. Es heißt, dass die Werte dort weiter streuen.
   - type: section
     id: beispiel
     title: Einen Boxplot Schritt für Schritt zeichnen
@@ -93,7 +93,7 @@ blocks:
         material:
           - type: figure
             image: images/boxplot-8b-8c.svg
-            alt: Boxplots der Klassen 8b und 8c auf derselben Skala von 0 bis 40 Minuten. Die Box der 8c ist kürzer als die der 8b.
+            alt: Boxplots der Klassen 8b und 8c auf derselben Skala von 0 bis 40 Minuten. Die Box der 8c ist kürzer als die der 8b.
             caption: Vergleiche die Boxen und die Linien.
             source: eigene Zeichnung
             licence: CC-BY-4.0
@@ -101,10 +101,10 @@ blocks:
           - text: In der 8c liegen die mittleren Werte enger beieinander als in der 8b.
             correct: true
             info: Die Box der 8c ist kürzer. Die mittlere Hälfte der Werte liegt dort in einem kleineren Bereich.
-          - text: Die 8c hat mehr Kinder als die 8b.
+          - text: Am Boxplot sieht man, wie viele Kinder die 8c hat.
             correct: false
-            info: Ein Boxplot zeigt nicht, wie viele Werte es gibt, sondern wie sie verteilt sind.
-          - text: In der 8c braucht ein Kind 35 Minuten.
+            info: Ein Boxplot zeigt nicht, wie viele Werte es gibt, sondern wie sie verteilt sind. Die Anzahl kann man an ihm nicht ablesen.
+          - text: In der 8c braucht ein Kind 35 Minuten.
             correct: false
             info: Das gilt für die 8b. Die Linie der 8c endet schon bei 19.
         explanation: Die Länge der Box zeigt, wie weit die mittlere Hälfte der Werte streut. Die 8c streut weniger.
@@ -113,7 +113,7 @@ blocks:
             url: "https://lernapps.net/apps/map/mathematik/c/boxplot/"
       - type: number
         id: median-ablesen
-        text: Lies den Median der 8c an der Skala ab. Bis 1 Minute daneben zählt noch als richtig.
+        text: Lies den Median der 8c an der Skala ab. Bis 1 Minute daneben zählt noch als richtig.
         material:
           - type: figure
             image: images/boxplot-8b-8c.svg
@@ -130,7 +130,7 @@ blocks:
           - answer: 15.5
             message: Das ist die rechte Kante der Box, das obere Quartil Q3. Der Median ist der dicke Strich in der Box.
         hint: Suche den dicken Strich in der Box der 8c und gehe senkrecht nach unten zur Skala.
-        explanation: Der dicke Strich der 8c steht zwischen 12 und 13, genau bei 12,5 Minuten.
+        explanation: Der dicke Strich der 8c steht zwischen 12 und 13, genau bei 12,5 Minuten.
         links:
           - title: "Lernlandkarte: Boxplot"
             url: "https://lernapps.net/apps/map/mathematik/c/boxplot/"
@@ -142,7 +142,7 @@ blocks:
           md: { int: [15, 20] }
           q3: { int: [21, 28] }
           mx: { int: [29, 40] }
-        where: ["q3 - q1 != md"]
+        where: ["q3 - q1 != md", "mx - mn != q3"]
         task:
           text: "Ein Boxplot hat diese fünf Werte: kleinster Wert {{mn}}, Q1 = {{q1}}, Median {{md}}, Q3 = {{q3}}, größter Wert {{mx}}. Wie lang ist die Box auf der Skala? Die Box reicht von Q1 bis Q3."
         answer: { value: "q3 - q1", compare: { number: { format: integer } } }
@@ -196,9 +196,9 @@ blocks:
         text: Bringe die Schritte zum Zeichnen eines Boxplots in die richtige Reihenfolge.
         items:
           - Die Daten der Größe nach ordnen
-          - Kleinsten Wert, Q1, Median, Q3 und größten Wert bestimmen
-          - Eine Skala zeichnen und die fünf Werte markieren
-          - Die Box von Q1 bis Q3 mit dem Strich beim Median und die zwei Linien zeichnen
+          - Kleinsten Wert, Q1, Median, Q3 und größten Wert bestimmen und auf einer Skala markieren
+          - Die Box von Q1 bis Q3 mit dem Strich beim Median zeichnen
+          - Die zwei Linien von der Box zum kleinsten und zum größten Wert zeichnen
         explanation: Erst brauchst du die fünf Werte, dann die Skala. Die Zeichnung folgt zuletzt, denn sie braucht beide.
         links:
           - title: "Lernlandkarte: Boxplot"
@@ -207,7 +207,7 @@ blocks:
         id: laenge-bedeutung
         text: Ist die Linie links von der Box länger als die Box selbst, liegen links mehr Werte als in der Box.
         answer: false
-        explanation: Jedes Viertel der Werte hat gleich viele Werte. Eine längere Linie bedeutet nur, dass diese Werte weiter auseinanderliegen.
+        explanation: Jedes Viertel der Werte hat etwa gleich viele Werte. Eine längere Linie bedeutet nur, dass diese Werte weiter auseinanderliegen.
         links:
           - title: "Lernlandkarte: Boxplot"
             url: "https://lernapps.net/apps/map/mathematik/c/boxplot/"

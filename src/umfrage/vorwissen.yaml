@@ -25,13 +25,16 @@ blocks:
           sagst du, welche Zahl größer ist. Beim **Ordnen** stellst du Zahlen der Größe nach hintereinander.
       - type: definition
         term: Zahlenstrahl
-        explanation: Der Zahlenstrahl beginnt bei 0 und geht nach rechts. Je weiter rechts eine Zahl liegt, desto größer ist sie. Beispiel Zahlenstrahl, 3 liegt links von 7, also ist 3 kleiner als 7.
+        explanation: Der Zahlenstrahl beginnt bei 0 und geht nach rechts. Je weiter rechts eine Zahl liegt, desto größer ist sie. Zum Beispiel liegt 3 links von 7, also ist 3 kleiner als 7.
       - type: figure
         image: images/zahlenstrahl-0-10.svg
         alt: Zahlenstrahl von 0 bis 10 mit den markierten Zahlen 3 und 7. Die 7 liegt weiter rechts.
         caption: Schau, welche Markierung weiter rechts liegt.
         source: eigene Zeichnung
         licence: CC-BY-4.0
+      - type: definition
+        term: Stellenwert
+        explanation: Der Stellenwert sagt, was eine Ziffer in einer Zahl wert ist. In 385 steht die 3 für 3 Hunderter, die 8 für 8 Zehner und die 5 für 5 Einer.
       - type: example
         title: Zwei Zahlen vergleichen
         blocks:
@@ -72,6 +75,12 @@ blocks:
       - type: definition
         term: Bruch
         explanation: Ein Bruch wie $\frac{3}{4}$ beschreibt einen Teil eines Ganzen. Der Nenner 4 sagt, dass das Ganze in vier gleiche Teile geteilt ist, der Zähler 3, dass drei davon gemeint sind.
+      - type: definition
+        term: Nenner
+        explanation: Der Nenner steht unter dem Bruchstrich. Er sagt, in wie viele gleich große Teile das Ganze geteilt ist, bei $\frac{3}{4}$ in vier Teile.
+      - type: definition
+        term: Zähler
+        explanation: Der Zähler steht über dem Bruchstrich. Er sagt, wie viele dieser Teile gemeint sind, bei $\frac{3}{4}$ drei Teile.
       - type: figure
         image: images/rechteck-drei-viertel.svg
         alt: Ein Rechteck in vier gleich große Teile geteilt. Drei Teile sind gefärbt, einer ist weiß.
@@ -119,7 +128,7 @@ blocks:
         text: |
           Ich kann mit Dezimalbrüchen rechnen. Eine **Dezimalzahl** hat ein Komma. Die Stellen hinter dem Komma sind Zehntel,
           Hundertstel und so weiter. Beim Addieren schreibst du Komma unter Komma, beim Teilen rechnest du wie mit
-          ganzen Zahlen und setzt das Komma passend.
+          ganzen Zahlen und machst Zehntel und Hundertstel, wenn ein Rest bleibt (siehe Beispiel).
       - type: definition
         term: Dezimalzahl
         explanation: Eine Dezimalzahl wie 3,25 hat ein Komma. Die erste Stelle nach dem Komma sind Zehntel, die zweite Hundertstel. 3,25 ist 3 Ganze, 2 Zehntel und 5 Hundertstel.

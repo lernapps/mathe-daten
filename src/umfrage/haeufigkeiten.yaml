@@ -51,7 +51,7 @@ blocks:
         explanation: Die absolute Häufigkeit sagt, wie oft eine Antwort vorkommt. Bei der 6a ist die absolute Häufigkeit von „Zu Fuß“ die Zahl 8.
       - type: definition
         term: Relative Häufigkeit
-        explanation: Die relative Häufigkeit ist der Anteil einer Antwort an allen Antworten. Du schreibst ihn als Bruch, wobei die Anzahl der Antwort über der Gesamtzahl steht. Bei der 6a ist die relative Häufigkeit von „Zu Fuß“ der Bruch $\frac{8}{24}$.
+        explanation: Die relative Häufigkeit ist der Anteil einer Antwort an allen Antworten. Du schreibst ihn als Bruch, wobei die Anzahl der Antwort über der Gesamtzahl steht. Den Bruch kannst du auch als Dezimalzahl ausrechnen. Bei der 6a ist die relative Häufigkeit von „Zu Fuß“ der Bruch $\frac{8}{24}$.
       - type: table
         caption: Absolute und relative Häufigkeit der 6a
         header: [Verkehrsmittel, absolute Häufigkeit, relative Häufigkeit]
@@ -82,8 +82,8 @@ blocks:
         blocks:
           - type: text
             text: |
-              In der 6b gehen 8 von 20 Kindern zu Fuß. Wo gehen mehr Kinder zu Fuß, in der 6a oder in der 6b? Beide
-              Klassen haben 8 Kinder, aber nicht gleich viele Kinder insgesamt.
+              In der 6b gehen 8 von 20 Kindern zu Fuß. In welcher Klasse geht ein größerer Teil der Kinder zu Fuß, in der 6a oder in der 6b? In beiden
+              Klassen gehen 8 Kinder zu Fuß, aber die Klassen sind nicht gleich groß.
 
               1. Die 6a hat die relative Häufigkeit $\frac{8}{24}$.
               2. Die 6b hat die relative Häufigkeit $\frac{8}{20}$.
@@ -119,27 +119,6 @@ blocks:
         links:
           - title: "Lernlandkarte: Absolute und relative Häufigkeit"
             url: "https://lernapps.net/apps/map/mathematik/c/haeufigkeiten/"
-      - type: generated
-        id: relative-haeufigkeit
-        given:
-          n: { oneOf: [20, 25, 40, 50] }
-          a: { int: [2, 18] }
-        where: ["a * 2 != n", "decimals(a / n) <= 2"]
-        task:
-          text: "In einer Klasse mit {{n}} Kindern haben {{a}} Kinder ein Haustier. Wie groß ist die relative Häufigkeit der Kinder mit Haustier? Gib sie als Dezimalzahl an: Teile die Anzahl durch die Gesamtzahl."
-        answer: { value: "a / n", compare: { number: { format: decimal, decimals: 2, tolerance: 0.001 } } }
-        mistakes:
-          - value: "a"
-            message: "Das ist die absolute Häufigkeit, die Anzahl der Kinder. Die relative Häufigkeit ist der Anteil an allen Kindern."
-          - value: "n / a"
-            message: "Zähler und Nenner sind vertauscht. Die Gesamtzahl der Kinder gehört in den Nenner."
-          - value: "(n - a) / n"
-            message: "Das ist die relative Häufigkeit der Kinder ohne Haustier. Gefragt sind die Kinder mit Haustier."
-        hint: "Die relative Häufigkeit ist der Bruch Anzahl der Kinder mit Haustier über Gesamtzahl der Kinder. Rechne ihn als Division aus."
-        steps:
-          - "Die Anzahl der Kinder mit Haustier ist der Zähler: {{a}}."
-          - "Die Gesamtzahl der Kinder ist der Nenner: {{n}}."
-          - "Die relative Häufigkeit ist der Bruch {{a}} über {{n}}. Als Division: {{a}} : {{n}} = {{answer}}."
       - type: single-choice
         id: antwort-zum-bruch
         text: In der 6a ist die relative Häufigkeit einer Antwort $\frac{6}{24}$. Welche Antwort ist das?
@@ -166,6 +145,27 @@ blocks:
         links:
           - title: "Lernlandkarte: Absolute und relative Häufigkeit"
             url: "https://lernapps.net/apps/map/mathematik/c/haeufigkeiten/"
+      - type: generated
+        id: relative-haeufigkeit
+        given:
+          n: { oneOf: [20, 25, 40, 50] }
+          a: { int: [2, 18] }
+        where: ["a * 2 != n", "a * a != n", "decimals(a / n) <= 2"]
+        task:
+          text: "In einer Klasse mit {{n}} Kindern haben {{a}} Kinder ein Haustier. Wie groß ist die relative Häufigkeit der Kinder mit Haustier? Gib sie als Dezimalzahl an: Teile die Anzahl durch die Gesamtzahl."
+        answer: { value: "a / n", compare: { number: { format: decimal, decimals: 2, tolerance: 0.001 } } }
+        mistakes:
+          - value: "a"
+            message: "Das ist die absolute Häufigkeit, die Anzahl der Kinder. Die relative Häufigkeit ist der Anteil an allen Kindern."
+          - value: "n / a"
+            message: "Zähler und Nenner sind vertauscht. Die Gesamtzahl der Kinder gehört in den Nenner."
+          - value: "(n - a) / n"
+            message: "Das ist die relative Häufigkeit der Kinder ohne Haustier. Gefragt sind die Kinder mit Haustier."
+        hint: "Die relative Häufigkeit ist der Bruch Anzahl der Kinder mit Haustier über Gesamtzahl der Kinder. Rechne ihn als Division aus."
+        steps:
+          - "Die Anzahl der Kinder mit Haustier ist der Zähler: {{a}}."
+          - "Die Gesamtzahl der Kinder ist der Nenner: {{n}}."
+          - "Die relative Häufigkeit ist der Bruch {{a}} über {{n}}. Als Division: {{a}} : {{n}} = {{answer}}."
       - type: ordering
         id: nach-anteil-ordnen
         text: Ordne die Antworten der 6a nach ihrer relativen Häufigkeit, die größte zuerst.
