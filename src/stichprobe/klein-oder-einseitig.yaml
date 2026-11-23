@@ -1,0 +1,186 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Spricht die Klasse für die ganze Schule?
+description: "Gesamtheit und Stichprobe unterscheiden und beurteilen, ob eine Stichprobe klein oder einseitig ist."
+competencies: [stichproben-erhebungen-planen]
+scope: |
+  Die Schülervertretung will wissen, wie alle 600 Lernenden der Schule zur Schule kommen. Die Klasse 6a hat 24 Kinder befragt:
+  8 kommen zu Fuß, 6 mit dem Fahrrad, 7 mit dem Bus, 3 mit dem Auto. Alle Lernenden der Schule sind die Gesamtheit, die
+  Befragten sind die Stichprobe. In der ganzen Schule kommen 20 % zu Fuß, 35 % mit dem Fahrrad, 35 % mit dem Bus und 10 % mit
+  dem Auto. Eine Stichprobe kann daneben liegen, wenn sie zu klein ist (zufällige Stichproben schwanken umso mehr, je kleiner
+  sie sind) oder einseitig (nur eine Klasse, nur Kinder am Fahrradständer). Eine zufällige und große Stichprobe liegt meist nah
+  an der Gesamtheit, aber sie bleibt eine Schätzung. Häufiger Fehler: glauben, dass eine große Stichprobe immer aussagekräftig
+  ist, auch wenn die Auswahl einseitig war.
+blocks:
+  - type: section
+    id: einstieg
+    title: Die Frage der Schülervertretung
+    blocks:
+      - type: text
+        text: |
+          Die Schülervertretung plant einen neuen Fahrradständer und braucht eine Zahl: Wie kommen die **600 Lernenden**
+          der Schule zur Schule? Die 6a hat schon 24 Kinder befragt. Eine Sprecherin sagt: „Ein Drittel kommt zu Fuß, das
+          haben wir gezählt.“ **Nach dieser Seite kannst du beurteilen, ob eine Stichprobe für eine Aussage über alle taugt.**
+      - type: single-choice
+        id: gesamtheit-erkennen
+        text: Wer gehört zur Gesamtheit, über die die Schülervertretung etwas wissen will?
+        options:
+          - text: Alle 600 Lernenden der Schule
+            correct: true
+            info: Die Schülervertretung will etwas über die ganze Schule wissen. Alle Lernenden zusammen sind die Gesamtheit.
+          - text: Die 24 Kinder der 6a
+            correct: false
+            info: Das ist nur ein Teil der Schule. Die 24 befragten Kinder sind die Stichprobe.
+          - text: Alle Kinder in Hessen
+            correct: false
+            info: Das ist viel mehr, als die Schülervertretung wissen will. Die Frage betrifft nur diese Schule.
+        explanation: Die Gesamtheit sind alle, über die man etwas sagen will. Die Befragten sind nur eine Auswahl daraus, die Stichprobe.
+        links:
+          - title: "Lernlandkarte: Stichproben und Erhebungen"
+            url: "https://lernapps.net/apps/map/mathematik/c/stichproben-erhebungen-planen/"
+      - type: vue-component
+        id: stichprobe-ziehen
+        component: StichprobeZiehen
+        props:
+          pupils: { data: schule }
+          categories: [Zu Fuß, Fahrrad, Bus, Auto]
+          classSize: 24
+          group: So wählst du die Stichprobe aus
+          optRandom: "{n} Lernende, zufällig aus allen ausgewählt"
+          optClass: "Nur die Klasse 6a ({n} Kinder)"
+          optStand: "Nur Kinder, die am Fahrradständer stehen (30)"
+          drawLabel: Stichprobe ziehen
+          caption: So kommen die Lernenden zur Schule
+          colAnswer: Antwort
+          colAll: "Alle {n} Lernenden"
+          colSample: "Stichprobe ({n})"
+          none: Noch keine Stichprobe. Wähle eine Auswahl und drücke „Stichprobe ziehen“. In dieser Simulation kennen wir alle 600 Lernenden, in Wirklichkeit wüsste man das nicht.
+          notice: Vergleiche die Anteile der Stichprobe mit den Anteilen aller 600. Ziehe mit derselben Auswahl noch einmal und schau, ob sich die Zahlen verändern.
+        nojs: |
+          Eine Simulation mit allen 600 Lernenden der Schule: 120 kommen zu Fuß (20 %), 210 mit dem Fahrrad (35 %), 210 mit dem
+          Bus (35 %) und 60 mit dem Auto (10 %). Zieht man 5, 30 oder 100 Lernende zufällig, weichen die Anteile der Stichprobe
+          von diesen Zahlen ab, bei 5 sehr stark, bei 100 nur wenig; jedes neue Ziehen gibt andere Zahlen. Befragt man nur die
+          Klasse 6a, kommen 33 % zu Fuß, 25 % mit dem Fahrrad, 29 % mit dem Bus und 13 % mit dem Auto, also andere Anteile als in der
+          ganzen Schule. Befragt man nur Kinder am Fahrradständer, kommen alle mit dem Fahrrad.
+  - type: section
+    id: erklaerung
+    title: Gesamtheit, Stichprobe und was sie taugt
+    blocks:
+      - type: definition
+        term: Gesamtheit
+        explanation: Die Gesamtheit sind alle, über die man etwas wissen will, hier alle 600 Lernenden der Schule.
+      - type: definition
+        term: Stichprobe
+        explanation: Eine Stichprobe ist ein Teil der Gesamtheit, den man wirklich befragt. Man schließt von ihr auf die Gesamtheit.
+      - type: text
+        text: |
+          Eine Stichprobe taugt für eine Aussage über alle, wenn sie **nicht zu klein** und **nicht einseitig** ist. Bei einer
+          zu kleinen Stichprobe können die Zahlen stark schwanken: Mit 5 Lernenden liegst du bei jedem Ziehen woanders. Bei
+          einer einseitigen Auswahl, zum Beispiel nur eine Klasse oder nur die Kinder am Fahrradständer, fehlen ganze Gruppen,
+          und mehr Befragte helfen nicht.
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Eine große Stichprobe ist nicht automatisch gut. Wenn jedes Kind die gleiche Chance hat, ausgewählt zu werden
+              (zufällige Auswahl), liegt die Stichprobe meist nah an der Gesamtheit. Auch dann ist ihr Ergebnis nur eine
+              Schätzung und keine genaue Zahl.
+  - type: section
+    id: beispiel
+    title: Die 6a im Vergleich mit der Schule
+    blocks:
+      - type: example
+        title: Ein Drittel der Schule kommt zu Fuß?
+        blocks:
+          - type: text
+            text: |
+              1. Die 6a hat 24 Kinder befragt, 8 kommen zu Fuß: 8 von 24, das ist ein Drittel (33 %).
+              2. In der ganzen Schule kommen 120 von 600 zu Fuß, das sind 20 %.
+              3. Die Stichprobe der 6a liegt also deutlich daneben.
+              4. Grund: Die Stichprobe ist klein (24 von 600) und einseitig, denn es ist nur eine Klasse.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: stichprobe-waehlen
+        text: Die Schülervertretung will eine Stichprobe von 30 Lernenden befragen. Welche Auswahl ist am wenigsten einseitig?
+        options:
+          - text: 30 Lernende, die aus der Liste aller Lernenden zufällig gezogen werden
+            correct: true
+            info: Jede und jeder hat die gleiche Chance. Alle Klassen und alle Verkehrsmittel können vorkommen.
+          - text: Die 30 Lernenden, die morgens als Erste am Schultor stehen
+            correct: false
+            info: Wer früh kommt, kommt vielleicht eher mit dem Bus oder zu Fuß. Die Auswahl hängt vom Verkehrsmittel ab.
+          - text: Die 30 Lernenden der Klasse 6a und der Klasse 6b
+            correct: false
+            info: Das sind nur zwei Klassen einer Stufe. Ältere Lernende fehlen, und die kommen vielleicht anders zur Schule.
+        explanation: Zufällig aus allen ausgewählt heißt, dass jede und jeder dieselbe Chance hat und keine Gruppe fehlt.
+        links:
+          - title: "Lernlandkarte: Stichproben und Erhebungen"
+            url: "https://lernapps.net/apps/map/mathematik/c/stichproben-erhebungen-planen/"
+      - type: generated
+        id: hochrechnen
+        given:
+          n: { oneOf: [20, 24, 25, 30, 40, 50, 60, 75, 100] }
+          a: { int: [2, 12] }
+        where: ["a * 2 < n", "a * a != n"]
+        task:
+          text: "In einer zufälligen Stichprobe von {{n}} Lernenden fahren {{a}} mit dem Bus. Wie viele der 600 Lernenden der Schule fahren dann ungefähr mit dem Bus, wenn der Anteil in der ganzen Schule so groß ist wie in der Stichprobe?"
+        answer: { value: "a * 600 / n", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "a"
+            message: "Das ist die Zahl in der Stichprobe. Die Frage ist, wie viele es unter allen 600 wären."
+          - value: "600 / a"
+            message: "Du hast durch die falsche Zahl geteilt. Rechne erst den Anteil: Anzahl in der Stichprobe geteilt durch Größe der Stichprobe, dann mal 600."
+        hint: "Bestimme den Anteil der Busfahrer in der Stichprobe als Bruch und nimm ihn mal 600."
+        steps:
+          - "Der Anteil in der Stichprobe ist {{a}} von {{n}}."
+          - "Für alle 600 Lernenden: {{a}} · 600 : {{n}}."
+          - "Das sind ungefähr {{answer}} Lernende."
+      - type: true-false
+        id: fuenf-reichen
+        text: Eine zufällige Stichprobe von nur 5 Lernenden zeigt zuverlässig, wie alle 600 zur Schule kommen.
+        answer: false
+        explanation: Mit nur 5 Lernenden ändern sich die Anteile bei jedem Ziehen stark. Bei 100 Lernenden liegen sie meist nah an den Anteilen aller 600.
+        links:
+          - title: "Lernlandkarte: Stichproben und Erhebungen"
+            url: "https://lernapps.net/apps/map/mathematik/c/stichproben-erhebungen-planen/"
+      - type: single-choice
+        id: aussage-6a
+        text: "Die 6a sagt: „Ein Drittel unserer Schule kommt zu Fuß.“ Für wen gilt diese Aussage nach ihrer Umfrage sicher?"
+        options:
+          - text: Für die 24 befragten Kinder der Klasse 6a
+            correct: true
+            info: Diese Kinder wurden alle gefragt. Ihre Zahlen stimmen für die Klasse.
+          - text: Für alle 600 Lernenden der Schule
+            correct: false
+            info: Die 6a ist nur ein kleiner Teil und eine einzige Klasse. Für die ganze Schule sind es 20 %, nicht ein Drittel.
+          - text: Für alle Schulen in der Stadt
+            correct: false
+            info: Eine Klasse einer Schule sagt noch nichts über andere Schulen.
+        explanation: Eine Aussage gilt sicher nur für die, die man gefragt hat. Für alle braucht man eine gute Stichprobe.
+        links:
+          - title: "Lernlandkarte: Stichproben und Erhebungen"
+            url: "https://lernapps.net/apps/map/mathematik/c/stichproben-erhebungen-planen/"
+  - type: section
+    id: urteil
+    title: Mein Urteil
+    blocks:
+      - type: open-task
+        id: urteil-6a
+        task: "Die 6a sagt: „Ein Drittel der Lernenden unserer Schule kommt zu Fuß.“ Beurteile in zwei bis vier Sätzen, ob die Stichprobe der 6a für diese Aussage taugt, und begründe dein Urteil."
+        points:
+          - text: Die Stichprobe ist klein, nur 24 von 600 Lernenden.
+            source: /stichprobe/klein-oder-einseitig/#erklaerung
+          - text: Es ist nur eine einzige Klasse, die Auswahl ist einseitig. Andere Klassen und Stufen fehlen.
+            source: /stichprobe/klein-oder-einseitig/#erklaerung
+          - text: Die Aussage gilt nur für die 24 Kinder der 6a, nicht für alle 600.
+            source: /stichprobe/klein-oder-einseitig/#beispiel
+          - text: Ganze Sätze mit einer Begründung (weil …, darum …).
+            kind: form
+        solution: |
+          Die Stichprobe der 6a taugt für diese Aussage nicht. Sie ist klein, denn es sind nur 24 von 600 Lernenden. Außerdem ist
+          es nur eine einzige Klasse, also eine einseitige Auswahl. Darum gilt „ein Drittel“ nur für die 6a. In der ganzen Schule
+          kommen nur 20 % zu Fuß.
+        hint: Denke an die Größe der Stichprobe und daran, wer alles befragt wurde und wer nicht.

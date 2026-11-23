@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Spricht die Stichprobe für alle?
+summary: Die Schülervertretung will wissen, wie alle Lernenden zur Schule kommen. Du prüfst, was eine Stichprobe aussagt, und planst eine Erhebung.
+pages: [klein-oder-einseitig]

@@ -277,7 +277,7 @@ Kapitel-Ids: `umfrage` (Unsere Umfrage), `kennwerte` (Median, Quartile und Boxpl
 - [x] Recap umfrage/vorwissen und Kurztest umfrage/vorwissen-test nach regeln.md Abschnitt 7: Begriffe fett mit Beispiel, Kopf, Checkliste, Selbsttest je Baustein mit Kartenseite; Glossar-Einträge; prüfen, ob eine Seite ohne Kompetenz erlaubt ist (sonst Fund)
 - [x] Datendateien klassen.yaml (8b, 8c) und schule.yaml (600 Lernende) mit Rechenprobe der Kennwerte (Median, Quartile, Spannweite) als Test oder Selbsttest
 - [x] Seite kennwerte/median-quartile (kenngroessen-lage-streumasse): Komponente Perlenkette mit Test und nojs, Quartilsverfahren eindeutig, generated mit Fehlerdiagnose, mindestens vier Aufgaben
-- [ ] Seite kennwerte/boxplot (boxplot): Boxplot-SVGs aus den Daten von 8b und 8c, Fünf-Werte-Zusammenfassung, Aussagen prüfen, generated, Rückblick Kapitel 2
+- [x] Seite kennwerte/boxplot (boxplot): Boxplot-SVGs aus den Daten von 8b und 8c, Fünf-Werte-Zusammenfassung, Aussagen prüfen, generated, Rückblick Kapitel 2
 - [ ] Seite stichprobe/klein-oder-einseitig (stichproben-erhebungen-planen): Komponente StichprobeZiehen mit Test und nojs, Vergleich mit der Gesamtheit, open-task Mein Urteil, scope auf allen Seiten
 - [ ] Seite stichprobe/erhebung-planen (stichproben-erhebungen-planen): Erhebungsplan beurteilen und neu planen, open-task Mein Urteil, Rückblick Kapitel 3 und Gesamtrückblick
 - [ ] Zwei Prüfer starten (Lernenden-Prüfer je Stufe, fachlicher Prüfer), Befunde im Plan unter Review, umsetzen; was danach inhaltlich geändert wurde, nochmals prüfen
