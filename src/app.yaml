@@ -6,7 +6,7 @@ intro: |
   Eine Klasse macht eine Umfrage: Sie fragt, zählt, zeichnet und rechnet. Du lernst, wie man aus Daten Aussagen gewinnt
   und wie du Diagramme und Stichproben kritisch prüfst. Für die Klassen 5 bis 10.
 languages: [de]
-chapters: [umfrage]
+chapters: [umfrage, kennwerte]
 scope:
   text: |
     Die App führt in die beschreibende Statistik ein und folgt einer Umfrage der Klasse: Daten erheben, mit Strichliste und

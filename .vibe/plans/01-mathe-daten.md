@@ -85,6 +85,8 @@ Lernende erheben Daten einer eigenen Klassenumfrage, stellen sie dar, beschreibe
 
 **Änderung Recap (Orchestrator, nach dem Plan-Bericht):** Der Recap bleibt eine Seite mit `recap:`; der Selbsttest ist die Komponente `Kurztest` darin, keine eigene Seite `vorwissen-test`. Die Plan-Aufgabe zum Recap nennt noch den Kurztest als Seite: sie gilt in dieser Fassung (Aufgabentext darf nur `lernapps plan` ändern).
 
+**Code-Stand Daten:** `src/data/verkehrsmittel.yaml` (Seiten 1 und 2), `src/data/werte.yaml` (Vorrat 3 bis 60 Minuten für die Aufgaben zu Median und Quartilen). `klassen.yaml` entfällt: die Werte der 8b und 8c stehen in der Seite und im Test `Perlenkette.test.ts` (Rechenprobe: 8b Median 12, Q1 7, Q3 18, Spannweite 31; 8c Median 12,5, Q1 9,5, Q3 15,5, Spannweite 13). `schule.yaml` (600 Lernende) entsteht mit der Komponente `StichprobeZiehen` (Aufgabe Seite 8), die Rechenprobe der Anteile steht dort im Test. Chromium: `lernapps screenshots` und eigenes Playwright finden Version 1243, nicht 1254; mein Skript setzt `executablePath` auf `/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell`. Typfehler in `.vue` zeigt nur `npx vue-tsc --noEmit` (der Hook meldet sie erst beim Commit).
+
 **Offen / geraten:** Quartilsverfahren (Median in die Hälften einbeziehen oder nicht) – Wahl: Hessen-übliches Verfahren, in der App erklärt (guess, vom fachlichen Prüfer zu bestätigen). Namen der Klasse und der Figuren erfinden wir (Klasse 6a/8b/10c, gemischte Namen).
 
 ## Explore
@@ -272,7 +274,7 @@ Kapitel-Ids: `umfrage` (Unsere Umfrage), `kennwerte` (Median, Quartile und Boxpl
 - [x] Seite umfrage/umfrage-durchfuehren (umfragen-erhebungen): Fragen beurteilen und verbessern, Antworten erfassen, generated Rohantworten zählen, mindestens vier Aufgaben
 - [x] Seite umfrage/mittelwert (mittelwert): Komponente WuerfelTuerme mit Test und nojs, Summe : Anzahl, generated mit Fehlerdiagnose, Deutung, mindestens vier Aufgaben
 - [x] Seite umfrage/diagramme-kritisch-lesen (daten-kritisch-lesen): Täuschungs-SVGs, Komponente AchseSchieber mit Test und nojs, benennen, zuordnen, reparieren, Rückblick Kapitel 1
-- [ ] Recap umfrage/vorwissen und Kurztest umfrage/vorwissen-test nach regeln.md Abschnitt 7: Begriffe fett mit Beispiel, Kopf, Checkliste, Selbsttest je Baustein mit Kartenseite; Glossar-Einträge; prüfen, ob eine Seite ohne Kompetenz erlaubt ist (sonst Fund)
+- [x] Recap umfrage/vorwissen und Kurztest umfrage/vorwissen-test nach regeln.md Abschnitt 7: Begriffe fett mit Beispiel, Kopf, Checkliste, Selbsttest je Baustein mit Kartenseite; Glossar-Einträge; prüfen, ob eine Seite ohne Kompetenz erlaubt ist (sonst Fund)
 - [ ] Datendateien klassen.yaml (8b, 8c) und schule.yaml (600 Lernende) mit Rechenprobe der Kennwerte (Median, Quartile, Spannweite) als Test oder Selbsttest
 - [ ] Seite kennwerte/median-quartile (kenngroessen-lage-streumasse): Komponente Perlenkette mit Test und nojs, Quartilsverfahren eindeutig, generated mit Fehlerdiagnose, mindestens vier Aufgaben
 - [ ] Seite kennwerte/boxplot (boxplot): Boxplot-SVGs aus den Daten von 8b und 8c, Fünf-Werte-Zusammenfassung, Aussagen prüfen, generated, Rückblick Kapitel 2
