@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: plan
+phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -168,8 +168,9 @@ Quelle der Antworten: Issue lernapps/apps#400 (Auftrag fertig entworfen) und `re
       learners see after each. Keep the files in `.vibe/sketches/`.
 - [x] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
       plain words (what learners see and do, what the app cannot do). At most 2 questions.
-- [ ] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
+- [x] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
       them, then ask again.
+      Creator: Plan bestätigt, weiter mit Code: Musterseite Daten darstellen mit SaeulenZeichnen, vorher unabhängiger Lernenden-Prüfer Klasse 5; open-task Mein Urteil mit scope, wo eindeutig zusätzlich single-choice; Komponenten ok mit Tastatur, Textalternative, statischer Form.
 
 ### Content method
 
@@ -249,7 +250,7 @@ Kapitel-Ids: `umfrage` (Unsere Umfrage), `kennwerte` (Median, Quartile und Boxpl
 
 ### Tasks
 
-- [ ] Load skill `lernapps-cli`. Create the app as its section "Create" says:
+- [x] Load skill `lernapps-cli`. Create the app as its section "Create" says:
       `npx --no -- lernapps create --archetype explainer`.
 - [ ] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
       no "FILL IN" left. Commit it before any content.
