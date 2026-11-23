@@ -41,15 +41,15 @@ blocks:
         id: warum-anders
         text: Das Diagramm zeigt immer dieselben Zahlen. Warum sieht der Unterschied bei „Achse beginnt bei 5“ so viel größer aus?
         options:
-          - text: Die Achse beginnt nicht bei 0, darum sind die Säulen unten abgeschnitten
-            correct: true
-            info: Von jeder Säule fehlt der Teil unter der Marke 5. Der Rest sieht darum sehr verschieden hoch aus.
           - text: Die Zahlen haben sich geändert
             correct: false
             info: Die Zahlen 6, 7 und 8 stehen über den Säulen und bleiben gleich. Nur die Achse ist anders.
           - text: Beim zweiten Diagramm wurden mehr Kinder gezählt
             correct: false
             info: Es sind in beiden Fällen dieselben Kinder. Das Zählen wurde nicht wiederholt.
+          - text: Die Achse beginnt nicht bei 0, darum sind die Säulen unten abgeschnitten
+            correct: true
+            info: Von jeder Säule fehlt der Teil unter der Marke 5. Der Rest sieht darum sehr verschieden hoch aus.
         explanation: Wenn die Achse nicht bei 0 beginnt, passen die Höhen der Säulen nicht mehr zu den Verhältnissen der Zahlen.
   - type: section
     id: erklaerung
@@ -90,7 +90,7 @@ blocks:
     blocks:
       - type: number
         id: zahlen-ablesen
-        text: Wie viele Kinder mehr fahren in der 6b mit dem Fahrrad als in der 6a? Lies die Zahlen an der Achse ab.
+        text: Wie viele Kinder mehr fahren in der 6b mit dem Fahrrad als in der 6a? Lies die Zahlen an der Achse ab und gib die Zahl der Kinder an.
         material:
           - type: figure
             image: images/saeulen-abgeschnitten.svg
@@ -100,7 +100,6 @@ blocks:
             licence: CC-BY-4.0
         answer: 1
         tolerance: 0
-        unit: Kinder
         mistakes:
           - answer: 2
             message: Du hast die Höhen der Säulen verglichen. Die 6b sieht doppelt so hoch aus, aber die Achse beginnt bei 5. Lies die Zahlen an der Achse ab.
@@ -125,13 +124,13 @@ blocks:
         text: Ordne jedem Problem im Diagramm zu, wie du es reparierst.
         pairs:
           - left: Die Achse beginnt bei 5
-            right: Die Achse bei 0 beginnen lassen
+            right: Achse bei 0 beginnen
           - left: Ein Bild ist in Breite und Höhe verdoppelt
-            right: Bild gleich groß lassen und doppelt so viele Bilder zeichnen
+            right: Gleiche Bilder, mehr davon
           - left: Die Säulen haben keine Zahlen und keine Beschriftung
-            right: Zahlen über die Säulen und Namen unter die Säulen schreiben
+            right: Zahlen und Namen ergänzen
         distractors:
-          - Die Säulen dicker zeichnen
+          - Säulen dicker zeichnen
         explanation: Jedes Problem hat seine eigene Reparatur. Ein Diagramm ist gut, wenn die Höhe zur Zahl passt und man alles lesen kann.
       - type: ordering
         id: kritisch-lesen-schritte

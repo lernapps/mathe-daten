@@ -96,16 +96,16 @@ blocks:
           - "Das sind {{answer}} Lernende."
       - type: matching
         id: problem-verbesserung
-        text: Ordne jedem Problem im Plan zu, wie du es verbesserst.
+        text: Ordne jedem Problem eines Erhebungsplans zu, wie du es verbesserst.
         pairs:
           - left: Die Frage legt die Antwort nahe
-            right: Eine neutrale Frage mit festen Antwortmöglichkeiten stellen
+            right: Neutrale Frage stellen
           - left: Es werden nur die Ersten am Tor gefragt
-            right: Aus der Liste aller Lernenden zufällig auswählen
+            right: Zufällig auswählen
           - left: Es werden nur 5 Lernende gefragt
-            right: Eine größere Stichprobe wählen, zum Beispiel 60 von 600
+            right: Größere Stichprobe wählen
           - left: Das Ergebnis wird als „genau“ angegeben
-            right: Das Ergebnis als ungefähre Schätzung formulieren
+            right: Mit „ungefähr“ formulieren
         explanation: Jedes Problem hat seine Verbesserung. Zusammen ergeben sie einen Plan, dem man eher trauen kann.
       - type: ordering
         id: plan-schritte
@@ -120,15 +120,15 @@ blocks:
         id: aussage-formulieren
         text: Von 60 zufällig gezogenen Lernenden fahren 22 mit dem Rad. Welche Aussage über alle 600 passt zu diesem Ergebnis?
         options:
+          - text: Mit dem Rad fahren nur die Kinder der Stichprobe
+            correct: false
+            info: Von den Kindern, die nicht befragt wurden, weiß man es nicht. Man schließt aus der Stichprobe auf alle.
           - text: Ungefähr 37 % der Lernenden fahren mit dem Rad
             correct: true
             info: 22 von 60 sind etwa 37 %. Das Wort „ungefähr“ sagt, dass die Aussage eine Schätzung ist.
           - text: Genau 220 Lernende fahren mit dem Rad
             correct: false
             info: Eine Stichprobe liefert eine Schätzung und keine genaue Zahl. Eine andere Stichprobe hätte etwas anderes ergeben.
-          - text: Mit dem Rad fahren nur die Kinder der Stichprobe
-            correct: false
-            info: Von den Kindern, die nicht befragt wurden, weiß man es nicht. Man schließt aus der Stichprobe auf alle.
         explanation: "Aus einer guten Stichprobe darf man auf alle schließen, aber vorsichtig: ungefähr, nicht genau."
   - type: section
     id: urteil

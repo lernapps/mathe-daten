@@ -74,15 +74,15 @@ blocks:
         id: gruppen-waehlen
         text: Die 6a teilt die Schulwegzeiten in Gruppen ein. Welche Einteilung ist gut?
         options:
-          - text: bis 10 Minuten, 11 bis 20 Minuten, über 20 Minuten
-            correct: true
-            info: Jede Zeit gehört in genau eine Gruppe, und keine Zeit bleibt übrig.
           - text: bis 10 Minuten, 10 bis 20 Minuten, über 20 Minuten
             correct: false
             info: Ein Kind mit 10 Minuten passt in zwei Gruppen. Die Gruppen überschneiden sich.
           - text: bis 10 Minuten, über 20 Minuten
             correct: false
             info: Ein Kind mit 15 Minuten passt in keine Gruppe. Es gibt eine Lücke.
+          - text: bis 10 Minuten, 11 bis 20 Minuten, über 20 Minuten
+            correct: true
+            info: Jede Zeit gehört in genau eine Gruppe, und keine Zeit bleibt übrig.
         explanation: Gute Gruppen überschneiden sich nicht und lassen keine Lücke.
       - type: number
         id: antworten-zaehlen

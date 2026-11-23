@@ -111,15 +111,15 @@ blocks:
         id: mittelwert-deuten
         text: Der Mittelwert der Schulwege von Mira, Jonas, Ayşe, Tom und Lena ist 7 Minuten. Was sagt das?
         options:
-          - text: So lang wäre der Weg für jedes Kind, wenn alle gleich lang brauchten und die Summe dieselbe bliebe
-            correct: true
-            info: Das ist die Idee vom Einebnen der Türme. Die Summe von 35 Minuten wird gerecht auf 5 Kinder verteilt.
           - text: Das ist die Zeit des Kindes mit dem längsten Weg
             correct: false
             info: Das längste Kind ist Tom mit 12 Minuten. Der Mittelwert liegt zwischen dem kleinsten und dem größten Wert.
           - text: Mindestens ein Kind braucht genau 7 Minuten
             correct: false
             info: Die Zeiten sind 3, 9, 6, 12 und 5 Minuten. Keines davon ist 7. Der Mittelwert muss kein Wert der Liste sein.
+          - text: So lang wäre der Weg für jedes Kind, wenn alle gleich lang brauchten und die Summe dieselbe bliebe
+            correct: true
+            info: Das ist die Idee vom Einebnen der Türme. Die Summe von 35 Minuten wird gerecht auf 5 Kinder verteilt.
         explanation: Der Mittelwert beschreibt die gleichmäßig verteilte Menge, nicht ein Kind und nicht den größten Wert.
       - type: true-false
         id: mittelwert-zwischen

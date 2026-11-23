@@ -26,24 +26,17 @@ blocks:
         licence: CC-BY-4.0
       - type: single-choice
         id: spannweite-sehen
-        text: Welche Klasse hat die größere Spannweite, also den größeren Abstand zwischen dem kleinsten und dem größten Wert?
-        material:
-          - type: figure
-            image: images/boxplot-8b-8c.svg
-            alt: Boxplots der Klassen 8b und 8c auf derselben Skala. Die Linie der 8b reicht von 4 bis 35, die der 8c von 6 bis 19.
-            caption: Die Linien reichen vom kleinsten bis zum größten Wert.
-            source: eigene Zeichnung
-            licence: CC-BY-4.0
+        text: Schau auf die Boxplots oben. Welche Klasse hat die größere Spannweite, also den größeren Abstand zwischen dem kleinsten und dem größten Wert?
         options:
+          - text: Beide gleich
+            correct: false
+            info: Die Linien enden an verschiedenen Stellen der Skala. Die der 8b ist viel länger.
           - text: Die 8b
             correct: true
             info: Die Linie der 8b beginnt links bei 4 und endet rechts bei 35. Sie ist viel länger.
           - text: Die 8c
             correct: false
             info: Die Linie der 8c reicht nur von 6 bis 19 und ist kürzer.
-          - text: Beide gleich
-            correct: false
-            info: Die Linien enden an verschiedenen Stellen der Skala. Die der 8b ist viel länger.
         explanation: Die ganze Linie vom linken bis zum rechten Ende ist die Spannweite. Bei der 8b ist sie größer.
   - type: section
     id: erklaerung
@@ -97,15 +90,15 @@ blocks:
             source: eigene Zeichnung
             licence: CC-BY-4.0
         options:
-          - text: In der 8c liegen die mittleren Werte enger beieinander als in der 8b
-            correct: true
-            info: Die Box der 8c ist kürzer. Die mittlere Hälfte der Werte liegt dort in einem kleineren Bereich.
           - text: Am Boxplot sieht man, wie viele Kinder die 8c hat
             correct: false
             info: Ein Boxplot zeigt nicht, wie viele Werte es gibt, sondern wie sie verteilt sind. Die Anzahl kann man an ihm nicht ablesen.
           - text: In der 8c braucht ein Kind 35 Minuten
             correct: false
             info: Das gilt für die 8b. Die Linie der 8c endet schon bei 19.
+          - text: In der 8c liegen die mittleren Werte enger beieinander als in der 8b
+            correct: true
+            info: Die Box der 8c ist kürzer. Die mittlere Hälfte der Werte liegt dort in einem kleineren Bereich.
         explanation: Die Länge der Box zeigt, wie weit die mittlere Hälfte der Werte streut. Die 8c streut weniger.
       - type: number
         id: median-ablesen

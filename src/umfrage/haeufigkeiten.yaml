@@ -119,15 +119,15 @@ blocks:
               - [Bus, "7"]
               - [Auto, "3"]
         options:
+          - text: Zu Fuß
+            correct: false
+            info: Bei „Zu Fuß“ stehen 8 Kinder, das ist die größte Anzahl. Der Bruch ist $\frac{8}{24}$.
           - text: Auto
             correct: true
             info: Beim Auto stehen 3 Kinder, das ist der kleinste Zähler. Der Bruch ist $\frac{3}{24}$.
           - text: Fahrrad
             correct: false
             info: Beim Fahrrad stehen 6 Kinder, das ist mehr als beim Auto. Der Bruch ist $\frac{6}{24}$.
-          - text: Zu Fuß
-            correct: false
-            info: Bei „Zu Fuß“ stehen 8 Kinder, das ist die größte Anzahl. Der Bruch ist $\frac{8}{24}$.
         explanation: Alle Brüche haben den Nenner 24, also hat der kleinste Zähler die kleinste relative Häufigkeit.
       - type: generated
         id: relative-haeufigkeit

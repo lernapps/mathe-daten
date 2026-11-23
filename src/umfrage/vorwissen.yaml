@@ -50,6 +50,11 @@ blocks:
           question: "Welche dieser Zahlen ist die größte?"
           options:
             - {
+                text: "40 075",
+                correct: false,
+                info: "Sie hat 0 Tausender und 0 Hunderter. Sie ist die kleinste der vier Zahlen.",
+              }
+            - {
                 text: "45 007",
                 correct: true,
                 info: "Sie hat 4 Zehntausender und 5 Tausender. Die anderen haben nur 0 Tausender.",
@@ -63,11 +68,6 @@ blocks:
                 text: "40 705",
                 correct: false,
                 info: "Sie hat 0 Tausender. 45 007 hat 5 Tausender und ist deshalb größer.",
-              }
-            - {
-                text: "40 075",
-                correct: false,
-                info: "Sie hat 0 Tausender und 0 Hunderter. Sie ist die kleinste der vier Zahlen.",
               }
           right: Richtig.
           wrong: Nicht richtig.
@@ -133,27 +133,32 @@ blocks:
         id: test-bruch
         component: Kurztest
         props:
-          question: "Eine Pizza ist in 12 gleich große Stücke geteilt. Ida isst 5 Stücke, Finn isst 3 Stücke. Welchen Bruchteil der Pizza haben beide zusammen gegessen?"
+          question: "Ein Band ist in 8 gleich lange Stücke geschnitten. 2 Stücke sind rot, 4 Stücke sind blau, der Rest ist weiß. Welcher Bruchteil des Bandes ist weiß?"
           options:
             - {
-                text: "acht Zwölftel",
+                text: "zwei Achtel",
                 correct: true,
-                info: "Zusammen sind es 5 + 3 = 8 Stücke. Der Nenner bleibt 12, denn die Pizza ist in 12 Teile geteilt.",
+                info: "Rot und blau sind zusammen 2 + 4 = 6 Stücke. Es bleiben 8 − 6 = 2 Stücke von 8: zwei Achtel.",
               }
             - {
-                text: "acht Vierundzwanzigstel",
+                text: "zwei Sechstel",
                 correct: false,
-                info: "Du hast die Nenner addiert. Das Ganze ist aber weiter in 12 Teile geteilt, also bleibt der Nenner 12.",
+                info: "Das Ganze ist das ganze Band, also 8 Stücke, nicht nur die 6 gefärbten. Der Nenner ist 8.",
               }
             - {
-                text: "zwei Zwölftel",
+                text: "sechs Achtel",
                 correct: false,
-                info: "Das ist der Unterschied zwischen 5 und 3. Gefragt ist, was beide zusammen gegessen haben.",
+                info: "Das sind die roten und blauen Stücke zusammen. Gefragt ist der weiße Teil.",
+              }
+            - {
+                text: "vier Achtel",
+                correct: false,
+                info: "Das sind nur die blauen Stücke. Gefragt ist der weiße Teil.",
               }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Eine Pizza ist in 12 gleich große Stücke geteilt, Ida isst 5 Stücke und Finn 3 Stücke. Antwort: acht Zwölftel, denn es sind 5 + 3 = 8 Stücke von 12.
+          Kurztest: Ein Band ist in 8 gleich lange Stücke geschnitten, 2 sind rot, 4 sind blau, der Rest ist weiß. Antwort: zwei Achtel, denn weiß sind 8 − 2 − 4 = 2 Stücke von 8.
       - type: text
         text: Wenn du nicht sicher warst, schau dir den Baustein „Bruchbegriff“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/brueche-begriff/) an.
   - type: section
@@ -183,11 +188,6 @@ blocks:
           question: "Wie viel ist 3,75 + 2,8?"
           options:
             - {
-                text: "6,55",
-                correct: true,
-                info: "Schreibe 3,75 + 2,80 untereinander: Hundertstel 5, Zehntel 7 + 8 = 15, also 5 und ein Übertrag, Ganze 3 + 2 + 1 = 6.",
-              }
-            - {
                 text: "5,83",
                 correct: false,
                 info: "Du hast die 8 wie 8 Hundertstel gerechnet. 2,8 sind 8 Zehntel, also 2,80.",
@@ -197,10 +197,36 @@ blocks:
                 correct: false,
                 info: "Die 5 Hundertstel von 3,75 fehlen in deinem Ergebnis. Rechne 3,75 + 2,80.",
               }
+            - {
+                text: "6,55",
+                correct: true,
+                info: "Schreibe 3,75 + 2,80 untereinander: Hundertstel 5, Zehntel 7 + 8 = 15, also 5 und ein Übertrag, Ganze 3 + 2 + 1 = 6.",
+              }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
           Kurztest: Wie viel ist 3,75 + 2,8? Antwort: 6,55, denn 3,75 + 2,80 ergibt 5 Hundertstel, 15 Zehntel (also 5 Zehntel und einen Übertrag) und 6 Ganze.
+      - type: vue-component
+        id: test-dezimal-teilen
+        component: Kurztest
+        props:
+          question: "Wie viel ist 15 : 4?"
+          options:
+            - {
+                text: "3,3",
+                correct: false,
+                info: "Der Rest 3 ist kein Zehntel. Du musst mit dem Rest weiterrechnen: 30 Zehntel geteilt durch 4.",
+              }
+            - {
+                text: "3,75",
+                correct: true,
+                info: "4 passt 3 Mal in 15, Rest 3. Dann 30 Zehntel : 4 = 7 Zehntel, Rest 2, dann 20 Hundertstel : 4 = 5 Hundertstel.",
+              }
+            - { text: "4", correct: false, info: "Das wäre 16 : 4. 15 : 4 liegt zwischen 3 und 4." }
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: |
+          Kurztest: Wie viel ist 15 : 4? Antwort: 3,75, denn 4 passt 3 Mal in 15 mit Rest 3, dann 30 Zehntel geteilt durch 4 sind 7 Zehntel mit Rest 2, dann 20 Hundertstel geteilt durch 4 sind 5.
       - type: text
         text: Wenn du nicht sicher warst, schau dir den Baustein „Rechnen mit Dezimalbrüchen“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/dezimalbrueche-rechnen/) an.
   - type: section

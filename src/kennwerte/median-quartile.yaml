@@ -48,7 +48,7 @@ blocks:
           alt: Elf Perlen mit den Schulwegzeiten der 8b in Minuten, wie sie dastehen oder der Größe nach geordnet.
           statusStart: Elf Perlen, jede ist die Schulwegzeit eines Kindes der 8b in Minuten, in der Reihenfolge, wie sie aufgeschrieben wurde. Drücke „Perlen ordnen“.
           statusOrdered: Die Perlen sind der Größe nach geordnet, links die kleinste. Jetzt kannst du die Mitte suchen.
-          statusMiddle: Die Perle in der Mitte hat 5 Perlen links und 5 Perlen rechts neben sich. Sie hat den Wert {m}. Das ist der Median.
+          statusMiddle: Die Perle in der Mitte hat 5 Perlen links und 5 Perlen rechts neben sich. Sie hat den Wert {m}. Das ist der Median, in der Zeichnung mit M beschriftet.
           statusHalves: Der Median teilt die Kette in die untere und die obere Hälfte, der Median gehört zu keiner von beiden. Die Mitte der unteren Hälfte ist Q1 = {q1}, die Mitte der oberen Hälfte ist Q3 = {q3}. min ist der kleinste Wert ({min}), max der größte ({max}).
         nojs: |
           Elf Perlen mit den Schulwegzeiten der 8b in Minuten: 4, 5, 7, 8, 10, 12, 12, 15, 18, 20 und 35, der Größe nach
@@ -113,7 +113,7 @@ blocks:
           alt: Zwölf Perlen mit den Schulwegzeiten der 8c in Minuten, wie sie dastehen oder der Größe nach geordnet.
           statusStart: Zwölf Perlen, jede ist die Schulwegzeit eines Kindes der 8c in Minuten. Drücke „Perlen ordnen“.
           statusOrdered: Die Perlen sind der Größe nach geordnet. Bei zwölf Werten gibt es keine einzelne Mitte.
-          statusMiddle: Die zwei mittleren Perlen sind hervorgehoben, je 5 Perlen liegen links und rechts davon. Der Median ist ihr Mittelwert, also {m}.
+          statusMiddle: Die zwei mittleren Perlen sind hervorgehoben, je 5 Perlen liegen links und rechts davon. Der Median ist ihr Mittelwert, also {m}. Er ist in der Zeichnung mit M beschriftet.
           statusHalves: Jede Hälfte hat sechs Perlen. Die Mitte der unteren Hälfte ist Q1 = {q1}, die Mitte der oberen Hälfte ist Q3 = {q3}. min ist der kleinste Wert ({min}), max der größte ({max}).
         nojs: |
           Zwölf Perlen mit den Schulwegzeiten der 8c in Minuten, der Größe nach geordnet: 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19. Die zwei mittleren Perlen sind 12 und 13, der Median ist 12,5. Jede Hälfte hat sechs Perlen: Q1 = 9,5 und Q3 = 15,5.
@@ -396,13 +396,13 @@ blocks:
         id: median-oder-mittel
         text: In der 8b ist der Mittelwert rund 13,3 Minuten, der Median 12 Minuten. Ein Kind braucht 35 Minuten. Warum ist der Median kleiner als der Mittelwert?
         options:
-          - text: Der Median reagiert nicht darauf, wie groß der größte Wert ist, nur auf die Mitte der geordneten Werte
-            correct: true
-            info: Der Wert 35 steht am Ende der geordneten Kette. Er verschiebt die Mitte nicht, aber er erhöht die Summe für den Mittelwert.
           - text: Beim Median wird der größte Wert nicht mitgezählt
             correct: false
             info: Der größte Wert gehört zur Kette. Er ändert nur nicht, welcher Wert in der Mitte liegt.
           - text: Der Median wird immer kleiner als der Mittelwert gerechnet
             correct: false
             info: Das stimmt nicht allgemein. Bei der 8c sind Median und Mittelwert beide 12,5.
+          - text: Der Median reagiert nicht darauf, wie groß der größte Wert ist, nur auf die Mitte der geordneten Werte
+            correct: true
+            info: Der Wert 35 steht am Ende der geordneten Kette. Er verschiebt die Mitte nicht, aber er erhöht die Summe für den Mittelwert.
         explanation: Der Median hängt von der Mitte der geordneten Werte ab, der Mittelwert von der Summe. Ein sehr großer Wert verändert nur die Summe.
