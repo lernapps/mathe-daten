@@ -548,9 +548,9 @@ Nr. | a.wert | b.wert | c.wert | d.wert | e.wert | f.wert | g.wert | h.wert | L�
 - Aufgabe: In der 8b ist der Mittelwert rund 13,3 Minuten, der Median 12 Minuten. Ein Kind braucht 35 Minuten. Warum ist der Median kleiner als der Mittelwert?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ Der Median reagiert nicht darauf, wie groß der größte Wert ist, nur auf die Mitte der geordneten Werte – Der Wert 35 steht am Ende der geordneten Kette. Er verschiebt die Mitte nicht, aber er erhöht die Summe für den Mittelwert.
   - ✗ Beim Median wird der größte Wert nicht mitgezählt – Der größte Wert gehört zur Kette. Er ändert nur nicht, welcher Wert in der Mitte liegt.
   - ✗ Der Median wird immer kleiner als der Mittelwert gerechnet – Das stimmt nicht allgemein. Bei der 8c sind Median und Mittelwert beide 12,5.
+  - ✓ Der Median reagiert nicht darauf, wie groß der größte Wert ist, nur auf die Mitte der geordneten Werte – Der Wert 35 steht am Ende der geordneten Kette. Er verschiebt die Mitte nicht, aber er erhöht die Summe für den Mittelwert.
 - Lösung: Der Median reagiert nicht darauf, wie groß der größte Wert ist, nur auf die Mitte der geordneten Werte
 - Erklärung: Der Median hängt von der Mitte der geordneten Werte ab, der Mittelwert von der Summe. Ein sehr großer Wert verändert nur die Summe.
 - Link: [../?via=tutor#median-oder-mittel](../?via=tutor#median-oder-mittel)

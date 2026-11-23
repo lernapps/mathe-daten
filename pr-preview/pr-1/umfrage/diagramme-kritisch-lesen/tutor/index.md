@@ -102,18 +102,18 @@ Im nächsten Kapitel vergleichen die Klassen 8b und 8c ihre Schulwege und brauch
 - Aufgabe: Das Diagramm zeigt immer dieselben Zahlen. Warum sieht der Unterschied bei „Achse beginnt bei 5“ so viel größer aus?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ Die Achse beginnt nicht bei 0, darum sind die Säulen unten abgeschnitten – Von jeder Säule fehlt der Teil unter der Marke 5. Der Rest sieht darum sehr verschieden hoch aus.
   - ✗ Die Zahlen haben sich geändert – Die Zahlen 6, 7 und 8 stehen über den Säulen und bleiben gleich. Nur die Achse ist anders.
   - ✗ Beim zweiten Diagramm wurden mehr Kinder gezählt – Es sind in beiden Fällen dieselben Kinder. Das Zählen wurde nicht wiederholt.
+  - ✓ Die Achse beginnt nicht bei 0, darum sind die Säulen unten abgeschnitten – Von jeder Säule fehlt der Teil unter der Marke 5. Der Rest sieht darum sehr verschieden hoch aus.
 - Lösung: Die Achse beginnt nicht bei 0, darum sind die Säulen unten abgeschnitten
 - Erklärung: Wenn die Achse nicht bei 0 beginnt, passen die Höhen der Säulen nicht mehr zu den Verhältnissen der Zahlen.
 - Link: [../?via=tutor#warum-anders](../?via=tutor#warum-anders)
 
 ### Aufgabe zahlen-ablesen
 
-- Aufgabe: Wie viele Kinder mehr fahren in der 6b mit dem Fahrrad als in der 6a? Lies die Zahlen an der Achse ab.
-- Antwortformat: eine Zahl eintippen (Kinder)
-- Lösung: 1 Kinder
+- Aufgabe: Wie viele Kinder mehr fahren in der 6b mit dem Fahrrad als in der 6a? Lies die Zahlen an der Achse ab und gib die Zahl der Kinder an.
+- Antwortformat: eine Zahl eintippen
+- Lösung: 1
 - Erklärung: Die Säule der 6a endet bei 6, die der 6b bei 7. Der Unterschied ist 7 − 6 = 1 Kind. Das Diagramm lässt ihn viel größer aussehen, weil die Achse bei 5 beginnt.
 - Tipp der App: Schau auf die Achse. Wo endet die Säule der 6a, wo die der 6b?
 - Typische Fehler und was die App sagt:
@@ -136,7 +136,7 @@ Im nächsten Kapitel vergleichen die Klassen 8b und 8c ihre Schulwege und brauch
 
 - Aufgabe: Ordne jedem Problem im Diagramm zu, wie du es reparierst.
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: Die Achse beginnt bei 5 – Die Achse bei 0 beginnen lassen; Ein Bild ist in Breite und Höhe verdoppelt – Bild gleich groß lassen und doppelt so viele Bilder zeichnen; Die Säulen haben keine Zahlen und keine Beschriftung – Zahlen über die Säulen und Namen unter die Säulen schreiben
+- Lösung: Die Achse beginnt bei 5 – Achse bei 0 beginnen; Ein Bild ist in Breite und Höhe verdoppelt – Gleiche Bilder, mehr davon; Die Säulen haben keine Zahlen und keine Beschriftung – Zahlen und Namen ergänzen
 - Erklärung: Jedes Problem hat seine eigene Reparatur. Ein Diagramm ist gut, wenn die Höhe zur Zahl passt und man alles lesen kann.
 - Link: [../?via=tutor#problem-reparatur](../?via=tutor#problem-reparatur)
 

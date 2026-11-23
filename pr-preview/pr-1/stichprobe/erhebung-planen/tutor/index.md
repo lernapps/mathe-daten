@@ -147,9 +147,9 @@ Nr. | n | k | Lösung | F1 | F2
 
 ### Aufgabe problem-verbesserung
 
-- Aufgabe: Ordne jedem Problem im Plan zu, wie du es verbesserst.
+- Aufgabe: Ordne jedem Problem eines Erhebungsplans zu, wie du es verbesserst.
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: Die Frage legt die Antwort nahe – Eine neutrale Frage mit festen Antwortmöglichkeiten stellen; Es werden nur die Ersten am Tor gefragt – Aus der Liste aller Lernenden zufällig auswählen; Es werden nur 5 Lernende gefragt – Eine größere Stichprobe wählen, zum Beispiel 60 von 600; Das Ergebnis wird als „genau“ angegeben – Das Ergebnis als ungefähre Schätzung formulieren
+- Lösung: Die Frage legt die Antwort nahe – Neutrale Frage stellen; Es werden nur die Ersten am Tor gefragt – Zufällig auswählen; Es werden nur 5 Lernende gefragt – Größere Stichprobe wählen; Das Ergebnis wird als „genau“ angegeben – Mit „ungefähr“ formulieren
 - Erklärung: Jedes Problem hat seine Verbesserung. Zusammen ergeben sie einen Plan, dem man eher trauen kann.
 - Link: [../?via=tutor#problem-verbesserung](../?via=tutor#problem-verbesserung)
 
@@ -166,9 +166,9 @@ Nr. | n | k | Lösung | F1 | F2
 - Aufgabe: Von 60 zufällig gezogenen Lernenden fahren 22 mit dem Rad. Welche Aussage über alle 600 passt zu diesem Ergebnis?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
+  - ✗ Mit dem Rad fahren nur die Kinder der Stichprobe – Von den Kindern, die nicht befragt wurden, weiß man es nicht. Man schließt aus der Stichprobe auf alle.
   - ✓ Ungefähr 37 % der Lernenden fahren mit dem Rad – 22 von 60 sind etwa 37 %. Das Wort „ungefähr“ sagt, dass die Aussage eine Schätzung ist.
   - ✗ Genau 220 Lernende fahren mit dem Rad – Eine Stichprobe liefert eine Schätzung und keine genaue Zahl. Eine andere Stichprobe hätte etwas anderes ergeben.
-  - ✗ Mit dem Rad fahren nur die Kinder der Stichprobe – Von den Kindern, die nicht befragt wurden, weiß man es nicht. Man schließt aus der Stichprobe auf alle.
 - Lösung: Ungefähr 37 % der Lernenden fahren mit dem Rad
 - Erklärung: Aus einer guten Stichprobe darf man auf alle schließen, aber vorsichtig: ungefähr, nicht genau.
 - Link: [../?via=tutor#aussage-formulieren](../?via=tutor#aussage-formulieren)

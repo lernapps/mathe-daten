@@ -104,12 +104,12 @@ Im nächsten Kapitel fragt die Schule, ob die Antworten einer Klasse für alle g
 
 ### Aufgabe spannweite-sehen
 
-- Aufgabe: Welche Klasse hat die größere Spannweite, also den größeren Abstand zwischen dem kleinsten und dem größten Wert?
+- Aufgabe: Schau auf die Boxplots oben. Welche Klasse hat die größere Spannweite, also den größeren Abstand zwischen dem kleinsten und dem größten Wert?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
+  - ✗ Beide gleich – Die Linien enden an verschiedenen Stellen der Skala. Die der 8b ist viel länger.
   - ✓ Die 8b – Die Linie der 8b beginnt links bei 4 und endet rechts bei 35. Sie ist viel länger.
   - ✗ Die 8c – Die Linie der 8c reicht nur von 6 bis 19 und ist kürzer.
-  - ✗ Beide gleich – Die Linien enden an verschiedenen Stellen der Skala. Die der 8b ist viel länger.
 - Lösung: Die 8b
 - Erklärung: Die ganze Linie vom linken bis zum rechten Ende ist die Spannweite. Bei der 8b ist sie größer.
 - Link: [../?via=tutor#spannweite-sehen](../?via=tutor#spannweite-sehen)
@@ -119,9 +119,9 @@ Im nächsten Kapitel fragt die Schule, ob die Antworten einer Klasse für alle g
 - Aufgabe: Welche Aussage über die beiden Boxplots stimmt?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ In der 8c liegen die mittleren Werte enger beieinander als in der 8b – Die Box der 8c ist kürzer. Die mittlere Hälfte der Werte liegt dort in einem kleineren Bereich.
   - ✗ Am Boxplot sieht man, wie viele Kinder die 8c hat – Ein Boxplot zeigt nicht, wie viele Werte es gibt, sondern wie sie verteilt sind. Die Anzahl kann man an ihm nicht ablesen.
   - ✗ In der 8c braucht ein Kind 35 Minuten – Das gilt für die 8b. Die Linie der 8c endet schon bei 19.
+  - ✓ In der 8c liegen die mittleren Werte enger beieinander als in der 8b – Die Box der 8c ist kürzer. Die mittlere Hälfte der Werte liegt dort in einem kleineren Bereich.
 - Lösung: In der 8c liegen die mittleren Werte enger beieinander als in der 8b
 - Erklärung: Die Länge der Box zeigt, wie weit die mittlere Hälfte der Werte streut. Die 8c streut weniger.
 - Link: [../?via=tutor#klassen-vergleichen](../?via=tutor#klassen-vergleichen)

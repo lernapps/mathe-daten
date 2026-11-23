@@ -69,7 +69,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 - A5: Aufgabe liste-kontrollieren der Seite „Eine eigene Umfrage durchführen“
 - A6: Aufgabe antworten-zaehlen der Seite „Eine eigene Umfrage durchführen“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
 - A7: Aufgabe mittelwert-berechnen der Seite „Der Mittelwert – gerecht verteilen“
-- A8: Aufgabe mittelwert-deuten der Seite „Der Mittelwert – gerecht verteilen“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
+- A8: Aufgabe mittelwert-zwischen der Seite „Der Mittelwert – gerecht verteilen“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
 - A9: Aufgabe zahlen-ablesen der Seite „Wie Diagramme täuschen können“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
 - A10: Aufgabe problem-reparatur der Seite „Wie Diagramme täuschen können“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
 - A11: Aufgabe falsche-zahlen der Seite „Wie Diagramme täuschen können“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)

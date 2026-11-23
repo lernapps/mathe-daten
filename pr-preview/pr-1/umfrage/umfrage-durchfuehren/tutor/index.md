@@ -104,9 +104,9 @@ hat genau eine Gruppe.
 - Aufgabe: Die 6a teilt die Schulwegzeiten in Gruppen ein. Welche Einteilung ist gut?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ bis 10 Minuten, 11 bis 20 Minuten, über 20 Minuten – Jede Zeit gehört in genau eine Gruppe, und keine Zeit bleibt übrig.
   - ✗ bis 10 Minuten, 10 bis 20 Minuten, über 20 Minuten – Ein Kind mit 10 Minuten passt in zwei Gruppen. Die Gruppen überschneiden sich.
   - ✗ bis 10 Minuten, über 20 Minuten – Ein Kind mit 15 Minuten passt in keine Gruppe. Es gibt eine Lücke.
+  - ✓ bis 10 Minuten, 11 bis 20 Minuten, über 20 Minuten – Jede Zeit gehört in genau eine Gruppe, und keine Zeit bleibt übrig.
 - Lösung: bis 10 Minuten, 11 bis 20 Minuten, über 20 Minuten
 - Erklärung: Gute Gruppen überschneiden sich nicht und lassen keine Lücke.
 - Link: [../?via=tutor#gruppen-waehlen](../?via=tutor#gruppen-waehlen)

@@ -89,7 +89,7 @@ Bild: Ein Rechteck in vier gleich große Teile geteilt. Drei Teile sind gefärbt
 
 Das Rechteck ist in 4 gleiche Teile geteilt, 3 sind gefärbt. Der Bruch heißt $\frac{3}{4}$, gesprochen drei Viertel.
 
-Interaktiv: Kurztest: Eine Pizza ist in 12 gleich große Stücke geteilt, Ida isst 5 Stücke und Finn 3 Stücke. Antwort: acht Zwölftel, denn es sind 5 + 3 = 8 Stücke von 12.
+Interaktiv: Kurztest: Ein Band ist in 8 gleich lange Stücke geschnitten, 2 sind rot, 4 sind blau, der Rest ist weiß. Antwort: zwei Achtel, denn weiß sind 8 − 2 − 4 = 2 Stücke von 8.
 
 Wenn du nicht sicher warst, schau dir den Baustein „Bruchbegriff“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/brueche-begriff/) an.
 
@@ -108,6 +108,8 @@ Addieren: 3,5 + 1,25. Schreibe 3,50 + 1,25 = 4,75.
 Teilen: 35 : 4. 35 : 4 = 8 Rest 3, dann 3 Ganze sind 30 Zehntel, 30 : 4 = 7 Rest 2, dann 20 Hundertstel, 20 : 4 = 5. Also 35 : 4 = 8,75.
 
 Interaktiv: Kurztest: Wie viel ist 3,75 + 2,8? Antwort: 6,55, denn 3,75 + 2,80 ergibt 5 Hundertstel, 15 Zehntel (also 5 Zehntel und einen Übertrag) und 6 Ganze.
+
+Interaktiv: Kurztest: Wie viel ist 15 : 4? Antwort: 3,75, denn 4 passt 3 Mal in 15 mit Rest 3, dann 30 Zehntel geteilt durch 4 sind 7 Zehntel mit Rest 2, dann 20 Hundertstel geteilt durch 4 sind 5.
 
 Wenn du nicht sicher warst, schau dir den Baustein „Rechnen mit Dezimalbrüchen“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/dezimalbrueche-rechnen/) an.
 

@@ -77,7 +77,7 @@ Schätzung und keine genaue Zahl.
 1. Die 6a hat 24 Kinder befragt, 8 kommen zu Fuß: 8 von 24, das ist ein Drittel, rund 33 %.
 2. In der ganzen Schule kommen 120 von 600 zu Fuß, das sind 20 %.
 3. Die Stichprobe der 6a liegt also deutlich daneben.
-4. Grund: Die Stichprobe ist klein (24 von 600, die Simulation zeigt: schon bei 30 schwanken die Anteile deutlich, erst bei 100 liegen sie meist nah) und einseitig, denn es ist nur eine Klasse.
+4. Grund: Die Stichprobe ist klein (24 von 600, die Simulation zeigt: bei 30 schwanken die Anteile noch merklich, bei 100 liegen sie meist näher an denen aller 600) und einseitig, denn es ist nur eine Klasse.
 
 ### Übung
 
@@ -110,9 +110,9 @@ Schätzung und keine genaue Zahl.
 - Aufgabe: Die Schülervertretung will eine Stichprobe von 30 Lernenden befragen. Welche Auswahl ist am wenigsten einseitig?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
+  - ✗ 30 Lernende aus den Klassen 6a und 6b – Das sind nur zwei Klassen einer Stufe. Ältere Lernende fehlen, und die kommen vielleicht anders zur Schule.
   - ✓ 30 Lernende, die aus der Liste aller Lernenden zufällig gezogen werden – Jede und jeder hat die gleiche Chance. Alle Klassen und alle Verkehrsmittel können vorkommen.
   - ✗ Die 30 Lernenden, die morgens als Erste am Schultor stehen – Wer früh kommt, kommt vielleicht eher mit dem Bus oder zu Fuß. Die Auswahl hängt vom Verkehrsmittel ab.
-  - ✗ 30 Lernende aus den Klassen 6a und 6b – Das sind nur zwei Klassen einer Stufe. Ältere Lernende fehlen, und die kommen vielleicht anders zur Schule.
 - Lösung: 30 Lernende, die aus der Liste aller Lernenden zufällig gezogen werden
 - Erklärung: Zufällig aus allen ausgewählt heißt, dass jede und jeder dieselbe Chance hat und keine Gruppe von vornherein ausgelassen wird.
 - Link: [../?via=tutor#stichprobe-waehlen](../?via=tutor#stichprobe-waehlen)
@@ -216,9 +216,9 @@ Nr. | n | a | Lösung | F1 | F2
 - Aufgabe: Die 6a sagt: „Ein Drittel unserer Schule kommt zu Fuß.“ Für wen gilt diese Aussage nach ihrer Umfrage sicher?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ Für die 24 befragten Kinder der Klasse 6a – Diese Kinder wurden alle gefragt. Ihre Zahlen stimmen für die Klasse.
   - ✗ Für alle 600 Lernenden der Schule – Die 6a ist nur ein kleiner Teil und eine einzige Klasse. Für die ganze Schule sind es 20 %, nicht ein Drittel.
   - ✗ Für alle Schulen in der Stadt – Eine Klasse einer Schule sagt noch nichts über andere Schulen.
+  - ✓ Für die 24 befragten Kinder der Klasse 6a – Diese Kinder wurden alle gefragt. Ihre Zahlen stimmen für die Klasse.
 - Lösung: Für die 24 befragten Kinder der Klasse 6a
 - Erklärung: Eine Aussage gilt sicher nur für die, die man gefragt hat. Für alle braucht man eine gute Stichprobe.
 - Link: [../?via=tutor#aussage-6a](../?via=tutor#aussage-6a)

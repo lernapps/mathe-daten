@@ -130,9 +130,9 @@ Klassen gehen 8 Kinder zu Fuß, aber die Klassen sind nicht gleich groß.
 - Aufgabe: Welche Antwort der 6a hat die kleinste relative Häufigkeit?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
+  - ✗ Zu Fuß – Bei „Zu Fuß“ stehen 8 Kinder, das ist die größte Anzahl. Der Bruch ist $\frac{8}{24}$.
   - ✓ Auto – Beim Auto stehen 3 Kinder, das ist der kleinste Zähler. Der Bruch ist $\frac{3}{24}$.
   - ✗ Fahrrad – Beim Fahrrad stehen 6 Kinder, das ist mehr als beim Auto. Der Bruch ist $\frac{6}{24}$.
-  - ✗ Zu Fuß – Bei „Zu Fuß“ stehen 8 Kinder, das ist die größte Anzahl. Der Bruch ist $\frac{8}{24}$.
 - Lösung: Auto
 - Erklärung: Alle Brüche haben den Nenner 24, also hat der kleinste Zähler die kleinste relative Häufigkeit.
 - Link: [../?via=tutor#kleinste-haeufigkeit](../?via=tutor#kleinste-haeufigkeit)
