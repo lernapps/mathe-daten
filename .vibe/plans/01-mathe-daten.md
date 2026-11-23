@@ -271,7 +271,7 @@ Kapitel-Ids: `umfrage` (Unsere Umfrage), `kennwerte` (Median, Quartile und Boxpl
 - [x] Seite umfrage/haeufigkeiten (haeufigkeiten): absolute und relative Häufigkeit als gesetzter Bruch, Kreisdiagramm als SVG, generated mit Fehlerdiagnose, mindestens vier Aufgaben
 - [x] Seite umfrage/umfrage-durchfuehren (umfragen-erhebungen): Fragen beurteilen und verbessern, Antworten erfassen, generated Rohantworten zählen, mindestens vier Aufgaben
 - [x] Seite umfrage/mittelwert (mittelwert): Komponente WuerfelTuerme mit Test und nojs, Summe : Anzahl, generated mit Fehlerdiagnose, Deutung, mindestens vier Aufgaben
-- [ ] Seite umfrage/diagramme-kritisch-lesen (daten-kritisch-lesen): Täuschungs-SVGs, Komponente AchseSchieber mit Test und nojs, benennen, zuordnen, reparieren, Rückblick Kapitel 1
+- [x] Seite umfrage/diagramme-kritisch-lesen (daten-kritisch-lesen): Täuschungs-SVGs, Komponente AchseSchieber mit Test und nojs, benennen, zuordnen, reparieren, Rückblick Kapitel 1
 - [ ] Recap umfrage/vorwissen und Kurztest umfrage/vorwissen-test nach regeln.md Abschnitt 7: Begriffe fett mit Beispiel, Kopf, Checkliste, Selbsttest je Baustein mit Kartenseite; Glossar-Einträge; prüfen, ob eine Seite ohne Kompetenz erlaubt ist (sonst Fund)
 - [ ] Datendateien klassen.yaml (8b, 8c) und schule.yaml (600 Lernende) mit Rechenprobe der Kennwerte (Median, Quartile, Spannweite) als Test oder Selbsttest
 - [ ] Seite kennwerte/median-quartile (kenngroessen-lage-streumasse): Komponente Perlenkette mit Test und nojs, Quartilsverfahren eindeutig, generated mit Fehlerdiagnose, mindestens vier Aufgaben
