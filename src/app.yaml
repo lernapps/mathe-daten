@@ -1,10 +1,17 @@
 # yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 format: 2
-# The strand of the learning map the app stays in, <subject>/<strand> (e.g. mathematik/stochastik); then each page
-# names its competencies. none: the app is on no strand, and no page names competencies. A unit app across the strands
-# of a subject whose map allows it names subject: <subject> (e.g. franzoesisch) instead of strand.
-strand: none
-title: Platzhalter
-intro: Dieses Kapitel hält den Platz frei, bis der geplante Inhalt da ist.
+strand: mathematik/stochastik
+title: Daten erheben und auswerten
+intro: |
+  Eine Klasse macht eine Umfrage: Sie fragt, zählt, zeichnet und rechnet. Du lernst, wie man aus Daten Aussagen gewinnt
+  und wie du Diagramme und Stichproben kritisch prüfst. Für die Klassen 5 bis 10.
 languages: [de]
-chapters: [thema]
+chapters: [umfrage]
+scope:
+  text: |
+    Die App führt in die beschreibende Statistik ein und folgt einer Umfrage der Klasse: Daten erheben, mit Strichliste und
+    Tabelle erfassen, im Säulendiagramm darstellen, Häufigkeiten und den Mittelwert bestimmen, Diagramme kritisch lesen,
+    später Median, Quartile und Boxplot und die Frage, ob eine Stichprobe für alle spricht.
+  out:
+    - "Wahrscheinlichkeit und relative Häufigkeit als Schätzwert für eine Wahrscheinlichkeit"
+    - "Standardabweichung und Hypothesentests"

@@ -52,7 +52,7 @@ Die Exercise-Ids je Seite stehen in der Seite (Abschnitt `uebung`).
 ## Exercise patterns
 
 - *Tabelle ↔ Diagramm* (`daten-darstellen`): Säulen setzen (Exercise-Komponente `SaeulenZeichnen`), aus einem Diagramm ablesen (`number`, `single-choice`), Darstellung begründen (`single-choice`).
-- *Zählen und teilen* (`haeufigkeiten`): `generated` aus `src/data/umfragen.yaml`; absolute, relative Häufigkeit als Bruch oder Dezimalzahl; Fehler: durch die falsche Zahl geteilt, absolut und relativ verwechselt.
+- *Zählen und teilen* (`haeufigkeiten`): `generated` aus `src/data/verkehrsmittel.yaml` (Anzahlen je Verkehrsmittel der 6a) und später `src/data/kinder.yaml` (Minuten je Kind); absolute, relative Häufigkeit als Bruch oder Dezimalzahl; Fehler: durch die falsche Zahl geteilt, absolut und relativ verwechselt.
 - *Frage beurteilen* (`umfragen-erhebungen`): `single-choice`/`multiple-choice` mit Begründung je Option; `generated` Rohantworten zählen.
 - *Mittelwert* (`mittelwert`): `generated` (4 bis 8 Werte, Ergebnis `decimal`), Fehler: nur addiert, durch die falsche Anzahl geteilt; `true-false` zur Deutung.
 - *Täuschung benennen und reparieren* (`daten-kritisch-lesen`): `single-choice`, `matching`, `ordering`.

@@ -36,6 +36,7 @@ Lernende erheben Daten einer eigenen Klassenumfrage, stellen sie dar, beschreibe
 - Archetype `explainer`: Lernende brauchen Erklärung, Darstellung und Herleitung vor den Aufgaben; kein Spiel, keine Echtzeit (`quiz` zu knapp, `interactive` passt nicht).
 - Strang `mathematik/stochastik`, Format 2, drei Kapitel wie im Issue (Stufen 5-6, 7-8, 9-10).
 - Die Umfrage der Klasse ist der rote Faden (Geschichte): erfundene Klasse, ein Datensatz, der mitwächst.
+- `scope`: ja, in `src/app.yaml` (`text`, `out`) und auf jeder Seite, weil Kap. 3 `open-task` „Mein Urteil“ hat (Tutor beurteilt offene Antworten nur nach dem Scope).
 - Antworten zu „Answers“ stammen aus dem Issue #400 und den Regeln, nicht aus einem Gespräch (guess, wo nicht im Issue).
 
 ## Notes
@@ -252,14 +253,14 @@ Kapitel-Ids: `umfrage` (Unsere Umfrage), `kennwerte` (Median, Quartile und Boxpl
 
 - [x] Load skill `lernapps-cli`. Create the app as its section "Create" says:
       `npx --no -- lernapps create --archetype explainer`.
-- [ ] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
+- [x] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
       no "FILL IN" left. Commit it before any content.
-- [ ] Load skill `lernapps-explainer`.
-- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+- [x] Load skill `lernapps-explainer`.
+- [x] Load skill `lernapps-content-questions`. Read whole, with your file tool:
       `.agents/skills/lernapps-explainer/references/blocks.md` and
       `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
-- [ ] Decide whether the app needs `scope`, as "`scope`" in
+- [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [ ] Muster: App-Gerüst (app.yaml, drei Kapitel, Datendatei umfragen.yaml, Figuren-Konventionen) und die Seite umfrage/daten-darstellen komplett: Einstieg mit Zettelzählung, Strichliste, Tabelle, Säulendiagramm als eigene SVG, Exercise-Komponente SaeulenZeichnen, mindestens vier Aufgaben mit Fehlerrückmeldung
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
