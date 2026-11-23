@@ -71,13 +71,18 @@ Die Exercise-Ids je Seite stehen in der Seite (Abschnitt `uebung`).
 
 Lernlandkarte Mathematik (geöffnet), KMK-Bildungsstandards ESA/MSA 2022 (Quelle der Karte; Seitenangaben nicht geprüft). Alle Texte, Aufgaben und Zahlen sind eigen; keine Schulbücher, keine Dritt-Inhalte, keine externen Links.
 
+## Self-assessment
+
+Jedes Kapitel hat in seiner `chapter.yaml` eine `selfAssessment`: Kapitel 1 vier Schritte, Kapitel 2 und 3 je zwei, je zwei bis drei Aufgaben (`generated`, `number`, `matching` und `single-choice`, die ohne ihre Seite klar sind).
+
 ## Adding a chapter or round
 
 1. Baustein und Voraussetzungen in der Karte nachsehen; Voraussetzung von außen → Abschnitt im Recap des Kapitels.
 2. Ordner `src/<kapitel>/` mit `chapter.yaml` (Titel, Seitenreihenfolge), in `src/app.yaml` eintragen.
 3. Seiten nach dem Muster der Seite `umfrage/daten-darstellen` (Abschnitte wie oben), Daten in `src/data/`, Figuren als SVG mit `alt`.
 4. Aufgaben aus den Mustern oben, mindestens vier je Seite, Fehler mit Rückmeldung.
-5. `npx --no -- lernapps check`, dann committen. Relative Häufigkeit als Schätzwert für Wahrscheinlichkeit gehört nicht hierher (Issue #401).
+5. 1 bis 3 ihrer Übungen in `selfAssessment` aufnehmen, wie Skill `lernapps-explainer-self-assessment` sagt (in der Einschätzung stehen nur Aufgaben, die ohne ihre Seite verständlich sind: kein „oben“, Bild in `material`).
+6. `npx --no -- lernapps check`, dann committen. Relative Häufigkeit als Schätzwert für Wahrscheinlichkeit gehört nicht hierher (Issue #401).
 
 ## Rules learned from mistakes
 

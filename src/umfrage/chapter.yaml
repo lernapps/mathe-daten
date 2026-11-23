@@ -2,3 +2,20 @@
 title: Unsere Umfrage
 summary: Die Klasse 6a fragt, wie die Kinder zur Schule kommen. Du zählst, stellst dar und rechnest mit.
 pages: [vorwissen, daten-darstellen, haeufigkeiten, umfrage-durchfuehren, mittelwert, diagramme-kritisch-lesen]
+selfAssessment:
+  pages:
+    - exercises:
+        - /umfrage/daten-darstellen/#striche-zaehlen
+        - /umfrage/daten-darstellen/#bus-gegen-auto
+        - /umfrage/haeufigkeiten/#relative-haeufigkeit
+    - exercises:
+        - /umfrage/haeufigkeiten/#absolut-oder-relativ
+        - /umfrage/umfrage-durchfuehren/#liste-kontrollieren
+        - /umfrage/umfrage-durchfuehren/#antworten-zaehlen
+    - exercises:
+        - /umfrage/mittelwert/#mittelwert-berechnen
+        - /umfrage/mittelwert/#mittelwert-deuten
+        - /umfrage/diagramme-kritisch-lesen/#zahlen-ablesen
+    - exercises:
+        - /umfrage/diagramme-kritisch-lesen/#problem-reparatur
+        - /umfrage/diagramme-kritisch-lesen/#falsche-zahlen
