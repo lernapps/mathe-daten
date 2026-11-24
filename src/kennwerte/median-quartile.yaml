@@ -82,7 +82,7 @@ blocks:
     title: Zwei Klassen, zwei Beispiele
     blocks:
       - type: text
-        text: "Wenn du die Kennwerte für eine Klasse brauchst, gehst du immer so vor: ordnen, die Mitte suchen, die Hälften teilen."
+        text: "Damit du für jede Klasse zu Median und Quartilen kommst, brauchst du eine feste Reihenfolge: ordnen, die Mitte suchen, die Hälften teilen."
       - type: example
         title: Die 8b hat elf Werte
         blocks:

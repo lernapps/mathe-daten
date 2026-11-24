@@ -15,11 +15,12 @@ blocks:
     blocks:
       - type: text
         text: |
-          Die Klasse 6a hat gefragt: „Wie kommst du zur Schule?“ Jedes Kind hat einen Zettel abgegeben, das sind 24
-          Zettel. Die Antworten auf den Zetteln heißen **Daten**. Mira, Jonas und Ayşe gehen in die 6a, ebenso Tom, Lena und Paul. Mira, Jonas und Ayşe zählen sie mit einer
-          **Strichliste**: Für jede Antwort machst du einen Strich. Je fünf Striche werden zu einem **Fünferbündel**
-          zusammengefasst, vier senkrechte Striche und ein durchgestrichener. **Nach dieser Seite kannst du Daten in
-          einer Tabelle und in einem Säulendiagramm darstellen und sagen, warum die Darstellung passt.**
+          Die Klasse 6a will wissen, wie die Kinder zur Schule kommen, und hat gefragt: „Wie kommst du zur Schule?“ Jedes
+          Kind hat einen Zettel abgegeben, das sind 24 Zettel. Die Antworten auf den Zetteln heißen **Daten**. Wie zählt man
+          so viele Antworten, ohne sich zu verzählen? Mira, Jonas und Ayşe, Kinder der 6a, machen für jede Antwort einen Strich
+          in eine **Strichliste**. Je fünf Striche werden zu einem **Fünferbündel** zusammengefasst, vier senkrechte Striche
+          und ein durchgestrichener. Ebenfalls in der 6a sind Tom, Lena und Paul. **Nach dieser Seite kannst du Daten in einer
+          Tabelle und in einem Säulendiagramm darstellen und sagen, warum die Darstellung passt.**
       - type: figure
         image: images/strichliste-6a.svg
         alt: Strichliste der Klasse 6a mit vier Zeilen. Jede Zeile hat Striche in Bündeln zu fünf, vier senkrechte Striche und ein durchgestrichener.
@@ -83,7 +84,7 @@ blocks:
     title: Ein Beispiel Schritt für Schritt
     blocks:
       - type: text
-        text: "Wenn du eine Antwort selbst von der Strichliste bis zur Säule verfolgen willst, gehst du so vor:"
+        text: "Jede Antwort braucht am Ende eine Säule. So wird aus den Strichen für „Bus“ eine Säule:"
       - type: example
         title: Die Antwort „Bus“ von der Strichliste zur Säule
         blocks:

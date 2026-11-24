@@ -67,7 +67,7 @@ blocks:
         text: "Wenn du etwas über alle wissen willst, aber nicht alle fragen kannst, befragst du nur einen Teil. Ob das für eine Aussage über alle reicht, hängt von der Stichprobe ab."
       - type: definition
         term: Gesamtheit
-        explanation: Die Gesamtheit sind alle, über die man etwas wissen will, hier alle 600 Lernenden der Schule. Verwechsle sie nicht mit der Gesamtzahl, der Anzahl aller Befragten einer Umfrage.
+        explanation: Die Gesamtheit sind alle, über die man etwas wissen will, hier alle 600 Lernenden der Schule.
       - type: definition
         term: Stichprobe
         explanation: Eine Stichprobe ist ein Teil der Gesamtheit, den man wirklich befragt. Man schließt von ihr auf die Gesamtheit.

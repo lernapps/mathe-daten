@@ -76,7 +76,7 @@ blocks:
     title: Ein Beispiel Schritt für Schritt
     blocks:
       - type: text
-        text: "Wenn du den Mittelwert selbst ausrechnen willst, gehst du so vor:"
+        text: "Wenn du den Mittelwert ohne Würfel ausrechnen willst, brauchst du eine Rechnung, die immer funktioniert. Hier ist sie:"
       - type: example
         title: Die Schulwegzeiten von fünf Kindern
         blocks:

@@ -183,6 +183,7 @@ const cell = (count: number, total: number) => `${percent(count, total)} % (${c
   border-color: var(--page-border);
   color: var(--page-muted);
   cursor: not-allowed;
+  opacity: 0.6;
 }
 
 .stichprobe-ziehen-draw {

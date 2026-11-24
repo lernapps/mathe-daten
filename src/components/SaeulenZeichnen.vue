@@ -149,5 +149,6 @@ const text = (template: string, name: string, n = 0) =>
   border-color: var(--page-border);
   color: var(--page-muted);
   cursor: not-allowed;
+  opacity: 0.6;
 }
 </style>

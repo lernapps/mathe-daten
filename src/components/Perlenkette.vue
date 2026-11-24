@@ -181,5 +181,6 @@ const isMiddleBead = (i: number) => step.value >= 2 && (result.value?.at.median.
   border-color: var(--page-border);
   color: var(--page-muted);
   cursor: not-allowed;
+  opacity: 0.6;
 }
 </style>

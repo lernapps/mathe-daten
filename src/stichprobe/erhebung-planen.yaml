@@ -38,8 +38,9 @@ blocks:
     blocks:
       - type: text
         text: |
-          Wenn du selbst eine Erhebung machst, entscheidest du vor dem Fragen, wer befragt wird und wie. Das legt der Erhebungsplan fest. Ein **Erhebungsplan** legt fest, wer befragt wird und wie. Er hat vier Teile: die Gesamtheit, die Stichprobe, das
-          **Erhebungsinstrument**, zum Beispiel einen Fragebogen mit der Frage und den Antwortmöglichkeiten, und die Aussage.
+          Wenn du selbst eine Erhebung machst, entscheidest du vor dem Fragen, wer befragt wird und wie. Das hält ein
+          **Erhebungsplan** fest. Er hat vier Teile: die Gesamtheit, die Stichprobe, das **Erhebungsinstrument**, zum
+          Beispiel einen Fragebogen mit der Frage und den Antwortmöglichkeiten, und die Aussage.
       - type: definition
         term: Erhebungsinstrument
         explanation: Das Erhebungsinstrument ist das, womit du die Daten erhebst, zum Beispiel ein Fragebogen mit einer neutralen Frage und festen Antwortmöglichkeiten.
@@ -63,7 +64,7 @@ blocks:
     title: Der neue Plan der Schülervertretung
     blocks:
       - type: text
-        text: "Wenn du einen Plan brauchst, kannst du dich an diesem Plan der Schülervertretung orientieren:"
+        text: "So sieht ein Plan aus, der die Probleme des ersten Plans vermeidet:"
       - type: example
         title: 60 von 600 Lernenden
         blocks:

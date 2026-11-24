@@ -8,7 +8,7 @@ scope: |
 blocks:
   - type: section
     id: einstieg
-    title: Kannst du das schon?
+    title: Wofür diese Seite da ist
     blocks:
       - type: text
         text: |
@@ -20,7 +20,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Wenn du Daten in eine Tabelle oder ein Diagramm einträgst, musst du Zahlen vergleichen und der Größe nach ordnen. Ich kann natürliche Zahlen vergleichen, am Zahlenstrahl ablesen und der Größe nach ordnen. Beim **Vergleichen**
+          Wenn du Daten in eine Tabelle oder ein Diagramm einträgst, musst du Zahlen vergleichen und der Größe nach ordnen. Auf der Lernlandkarte steht dafür: „Ich kann natürliche Zahlen vergleichen, am Zahlenstrahl ablesen und der Größe nach ordnen.“ Beim **Vergleichen**
           sagst du, welche Zahl größer ist. Beim **Ordnen** stellst du Zahlen der Größe nach hintereinander.
       - type: definition
         term: Natürliche Zahlen
@@ -48,7 +48,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Wenn du sagen willst, welchen Teil aller Antworten eine Antwort ausmacht, brauchst du Brüche. Ich kann Brüche als Teil eines Ganzen deuten und darstellen. Ein **Bruch** beschreibt einen Teil eines Ganzen, das in
+          Wenn du sagen willst, welchen Teil aller Antworten eine Antwort ausmacht, brauchst du Brüche. Auf der Lernlandkarte steht dafür: „Ich kann Brüche als Teil eines Ganzen deuten und darstellen.“ Ein **Bruch** beschreibt einen Teil eines Ganzen, das in
           gleich große Teile geteilt ist. Der **Nenner** sagt, in wie viele gleiche Teile das Ganze geteilt ist. Der **Zähler**
           sagt, wie viele dieser Teile gemeint sind.
       - type: definition
@@ -77,7 +77,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Wenn du einen Mittelwert ausrechnest, entstehen oft Kommazahlen, mit denen du rechnen musst. Ich kann mit Dezimalbrüchen rechnen. Eine **Dezimalzahl** hat ein Komma; man nennt sie auch **Dezimalbruch**. Die Stellen hinter dem Komma sind Zehntel,
+          Wenn du einen Mittelwert ausrechnest, entstehen oft Kommazahlen, mit denen du rechnen musst. Auf der Lernlandkarte steht dafür: „Ich kann mit Dezimalbrüchen rechnen.“ Eine **Dezimalzahl** hat ein Komma; man nennt sie auch **Dezimalbruch**. Die Stellen hinter dem Komma sind Zehntel,
           Hundertstel und so weiter. Beim Addieren schreibst du Komma unter Komma, beim Teilen rechnest du wie mit
           ganzen Zahlen und machst Zehntel und Hundertstel, wenn ein Rest bleibt (siehe Beispiel).
       - type: definition
@@ -97,7 +97,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Wenn du prüfen willst, ob du für das Kapitel bereit bist, beantworte diese zwei Aufgaben. Die erste prüft das Rechnen mit Dezimalzahlen, die zweite den Bruchbegriff.
+          Wenn du prüfen willst, ob du für das Kapitel bereit bist, beantworte diese zwei Aufgaben. Die erste prüft das Rechnen mit Dezimalzahlen, die zweite den Bruchbegriff. Ob du Zahlen vergleichen und ordnen kannst, siehst du an der Checkliste darunter.
       - type: number
         id: selbsttest-dezimal
         text: Wie viel ist 3,75 + 2,8?

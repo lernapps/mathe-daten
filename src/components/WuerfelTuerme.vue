@@ -148,16 +148,17 @@ function give(index: number, direction: -1 | 1): void {
   cursor: pointer;
 }
 
-.wuerfel-tuerme-buttons button,
+.wuerfel-tuerme-buttons button:focus-visible,
 .wuerfel-tuerme-reset:focus-visible {
   outline: 3px solid var(--page-text);
   outline-offset: 2px;
 }
 
-.wuerfel-tuerme-buttons button,
+.wuerfel-tuerme-buttons button:disabled,
 .wuerfel-tuerme-reset:disabled {
   border-color: var(--page-border);
   color: var(--page-muted);
   cursor: not-allowed;
+  opacity: 0.6;
 }
 </style>
