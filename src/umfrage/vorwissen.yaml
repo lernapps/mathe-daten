@@ -1,0 +1,143 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du für dieses Kapitel
+description: "Zahlen vergleichen und ordnen, Brüche und Dezimalzahlen: was du für die Umfrage der Klasse 6a schon können solltest."
+recap: [mathematik/zahlen-vergleichen-ordnen, mathematik/brueche-begriff, mathematik/dezimalbrueche-rechnen]
+scope: |
+  Diese Seite wiederholt, was das Kapitel voraussetzt: natürliche Zahlen vergleichen und der Größe nach ordnen, Brüche als
+  Teil eines Ganzen deuten (Zähler über Nenner) und mit Dezimalzahlen rechnen. Der Abschnitt „Kannst du das?“ hat zwei Aufgaben. Wer eine nicht sicher beantwortet, schaut sich den Baustein auf der Lernlandkarte an.
+blocks:
+  - type: section
+    id: einstieg
+    title: Wofür diese Seite da ist
+    blocks:
+      - type: text
+        text: |
+          Dieses Kapitel braucht drei Dinge: Zahlen vergleichen und ordnen, Brüche und Dezimalzahlen. Für Tabellen und Diagramme brauchst du das Ordnen von Zahlen, für Häufigkeiten Brüche und für den Mittelwert das Rechnen mit Dezimalzahlen. Zu jedem gibt es eine
+          kurze Wiederholung. Danach folgen zwei Aufgaben und eine Checkliste.
+  - type: section
+    id: zahlen
+    title: Zahlen vergleichen und ordnen
+    blocks:
+      - type: text
+        text: |
+          Wenn du Daten in eine Tabelle oder ein Diagramm einträgst, musst du Zahlen vergleichen und der Größe nach ordnen. Auf der Lernlandkarte steht dafür: „Ich kann natürliche Zahlen vergleichen, am Zahlenstrahl ablesen und der Größe nach ordnen.“ Beim **Vergleichen**
+          sagst du, welche Zahl größer ist. Beim **Ordnen** stellst du Zahlen der Größe nach hintereinander.
+      - type: definition
+        term: Natürliche Zahlen
+        explanation: Die natürlichen Zahlen sind 0, 1, 2, 3 und immer so weiter.
+      - type: definition
+        term: Zahlenstrahl
+        explanation: Der Zahlenstrahl beginnt bei 0 und geht nach rechts. Je weiter rechts eine Zahl liegt, desto größer ist sie. Zum Beispiel liegt 3 links von 7, also ist 3 kleiner als 7.
+      - type: figure
+        image: images/zahlenstrahl-0-10.svg
+        alt: Zahlenstrahl von 0 bis 10 mit den markierten Zahlen 3 und 7. Die 7 liegt weiter rechts.
+        caption: Schau, welche Markierung weiter rechts liegt.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: definition
+        term: Stellenwert
+        explanation: Der Stellenwert sagt, was eine Ziffer in einer Zahl wert ist. In 385 steht die 3 für 3 Hunderter, die 8 für 8 Zehner und die 5 für 5 Einer.
+      - type: example
+        title: Zwei Zahlen vergleichen
+        blocks:
+          - type: text
+            text: "Welche Zahl ist größer, 385 oder 358? Vergleiche von links: Beide haben 3 Hunderter, 385 hat 8 Zehner, 358 hat 5 Zehner. Also ist 385 größer als 358."
+  - type: section
+    id: brueche
+    title: Der Bruchbegriff
+    blocks:
+      - type: text
+        text: |
+          Wenn du sagen willst, welchen Teil aller Antworten eine Antwort ausmacht, brauchst du Brüche. Auf der Lernlandkarte steht dafür: „Ich kann Brüche als Teil eines Ganzen deuten und darstellen.“ Ein **Bruch** beschreibt einen Teil eines Ganzen, das in
+          gleich große Teile geteilt ist. Der **Nenner** sagt, in wie viele gleiche Teile das Ganze geteilt ist. Der **Zähler**
+          sagt, wie viele dieser Teile gemeint sind.
+      - type: definition
+        term: Bruch
+        explanation: Ein Bruch wie $\frac{3}{4}$ beschreibt einen Teil eines Ganzen. Der Nenner 4 sagt, dass das Ganze in vier gleiche Teile geteilt ist, der Zähler 3, dass drei davon gemeint sind.
+      - type: definition
+        term: Nenner
+        explanation: Der Nenner steht unter dem Bruchstrich. Er sagt, in wie viele gleich große Teile das Ganze geteilt ist, bei $\frac{3}{4}$ in vier Teile.
+      - type: definition
+        term: Zähler
+        explanation: Der Zähler steht über dem Bruchstrich. Er sagt, wie viele dieser Teile gemeint sind, bei $\frac{3}{4}$ drei Teile.
+      - type: figure
+        image: images/rechteck-drei-viertel.svg
+        alt: Ein Rechteck in vier gleich große Teile geteilt. Drei Teile sind gefärbt, einer ist weiß.
+        caption: Das ganze Rechteck ist das Ganze. Drei von vier gleich großen Teilen sind gefärbt.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: example
+        title: Ein Bruch am Rechteck
+        blocks:
+          - type: text
+            text: Das Rechteck ist in 4 gleiche Teile geteilt, 3 sind gefärbt. Der Bruch heißt $\frac{3}{4}$, gesprochen drei Viertel.
+  - type: section
+    id: dezimal
+    title: Rechnen mit Dezimalbrüchen
+    blocks:
+      - type: text
+        text: |
+          Wenn du einen Mittelwert ausrechnest, entstehen oft Kommazahlen, mit denen du rechnen musst. Auf der Lernlandkarte steht dafür: „Ich kann mit Dezimalbrüchen rechnen.“ Eine **Dezimalzahl** hat ein Komma; man nennt sie auch **Dezimalbruch**. Die Stellen hinter dem Komma sind Zehntel,
+          Hundertstel und so weiter. Beim Addieren schreibst du Komma unter Komma, beim Teilen rechnest du wie mit
+          ganzen Zahlen und machst Zehntel und Hundertstel, wenn ein Rest bleibt (siehe Beispiel).
+      - type: definition
+        term: Dezimalzahl
+        explanation: Eine Dezimalzahl wie 3,25 hat ein Komma. Die erste Stelle nach dem Komma sind Zehntel, die zweite Hundertstel. 3,25 ist 3 Ganze, 2 Zehntel und 5 Hundertstel.
+      - type: example
+        title: Mit Dezimalzahlen rechnen
+        blocks:
+          - type: text
+            text: |
+              Addieren: 3,5 + 1,25. Schreibe 3,50 + 1,25 = 4,75.
+
+              Teilen: 35 : 4. 35 : 4 = 8 Rest 3, dann 3 Ganze sind 30 Zehntel, 30 : 4 = 7 Rest 2, dann 20 Hundertstel, 20 : 4 = 5. Also 35 : 4 = 8,75.
+  - type: section
+    id: selbsttest
+    title: Kannst du das?
+    blocks:
+      - type: text
+        text: |
+          Wenn du prüfen willst, ob du für das Kapitel bereit bist, beantworte diese zwei Aufgaben. Die erste prüft das Rechnen mit Dezimalzahlen, die zweite den Bruchbegriff. Ob du Zahlen vergleichen und ordnen kannst, siehst du an der Checkliste darunter.
+      - type: number
+        id: selbsttest-dezimal
+        text: Wie viel ist 3,75 + 2,8?
+        answer: 6.55
+        tolerance: 0
+        mistakes:
+          - answer: 5.83
+            message: Du hast die 8 wie 8 Hundertstel gerechnet. 2,8 sind 8 Zehntel, also 2,80. Schreibe 3,75 + 2,80 untereinander.
+          - answer: 6.5
+            message: Die 5 Hundertstel von 3,75 fehlen in deinem Ergebnis. Rechne 3,75 + 2,80.
+        hint: Schreibe die Zahlen mit Komma unter Komma untereinander und ergänze bei 2,8 eine Null.
+        explanation: Bei 3,75 + 2,80 ergeben die Hundertstel 5, die Zehntel 7 + 8 = 15 (5 Zehntel und einen Übertrag) und die Ganzen 3 + 2 + 1 = 6. Das Ergebnis ist 6,55.
+      - type: single-choice
+        id: selbsttest-bruch
+        text: Ein Band ist in 8 gleich lange Stücke geschnitten. 2 Stücke sind rot, 4 Stücke sind blau, der Rest ist weiß. Welcher Bruchteil des Bandes ist weiß?
+        options:
+          - text: sechs Achtel
+            correct: false
+            info: Das sind die roten und blauen Stücke zusammen. Gefragt ist der weiße Teil.
+          - text: zwei Achtel
+            correct: true
+            info: Rot und blau sind zusammen 2 + 4 = 6 Stücke. Es bleiben 8 − 6 = 2 Stücke von 8, das sind zwei Achtel.
+          - text: zwei Sechstel
+            correct: false
+            info: Das Ganze ist das ganze Band, also 8 Stücke, nicht nur die 6 gefärbten. Der Nenner ist 8.
+          - text: vier Achtel
+            correct: false
+            info: Das sind nur die blauen Stücke. Gefragt ist der weiße Teil.
+        explanation: Der Nenner ist die Zahl aller Stücke, 8. Der Zähler ist die Zahl der weißen Stücke, 8 − 2 − 4 = 2.
+      - type: text
+        text: |
+          Wenn du nicht sicher warst, schau dir den Baustein auf der Lernlandkarte an: [Zahlen vergleichen und ordnen](https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/), [Bruchbegriff](https://lernapps.net/apps/map/mathematik/c/brueche-begriff/) und [Rechnen mit Dezimalbrüchen](https://lernapps.net/apps/map/mathematik/c/dezimalbrueche-rechnen/).
+  - type: section
+    id: checkliste
+    title: Du bist bereit, wenn du …
+    blocks:
+      - type: text
+        text: |
+          - natürliche Zahlen vergleichen, am Zahlenstrahl ablesen und der Größe nach ordnen kannst,
+          - Brüche als Teil eines Ganzen deuten und darstellen kannst,
+          - mit Dezimalbrüchen rechnen kannst.
+
+          Bei einem Punkt unsicher? Lies den Abschnitt oben noch einmal und schau dir den Baustein auf der Lernlandkarte an (Links unter den Aufgaben). Sonst geht es mit der Umfrage der Klasse 6a weiter.

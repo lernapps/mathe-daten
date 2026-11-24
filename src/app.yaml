@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+format: 2
+strand: mathematik/stochastik
+title: Daten erheben und auswerten
+intro: |
+  Eine Klasse macht eine Umfrage: Sie fragt, zählt, zeichnet und rechnet. Du lernst, wie man aus Daten Aussagen gewinnt
+  und wie du Diagramme und Stichproben kritisch prüfst. Für die Klassen 5 bis 10.
+languages: [de]
+chapters: [umfrage, kennwerte, stichprobe]
+scope:
+  text: |
+    Die App führt in die beschreibende Statistik ein und folgt einer Umfrage der Klasse: Daten erheben, mit Strichliste und
+    Tabelle erfassen, im Säulendiagramm darstellen, Häufigkeiten und den Mittelwert bestimmen, Diagramme kritisch lesen,
+    später Median, Quartile und Boxplot und die Frage, ob eine Stichprobe für alle spricht.
+  out:
+    - "Wahrscheinlichkeit und relative Häufigkeit als Schätzwert für eine Wahrscheinlichkeit"
+    - "Standardabweichung und Hypothesentests"

@@ -1,0 +1,602 @@
+# Alle 600 Lernenden der Schule (erfunden): Wie kommst du zur Schule? Die ersten 24 sind die Klasse 6a von Seite 1.
+# Zusammen: Zu Fuß 120 (20 %), Fahrrad 210 (35 %), Bus 210 (35 %), Auto 60 (10 %).
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Auto }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Zu Fuß }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Auto }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Auto }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Auto }
+- { mittel: Auto }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Auto }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Fahrrad }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Bus }
+- { mittel: Bus }
+- { mittel: Auto }
+- { mittel: Zu Fuß }
+- { mittel: Fahrrad }
+- { mittel: Fahrrad }
+- { mittel: Bus }

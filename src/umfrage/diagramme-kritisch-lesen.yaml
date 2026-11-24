@@ -1,0 +1,171 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Wie Diagramme täuschen können
+description: "Diagramme aus Zeitung und Werbung kritisch lesen: abgeschnittene Achse und verzerrte Bilder erkennen und reparieren."
+competencies: [daten-kritisch-lesen]
+scope: |
+  Zeitungen und Werbung zeigen Daten oft so, dass ein kleiner Unterschied groß aussieht. Zwei Tricks kommen oft vor. Erstens
+  beginnt die senkrechte Achse nicht bei null: Dieselben Zahlen, zum Beispiel 6 und 7, sehen dann sehr verschieden aus.
+  Zweitens wird ein Bild in beide Richtungen vergrößert: Ist es doppelt so breit und doppelt so hoch, ist seine Fläche
+  viermal so groß, obwohl die Zahl nur doppelt so groß ist. Reparieren heißt: die Achse bei null beginnen lassen, Säulen
+  gleich breit zeichnen, Zahlen und Beschriftung angeben. Kritisch lesen heißt: erst auf Achse und Zahlen schauen, dann
+  entscheiden, was die Daten sagen.
+blocks:
+  - type: section
+    id: einstieg
+    title: Drei Klassen, ein Eindruck
+    blocks:
+      - type: text
+        text: |
+          Die 6a, die 6b und die 6c haben gezählt, wie viele Kinder mit dem Fahrrad kommen: 6a hat 6, 6b hat 7, 6c hat 8. Ayşe
+          zeichnet ein Diagramm für die Schulzeitung. Tom sagt: „Das sieht aber anders aus als meins.“ Mit den zwei Knöpfen unter dem Diagramm stellst du ein, wo die senkrechte Achse beginnt, bei 0 oder bei 5. **Nach dieser Seite
+          kannst du erkennen, wie Diagramme täuschen, und sie reparieren.**
+      - type: vue-component
+        id: achse-schieben
+        component: AchseSchieber
+        props:
+          values: [6, 7, 8]
+          names: [6a, 6b, 6c]
+          max: 9
+          cut: 5
+          axis: Kinder mit Fahrrad
+          zero: Achse beginnt bei 0
+          cutLabel: Achse beginnt bei {min}
+          alt: Säulendiagramm mit drei Säulen für 6a, 6b und 6c mit 6, 7 und 8 Kindern. Die senkrechte Achse beginnt bei {min}.
+          noticeZero: Die Achse beginnt bei 0. Die Säule der 6c ist etwas höher als die der 6a, so wie 8 etwas größer ist als 6.
+          noticeCut: Die Achse beginnt bei {min}. Die Zahlen sind dieselben, aber die Säule der 6c sieht viel höher aus als die der 6a.
+        nojs: |
+          Ein Säulendiagramm mit drei Säulen: 6a hat 6 Kinder mit Fahrrad, 6b hat 7, 6c hat 8. Beginnt die senkrechte Achse
+          bei 0, sind die Säulen nur wenig verschieden hoch. Beginnt sie bei 5, sieht die Säule der 6c dreimal so hoch aus wie
+          die der 6a, obwohl die Zahlen dieselben sind.
+      - type: single-choice
+        id: warum-anders
+        text: Das Diagramm zeigt immer dieselben Zahlen. Warum sieht der Unterschied bei „Achse beginnt bei 5“ so viel größer aus?
+        options:
+          - text: Die Zahlen haben sich geändert
+            correct: false
+            info: Die Zahlen 6, 7 und 8 stehen über den Säulen und bleiben gleich. Nur die Achse ist anders.
+          - text: Beim zweiten Diagramm wurden mehr Kinder gezählt
+            correct: false
+            info: Es sind in beiden Fällen dieselben Kinder. Das Zählen wurde nicht wiederholt.
+          - text: Die Achse beginnt nicht bei 0, darum sind die Säulen unten abgeschnitten
+            correct: true
+            info: Von jeder Säule fehlt der Teil unter der Marke 5. Der Rest sieht darum sehr verschieden hoch aus.
+        explanation: Wenn die Achse nicht bei 0 beginnt, passen die Höhen der Säulen nicht mehr zu den Verhältnissen der Zahlen.
+  - type: section
+    id: erklaerung
+    title: Wie du Täuschungen erkennst
+    blocks:
+      - type: text
+        text: |
+          Zeitungen und Werbung zeigen Daten oft so, dass ein kleiner Unterschied groß aussieht. Wenn du ein Diagramm
+          siehst, willst du wissen, ob du ihm trauen kannst. Dafür gehst du vier Dinge der Reihe nach durch: Lies zuerst
+          die Überschrift und die Frage. Schau dann auf die **Achse**: Beginnt sie bei 0? Schau auf die **Zahlen**: Passen
+          die Höhen dazu? Schau zuletzt auf **Bilder**: Sind sie in beide Richtungen vergrößert?
+
+          Wenn ein Diagramm täuscht, kannst du es reparieren: Lass die Achse bei 0 beginnen, lass ein Bild gleich groß und
+          zeichne für mehr einfach mehr Bilder, und schreibe Zahlen über die Säulen und Namen unter die Säulen.
+      - type: figure
+        image: images/becher-werbung.svg
+        alt: Zwei Becher, der linke klein mit der Beschriftung Schuljahr 1 mit 120, der rechte doppelt so breit und doppelt so hoch mit der Beschriftung Schuljahr 2 mit 240.
+        caption: Vergleiche die Zahlen unter den Bechern mit der Größe der Becher.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Wird ein Bild in der Breite **und** in der Höhe verdoppelt, ist seine Fläche **viermal** so groß. Das Auge
+              vergleicht die Fläche, nicht die Höhe, und glaubt darum an einen viel größeren Unterschied. Zum Beispiel braucht ein Quadrat aus einem Kästchen, das doppelt so breit und doppelt so hoch wird, vier Kästchen.
+  - type: section
+    id: beispiel
+    title: "Ein Beispiel: die Becher-Werbung"
+    blocks:
+      - type: text
+        text: "Wenn eine Werbung ein Bild und Zahlen zeigt, prüfst du, ob sie zusammenpassen. So geht das bei der Becher-Werbung:"
+      - type: example
+        title: Sind 240 Becher wirklich so viel mehr als 120?
+        blocks:
+          - type: text
+            text: |
+              1. Die Zahlen: Im Schuljahr 1 wurden 120 Becher verkauft, im Schuljahr 2 sind es 240.
+              2. 240 ist doppelt so viel wie 120, nicht mehr.
+              3. Das Bild: Der rechte Becher ist doppelt so breit und doppelt so hoch gezeichnet. Seine Fläche ist viermal so groß.
+              4. Ergebnis: Das Bild täuscht. Es sieht nach viermal so vielen Bechern aus.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: number
+        id: zahlen-ablesen
+        text: Wie viele Kinder mehr fahren in der 6b mit dem Fahrrad als in der 6a? Lies die Zahlen an der Achse ab und gib die Zahl der Kinder an.
+        material:
+          - type: figure
+            image: images/saeulen-abgeschnitten.svg
+            alt: Säulendiagramm mit den Säulen 6a und 6b. Die senkrechte Achse hat die Marken 5, 6, 7, 8 und 9. Die Säule der 6a reicht bis zur Marke 6, die der 6b bis zur Marke 7.
+            caption: Lies an der Achse ab, wo jede Säule endet.
+            source: eigene Zeichnung
+            licence: CC-BY-4.0
+        answer: 1
+        tolerance: 0
+        mistakes:
+          - answer: 2
+            message: Du hast die Höhen der Säulen verglichen. Die 6b sieht doppelt so hoch aus, aber die Achse beginnt bei 5. Lies die Zahlen an der Achse ab.
+        hint: Schau auf die Achse. Wo endet die Säule der 6a, wo die der 6b?
+        explanation: Die Säule der 6a endet bei 6, die der 6b bei 7. Der Unterschied ist 7 − 6 = 1 Kind. Das Diagramm lässt ihn viel größer aussehen, weil die Achse bei 5 beginnt.
+      - type: single-choice
+        id: becher-bewerten
+        text: "Die Werbung sagt: „Doppelt so viele Becher verkauft!“ Was täuscht an dem Bild mit den Bechern oben?"
+        options:
+          - text: Der rechte Becher ist in Breite und Höhe verdoppelt, seine Fläche ist viermal so groß
+            correct: true
+            info: Die Zahl hat sich verdoppelt, die gezeichnete Fläche vervierfacht. Das Bild sieht nach viel mehr aus, als die Zahlen sagen.
+          - text: Die Zahl 240 steht falsch unter dem Becher
+            correct: false
+            info: Die Zahlen sind richtig. 240 ist wirklich das Doppelte von 120. Der Trick liegt in der Größe des Bildes.
+          - text: Die Becher haben die falsche Farbe
+            correct: false
+            info: Beide Becher haben dieselbe Farbe. Die Farbe verändert die Aussage nicht.
+        explanation: Wer ein Bild in beide Richtungen vergrößert, vervierfacht die Fläche. Das Auge vergleicht die Fläche.
+      - type: matching
+        id: problem-reparatur
+        text: Ordne jedem Problem im Diagramm zu, wie du es reparierst.
+        pairs:
+          - left: Die Achse beginnt bei 5
+            right: Achse bei 0 beginnen
+          - left: Ein Bild ist in Breite und Höhe verdoppelt
+            right: Gleiche Bilder, mehr davon
+          - left: Die Säulen haben keine Zahlen und keine Beschriftung
+            right: Zahlen und Namen ergänzen
+        distractors:
+          - Säulen dicker zeichnen
+        explanation: Jedes Problem hat seine eigene Reparatur. Ein Diagramm ist gut, wenn die Höhe zur Zahl passt und man alles lesen kann.
+      - type: ordering
+        id: kritisch-lesen-schritte
+        text: Bringe die Schritte beim kritischen Lesen eines Diagramms in eine sinnvolle Reihenfolge.
+        items:
+          - Überschrift und Frage lesen
+          - Auf Achse und Zahlen schauen und fragen, ob die Achse bei 0 beginnt
+          - Bilder prüfen und fragen, ob sie in beide Richtungen vergrößert sind
+          - Entscheiden, ob das Bild zu den Zahlen passt
+        explanation: Erst weißt du, worum es geht, dann prüfst du Achse, Zahlen und Bilder. Am Ende entscheidest du, ob das Diagramm ehrlich ist.
+      - type: true-false
+        id: falsche-zahlen
+        text: Ein Diagramm mit abgeschnittener Achse kann richtige Zahlen zeigen und trotzdem täuschen.
+        answer: true
+        explanation: Die Zahlen können richtig sein. Das Diagramm täuscht trotzdem, weil die Höhen der Säulen nicht zu den Verhältnissen der Zahlen passen.
+  - type: section
+    id: rueckblick
+    title: Rückblick auf Kapitel 1
+    blocks:
+      - type: text
+        text: |
+          Du hast mit der 6a eine Umfrage gemacht. Du kannst jetzt:
+
+          - Daten in Tabellen und Säulendiagrammen darstellen,
+          - absolute und relative Häufigkeiten bestimmen,
+          - eine Umfrage planen und die Antworten in einer Liste erfassen,
+          - den Mittelwert berechnen und deuten,
+          - Diagramme kritisch lesen.
+
+          Im nächsten Kapitel vergleichen die Klassen 8b und 8c ihre Schulwege und brauchen dazu mehr als den Mittelwert.

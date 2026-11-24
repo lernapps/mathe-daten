@@ -1,0 +1,160 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Der Mittelwert – gerecht verteilen
+description: "Den Mittelwert berechnen und deuten: erst Würfeltürme gleich hoch machen, dann Summe geteilt durch Anzahl."
+competencies: [mittelwert]
+scope: |
+  Die Klasse 6a fragt nach der Dauer des Schulwegs. Der Mittelwert (arithmetisches Mittel) ist der Wert, den alle hätten, wenn
+  man die Summe gerecht verteilt: Summe aller Werte geteilt durch Anzahl der Werte. Fünf Kinder mit 3, 9, 6, 12 und 5 Minuten
+  haben zusammen 35 Minuten, der Mittelwert ist 35 : 5 = 7 Minuten. Der Mittelwert muss kein Wert der Liste sein. Häufige
+  Fehler: nur addieren, durch die falsche Anzahl teilen, den Mittelwert für einen Wert halten, den ein Kind hat.
+blocks:
+  - type: section
+    id: einstieg
+    title: Wer braucht wie lange?
+    blocks:
+      - type: text
+        text: |
+          Fünf Kinder der 6a haben ihre Schulwegzeit gemessen: Mira 3 Minuten, Jonas 9, Ayşe 6, Tom 12 und Lena 5. Mira
+          fragt: „Wie lang ist der Weg bei uns **im Durchschnitt**?“ Stell dir vor, jede Minute ist ein Würfel und jedes
+          Kind hat einen Turm. Mit den Pfeilen unter jedem Turm gibst du einen Würfel an den linken oder rechten Nachbarn ab. Mach alle Türme gleich hoch. **Nach dieser Seite kannst du den Mittelwert berechnen und sagen, was er bedeutet.**
+      - type: vue-component
+        id: tuerme-einebnen
+        component: WuerfelTuerme
+        props:
+          values: [3, 9, 6, 12, 5]
+          names: [Mira, Jonas, Ayşe, Tom, Lena]
+          tower: "{name}: {n} min"
+          left: "{name} gibt einen Würfel nach links ab"
+          right: "{name} gibt einen Würfel nach rechts ab"
+          hint: "Gib mit den Pfeilen Würfel an den Nachbarn ab, bis alle Türme gleich hoch sind. Ausgegraute Pfeile gehen nicht: Am Rand gibt es keinen Nachbarn, und ein leerer Turm hat nichts abzugeben."
+          done: "Alle {k} Türme sind gleich hoch: {h} Würfel."
+          reset: Von vorn
+        nojs: |
+          Fünf Türme aus Würfeln, jeder Würfel ist eine Minute: Mira 3, Jonas 9, Ayşe 6, Tom 12 und Lena 5. Gibt man Würfel an
+          den Nachbarn ab, bis alle Türme gleich hoch sind, hat jeder Turm 7 Würfel. Es sind immer 35 Würfel, weil nichts
+          dazukommt oder wegfällt.
+      - type: number
+        id: summe-bilden
+        text: Wie viele Würfel sind es bei den fünf Türmen zusammen?
+        answer: 35
+        tolerance: 0
+        unit: Würfel
+        mistakes:
+          - answer: 5
+            message: Das ist die Anzahl der Türme. Gesucht sind alle Würfel zusammen.
+          - answer: 7
+            message: Das ist die Höhe eines Turms, wenn alle gleich hoch sind. Gesucht ist die Gesamtzahl der Würfel.
+        hint: Zähle die Würfel aller Türme zusammen, also die Minuten von Mira, Jonas, Ayşe, Tom und Lena.
+        explanation: 3 + 9 + 6 + 12 + 5 = 35. Beim Abgeben von Würfeln bleibt die Summe gleich.
+  - type: section
+    id: erklaerung
+    title: Aus den Türmen wird eine Rechnung
+    blocks:
+      - type: text
+        text: "Wenn du eine einzige Zahl für alle Werte brauchst, zum Beispiel „Wie lang ist der Schulweg im Durchschnitt?“, rechnest du den Mittelwert aus."
+      - type: definition
+        term: Mittelwert
+        explanation: Der Mittelwert (genauer das arithmetische Mittel, im Alltag auch Durchschnitt genannt) ist der Wert, den jedes Kind hätte, wenn man alle Werte gerecht verteilt. Du rechnest ihn aus, indem du die Summe aller Werte durch ihre Anzahl teilst.
+      - type: text
+        text: |
+          Beim Einebnen sind 35 Würfel auf 5 Türme verteilt worden. Jeder Turm hat danach 35 : 5 = 7 Würfel. Das ist der
+          Mittelwert, hier 7 Minuten.
+      - type: formula
+        formula: '\text{Mittelwert} = \frac{\text{Summe aller Werte}}{\text{Anzahl der Werte}}'
+      - type: text
+        text: |
+          Du kannst auch rückwärts rechnen: Kennst du den Mittelwert und die Anzahl der Werte, ist die Summe aller Werte der Mittelwert mal die Anzahl. Bei 5 Kindern und dem Mittelwert 7 Minuten sind es 5 · 7 = 35 Minuten zusammen.
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Der Mittelwert liegt immer zwischen dem kleinsten und dem größten Wert. Er muss kein Wert der Liste sein: Hier hat kein Kind genau 7 Minuten. Ein sehr großer Wert zieht den Mittelwert nach oben. Der Mittelwert sagt nur: So viel hätte
+              jedes Kind, wenn alle gleich lang brauchten und die Summe dieselbe bliebe.
+  - type: section
+    id: beispiel
+    title: Ein Beispiel Schritt für Schritt
+    blocks:
+      - type: text
+        text: "Wenn du den Mittelwert ohne Würfel ausrechnen willst, brauchst du eine Rechnung, die immer funktioniert. Hier ist sie:"
+      - type: example
+        title: Die Schulwegzeiten von fünf Kindern
+        blocks:
+          - type: text
+            text: |
+              1. Alle Werte addieren: 3 + 9 + 6 + 12 + 5 = 35.
+              2. Die Anzahl der Werte zählen: 5 Kinder.
+              3. Die Summe durch die Anzahl teilen: 35 : 5 = 7.
+              4. Antwort: Im Mittel brauchen die Kinder 7 Minuten.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: mittelwert-berechnen
+        given:
+          a: { int: [2, 20] }
+          b: { int: [2, 20] }
+          c: { int: [2, 20] }
+          d: { int: [2, 20] }
+        where: ["decimals((a + b + c + d) / 4) <= 2"]
+        task:
+          text: "Vier Kinder brauchen für ihren Schulweg {{a}}, {{b}}, {{c}} und {{d}} Minuten. Wie viele Minuten sind das im Mittel? Gib das Ergebnis genau an, wenn nötig mit Komma."
+        answer: { value: "(a + b + c + d) / 4", compare: { number: { format: decimal, decimals: 2, unit: min } } }
+        mistakes:
+          - value: "a + b + c + d"
+            message: "Du hast nur addiert. Teile die Summe noch durch die Anzahl der Werte."
+          - value: "(a + b + c + d) / 3"
+            message: "Du hast durch 3 geteilt. Es sind vier Kinder, also teilst du durch 4."
+        hint: "Addiere die vier Zeiten und teile die Summe durch 4."
+        steps:
+          - "Die Summe: {{a}} + {{b}} + {{c}} + {{d}}."
+          - "Die Anzahl der Werte ist 4."
+          - "Der Mittelwert: Summe : 4 = {{answer}} Minuten."
+      - type: single-choice
+        id: mittelwert-deuten
+        text: Der Mittelwert der Schulwege von Mira, Jonas, Ayşe, Tom und Lena ist 7 Minuten. Was sagt das?
+        options:
+          - text: Das ist die Zeit des Kindes mit dem längsten Weg
+            correct: false
+            info: Das längste Kind ist Tom mit 12 Minuten. Der Mittelwert liegt zwischen dem kleinsten und dem größten Wert.
+          - text: Mindestens ein Kind braucht genau 7 Minuten
+            correct: false
+            info: Die Zeiten sind 3, 9, 6, 12 und 5 Minuten. Keines davon ist 7. Der Mittelwert muss kein Wert der Liste sein.
+          - text: So lang wäre der Weg für jedes Kind, wenn alle gleich lang brauchten und die Summe dieselbe bliebe
+            correct: true
+            info: Das ist die Idee vom Einebnen der Türme. Die Summe von 35 Minuten wird gerecht auf 5 Kinder verteilt.
+        explanation: Der Mittelwert beschreibt die gleichmäßig verteilte Menge, nicht ein Kind und nicht den größten Wert.
+      - type: true-false
+        id: mittelwert-zwischen
+        text: Der Mittelwert von 3, 9, 6, 12 und 5 kann 15 sein.
+        answer: false
+        explanation: Der größte Wert ist 12. Der Mittelwert liegt zwischen dem kleinsten und dem größten Wert, hier zwischen 3 und 12. Würden alle Kinder gleich lang brauchen, wäre es nicht mehr als beim langsamsten Kind.
+      - type: generated
+        id: fehlenden-wert-finden
+        given:
+          m: { int: [6, 12] }
+          a: { int: [3, 15] }
+          b: { int: [3, 15] }
+          c: { int: [3, 15] }
+          d: { int: [3, 15] }
+        where:
+          [
+            "5 * m - (a + b + c + d) >= 2",
+            "5 * m - (a + b + c + d) <= 20",
+            "5 * m - (a + b + c + d) != m",
+            "5 * m - (a + b + c + d) != 2 * m",
+          ]
+        task:
+          text: "Der Mittelwert der Schulwege von fünf Kindern ist {{m}} Minuten. Vier von ihnen brauchen {{a}}, {{b}}, {{c}} und {{d}} Minuten. Wie viele Minuten braucht das fünfte Kind?"
+        answer: { value: "5 * m - (a + b + c + d)", compare: { number: { format: integer, unit: min } } }
+        mistakes:
+          - value: "m"
+            message: "Das ist der Mittelwert, nicht die Zeit des fünften Kindes. Rechne erst aus, wie viele Minuten alle fünf zusammen haben."
+          - value: "4 * m - (a + b + c + d)"
+            message: "Es sind fünf Kinder. Die Summe aller Werte ist 5 mal der Mittelwert, nicht 4 mal."
+        hint: "Alle fünf Werte zusammen sind 5 mal der Mittelwert. Ziehe die vier bekannten Werte davon ab."
+        steps:
+          - "Alle fünf Zeiten zusammen: 5 · {{m}} Minuten."
+          - "Die vier bekannten Zeiten sind zusammen {{a}} + {{b}} + {{c}} + {{d}} Minuten."
+          - "Das fünfte Kind braucht die Differenz: {{answer}} Minuten."

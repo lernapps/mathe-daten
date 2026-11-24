@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Spricht die Stichprobe für alle?
+summary: Die Schülervertretung will wissen, wie alle Lernenden zur Schule kommen. Du prüfst, was eine Stichprobe aussagt, und planst eine Erhebung.
+pages: [klein-oder-einseitig, erhebung-planen]
+selfAssessment:
+  pages:
+    - exercises:
+        - /stichprobe/klein-oder-einseitig/#hochrechnen
+        - /stichprobe/klein-oder-einseitig/#stichprobe-waehlen
+        - /stichprobe/klein-oder-einseitig/#fuenf-reichen
+    - exercises:
+        - /stichprobe/erhebung-planen/#jede-kte-person
+        - /stichprobe/erhebung-planen/#problem-verbesserung
+        - /stichprobe/erhebung-planen/#aussage-formulieren

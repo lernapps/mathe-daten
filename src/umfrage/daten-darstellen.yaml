@@ -1,0 +1,194 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Unsere Umfrage – Daten darstellen
+description: "Antworten zählen, in eine Tabelle schreiben und als Säulendiagramm zeichnen: so wird aus Zetteln ein Bild."
+competencies: [daten-darstellen]
+scope: |
+  Die Klasse 6a hat gefragt: „Wie kommst du zur Schule?“ Jedes Kind hat einen Zettel abgegeben. Die Antworten heißen
+  Daten. Man zählt sie mit einer Strichliste (fünf Striche bilden ein Bündel), schreibt die Anzahlen in eine Tabelle und
+  zeichnet ein Säulendiagramm: Jede Säule gehört zu einer Antwort, ihre Höhe ist die Anzahl. Die senkrechte Achse
+  beginnt bei null, die Säulen haben Beschriftungen. Ein Diagramm ist gut gewählt, wenn man die Frage daran schnell
+  beantworten kann. Häufige Fehler: ein Fünferbündel als einen Strich zählen, zwei Säulen vertauschen.
+blocks:
+  - type: section
+    id: einstieg
+    title: Was die Klasse gefragt hat
+    blocks:
+      - type: text
+        text: |
+          Die Klasse 6a will wissen, wie die Kinder zur Schule kommen, und hat gefragt: „Wie kommst du zur Schule?“ Jedes
+          Kind hat einen Zettel abgegeben, das sind 24 Zettel. Die Antworten auf den Zetteln heißen **Daten**. Wie zählt man
+          so viele Antworten, ohne sich zu verzählen? Mira, Jonas und Ayşe, Kinder der 6a, machen für jede Antwort einen Strich
+          in eine **Strichliste**. Je fünf Striche werden zu einem **Fünferbündel** zusammengefasst, vier senkrechte Striche
+          und ein durchgestrichener. Ebenfalls in der 6a sind Tom, Lena und Paul. **Nach dieser Seite kannst du Daten in einer
+          Tabelle und in einem Säulendiagramm darstellen und sagen, warum die Darstellung passt.**
+      - type: figure
+        image: images/strichliste-6a.svg
+        alt: Strichliste der Klasse 6a mit vier Zeilen. Jede Zeile hat Striche in Bündeln zu fünf, vier senkrechte Striche und ein durchgestrichener.
+        caption: Jede Zeile ist eine Antwort, jeder Strich ein Kind. Zähle erst die Bündel in Fünferschritten, dann die einzelnen Striche daneben.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: number
+        id: rad-zaehlen
+        text: Schau in die Strichliste oben. Wie viele Kinder der 6a kommen mit dem Fahrrad?
+        answer: 6
+        tolerance: 0
+        unit: Kinder
+        mistakes:
+          - answer: 2
+            message: Du hast nur die Striche außerhalb des Bündels gezählt. Das Bündel gehört dazu und zählt fünf.
+          - answer: 5
+            message: Das ist nur das Bündel. Neben dem Bündel steht noch ein einzelner Strich.
+          - answer: 7
+            message: Das ist die Zeile „Bus“. Gesucht ist die Zeile „Fahrrad“.
+        hint: Zähle in Fünferschritten und rechne dann die einzelnen Striche dazu.
+        explanation: In der Zeile „Fahrrad“ zählt ein Fünferbündel fünf, dazu kommt ein einzelner Strich. Das sind 5 + 1 = 6 Kinder.
+  - type: section
+    id: erklaerung
+    title: Von der Strichliste zur Säule
+    blocks:
+      - type: text
+        text: |
+          Wenn du anderen zeigen willst, wie oft jede Antwort vorkommt, brauchst du eine Darstellung, die man auf einen Blick versteht. Die Anzahlen schreibst du in eine **Tabelle**: Jede Zeile gehört zu einem Verkehrsmittel, das war die Antwort
+          auf die Frage. Aus der Tabelle zeichnest du ein **Säulendiagramm**: Jede Zeile der Tabelle wird eine Säule, und
+          die Höhe der Säule ist die Anzahl der Kinder.
+      - type: definition
+        term: Säulendiagramm
+        explanation: Ein Säulendiagramm zeigt zu jeder Antwort eine Säule. Die Höhe der Säule ist die Anzahl.
+      - type: definition
+        term: Strichliste
+        explanation: Eine Strichliste zählt Antworten mit Strichen. Je fünf Striche werden zu einem Bündel zusammengefasst.
+      - type: table
+        caption: Wie kommen die Kinder der 6a zur Schule?
+        header: [Verkehrsmittel, Anzahl der Kinder]
+        rows:
+          - [Zu Fuß, "8"]
+          - [Fahrrad, "6"]
+          - [Bus, "7"]
+          - [Auto, "3"]
+      - type: figure
+        image: images/saeulen-6a.svg
+        alt: Säulendiagramm mit den vier Säulen Zu Fuß 8, Fahrrad 6, Bus 7 und Auto 3. Die senkrechte Achse zeigt die Anzahl der Kinder von 0 bis 10.
+        caption: Vergleiche eine Säule mit der Zeile der Tabelle mit demselben Namen. Die Farben halten die Säulen nur auseinander, der Name steht unter jeder Säule.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Die senkrechte Achse beginnt bei 0. Dann gilt: Eine doppelt so hohe Säule bedeutet doppelt so viele Kinder.
+              Willst du wissen, wie viele Kinder mehr es bei einer Säule sind als bei einer anderen, ziehst du die kleinere
+              Zahl von der größeren ab.
+  - type: section
+    id: beispiel
+    title: Ein Beispiel Schritt für Schritt
+    blocks:
+      - type: text
+        text: "Jede Antwort braucht am Ende eine Säule. So wird aus den Strichen für „Bus“ eine Säule:"
+      - type: example
+        title: Die Antwort „Bus“ von der Strichliste zur Säule
+        blocks:
+          - type: text
+            text: |
+              1. In der Strichliste steht bei „Bus“ ein Fünferbündel und dazu zwei einzelne Striche.
+              2. Das sind 5 + 2 = 7 Striche, also 7 Kinder.
+              3. In der Tabelle steht bei „Bus“ die Zahl 7.
+              4. Die Säule „Bus“ reicht auf der senkrechten Achse bis zur Marke 7.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: striche-zaehlen
+        given:
+          a: { int: [1, 4] }
+          b: { int: [2, 4] }
+        task:
+          text: "In einer Strichliste stehen {{a}} Fünferbündel. Daneben stehen {{b}} einzelne Striche. Wie viele Striche sind das zusammen?"
+        answer: { value: "5 * a + b", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "a + b"
+            message: "Du hast jedes Bündel als einen Strich gezählt. Ein Bündel sind fünf Striche."
+          - value: "4 * a + b"
+            message: "Ein Bündel hat fünf Striche: vier senkrechte und den durchgestrichenen."
+        hint: "Rechne zuerst, wie viele Striche in den Bündeln sind."
+        steps:
+          - "Die Bündel: {{a}} · 5 Striche."
+          - "Dazu kommen {{b}} einzelne Striche."
+          - "Zusammen: {{a}} · 5 + {{b}} = {{answer}} Striche."
+      - type: number
+        id: bus-gegen-auto
+        text: Wie viele Kinder mehr kommen mit dem Bus als mit dem Auto?
+        material:
+          - type: figure
+            image: images/saeulen-6a.svg
+            alt: Säulendiagramm mit den Säulen Zu Fuß 8, Fahrrad 6, Bus 7 und Auto 3. Über jeder Säule steht ihre Anzahl.
+            caption: Vergleiche die Säulen „Bus“ und „Auto“.
+            source: eigene Zeichnung
+            licence: CC-BY-4.0
+        answer: 4
+        tolerance: 0
+        unit: Kinder
+        mistakes:
+          - answer: 10
+            message: Du hast die beiden Zahlen addiert. Gefragt ist, wie viele mehr es sind, also der Unterschied.
+          - answer: 7
+            message: Das ist nur die Anzahl beim Bus. Gefragt ist der Unterschied zwischen Bus und Auto.
+        hint: Lies beide Zahlen über den Säulen ab und vergleiche sie.
+        explanation: Beim Bus sind es 7, beim Auto 3. Der Unterschied ist 7 − 3 = 4 Kinder.
+      - type: generated
+        id: tabelle-lesen
+        given:
+          e: { pick: 1, from: { data: verkehrsmittel } }
+          f: { pick: 1, from: { data: verkehrsmittel } }
+        where: ["e.anzahl > f.anzahl"]
+        task:
+          text: "Aus der Tabelle der 6a: {{e.mittel}} {{e.anzahl}} Kinder, {{f.mittel}} {{f.anzahl}} Kinder. Wie viele Kinder mehr haben „{{e.mittel}}“ geantwortet als „{{f.mittel}}“?"
+        answer: { value: "e.anzahl - f.anzahl", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "e.anzahl + f.anzahl"
+            message: "Du hast die beiden Anzahlen addiert. Gefragt ist, wie viele mehr es sind, also der Unterschied."
+          - value: "e.anzahl"
+            message: "Das ist nur die größere Anzahl. Gefragt ist der Unterschied zwischen den beiden Anzahlen."
+        hint: "Vergleiche die beiden Zahlen: Wie viel größer ist die erste?"
+        steps:
+          - "Die größere Anzahl: {{e.anzahl}} Kinder bei „{{e.mittel}}“."
+          - "Die kleinere Anzahl: {{f.anzahl}} Kinder bei „{{f.mittel}}“."
+          - "Der Unterschied: {{e.anzahl}} − {{f.anzahl}} = {{answer}} Kinder."
+      - type: single-choice
+        id: darstellung-waehlen
+        text: Die Klasse will anderen zeigen, wie viele Kinder mit welchem Verkehrsmittel kommen. Was zeigt das am schnellsten?
+        options:
+          - text: Ein Säulendiagramm mit einer Säule je Verkehrsmittel
+            correct: true
+            info: Die Höhen der Säulen kann man gleich vergleichen. Jede Säule steht für ein Verkehrsmittel.
+          - text: Eine einzige Zahl, die Summe aller Kinder
+            correct: false
+            info: Die Summe ist 24. Sie sagt aber nicht, wie sich die Kinder auf die Verkehrsmittel verteilen.
+          - text: Alle 24 Zettel nebeneinander auf den Tisch legen
+            correct: false
+            info: Man sieht dann 24 einzelne Zettel, aber nicht gleich, welche Antwort wie oft vorkommt. Dafür müsste man erst zählen.
+        explanation: Ein Säulendiagramm eignet sich, wenn man auf einen Blick vergleichen will, wie oft jede Antwort vorkommt.
+      - type: vue-component
+        id: saeulen-setzen
+        component: SaeulenZeichnen
+        props:
+          task: "Eine andere Klasse hat gezählt: {k0}, {k1}, {k2}, {k3}. Setze für jede Antwort eine Säule auf die Anzahl: Mit + machst du eine Säule um 1 höher, mit − um 1 niedriger. Eine Säule kann bis 10 hoch sein."
+          categories: [Zu Fuß, Fahrrad, Bus, Auto]
+          plus: "Säule {name} um 1 höher"
+          minus: "Säule {name} um 1 niedriger"
+          bar: "{name}: {n}"
+          mistakes:
+            - "Zwei Säulen sind vertauscht: Vergleiche die Höhe jeder Säule mit der Zahl neben ihrem Namen."
+            - "Alle Säulen sind um 1 zu hoch. Lies die Zahl noch einmal ab: Die Säule soll genau so hoch sein."
+          oneOff: "Die Säule „{name}“ passt noch nicht zur Zahl in der Aufgabe."
+          several: "Erst {n} von 4 Säulen passen zu den Zahlen. Vergleiche jede Säule mit der Zahl neben ihrem Namen in der Aufgabe."
+        examples:
+          accepted:
+            - { answer: [7, 8, 3, 6], seed: 5 }
+          rejected:
+            - { answer: [0, 0, 0, 0] }
+        nojs: |
+          Aufgabe: Eine Tabelle nennt vier Antworten mit ihren Anzahlen, zum Beispiel Zu Fuß 5, Fahrrad 3, Bus 4,
+          Auto 2. Du setzt für jede Antwort eine Säule auf diese Höhe. Lösung: Die Säulen haben genau die Höhen aus der
+          Tabelle.

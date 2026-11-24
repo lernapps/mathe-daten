@@ -1,0 +1,138 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Eine eigene Umfrage durchführen
+description: "Eine Frage und Antwortmöglichkeiten planen, die Zettel auswerten und die Liste kontrollieren."
+competencies: [umfragen-erhebungen]
+scope: |
+  Die Klasse 6a plant eine zweite Umfrage: Wie lange dauert der Schulweg? Eine gute Frage fragt nach einer einzigen Sache
+  und ist eindeutig. Die Antwortmöglichkeiten sind so gewählt, dass jedes Kind genau eine passende findet: Sie überschneiden
+  sich nicht und lassen keine Lücke. Die Antworten werden in einer Liste oder Strichliste erfasst. Zur Kontrolle ergeben alle
+  Anzahlen zusammen die Zahl der abgegebenen Zettel. Häufige Fehler: zwei Fragen in einer, Antwortgruppen, die sich
+  überschneiden, eine Antwort doppelt oder gar nicht zählen.
+blocks:
+  - type: section
+    id: einstieg
+    title: Die nächste Umfrage der 6a
+    blocks:
+      - type: text
+        text: |
+          Die erste Umfrage der 6a ist ausgewertet. Jetzt plant die Klasse eine zweite. Mira möchte wissen, wie lange die Kinder der 6a für ihren Schulweg brauchen. Jedes Kind schreibt seine Antwort auf einen Zettel. Jonas schlägt vor: „Wir fragen:
+          ‚Wie ist dein Schulweg?‘“ Lena meint: „Da schreibt jeder etwas anderes.“ **Nach dieser Seite kannst du eine
+          Umfrage planen, durchführen und die Antworten in einer Liste aufschreiben.**
+      - type: single-choice
+        id: frage-waehlen
+        text: Welche Frage eignet sich für die Umfrage zur Dauer des Schulwegs am besten?
+        options:
+          - text: Wie viele Minuten brauchst du morgens für deinen Schulweg?
+            correct: true
+            info: Die Frage fragt nach einer Sache, der Zeit, und nennt die Einheit. Jedes Kind kann eine Zahl nennen.
+          - text: Wie ist dein Schulweg?
+            correct: false
+            info: Die Frage ist nicht eindeutig. Ein Kind schreibt „weit“, ein anderes „mit dem Bus“, ein drittes „schön“. So lassen sich die Zettel nicht zählen.
+          - text: Brauchst du lange für deinen Schulweg und fährst du gern mit dem Bus?
+            correct: false
+            info: Das sind zwei Fragen in einer. Ein Kind, das lange braucht, aber nicht gern Bus fährt, weiß nicht, was es antworten soll.
+        explanation: Eine gute Frage fragt nach einer Sache und lässt sich mit einer Zahl oder einem Wort aus einer festen Auswahl beantworten.
+  - type: section
+    id: erklaerung
+    title: Von der Frage zur Liste
+    blocks:
+      - type: text
+        text: |
+          Wenn du viele Antworten zählen und vergleichen willst, brauchst du eine Umfrage, bei der alle dieselbe Frage mit denselben Antwortmöglichkeiten bekommen. Eine Umfrage hat vier Schritte. Du überlegst eine **Frage**. Du legst die **Antwortmöglichkeiten** fest, damit
+          man die Zettel zählen kann. Du sammelst die Zettel ein und erfasst die Antworten in einer **Liste**, zum Beispiel
+          mit einer Strichliste. Zum Schluss kontrollierst du, ob die Anzahlen zusammen die Zahl der Zettel ergeben.
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Jedes Kind soll **genau eine** passende Antwortmöglichkeit finden. Dafür dürfen sich die Gruppen nicht
+              überschneiden, und es darf keine Lücke geben. Eine gute Frage legt außerdem keine Antwort nahe: Nicht „Du fährst doch auch mit dem Rad, oder?“, sondern „Wie kommst du zur Schule?“. Mit solchen Zeiten rechnest du auf der nächsten Seite weiter: Dort bestimmst du den Mittelwert.
+  - type: section
+    id: beispiel
+    title: Ein Beispiel für gute Antwortgruppen
+    blocks:
+      - type: text
+        text: "Wenn Antworten Zahlen sind, wie die Minuten des Schulwegs, fasst du sie in Gruppen zusammen, damit sich Zettel zählen lassen."
+      - type: example
+        title: Die Schulwegzeit in Gruppen
+        blocks:
+          - type: table
+            caption: So sortieren die Kinder der 6a ihre Zettel
+            header: [Gruppe, Passt für]
+            rows:
+              - [bis 10 Minuten, "1 bis 10 Minuten"]
+              - [11 bis 20 Minuten, "11 bis 20 Minuten"]
+              - [über 20 Minuten, "21 Minuten und mehr"]
+          - type: text
+            text: |
+              Die Zeiten sind in ganzen Minuten angegeben. Ein Kind mit 10 Minuten gehört nur in die erste Gruppe, ein Kind mit 15 Minuten nur in die zweite. Jeder Zettel
+              hat genau eine Gruppe.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: gruppen-waehlen
+        text: Die 6a teilt die Schulwegzeiten in Gruppen ein. Welche Einteilung ist gut?
+        options:
+          - text: bis 10 Minuten, 10 bis 20 Minuten, über 20 Minuten
+            correct: false
+            info: Ein Kind mit 10 Minuten passt in zwei Gruppen. Die Gruppen überschneiden sich.
+          - text: bis 10 Minuten, über 20 Minuten
+            correct: false
+            info: Ein Kind mit 15 Minuten passt in keine Gruppe. Es gibt eine Lücke.
+          - text: bis 10 Minuten, 11 bis 20 Minuten, über 20 Minuten
+            correct: true
+            info: Jede Zeit gehört in genau eine Gruppe, und keine Zeit bleibt übrig.
+        explanation: Gute Gruppen überschneiden sich nicht und lassen keine Lücke.
+      - type: number
+        id: antworten-zaehlen
+        text: Wie oft steht „Fahrrad“ auf den Zetteln?
+        material:
+          - type: text
+            text: "Antworten der Zettel, der Reihe nach: Bus, Fahrrad, Zu Fuß, Fahrrad, Auto, Bus, Zu Fuß, Fahrrad, Bus, Zu Fuß, Fahrrad, Zu Fuß."
+        answer: 4
+        tolerance: 0
+        unit: mal
+        mistakes:
+          - answer: 3
+            message: Das ist die Anzahl für „Bus“. Zähle nur die Zettel mit „Fahrrad“.
+          - answer: 12
+            message: Das ist die Anzahl aller Zettel. Gesucht ist, wie oft nur „Fahrrad“ vorkommt.
+        hint: Mache zu jedem „Fahrrad“ einen Strich und zähle die Striche.
+        explanation: Auf dem zweiten, vierten, achten und elften Zettel steht „Fahrrad“. Das sind 4 Zettel.
+      - type: generated
+        id: liste-kontrollieren
+        given:
+          n: { int: [20, 30] }
+          a: { int: [5, 12] }
+          b: { int: [4, 10] }
+        where: ["n != 2 * (a + b)", "n != 2 * a + b", "n - a - b >= 3"]
+        task:
+          text: "Die Klasse hat {{n}} Zettel eingesammelt. In der Liste stehen schon „bis 10 Minuten“ {{a}} Mal und „11 bis 20 Minuten“ {{b}} Mal. Wie oft muss „über 20 Minuten“ stehen, damit die Liste stimmt?"
+        answer: { value: "n - a - b", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "a + b"
+            message: "Das ist die Zahl der Zettel, die schon gezählt sind. Gesucht sind die, die noch fehlen."
+          - value: "n - a"
+            message: "Du hast nur eine Gruppe abgezogen. Ziehe beide Gruppen von der Zahl der Zettel ab."
+        hint: "Alle Anzahlen zusammen ergeben die Zahl der Zettel."
+        steps:
+          - "Schon gezählt: {{a}} + {{b}} Zettel."
+          - "Es bleiben {{n}} − ({{a}} + {{b}}) Zettel."
+          - "Also muss „über 20 Minuten“ {{answer}} Mal stehen."
+      - type: ordering
+        id: schritte-ordnen
+        text: Bringe die Schritte einer Umfrage in die richtige Reihenfolge.
+        items:
+          - Eine Frage überlegen
+          - Antwortmöglichkeiten festlegen
+          - Zettel einsammeln und die Antworten in einer Liste erfassen
+          - Kontrollieren, ob die Anzahlen zusammen die Zahl der Zettel ergeben
+        explanation: Ohne Frage und feste Antwortmöglichkeiten kann man die Zettel nicht zählen. Die Kontrolle kommt zuletzt, denn erst dann sind alle Anzahlen da.
+      - type: true-false
+        id: summe-kleiner
+        text: "Die Anzahlen in der Liste ergeben zusammen weniger als die Zahl der Zettel. Dann stimmt die Liste nicht."
+        answer: true
+        explanation: Jeder Zettel hat genau eine Antwort. Wenn die Summe nicht stimmt, wurde ein Zettel nicht gezählt oder falsch gezählt. Dann zählst du noch einmal.

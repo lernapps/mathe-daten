@@ -1,0 +1,168 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Eine Erhebung neu planen
+description: "Einen Erhebungsplan beurteilen und besser machen: Stichprobe, Frage und Aussage."
+competencies: [stichproben-erhebungen-planen]
+scope: |
+  Die Schülervertretung plant ihre Erhebung neu. Ein guter Plan legt die Gesamtheit fest (alle 600 Lernenden), wählt eine Stichprobe,
+  die groß genug ist und zufällig gezogen wird (zum Beispiel 60 Lernende, jede 10. Person aus der Schülerliste ab einem zufälligen
+  Start), und nutzt ein Erhebungsinstrument, hier einen Fragebogen mit einer neutralen Frage und festen Antwortmöglichkeiten. Eine
+  Suggestivfrage („Du fährst doch auch mit dem Rad, oder?“) oder eine Auswahl der Ersten am Tor verfälscht das Ergebnis. Das Ergebnis
+  einer Stichprobe ist eine Schätzung: Man sagt „ungefähr“ oder „etwa“, nicht „genau“.
+blocks:
+  - type: section
+    id: einstieg
+    title: Was an diesem Plan nicht stimmt
+    blocks:
+      - type: text
+        text: |
+          Die Schülervertretung hat einen ersten Plan: Sie steht morgens am Tor und fragt die ersten 20 Lernenden, die ankommen:
+          „Du fährst doch auch mit dem Rad, oder?“ **Nach dieser Seite kannst du eine Erhebung mit Stichprobe und
+          Erhebungsinstrument planen und beurteilen, wie aussagekräftig sie ist.**
+      - type: multiple-choice
+        id: plan-fehler
+        text: Was ist an diesem Plan ein Problem? Wähle alle Antworten aus, die stimmen.
+        options:
+          - text: Die Frage legt eine Antwort nahe („… doch auch mit dem Rad, oder?“)
+            correct: true
+            info: Wer so gefragt wird, antwortet eher „ja“. Eine neutrale Frage legt keine Antwort nahe.
+          - text: Befragt werden nur die Ersten, die am Tor ankommen
+            correct: true
+            info: Wer früh kommt, kommt vielleicht anders zur Schule als die anderen. Die Auswahl ist einseitig.
+          - text: Die Schule hat Lernende, die nicht befragt werden
+            correct: false
+            info: Das ist bei jeder Stichprobe so und kein Fehler des Plans. Wichtig ist, dass die Auswahl der Befragten nicht einseitig ist.
+        explanation: "Zwei Dinge verfälschen das Ergebnis: eine Frage, die die Antwort nahelegt, und eine einseitige Auswahl der Befragten."
+  - type: section
+    id: erklaerung
+    title: Was ein guter Erhebungsplan festlegt
+    blocks:
+      - type: text
+        text: |
+          Wenn du selbst eine Erhebung machst, entscheidest du vor dem Fragen, wer befragt wird und wie. Das hält ein
+          **Erhebungsplan** fest. Er hat vier Teile: die Gesamtheit, die Stichprobe, das **Erhebungsinstrument**, zum
+          Beispiel einen Fragebogen mit der Frage und den Antwortmöglichkeiten, und die Aussage.
+      - type: definition
+        term: Erhebungsinstrument
+        explanation: Das Erhebungsinstrument ist das, womit du die Daten erhebst, zum Beispiel ein Fragebogen mit einer neutralen Frage und festen Antwortmöglichkeiten.
+      - type: table
+        caption: Die Teile eines Erhebungsplans
+        header: [Teil, Das legst du fest]
+        rows:
+          - [Gesamtheit, Über wen du etwas wissen willst]
+          - [Stichprobe, Wie viele du befragst und wie du sie zufällig auswählst]
+          - [Erhebungsinstrument, "Eine neutrale Frage mit festen Antwortmöglichkeiten"]
+          - [Aussage, "Was du aus dem Ergebnis sagen darfst: etwa, ungefähr"]
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Das Ergebnis einer Stichprobe ist eine **Schätzung**. Eine andere Stichprobe hätte etwas andere Zahlen ergeben.
+              Sage darum „ungefähr“ oder „etwa“, nicht „genau“.
+  - type: section
+    id: beispiel
+    title: Der neue Plan der Schülervertretung
+    blocks:
+      - type: text
+        text: "So sieht ein Plan aus, der die Probleme des ersten Plans vermeidet:"
+      - type: example
+        title: 60 von 600 Lernenden
+        blocks:
+          - type: text
+            text: |
+              1. Gesamtheit: alle 600 Lernenden der Schule.
+              2. Stichprobe: 60 Lernende. Aus der Schülerliste wird jede 10. Person gewählt, der Start unter den ersten zehn Namen wird ausgelost. Weil der Start ausgelost wird, hat jede Person die gleiche Chance, dabei zu sein.
+              3. Erhebungsinstrument: „Wie kommst du morgens zur Schule?“ mit den Antworten „Zu Fuß“, „Fahrrad“, „Bus“, „Auto“.
+              4. Aussage: „Etwa derselbe Anteil der Lernenden der Schule kommt mit dem Rad wie in der Stichprobe.“
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: jede-kte-person
+        given:
+          n: { oneOf: [600, 480, 360] }
+          k: { oneOf: [10, 12, 20, 30] }
+        where: ["n / k <= 60"]
+        task:
+          text: "Eine Schülerliste hat {{n}} Namen. Aus ihr wird jede {{k}}. Person ausgewählt. Wie viele Lernende kommen in die Stichprobe?"
+        answer: { value: "n / k", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "n * k"
+            message: "Du hast mit {{k}} multipliziert. Wenn jede {{k}}. Person gewählt wird, teilt sich die Liste in Gruppen von {{k}} Namen."
+          - value: "k"
+            message: "Das ist die Schrittweite. Gefragt ist, wie viele Personen insgesamt gewählt werden."
+        hint: "Teile die Liste in Gruppen von {{k}} Namen. Aus jeder Gruppe kommt eine Person."
+        steps:
+          - "Jede {{k}}. Person: Aus jeder Gruppe von {{k}} Namen kommt eine Person."
+          - "Anzahl der Gruppen: {{n}} : {{k}}."
+          - "Das sind {{answer}} Lernende."
+      - type: matching
+        id: problem-verbesserung
+        text: Ordne jedem Problem eines Erhebungsplans zu, wie du es verbesserst.
+        pairs:
+          - left: Die Frage legt die Antwort nahe
+            right: Neutrale Frage stellen
+          - left: Es werden nur die Ersten am Tor gefragt
+            right: Zufällig auswählen
+          - left: Es werden nur 5 Lernende gefragt
+            right: Größere Stichprobe wählen
+          - left: Das Ergebnis wird als „genau“ angegeben
+            right: Mit „ungefähr“ formulieren
+        explanation: Jedes Problem hat seine Verbesserung. Zusammen ergeben sie einen Plan, dem man eher trauen kann.
+      - type: ordering
+        id: plan-schritte
+        text: Bringe die Schritte der Planung einer Erhebung in eine sinnvolle Reihenfolge.
+        items:
+          - Festlegen, über wen man etwas wissen will
+          - Die Stichprobe zufällig auswählen und die Frage mit Antwortmöglichkeiten festlegen
+          - Befragen
+          - Das Ergebnis als Schätzung für alle formulieren
+        explanation: Erst weißt du, über wen du etwas sagen willst. Dann planst du Stichprobe und Frage. Befragt wird erst, wenn alles feststeht, und zuletzt formulierst du das Ergebnis.
+      - type: single-choice
+        id: aussage-formulieren
+        text: Von 60 zufällig gezogenen Lernenden fahren 22 mit dem Rad. Welche Aussage über alle 600 passt zu diesem Ergebnis?
+        options:
+          - text: Mit dem Rad fahren nur die Kinder der Stichprobe
+            correct: false
+            info: Von den Kindern, die nicht befragt wurden, weiß man es nicht. Man schließt aus der Stichprobe auf alle.
+          - text: Ungefähr 37 % der Lernenden fahren mit dem Rad
+            correct: true
+            info: 22 von 60 sind etwa 37 %. Das Wort „ungefähr“ sagt, dass die Aussage eine Schätzung ist.
+          - text: Genau 220 Lernende fahren mit dem Rad
+            correct: false
+            info: Eine Stichprobe liefert eine Schätzung und keine genaue Zahl. Eine andere Stichprobe hätte etwas anderes ergeben.
+        explanation: "Aus einer guten Stichprobe darf man auf alle schließen, aber vorsichtig: ungefähr, nicht genau."
+  - type: section
+    id: urteil
+    title: Mein Urteil
+    blocks:
+      - type: open-task
+        id: urteil-plan
+        task: "Die Schülervertretung sagt nach ihrer Erhebung mit dem neuen Plan (60 zufällig gewählte Lernende, neutrale Frage): „Genau 37 % der Schule kommen mit dem Rad.“ Beurteile in zwei bis vier Sätzen, ob diese Aussage zum Plan passt, und begründe dein Urteil."
+        points:
+          - text: Der Plan ist gut, denn die Stichprobe ist zufällig und deutlich größer als eine Klasse und die Frage ist neutral.
+            source: /stichprobe/erhebung-planen/#erklaerung
+          - text: Das Ergebnis ist trotzdem nur eine Schätzung. Mit einer anderen Stichprobe wären die Zahlen etwas anders.
+            source: /stichprobe/erhebung-planen/#erklaerung
+          - text: Richtig wäre eine vorsichtige Aussage mit „ungefähr“ oder „etwa“, nicht „genau“.
+            source: /stichprobe/erhebung-planen/#erklaerung
+          - text: Ganze Sätze mit einer Begründung (weil …, darum …).
+            kind: form
+        solution: |
+          Der Plan ist gut, weil die 60 Lernenden zufällig gewählt wurden und die Frage neutral ist. Die Zahlen können trotzdem noch um einige Prozentpunkte schwanken. Trotzdem ist „genau 37 %“ zu
+          sicher gesagt. Eine Stichprobe liefert nur eine Schätzung, eine andere hätte etwas andere Zahlen gegeben. Besser ist:
+          „Ungefähr 37 % der Schule kommen mit dem Rad.“
+        hint: Denke daran, was eine Stichprobe liefern kann und was nicht.
+  - type: section
+    id: rueckblick
+    title: Rückblick auf Kapitel 3 und die ganze App
+    blocks:
+      - type: text
+        text: |
+          Du hast gefragt, gezählt, gezeichnet und gerechnet, und du hast geprüft, ob man dem Ergebnis trauen kann. Du kannst jetzt:
+
+          - Umfragen planen und Daten darstellen,
+          - Häufigkeiten und den Mittelwert bestimmen, Median und Quartile ermitteln und Boxplots lesen,
+          - Diagramme kritisch lesen,
+          - beurteilen, ob eine Stichprobe für eine Aussage über alle taugt, und eine Erhebung planen.

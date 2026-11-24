@@ -1,0 +1,412 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Median, Spannweite und Quartile
+description: "Daten der Größe nach ordnen, die Mitte finden und die Hälften teilen: Median, Spannweite und Quartile bestimmen."
+competencies: [kenngroessen-lage-streumasse]
+scope: |
+  Die Klassen 8b und 8c vergleichen die Dauer ihres Schulwegs. Der Mittelwert wird von einem sehr großen Wert stark nach oben
+  gezogen. Der Median ist der mittlere Wert der der Größe nach geordneten Daten: bei ungerader Anzahl der Wert in der Mitte, bei
+  gerader Anzahl der Mittelwert der beiden mittleren Werte. Die Spannweite ist der größte minus der kleinste Wert. Das untere
+  Quartil Q1 ist der Median der unteren Hälfte, das obere Quartil Q3 der Median der oberen Hälfte. Bei ungerader Anzahl
+  gehört der Median zu keiner der beiden Hälften. Häufige Fehler: die Daten nicht ordnen, bei gerader Anzahl nur einen mittleren
+  Wert nehmen, den Median in beide Hälften rechnen.
+blocks:
+  - type: section
+    id: einstieg
+    title: Reicht der Mittelwert?
+    blocks:
+      - type: text
+        text: |
+          Mia aus der 8b und Karim aus der 8c besuchen dieselbe Schule wie die 6a. Mia schreibt: „Bei uns brauchen die Kinder im Mittel rund 13,3 Minuten.“ Karim aus der 8c antwortet: „Bei
+          uns sind es 12,5. Wir haben den kürzeren Weg!“ Mia: „Aber einer von uns braucht 35 Minuten, das zieht den Mittelwert
+          hoch.“ Die Kette unten zeigt die elf Schulwegzeiten der 8b als Perlen: Mit den Knöpfen unter der Kette ordnest du sie, markierst die Mitte und teilst die Hälften. Die Kette macht das für dich Schritt für Schritt vor. **Nach dieser Seite kannst du Median, Spannweite und Quartile bestimmen und sagen, was sie über die Daten
+          verraten.**
+      - type: single-choice
+        id: ausreisser
+        text: Was passiert mit dem Mittelwert, wenn ein Wert der Liste durch einen viel größeren Wert ersetzt wird?
+        options:
+          - text: Der Mittelwert wird größer
+            correct: true
+            info: Die Summe wird größer, die Anzahl der Werte bleibt gleich. Darum steigt der Mittelwert.
+          - text: Der Mittelwert bleibt gleich
+            correct: false
+            info: Der Mittelwert hängt von der Summe aller Werte ab. Ein großer Wert verändert die Summe.
+          - text: Der Mittelwert wird kleiner
+            correct: false
+            info: Ein größerer Wert macht die Summe größer, nicht kleiner.
+        explanation: Der Mittelwert reagiert auf jeden Wert, auch auf einen sehr großen. Dieser Wert zieht den Mittelwert nach oben.
+      - type: vue-component
+        id: kette
+        component: Perlenkette
+        props:
+          values: [12, 4, 20, 7, 35, 12, 5, 18, 8, 15, 10]
+          order: Perlen ordnen
+          middle: Mitte markieren
+          halves: Hälften teilen
+          reset: Von vorn
+          lower: untere Hälfte
+          upper: obere Hälfte
+          alt: Elf Perlen mit den Schulwegzeiten der 8b in Minuten, wie sie dastehen oder der Größe nach geordnet.
+          statusStart: Elf Perlen, jede ist die Schulwegzeit eines Kindes der 8b in Minuten, in der Reihenfolge, wie sie aufgeschrieben wurde. Drücke „Perlen ordnen“.
+          statusOrdered: Die Perlen sind der Größe nach geordnet, links die kleinste. Jetzt kannst du die Mitte suchen.
+          statusMiddle: Die Perle in der Mitte hat 5 Perlen links und 5 Perlen rechts neben sich. Sie hat den Wert {m}. Das ist der Median, in der Zeichnung mit M beschriftet.
+          statusHalves: Der Median teilt die Kette in die untere und die obere Hälfte, der Median gehört zu keiner von beiden. Die Mitte der unteren Hälfte ist Q1 = {q1}, die Mitte der oberen Hälfte ist Q3 = {q3}. min ist der kleinste Wert ({min}), max der größte ({max}).
+        nojs: |
+          Elf Perlen mit den Schulwegzeiten der 8b in Minuten: 4, 5, 7, 8, 10, 12, 12, 15, 18, 20 und 35, der Größe nach
+          geordnet. Der Median ist der mittlere Wert, die sechste Perle: 12. Die untere Hälfte sind die fünf kleinsten Werte,
+          ihre Mitte ist Q1 = 7. Die obere Hälfte sind die fünf größten, ihre Mitte ist Q3 = 18. Der kleinste Wert ist 4, der
+          größte 35.
+  - type: section
+    id: erklaerung
+    title: Die Mitte und die Hälften
+    blocks:
+      - type: text
+        text: "Wenn ein einzelner Wert den Mittelwert verzerrt, brauchst du Kennwerte, die weniger davon abhängen. Der Median zeigt die Mitte, die Spannweite und die Quartile zeigen, wie weit die Werte streuen."
+      - type: definition
+        term: Median
+        explanation: Der Median ist der mittlere Wert der Daten, wenn du sie der Größe nach ordnest. Bei gerader Anzahl ist er der Mittelwert der beiden mittleren Werte. In der geordneten Liste stehen links und rechts von der Mitte gleich viele Werte.
+      - type: definition
+        term: Spannweite
+        explanation: Die Spannweite ist der Unterschied zwischen dem größten und dem kleinsten Wert, also größter Wert minus kleinster Wert. Sie zeigt, wie weit die Daten auseinanderliegen.
+      - type: definition
+        term: Quartile
+        explanation: Das untere Quartil Q1 ist der Median der unteren Hälfte der geordneten Daten, das obere Quartil Q3 der Median der oberen Hälfte. Bei ungerader Anzahl gehört der Median zu keiner der beiden Hälften.
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              **Zuerst ordnen**, dann die Mitte suchen. Bei gerader Anzahl nimmst du den Mittelwert der beiden mittleren
+              Werte. Die Spannweite ist $\text{größter Wert} - \text{kleinster Wert}$. Bei gerader Anzahl teilst du die Liste genau in zwei Hälften, bei zwölf Werten je sechs. Kein Wert bleibt übrig. Der Median muss dann kein Wert der Liste sein.
+  - type: section
+    id: beispiel
+    title: Zwei Klassen, zwei Beispiele
+    blocks:
+      - type: text
+        text: "Damit du für jede Klasse zu Median und Quartilen kommst, brauchst du eine feste Reihenfolge: ordnen, die Mitte suchen, die Hälften teilen."
+      - type: example
+        title: Die 8b hat elf Werte
+        blocks:
+          - type: text
+            text: |
+              1. Ordnen: 4, 5, 7, 8, 10, 12, 12, 15, 18, 20, 35.
+              2. Median: Bei elf Werten ist der sechste der mittlere. Er ist 12.
+              3. Untere Hälfte: 4, 5, 7, 8, 10. Ihre Mitte ist Q1 = 7.
+              4. Obere Hälfte: 12, 15, 18, 20, 35. Ihre Mitte ist Q3 = 18.
+              5. Spannweite: 35 − 4 = 31.
+      - type: example
+        title: Die 8c hat zwölf Werte
+        blocks:
+          - type: text
+            text: |
+              1. Ordnen: 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19.
+              2. Median: Bei zwölf Werten sind der sechste (12) und der siebte (13) die mittleren. Der Median ist (12 + 13) : 2 = 12,5.
+              3. Untere Hälfte: 6, 8, 9, 10, 11, 12. Ihre Mitte ist (9 + 10) : 2 = 9,5, also Q1 = 9,5.
+              4. Obere Hälfte: 13, 14, 15, 16, 17, 19. Ihre Mitte ist (15 + 16) : 2 = 15,5, also Q3 = 15,5.
+              5. Spannweite: 19 − 6 = 13.
+      - type: vue-component
+        id: kette-gerade
+        component: Perlenkette
+        props:
+          values: [14, 6, 19, 9, 12, 16, 8, 11, 17, 10, 13, 15]
+          order: Perlen ordnen
+          middle: Mitte markieren
+          halves: Hälften teilen
+          reset: Von vorn
+          lower: untere Hälfte
+          upper: obere Hälfte
+          alt: Zwölf Perlen mit den Schulwegzeiten der 8c in Minuten, wie sie dastehen oder der Größe nach geordnet.
+          statusStart: Zwölf Perlen, jede ist die Schulwegzeit eines Kindes der 8c in Minuten. Drücke „Perlen ordnen“.
+          statusOrdered: Die Perlen sind der Größe nach geordnet. Bei zwölf Werten gibt es keine einzelne Mitte.
+          statusMiddle: Die zwei mittleren Perlen sind hervorgehoben, je 5 Perlen liegen links und rechts davon. Der Median ist ihr Mittelwert, also {m}. Er ist in der Zeichnung mit M beschriftet.
+          statusHalves: Jede Hälfte hat sechs Perlen. Die Mitte der unteren Hälfte ist Q1 = {q1}, die Mitte der oberen Hälfte ist Q3 = {q3}. min ist der kleinste Wert ({min}), max der größte ({max}).
+        nojs: |
+          Zwölf Perlen mit den Schulwegzeiten der 8c in Minuten, der Größe nach geordnet: 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19. Die zwei mittleren Perlen sind 12 und 13, der Median ist 12,5. Jede Hälfte hat sechs Perlen: Q1 = 9,5 und Q3 = 15,5.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: median-ungerade
+        given:
+          a: { pick: 1, from: { data: werte } }
+          b: { pick: 1, from: { data: werte } }
+          c: { pick: 1, from: { data: werte } }
+          d: { pick: 1, from: { data: werte } }
+          e: { pick: 1, from: { data: werte } }
+          f: { pick: 1, from: { data: werte } }
+          g: { pick: 1, from: { data: werte } }
+        where:
+          [
+            "a.wert != b.wert",
+            "a.wert != c.wert",
+            "a.wert != d.wert",
+            "a.wert != e.wert",
+            "a.wert != f.wert",
+            "a.wert != g.wert",
+            "b.wert != c.wert",
+            "b.wert != d.wert",
+            "b.wert != e.wert",
+            "b.wert != f.wert",
+            "b.wert != g.wert",
+            "c.wert != d.wert",
+            "c.wert != e.wert",
+            "c.wert != f.wert",
+            "c.wert != g.wert",
+            "d.wert != e.wert",
+            "d.wert != f.wert",
+            "d.wert != g.wert",
+            "e.wert != f.wert",
+            "e.wert != g.wert",
+            "f.wert != g.wert",
+            "d.wert != sortBy([a, b, c, d, e, f, g], wert)[3].wert",
+            "d.wert != sortBy([a, b, c, d, e, f, g], wert)[4].wert",
+          ]
+        task:
+          text: "Sieben Kinder brauchen für den Schulweg (in Minuten): {{a.wert}}, {{b.wert}}, {{c.wert}}, {{d.wert}}, {{e.wert}}, {{f.wert}}, {{g.wert}}. Wie groß ist der Median?"
+        answer: { value: "sortBy([a, b, c, d, e, f, g], wert)[3].wert", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "d.wert"
+            message: "Du hast den mittleren Wert der Liste in der Reihenfolge genommen, wie sie dasteht. Ordne die Werte zuerst der Größe nach."
+          - value: "sortBy([a, b, c, d, e, f, g], wert)[4].wert"
+            message: "Du hast den fünften Wert genommen. Bei sieben Werten ist der vierte der mittlere: drei Werte stehen davor, drei dahinter."
+        hint: "Ordne die Werte der Größe nach. Der Median ist der Wert in der Mitte."
+        steps:
+          - "Ordnen: Schreibe die sieben Werte der Größe nach auf."
+          - "Bei sieben Werten ist der vierte Wert der mittlere, davor und dahinter stehen je drei."
+          - "Der Median ist dieser vierte Wert der geordneten Liste: {{answer}} Minuten."
+      - type: generated
+        id: median-gerade
+        given:
+          a: { pick: 1, from: { data: werte } }
+          b: { pick: 1, from: { data: werte } }
+          c: { pick: 1, from: { data: werte } }
+          d: { pick: 1, from: { data: werte } }
+          e: { pick: 1, from: { data: werte } }
+          f: { pick: 1, from: { data: werte } }
+          g: { pick: 1, from: { data: werte } }
+          h: { pick: 1, from: { data: werte } }
+        where:
+          [
+            "a.wert != b.wert",
+            "a.wert != c.wert",
+            "a.wert != d.wert",
+            "a.wert != e.wert",
+            "a.wert != f.wert",
+            "a.wert != g.wert",
+            "a.wert != h.wert",
+            "b.wert != c.wert",
+            "b.wert != d.wert",
+            "b.wert != e.wert",
+            "b.wert != f.wert",
+            "b.wert != g.wert",
+            "b.wert != h.wert",
+            "c.wert != d.wert",
+            "c.wert != e.wert",
+            "c.wert != f.wert",
+            "c.wert != g.wert",
+            "c.wert != h.wert",
+            "d.wert != e.wert",
+            "d.wert != f.wert",
+            "d.wert != g.wert",
+            "d.wert != h.wert",
+            "e.wert != f.wert",
+            "e.wert != g.wert",
+            "e.wert != h.wert",
+            "f.wert != g.wert",
+            "f.wert != h.wert",
+            "g.wert != h.wert",
+            "(d.wert + e.wert) / 2 != (sortBy([a, b, c, d, e, f, g, h], wert)[3].wert + sortBy([a, b, c, d, e, f, g, h], wert)[4].wert) / 2",
+            "(d.wert + e.wert) / 2 != sortBy([a, b, c, d, e, f, g, h], wert)[3].wert",
+          ]
+        task:
+          text: "Acht Kinder brauchen für den Schulweg (in Minuten): {{a.wert}}, {{b.wert}}, {{c.wert}}, {{d.wert}}, {{e.wert}}, {{f.wert}}, {{g.wert}}, {{h.wert}}. Wie groß ist der Median? Gib eine Dezimalzahl an, wenn nötig."
+        answer:
+          {
+            value: "(sortBy([a, b, c, d, e, f, g, h], wert)[3].wert + sortBy([a, b, c, d, e, f, g, h], wert)[4].wert) / 2",
+            compare: { number: { format: decimal, decimals: 1 } },
+          }
+        mistakes:
+          - value: "sortBy([a, b, c, d, e, f, g, h], wert)[3].wert"
+            message: "Du hast nur den vierten Wert genommen. Bei acht Werten gibt es zwei mittlere Werte, den vierten und den fünften. Der Median liegt in der Mitte zwischen beiden."
+          - value: "(d.wert + e.wert) / 2"
+            message: "Du hast die mittleren Werte der Liste in der Reihenfolge genommen, wie sie dasteht. Ordne die Werte zuerst der Größe nach."
+        hint: "Ordne die Werte. Bei acht Werten gibt es zwei mittlere. Der Median ist ihr Mittelwert."
+        steps:
+          - "Ordnen: Schreibe die acht Werte der Größe nach auf."
+          - "Die beiden mittleren Werte sind der vierte und der fünfte."
+          - "Der Median ist ihr Mittelwert: {{answer}} Minuten."
+      - type: generated
+        id: spannweite-bestimmen
+        given:
+          a: { pick: 1, from: { data: werte } }
+          b: { pick: 1, from: { data: werte } }
+          c: { pick: 1, from: { data: werte } }
+          d: { pick: 1, from: { data: werte } }
+          e: { pick: 1, from: { data: werte } }
+          f: { pick: 1, from: { data: werte } }
+          g: { pick: 1, from: { data: werte } }
+        where:
+          [
+            "a.wert != b.wert",
+            "a.wert != c.wert",
+            "a.wert != d.wert",
+            "a.wert != e.wert",
+            "a.wert != f.wert",
+            "a.wert != g.wert",
+            "b.wert != c.wert",
+            "b.wert != d.wert",
+            "b.wert != e.wert",
+            "b.wert != f.wert",
+            "b.wert != g.wert",
+            "c.wert != d.wert",
+            "c.wert != e.wert",
+            "c.wert != f.wert",
+            "c.wert != g.wert",
+            "d.wert != e.wert",
+            "d.wert != f.wert",
+            "d.wert != g.wert",
+            "e.wert != f.wert",
+            "e.wert != g.wert",
+            "f.wert != g.wert",
+          ]
+        task:
+          text: "Sieben Kinder brauchen für den Schulweg (in Minuten): {{a.wert}}, {{b.wert}}, {{c.wert}}, {{d.wert}}, {{e.wert}}, {{f.wert}}, {{g.wert}}. Wie groß ist die Spannweite?"
+        answer:
+          {
+            value: "sortBy([a, b, c, d, e, f, g], wert)[6].wert - sortBy([a, b, c, d, e, f, g], wert)[0].wert",
+            compare: { number: { format: integer } },
+          }
+        mistakes:
+          - value: "sortBy([a, b, c, d, e, f, g], wert)[6].wert"
+            message: "Das ist nur der größte Wert. Die Spannweite ist der Unterschied zwischen dem größten und dem kleinsten Wert."
+          - value: "sortBy([a, b, c, d, e, f, g], wert)[6].wert + sortBy([a, b, c, d, e, f, g], wert)[0].wert"
+            message: "Du hast addiert. Die Spannweite ist der Unterschied, also größter Wert minus kleinster Wert."
+        hint: "Suche den größten und den kleinsten Wert und bilde den Unterschied."
+        steps:
+          - "Suche in der Liste den größten und den kleinsten Wert."
+          - "Rechne größter Wert minus kleinster Wert."
+          - "Die Spannweite ist {{answer}} Minuten."
+      - type: generated
+        id: unteres-quartil
+        given:
+          a: { pick: 1, from: { data: werte } }
+          b: { pick: 1, from: { data: werte } }
+          c: { pick: 1, from: { data: werte } }
+          d: { pick: 1, from: { data: werte } }
+          e: { pick: 1, from: { data: werte } }
+          f: { pick: 1, from: { data: werte } }
+          g: { pick: 1, from: { data: werte } }
+        where:
+          [
+            "a.wert != b.wert",
+            "a.wert != c.wert",
+            "a.wert != d.wert",
+            "a.wert != e.wert",
+            "a.wert != f.wert",
+            "a.wert != g.wert",
+            "b.wert != c.wert",
+            "b.wert != d.wert",
+            "b.wert != e.wert",
+            "b.wert != f.wert",
+            "b.wert != g.wert",
+            "c.wert != d.wert",
+            "c.wert != e.wert",
+            "c.wert != f.wert",
+            "c.wert != g.wert",
+            "d.wert != e.wert",
+            "d.wert != f.wert",
+            "d.wert != g.wert",
+            "e.wert != f.wert",
+            "e.wert != g.wert",
+            "f.wert != g.wert",
+          ]
+        task:
+          text: "Sieben Kinder brauchen für den Schulweg (in Minuten): {{a.wert}}, {{b.wert}}, {{c.wert}}, {{d.wert}}, {{e.wert}}, {{f.wert}}, {{g.wert}}. Wie groß ist das untere Quartil Q1?"
+        answer:
+          {
+            value: "sortBy([a, b, c, d, e, f, g], wert)[1].wert",
+            compare: { number: { format: decimal, decimals: 1 } },
+          }
+        mistakes:
+          - value: "sortBy([a, b, c, d, e, f, g], wert)[3].wert"
+            message: "Das ist der Median. Das untere Quartil ist der Median der unteren Hälfte, der drei kleinsten Werte."
+          - value: "(sortBy([a, b, c, d, e, f, g], wert)[1].wert + sortBy([a, b, c, d, e, f, g], wert)[2].wert) / 2"
+            message: "Du hast den Median in die untere Hälfte gerechnet. Bei sieben Werten gehört der mittlere Wert zu keiner Hälfte: Die untere Hälfte sind nur die drei kleinsten Werte."
+        hint: "Ordne die Werte. Die untere Hälfte sind die drei kleinsten Werte. Q1 ist ihr mittlerer Wert."
+        steps:
+          - "Ordnen: Schreibe die sieben Werte der Größe nach auf."
+          - "Die untere Hälfte sind die drei kleinsten Werte, der Median gehört nicht dazu."
+          - "Q1 ist der mittlere Wert der unteren Hälfte, also der zweite Wert der Liste: {{answer}} Minuten."
+      - type: generated
+        id: oberes-quartil-gerade
+        given:
+          a: { pick: 1, from: { data: werte } }
+          b: { pick: 1, from: { data: werte } }
+          c: { pick: 1, from: { data: werte } }
+          d: { pick: 1, from: { data: werte } }
+          e: { pick: 1, from: { data: werte } }
+          f: { pick: 1, from: { data: werte } }
+          g: { pick: 1, from: { data: werte } }
+          h: { pick: 1, from: { data: werte } }
+        where:
+          [
+            "a.wert != b.wert",
+            "a.wert != c.wert",
+            "a.wert != d.wert",
+            "a.wert != e.wert",
+            "a.wert != f.wert",
+            "a.wert != g.wert",
+            "a.wert != h.wert",
+            "b.wert != c.wert",
+            "b.wert != d.wert",
+            "b.wert != e.wert",
+            "b.wert != f.wert",
+            "b.wert != g.wert",
+            "b.wert != h.wert",
+            "c.wert != d.wert",
+            "c.wert != e.wert",
+            "c.wert != f.wert",
+            "c.wert != g.wert",
+            "c.wert != h.wert",
+            "d.wert != e.wert",
+            "d.wert != f.wert",
+            "d.wert != g.wert",
+            "d.wert != h.wert",
+            "e.wert != f.wert",
+            "e.wert != g.wert",
+            "e.wert != h.wert",
+            "f.wert != g.wert",
+            "f.wert != h.wert",
+            "g.wert != h.wert",
+          ]
+        task:
+          text: "Acht Kinder brauchen für den Schulweg (in Minuten): {{a.wert}}, {{b.wert}}, {{c.wert}}, {{d.wert}}, {{e.wert}}, {{f.wert}}, {{g.wert}}, {{h.wert}}. Wie groß ist das obere Quartil Q3? Gib eine Dezimalzahl an, wenn nötig."
+        answer:
+          {
+            value: "(sortBy([a, b, c, d, e, f, g, h], wert)[5].wert + sortBy([a, b, c, d, e, f, g, h], wert)[6].wert) / 2",
+            compare: { number: { format: decimal, decimals: 1 } },
+          }
+        mistakes:
+          - value: "sortBy([a, b, c, d, e, f, g, h], wert)[5].wert"
+            message: "Du hast nur einen Wert der oberen Hälfte genommen. Die obere Hälfte hat vier Werte, ihre Mitte liegt zwischen dem zweiten und dem dritten dieser Werte: Nimm den Mittelwert der beiden."
+          - value: "sortBy([a, b, c, d, e, f, g, h], wert)[3].wert"
+            message: "Das ist ein Wert aus der Mitte der ganzen Liste. Q3 ist die Mitte der oberen Hälfte, der vier größten Werte."
+        hint: "Ordne die Werte. Die obere Hälfte sind die vier größten Werte. Q3 ist der Mittelwert ihrer beiden mittleren Werte."
+        steps:
+          - "Ordnen: Schreibe die acht Werte der Größe nach auf."
+          - "Die obere Hälfte sind die vier größten Werte, also die Plätze 5 bis 8."
+          - "Q3 ist der Mittelwert der beiden mittleren davon, der Plätze 6 und 7: {{answer}} Minuten."
+      - type: single-choice
+        id: median-oder-mittel
+        text: In der 8b ist der Mittelwert rund 13,3 Minuten, der Median 12 Minuten. Ein Kind braucht 35 Minuten. Warum ist der Median kleiner als der Mittelwert?
+        options:
+          - text: Beim Median wird der größte Wert nicht mitgezählt
+            correct: false
+            info: Der größte Wert gehört zur Kette. Er ändert nur nicht, welcher Wert in der Mitte liegt.
+          - text: Der Median wird immer kleiner als der Mittelwert gerechnet
+            correct: false
+            info: Das stimmt nicht allgemein. Bei der 8c sind Median und Mittelwert beide 12,5.
+          - text: Der Median reagiert nicht darauf, wie groß der größte Wert ist, nur auf die Mitte der geordneten Werte
+            correct: true
+            info: Der Wert 35 steht am Ende der geordneten Kette. Er verschiebt die Mitte nicht, aber er erhöht die Summe für den Mittelwert.
+        explanation: Der Median hängt von der Mitte der geordneten Werte ab, der Mittelwert von der Summe. Ein sehr großer Wert verändert nur die Summe.

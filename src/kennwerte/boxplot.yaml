@@ -1,0 +1,206 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Boxplot – zwei Klassen im Vergleich
+description: "Aus den fünf Werten einen Boxplot zeichnen und an Boxplots ablesen, wie zwei Klassen sich unterscheiden."
+competencies: [boxplot]
+scope: |
+  Ein Boxplot zeigt fünf Werte der geordneten Daten: den kleinsten Wert, das untere Quartil Q1, den Median, das obere Quartil
+  Q3 und den größten Wert. Die Box reicht von Q1 bis Q3, ein dicker Strich in der Box steht beim Median, zwei Linien reichen
+  bis zum kleinsten und zum größten Wert. In der Box liegen die mittleren zwei Viertel der Werte, also etwa die Hälfte. Eine lange
+  Linie oder Box bedeutet: Die Werte streuen dort weit, nicht, dass dort mehr Werte liegen. Zwei Boxplots auf derselben Skala
+  lassen sich vergleichen. Häufige Fehler: die Länge der Box als Anzahl deuten, die Skala nicht beachten.
+blocks:
+  - type: section
+    id: einstieg
+    title: Zwei Klassen auf einen Blick
+    blocks:
+      - type: text
+        text: |
+          Die 8b und die 8c wollen ihre Schulwege vergleichen, aber zwei Listen mit Zahlen sind schwer zu vergleichen. Noah
+          aus der 8b zeichnet deshalb für beide Klassen ein Bild aus den Werten, die du auf der Seite davor bestimmt hast, auf
+          derselben Skala. Ein solches Bild heißt **Boxplot**. Eine Linie reicht vom kleinsten bis zum größten Wert, dazwischen
+          liegt eine Box von Q1 bis Q3, und ein dicker Strich in der Box zeigt den Median. **Nach dieser Seite kannst du einen
+          Boxplot zeichnen und aus Boxplots Aussagen über die Daten ablesen.**
+      - type: figure
+        image: images/boxplot-8b-8c.svg
+        alt: Zwei Boxplots untereinander auf derselben Skala von 0 bis 40 Minuten. Die 8b hat eine breite Box und eine lange Linie nach rechts bis 35. Die 8c hat eine kürzere Box und eine kürzere Linie.
+        caption: Beide Bilder haben dieselbe Skala. Vergleiche, wie weit die Linien und die Boxen reichen.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: single-choice
+        id: spannweite-sehen
+        text: Schau auf die Boxplots oben. Welche Klasse hat die größere Spannweite, also den größeren Abstand zwischen dem kleinsten und dem größten Wert?
+        options:
+          - text: Beide gleich
+            correct: false
+            info: Die Linien enden an verschiedenen Stellen der Skala. Die der 8b ist viel länger.
+          - text: Die 8b
+            correct: true
+            info: Die Linie der 8b beginnt links bei 4 und endet rechts bei 35. Sie ist viel länger.
+          - text: Die 8c
+            correct: false
+            info: Die Linie der 8c reicht nur von 6 bis 19 und ist kürzer.
+        explanation: Die ganze Linie vom linken bis zum rechten Ende ist die Spannweite. Bei der 8b ist sie größer.
+  - type: section
+    id: erklaerung
+    title: Wie ein Boxplot gebaut ist
+    blocks:
+      - type: text
+        text: |
+          Wenn du Mitte und Streuung von zwei Klassen auf einen Blick vergleichen willst, brauchst du ein Bild, das die fünf Kennwerte zeigt: den Boxplot. Ein **Boxplot** zeichnet fünf Werte der geordneten Daten auf einer Skala: den kleinsten Wert, Q1, den Median, Q3
+          und den größten Wert. Die **Box** reicht von Q1 bis Q3. Der dicke Strich in der Box steht beim Median. Eine Linie
+          führt von der Box zum kleinsten Wert, eine zum größten. Die fünf Werte teilen die geordneten Daten in vier **Viertel** mit etwa gleich vielen Werten: von min bis Q1, von Q1 bis zum Median, vom Median bis Q3 und von Q3 bis max.
+      - type: definition
+        term: Boxplot
+        explanation: Ein Boxplot ist ein Bild für fünf Werte der geordneten Daten, den kleinsten Wert, Q1, den Median, Q3 und den größten Wert. Die Box reicht von Q1 bis Q3, ein dicker Strich in der Box steht beim Median.
+      - type: figure
+        image: images/boxplot-8b-erklaert.svg
+        alt: Boxplot der Klasse 8b. Die Linie beginnt bei 4 und endet bei 35. Die Box reicht von 7 bis 18, der dicke Strich in der Box steht bei 12.
+        caption: Die beschrifteten Stellen sind die fünf Werte der 8b von der Seite davor. „min“ ist der kleinste Wert, „max“ der größte.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              In der Box liegen die mittleren zwei Viertel der Werte, also etwa die Hälfte. Ist die Box oder eine Linie lang, heißt das nicht, dass dort mehr Werte liegen: Jedes Viertel hat etwa gleich viele Werte. Es heißt, dass die Werte dort weiter streuen.
+  - type: section
+    id: beispiel
+    title: Einen Boxplot Schritt für Schritt zeichnen
+    blocks:
+      - type: text
+        text: "Damit zwei Klassen vergleichbar werden, zeichnest du beide Boxplots auf derselben Skala. So entsteht der Boxplot der 8c:"
+      - type: example
+        title: Die 8c als Boxplot
+        blocks:
+          - type: text
+            text: |
+              1. Fünf Werte aus den geordneten Daten bestimmen: kleinster Wert 6, Q1 = 9,5, Median 12,5, Q3 = 15,5, größter Wert 19.
+              2. Eine Skala zeichnen, die von 0 bis 40 reicht, und die fünf Werte darauf markieren.
+              3. Die Box von 9,5 bis 15,5 zeichnen und den dicken Strich bei 12,5.
+              4. Eine Linie von der Box bis 6 und eine bis 19 zeichnen.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: klassen-vergleichen
+        text: Welche Aussage über die beiden Boxplots stimmt?
+        material:
+          - type: figure
+            image: images/boxplot-8b-8c.svg
+            alt: Boxplots der Klassen 8b und 8c auf derselben Skala von 0 bis 40 Minuten. Die Box der 8c ist kürzer als die der 8b.
+            caption: Vergleiche die Boxen und die Linien.
+            source: eigene Zeichnung
+            licence: CC-BY-4.0
+        options:
+          - text: Am Boxplot sieht man, wie viele Kinder die 8c hat
+            correct: false
+            info: Ein Boxplot zeigt nicht, wie viele Werte es gibt, sondern wie sie verteilt sind. Die Anzahl kann man an ihm nicht ablesen.
+          - text: In der 8c braucht ein Kind 35 Minuten
+            correct: false
+            info: Das gilt für die 8b. Die Linie der 8c endet schon bei 19.
+          - text: In der 8c liegen die mittleren Werte enger beieinander als in der 8b
+            correct: true
+            info: Die Box der 8c ist kürzer. Die mittlere Hälfte der Werte liegt dort in einem kleineren Bereich.
+        explanation: Die Länge der Box zeigt, wie weit die mittlere Hälfte der Werte streut. Die 8c streut weniger.
+      - type: number
+        id: median-ablesen
+        text: Lies den Median der 8c an der Skala ab. Bis 1 Minute daneben zählt noch als richtig.
+        material:
+          - type: figure
+            image: images/boxplot-8b-8c.svg
+            alt: Boxplots der Klassen 8b und 8c auf derselben Skala. Bei der 8c steht der dicke Strich in der Box bei einem Wert zwischen 10 und 15.
+            caption: Der dicke Strich in der Box ist der Median.
+            source: eigene Zeichnung
+            licence: CC-BY-4.0
+        answer: 12.5
+        tolerance: 1
+        unit: Minuten
+        mistakes:
+          - answer: 19
+            message: Das ist das rechte Ende der Linie, der größte Wert. Der Median ist der dicke Strich in der Box.
+          - answer: 15.5
+            message: Das ist die rechte Kante der Box, das obere Quartil Q3. Der Median ist der dicke Strich in der Box.
+        hint: Suche den dicken Strich in der Box der 8c und gehe senkrecht nach unten zur Skala.
+        explanation: Der dicke Strich der 8c steht zwischen 12 und 13, genau bei 12,5 Minuten.
+      - type: generated
+        id: box-laenge
+        given:
+          mn: { int: [2, 8] }
+          q1: { int: [9, 14] }
+          md: { int: [15, 20] }
+          q3: { int: [21, 28] }
+          mx: { int: [29, 40] }
+        where: ["q3 - q1 != md", "mx - mn != q3"]
+        task:
+          text: "Ein Boxplot hat diese fünf Werte: kleinster Wert {{mn}}, Q1 = {{q1}}, Median {{md}}, Q3 = {{q3}}, größter Wert {{mx}}. Wie lang ist die Box auf der Skala? Die Box reicht von Q1 bis Q3."
+        answer: { value: "q3 - q1", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "mx - mn"
+            message: "Das ist die Länge der ganzen Linie, die Spannweite. Die Box reicht nur von Q1 bis Q3."
+          - value: "q3"
+            message: "Das ist die Stelle, an der die Box endet. Gefragt ist ihre Länge: der Abstand von Q1 bis Q3."
+        hint: "Die Länge ist der Abstand zwischen der linken und der rechten Kante der Box."
+        steps:
+          - "Die linke Kante der Box ist Q1 = {{q1}}, die rechte Kante ist Q3 = {{q3}}."
+          - "Die Länge ist der Unterschied: {{q3}} − {{q1}} = {{answer}}."
+      - type: generated
+        id: box-anzahl
+        given:
+          n: { oneOf: [8, 12, 16, 20, 24, 28] }
+        task:
+          text: "In einer Klasse haben {{n}} Kinder ihren Schulweg angegeben. Die Daten sind geordnet und in vier gleich große Viertel geteilt. Die Box reicht über die mittleren zwei Viertel. Wie viele Werte liegen in der Box?"
+        answer: { value: "n / 2", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "n / 4"
+            message: "Das ist nur ein Viertel der Werte. Die Box umfasst die mittleren zwei Viertel."
+          - value: "n"
+            message: "Das sind alle Werte. Die Box zeigt nur die mittleren zwei Viertel."
+        hint: "Wie viele Werte hat ein Viertel? Die Box umfasst zwei Viertel."
+        steps:
+          - "Ein Viertel der {{n}} Werte ist {{n}} : 4."
+          - "Die Box umfasst zwei Viertel, also die Hälfte: {{answer}} Werte."
+      - type: matching
+        id: boxplot-zeichnen
+        text: Auch die 9a derselben Schule hat ihre Schulwege gemessen. Die Daten der 9a, der Größe nach geordnet, sind 3, 5, 6, 8, 9, 11, 13, 14, 20. Ordne den Stellen im Boxplot ihre Werte zu.
+        pairs:
+          - left: Linkes Ende der Linie
+            right: "3"
+          - left: Linke Kante der Box (Q1)
+            right: "5,5"
+          - left: Dicker Strich in der Box (Median)
+            right: "9"
+          - left: Rechte Kante der Box (Q3)
+            right: "13,5"
+          - left: Rechtes Ende der Linie
+            right: "20"
+        distractors:
+          - "11"
+        explanation: Bei neun Werten ist der fünfte der Median (9). Die untere Hälfte 3, 5, 6, 8 hat die Mitte 5,5, die obere Hälfte 11, 13, 14, 20 hat die Mitte 13,5. Kleinster und größter Wert sind 3 und 20.
+      - type: ordering
+        id: schritte-boxplot
+        text: Bringe die Schritte zum Zeichnen eines Boxplots in die richtige Reihenfolge.
+        items:
+          - Die Daten der Größe nach ordnen
+          - Kleinsten Wert, Q1, Median, Q3 und größten Wert bestimmen und auf einer Skala markieren
+          - Die Box von Q1 bis Q3 mit dem Strich beim Median und die zwei Linien zum kleinsten und größten Wert zeichnen
+        explanation: Erst brauchst du die fünf Werte, dann die Skala. Die Zeichnung folgt zuletzt, denn sie braucht beide.
+      - type: true-false
+        id: laenge-bedeutung
+        text: Ist die Linie links von der Box länger als die Box selbst, liegen links mehr Werte als in der Box.
+        answer: false
+        explanation: Jedes Viertel der Werte hat etwa gleich viele Werte. Eine längere Linie bedeutet nur, dass diese Werte weiter auseinanderliegen.
+  - type: section
+    id: rueckblick
+    title: Rückblick auf Kapitel 2
+    blocks:
+      - type: text
+        text: |
+          Du hast die Schulwege der 8b und 8c verglichen. Du kannst jetzt:
+
+          - Daten ordnen, den Median, die Spannweite und die Quartile bestimmen,
+          - einen Boxplot aus den fünf Werten zeichnen,
+          - an Boxplots ablesen, wie zwei Klassen sich unterscheiden.
+
+          Im nächsten Kapitel fragt die Schule, ob die Antworten einer Klasse für alle gelten.
