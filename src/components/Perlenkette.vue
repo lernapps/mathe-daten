@@ -88,7 +88,7 @@ const isMiddleBead = (i: number) => step.value >= 2 && (result.value?.at.median.
       <button type="button" :disabled="step !== 0" @click="step = 1">{{ order }}</button>
       <button type="button" :disabled="step !== 1" @click="step = 2">{{ middle }}</button>
       <button type="button" :disabled="step !== 2" @click="step = 3">{{ halves }}</button>
-      <button type="button" @click="step = 0">{{ reset }}</button>
+      <button type="button" :disabled="step === 0" @click="step = 0">{{ reset }}</button>
     </div>
     <p class="perlenkette-status" aria-live="polite">{{ status }}</p>
   </div>
@@ -157,5 +157,29 @@ const isMiddleBead = (i: number) => step.value >= 2 && (result.value?.at.median.
 .perlenkette-status {
   margin: 0.5rem 0 0;
   min-height: 3.5rem;
+}
+
+/* buttons in the look of the runtime: the accent colour, the radius and the focus ring of its questions */
+.perlenkette-buttons button {
+  font: inherit;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--page-accent);
+  border-radius: 0.375rem;
+  background: var(--page-background);
+  color: var(--page-accent);
+  cursor: pointer;
+}
+
+.perlenkette-buttons button:focus-visible {
+  outline: 3px solid var(--page-text);
+  outline-offset: 2px;
+}
+
+.perlenkette-buttons button:disabled {
+  border-color: var(--page-border);
+  color: var(--page-muted);
+  cursor: not-allowed;
 }
 </style>

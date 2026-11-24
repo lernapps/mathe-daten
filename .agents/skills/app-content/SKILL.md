@@ -37,7 +37,7 @@ Die Exercise-Ids je Seite stehen in der Seite (Abschnitt `uebung`).
 
 - Dateien: `src/app.yaml`, `src/<kapitel>/chapter.yaml`, `src/<kapitel>/<seite>.yaml`, Daten in `src/data/`, Figuren in `src/images/`, Komponenten in `src/components/`.
 - Jede Seite hat `scope`, nur Deutsch (`languages: [de]`), Abschnitte mit gleichen Ids: `einstieg` (Ziel in Lernendenworten, Szene, erste leichte Aufgabe), `erklaerung`, `beispiel`, `merke`, `uebung`; Kapitel 3 zusätzlich `urteil` („Mein Urteil“, `open-task` mit Musterlösung und konkreter Checkliste, dazu wo eindeutig eine `single-choice`). Titel sagen, was der Abschnitt tut.
-- Die Recap-Seite hat `recap:` und keine Aufgaben: Kopf „Das brauchst du für dieses Kapitel“, je Voraussetzung ein Abschnitt (Überschrift = Name des Bausteins, fette Begriffe, Beispiel im Kasten), darin die Komponente `Kurztest`, am Ende die Checkliste „Du bist bereit, wenn du …“.
+- Die Recap-Seite hat `recap:` und keine Aufgaben: Kopf „Das brauchst du für dieses Kapitel“, je Voraussetzung ein Abschnitt (Überschrift = Name des Bausteins, fette Begriffe, Beispiel im Kasten, ein Satz, wozu man es im Kapitel braucht), dann der Abschnitt `selbsttest` „Kannst du das?“ mit höchstens zwei normalen Übungen (`number` und `single-choice`, Rückmeldung mit Grund) und den Links auf die Kartenseiten, am Ende die Checkliste „Du bist bereit, wenn du …“.
 - Mindestens vier Aufgaben je Seite, steigend (erkennen → anwenden → neue Situation); jede Seite endet mit einem Satz, was nun möglich ist, und dem nächsten Schritt der Geschichte.
 - Geschichte: Kap. 1 Klasse 6a (gezeichnete Kinder Mira, Jonas, Ayşe, Tom, Lena, Paul), Kap. 2 Chat der Klassen 8b und 8c, Kap. 3 ein Fall (Schule mit 600 Lernenden, die Schülervertretung). Derselbe Datensatz „Schulweg“ wächst mit.
 
@@ -65,7 +65,7 @@ Die Exercise-Ids je Seite stehen in der Seite (Abschnitt `uebung`).
 
 - Alle Diagramme (Säulen, Kreis, Boxplot, Täuschungsbeispiele) sind eigene SVG in `src/images/`, aus den Zahlen der Datendateien gezeichnet, `source: eigene Zeichnung`, `licence: CC-BY-4.0`; jedes hat `alt` (was zu sehen ist, ohne die Lösung) und eine Bildunterschrift (wohin schauen). `figure` mit `bar`/`hundred-grid` taugt nicht für Säulen.
 - Konventionen: Achsen beschriftet, Skala sichtbar, Säulen mit Zahl, Kategorien als Wort; eine Farbe je Merkmal plus zweites Merkmal (Muster oder Beschriftung), nie Farbe allein; Dezimalkomma.
-- Komponenten (Begründung: kein Block kann das): `SaeulenZeichnen` (Exercise, Säulen setzen; Seite 1), `WuerfelTuerme` (Würfel verschieben; Mittelwert), `AchseSchieber` (Achse bei 0 oder 5; Diagramme kritisch lesen), `Perlenkette` (Werte ordnen, Mitte markieren, Hälften teilen; zweimal auf der Median-Seite, ungerade und gerade Anzahl), `StichprobeZiehen` (Stichprobe ziehen; Seite `klein-oder-einseitig`), `Kurztest` (Selbsttest im Recap, Vorlage aus `docs/mathe-epic/components/`). Jede hat Tastatur, Textalternative (`nojs`/`describe`) und Test; der Text vor ihr sagt, was die Knöpfe tun. Eigene SVG: `strichliste-6a`, `saeulen-6a`, `kreis-6a`, `becher-werbung`, `saeulen-abgeschnitten`, `zahlenstrahl-0-10`, `rechteck-drei-viertel`, `boxplot-8b-8c`, `boxplot-8b-erklaert`.
+- Komponenten (Begründung: kein Block kann das): `SaeulenZeichnen` (Exercise, Säulen setzen; Seite 1), `WuerfelTuerme` (Würfel verschieben; Mittelwert), `AchseSchieber` (Achse bei 0 oder 5; Diagramme kritisch lesen), `Perlenkette` (Werte ordnen, Mitte markieren, Hälften teilen; zweimal auf der Median-Seite, ungerade und gerade Anzahl), `StichprobeZiehen` (Stichprobe ziehen; Seite `klein-oder-einseitig`). Jede hat Tastatur, Textalternative (`nojs`/`describe`) und Test; der Text vor ihr sagt, was die Knöpfe tun. Buttons sind im Stil der Laufzeit gestaltet (Akzentfarbe, Radius, Fokusring) und ausgegraut, wo sie nichts bewirken (Rand, leerer Turm, Grenze der Säulenhöhe, „Von vorn“ im Ausgangszustand). Eigene SVG: `strichliste-6a`, `saeulen-6a`, `kreis-6a`, `becher-werbung`, `saeulen-abgeschnitten`, `zahlenstrahl-0-10`, `rechteck-drei-viertel`, `boxplot-8b-8c`, `boxplot-8b-erklaert`.
 
 ## Sources
 
@@ -92,5 +92,6 @@ Jedes Kapitel hat in seiner `chapter.yaml` eine `selfAssessment`: Kapitel 1 vier
 - Ein Satzpunkt am Ende einer Antwortoption macht in der Rückmeldung „.:“: Optionen ohne Schlusspunkt schreiben.
 - Zahl und Einheit mit geschütztem Leerzeichen (`12 Minuten`, `37 %`).
 - Aufgabe mit mehreren Listenwerten: `where` gegen gleiche Werte und gegen gleiche `mistakes` (Property-Test), Reihenfolge leicht vor schwer.
+- Jede Seite, jeder Abschnitt und jedes Verfahren beginnt mit dem Anlass („Wenn du … willst, …“), dann die Methode (Regeln §9.8).
 - Neue Darstellung vor der ersten Aufgabe in Worten einführen (Boxplot, Perlenkette); Text vor einer Komponente sagt, was ihre Knöpfe tun.
 - Typfehler in `.vue` zeigt `npx vue-tsc --noEmit`, nicht `vp check`.

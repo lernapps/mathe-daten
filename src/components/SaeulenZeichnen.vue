@@ -54,8 +54,12 @@ const text = (template: string, name: string, n = 0) =>
         </div>
         <p class="saeulen-zeichnen-label" aria-live="polite">{{ text(bar, name, heights[i]) }}</p>
         <div class="saeulen-zeichnen-buttons">
-          <button type="button" :aria-label="text(plus, name)" @click="set(i, 1)">+</button>
-          <button type="button" :aria-label="text(minus, name)" @click="set(i, -1)">−</button>
+          <button type="button" :aria-label="text(plus, name)" :disabled="(heights[i] ?? 0) >= MAX" @click="set(i, 1)">
+            +
+          </button>
+          <button type="button" :aria-label="text(minus, name)" :disabled="(heights[i] ?? 0) <= 0" @click="set(i, -1)">
+            −
+          </button>
         </div>
       </div>
     </div>
@@ -121,5 +125,29 @@ const text = (template: string, name: string, n = 0) =>
   background: var(--page-surface);
   color: var(--page-text);
   font-size: 1.2rem;
+}
+
+/* buttons in the look of the runtime: the accent colour, the radius and the focus ring of its questions */
+.saeulen-zeichnen-buttons button {
+  font: inherit;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--page-accent);
+  border-radius: 0.375rem;
+  background: var(--page-background);
+  color: var(--page-accent);
+  cursor: pointer;
+}
+
+.saeulen-zeichnen-buttons button:focus-visible {
+  outline: 3px solid var(--page-text);
+  outline-offset: 2px;
+}
+
+.saeulen-zeichnen-buttons button:disabled {
+  border-color: var(--page-border);
+  color: var(--page-muted);
+  cursor: not-allowed;
 }
 </style>

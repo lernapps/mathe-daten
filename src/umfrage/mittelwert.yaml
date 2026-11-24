@@ -26,7 +26,7 @@ blocks:
           tower: "{name}: {n} min"
           left: "{name} gibt einen Würfel nach links ab"
           right: "{name} gibt einen Würfel nach rechts ab"
-          hint: "Gib mit den Pfeilen Würfel an den Nachbarn ab, bis alle Türme gleich hoch sind."
+          hint: "Gib mit den Pfeilen Würfel an den Nachbarn ab, bis alle Türme gleich hoch sind. Ausgegraute Pfeile gehen nicht: Am Rand gibt es keinen Nachbarn, und ein leerer Turm hat nichts abzugeben."
           done: "Alle {k} Türme sind gleich hoch: {h} Würfel."
           reset: Von vorn
         nojs: |
@@ -50,6 +50,8 @@ blocks:
     id: erklaerung
     title: Aus den Türmen wird eine Rechnung
     blocks:
+      - type: text
+        text: "Wenn du eine einzige Zahl für alle Werte brauchst, zum Beispiel „Wie lang ist der Schulweg im Durchschnitt?“, rechnest du den Mittelwert aus."
       - type: definition
         term: Mittelwert
         explanation: Der Mittelwert (genauer das arithmetische Mittel, im Alltag auch Durchschnitt genannt) ist der Wert, den jedes Kind hätte, wenn man alle Werte gerecht verteilt. Du rechnest ihn aus, indem du die Summe aller Werte durch ihre Anzahl teilst.
@@ -73,6 +75,8 @@ blocks:
     id: beispiel
     title: Ein Beispiel Schritt für Schritt
     blocks:
+      - type: text
+        text: "Wenn du den Mittelwert selbst ausrechnen willst, gehst du so vor:"
       - type: example
         title: Die Schulwegzeiten von fünf Kindern
         blocks:

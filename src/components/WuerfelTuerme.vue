@@ -43,15 +43,36 @@ function give(index: number, direction: -1 | 1): void {
         </div>
         <p class="wuerfel-tuerme-label">{{ fill(tower, { name, n: heights[i] ?? 0 }) }}</p>
         <div class="wuerfel-tuerme-buttons">
-          <button type="button" :aria-label="fill(left, { name })" @click="give(i, -1)">←</button>
-          <button type="button" :aria-label="fill(right, { name })" @click="give(i, 1)">→</button>
+          <button
+            type="button"
+            :aria-label="fill(left, { name })"
+            :disabled="i === 0 || (heights[i] ?? 0) === 0"
+            @click="give(i, -1)"
+          >
+            ←
+          </button>
+          <button
+            type="button"
+            :aria-label="fill(right, { name })"
+            :disabled="i === heights.length - 1 || (heights[i] ?? 0) === 0"
+            @click="give(i, 1)"
+          >
+            →
+          </button>
         </div>
       </div>
     </div>
     <p class="wuerfel-tuerme-status" aria-live="polite">
       {{ isLevel(heights) && levelHeight !== undefined ? fill(done, { k: heights.length, h: levelHeight }) : hint }}
     </p>
-    <button type="button" class="wuerfel-tuerme-reset" @click="heights = [...values]">{{ reset }}</button>
+    <button
+      type="button"
+      class="wuerfel-tuerme-reset"
+      :disabled="heights.every((h, i) => h === values[i])"
+      @click="heights = [...values]"
+    >
+      {{ reset }}
+    </button>
   </div>
 </template>
 
@@ -111,5 +132,32 @@ function give(index: number, direction: -1 | 1): void {
 .wuerfel-tuerme-reset {
   padding: 0 1rem;
   font-size: 1rem;
+}
+
+/* buttons in the look of the runtime: the accent colour, the radius and the focus ring of its questions */
+.wuerfel-tuerme-buttons button,
+.wuerfel-tuerme-reset {
+  font: inherit;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--page-accent);
+  border-radius: 0.375rem;
+  background: var(--page-background);
+  color: var(--page-accent);
+  cursor: pointer;
+}
+
+.wuerfel-tuerme-buttons button,
+.wuerfel-tuerme-reset:focus-visible {
+  outline: 3px solid var(--page-text);
+  outline-offset: 2px;
+}
+
+.wuerfel-tuerme-buttons button,
+.wuerfel-tuerme-reset:disabled {
+  border-color: var(--page-border);
+  color: var(--page-muted);
+  cursor: not-allowed;
 }
 </style>

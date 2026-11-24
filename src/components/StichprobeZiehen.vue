@@ -160,4 +160,33 @@ const cell = (count: number, total: number) => `${percent(count, total)} % (${c
   margin: 0.5rem 0 0;
   min-height: 3rem;
 }
+
+/* buttons in the look of the runtime: the accent colour, the radius and the focus ring of its questions */
+.stichprobe-ziehen-draw {
+  font: inherit;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--page-accent);
+  border-radius: 0.375rem;
+  background: var(--page-background);
+  color: var(--page-accent);
+  cursor: pointer;
+}
+
+.stichprobe-ziehen-draw:focus-visible {
+  outline: 3px solid var(--page-text);
+  outline-offset: 2px;
+}
+
+.stichprobe-ziehen-draw:disabled {
+  border-color: var(--page-border);
+  color: var(--page-muted);
+  cursor: not-allowed;
+}
+
+.stichprobe-ziehen-draw {
+  background: var(--page-accent);
+  color: var(--page-on-accent);
+}
 </style>

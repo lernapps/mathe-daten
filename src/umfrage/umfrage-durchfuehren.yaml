@@ -38,7 +38,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Eine Umfrage hat vier Schritte. Du überlegst eine **Frage**. Du legst die **Antwortmöglichkeiten** fest, damit
+          Wenn du viele Antworten zählen und vergleichen willst, brauchst du eine Umfrage, bei der alle dieselbe Frage mit denselben Antwortmöglichkeiten bekommen. Eine Umfrage hat vier Schritte. Du überlegst eine **Frage**. Du legst die **Antwortmöglichkeiten** fest, damit
           man die Zettel zählen kann. Du sammelst die Zettel ein und erfasst die Antworten in einer **Liste**, zum Beispiel
           mit einer Strichliste. Zum Schluss kontrollierst du, ob die Anzahlen zusammen die Zahl der Zettel ergeben.
       - type: note
@@ -52,6 +52,8 @@ blocks:
     id: beispiel
     title: Ein Beispiel für gute Antwortgruppen
     blocks:
+      - type: text
+        text: "Wenn Antworten Zahlen sind, wie die Minuten des Schulwegs, fasst du sie in Gruppen zusammen, damit sich Zettel zählen lassen."
       - type: example
         title: Die Schulwegzeit in Gruppen
         blocks:

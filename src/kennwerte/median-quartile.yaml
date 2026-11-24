@@ -59,6 +59,8 @@ blocks:
     id: erklaerung
     title: Die Mitte und die Hälften
     blocks:
+      - type: text
+        text: "Wenn ein einzelner Wert den Mittelwert verzerrt, brauchst du Kennwerte, die weniger davon abhängen. Der Median zeigt die Mitte, die Spannweite und die Quartile zeigen, wie weit die Werte streuen."
       - type: definition
         term: Median
         explanation: Der Median ist der mittlere Wert der Daten, wenn du sie der Größe nach ordnest. Bei gerader Anzahl ist er der Mittelwert der beiden mittleren Werte. In der geordneten Liste stehen links und rechts von der Mitte gleich viele Werte.
@@ -79,6 +81,8 @@ blocks:
     id: beispiel
     title: Zwei Klassen, zwei Beispiele
     blocks:
+      - type: text
+        text: "Wenn du die Kennwerte für eine Klasse brauchst, gehst du immer so vor: ordnen, die Mitte suchen, die Hälften teilen."
       - type: example
         title: Die 8b hat elf Werte
         blocks:

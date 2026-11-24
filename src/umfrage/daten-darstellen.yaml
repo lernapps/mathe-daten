@@ -47,7 +47,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Die Anzahlen schreibst du in eine **Tabelle**: Jede Zeile gehört zu einem Verkehrsmittel, das war die Antwort
+          Wenn du anderen zeigen willst, wie oft jede Antwort vorkommt, brauchst du eine Darstellung, die man auf einen Blick versteht. Die Anzahlen schreibst du in eine **Tabelle**: Jede Zeile gehört zu einem Verkehrsmittel, das war die Antwort
           auf die Frage. Aus der Tabelle zeichnest du ein **Säulendiagramm**: Jede Zeile der Tabelle wird eine Säule, und
           die Höhe der Säule ist die Anzahl der Kinder.
       - type: definition
@@ -82,6 +82,8 @@ blocks:
     id: beispiel
     title: Ein Beispiel Schritt für Schritt
     blocks:
+      - type: text
+        text: "Wenn du eine Antwort selbst von der Strichliste bis zur Säule verfolgen willst, gehst du so vor:"
       - type: example
         title: Die Antwort „Bus“ von der Strichliste zur Säule
         blocks:

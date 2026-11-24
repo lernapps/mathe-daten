@@ -44,7 +44,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Ein **Boxplot** zeichnet fünf Werte der geordneten Daten auf einer Skala: den kleinsten Wert, Q1, den Median, Q3
+          Wenn du Mitte und Streuung von zwei Klassen auf einen Blick vergleichen willst, brauchst du ein Bild, das die fünf Kennwerte zeigt: den Boxplot. Ein **Boxplot** zeichnet fünf Werte der geordneten Daten auf einer Skala: den kleinsten Wert, Q1, den Median, Q3
           und den größten Wert. Die **Box** reicht von Q1 bis Q3. Der dicke Strich in der Box steht beim Median. Eine Linie
           führt von der Box zum kleinsten Wert, eine zum größten. Die fünf Werte teilen die geordneten Daten in vier **Viertel** mit etwa gleich vielen Werten: von min bis Q1, von Q1 bis zum Median, vom Median bis Q3 und von Q3 bis max.
       - type: definition
@@ -66,6 +66,8 @@ blocks:
     id: beispiel
     title: Einen Boxplot Schritt für Schritt zeichnen
     blocks:
+      - type: text
+        text: "Wenn du für eine Klasse selbst einen Boxplot brauchst, zeichnest du ihn so:"
       - type: example
         title: Die 8c als Boxplot
         blocks:

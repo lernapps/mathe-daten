@@ -43,6 +43,8 @@ blocks:
     id: erklaerung
     title: Anzahl und Anteil
     blocks:
+      - type: text
+        text: "Wenn du wissen willst, wie oft eine Antwort vorkommt und welchen Teil aller Antworten sie ausmacht, brauchst du zwei Zahlen: die absolute und die relative Häufigkeit."
       - type: definition
         term: Absolute Häufigkeit
         explanation: Die absolute Häufigkeit sagt, wie oft eine Antwort vorkommt. Bei der 6a ist die absolute Häufigkeit von „Zu Fuß“ die Zahl 8.
@@ -76,6 +78,8 @@ blocks:
     id: beispiel
     title: Ein Beispiel zum Vergleichen
     blocks:
+      - type: text
+        text: "Wenn zwei Klassen verschieden groß sind, sagt die Anzahl allein nicht, wo ein größerer Teil etwas tut. Dann vergleichst du die relativen Häufigkeiten."
       - type: example
         title: Zwei Klassen, verschieden groß
         blocks:
