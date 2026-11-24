@@ -60,6 +60,8 @@ Die Zählung der 6a:
 
 ### Anzahl und Anteil
 
+Wenn du wissen willst, wie oft eine Antwort vorkommt und welchen Teil aller Antworten sie ausmacht, brauchst du zwei Zahlen: die absolute und die relative Häufigkeit.
+
 - **Absolute Häufigkeit**: Die absolute Häufigkeit sagt, wie oft eine Antwort vorkommt. Bei der 6a ist die absolute Häufigkeit von „Zu Fuß“ die Zahl 8.
 
 - **Relative Häufigkeit**: Die relative Häufigkeit ist der Anteil einer Antwort an allen Antworten. Du schreibst ihn als Bruch, wobei die Anzahl der Antwort über der Gesamtzahl steht. Den Bruch kannst du auch als Dezimalzahl ausrechnen. Bei der 6a ist die relative Häufigkeit von „Zu Fuß“ der Bruch $\frac{8}{24}$.
@@ -80,6 +82,8 @@ Einen Bruch kannst du auch als Division ausrechnen: $\frac{6}{24}$ bedeutet 6 : 
 Die Gesamtzahl steht im Nenner, die Anzahl der Antwort im Zähler. Zählst du alle Anzahlen zusammen, bekommst du die Gesamtzahl. Alle relativen Häufigkeiten zusammen sind darum das Ganze: $\frac{8}{24} + \frac{6}{24} + \frac{7}{24} + \frac{3}{24} = \frac{24}{24} = 1$. Lena fragt nach der Anzahl: Die absolute Häufigkeit von „Zu Fuß“ ist 8. Toms Frage beantwortet die relative Häufigkeit: $\frac{8}{24}$.
 
 ### Ein Beispiel zum Vergleichen
+
+Wenn zwei Klassen verschieden groß sind, sagt die Anzahl allein nicht, wo ein größerer Teil etwas tut. Dann vergleichst du die relativen Häufigkeiten.
 
 **Beispiel: Zwei Klassen, verschieden groß**
 

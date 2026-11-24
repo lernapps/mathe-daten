@@ -55,7 +55,7 @@ Interaktiv: Ein Säulendiagramm mit drei Säulen: 6a hat 6 Kinder mit Fahrrad, 6
 
 ### Wie du Täuschungen erkennst
 
-Zeitungen und Werbung zeigen Daten oft so, dass ein kleiner Unterschied groß aussieht. Lies bei einem Diagramm zuerst die Überschrift und die Frage. Schau dann auf die **Achse**: Beginnt sie bei 0? Schau auf die **Zahlen**: Passen die Höhen dazu? Schau zuletzt auf **Bilder**: Sind sie in beide Richtungen vergrößert? Repariert wird so: die Achse bei 0 beginnen lassen, ein Bild gleich groß lassen und für mehr einfach mehr Bilder zeichnen, Zahlen über die Säulen und Namen unter die Säulen schreiben.
+Wenn du ein Diagramm in der Zeitung oder in der Werbung siehst, willst du wissen, ob du ihm trauen kannst. Dafür prüfst du drei Dinge. Zeitungen und Werbung zeigen Daten oft so, dass ein kleiner Unterschied groß aussieht. Lies bei einem Diagramm zuerst die Überschrift und die Frage. Schau dann auf die **Achse**: Beginnt sie bei 0? Schau auf die **Zahlen**: Passen die Höhen dazu? Schau zuletzt auf **Bilder**: Sind sie in beide Richtungen vergrößert? Repariert wird so: die Achse bei 0 beginnen lassen, ein Bild gleich groß lassen und für mehr einfach mehr Bilder zeichnen, Zahlen über die Säulen und Namen unter die Säulen schreiben.
 
 Bild: Zwei Becher, der linke klein mit der Beschriftung Schuljahr 1 mit 120, der rechte doppelt so breit und doppelt so hoch mit der Beschriftung Schuljahr 2 mit 240. Bildunterschrift: Vergleiche die Zahlen unter den Bechern mit der Größe der Becher.
 
@@ -65,6 +65,8 @@ Wird ein Bild in der Breite **und** in der Höhe verdoppelt, ist seine Fläche *
 vergleicht die Fläche, nicht die Höhe, und glaubt darum an einen viel größeren Unterschied. Zum Beispiel braucht ein Quadrat aus einem Kästchen, das doppelt so breit und doppelt so hoch wird, vier Kästchen.
 
 ### Ein Beispiel: die Becher-Werbung
+
+Wenn eine Werbung ein Bild und Zahlen zeigt, prüfst du, ob sie zusammenpassen. So geht das bei der Becher-Werbung:
 
 **Beispiel: Sind 240 Becher wirklich so viel mehr als 120?**
 

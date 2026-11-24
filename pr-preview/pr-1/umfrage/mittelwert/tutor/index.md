@@ -55,6 +55,8 @@ Interaktiv: Fünf Türme aus Würfeln, jeder Würfel ist eine Minute: Mira 3, Jo
 
 ### Aus den Türmen wird eine Rechnung
 
+Wenn du eine einzige Zahl für alle Werte brauchst, zum Beispiel „Wie lang ist der Schulweg im Durchschnitt?“, rechnest du den Mittelwert aus.
+
 - **Mittelwert**: Der Mittelwert (genauer das arithmetische Mittel, im Alltag auch Durchschnitt genannt) ist der Wert, den jedes Kind hätte, wenn man alle Werte gerecht verteilt. Du rechnest ihn aus, indem du die Summe aller Werte durch ihre Anzahl teilst.
 
 Beim Einebnen sind 35 Würfel auf 5 Türme verteilt worden. Jeder Turm hat danach 35 : 5 = 7 Würfel. Das ist der
@@ -70,6 +72,8 @@ Der Mittelwert liegt immer zwischen dem kleinsten und dem größten Wert. Er mus
 jedes Kind, wenn alle gleich lang brauchten und die Summe dieselbe bliebe.
 
 ### Ein Beispiel Schritt für Schritt
+
+Wenn du den Mittelwert selbst ausrechnen willst, gehst du so vor:
 
 **Beispiel: Die Schulwegzeiten von fünf Kindern**
 

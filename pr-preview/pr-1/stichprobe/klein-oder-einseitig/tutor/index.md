@@ -55,6 +55,8 @@ Interaktiv: Eine Simulation mit allen 600 Lernenden der Schule: 120 kommen zu Fu
 
 ### Gesamtheit, Stichprobe und was sie taugt
 
+Wenn du etwas über alle wissen willst, aber nicht alle fragen kannst, befragst du nur einen Teil. Ob das für eine Aussage über alle reicht, hängt von der Stichprobe ab.
+
 - **Gesamtheit**: Die Gesamtheit sind alle, über die man etwas wissen will, hier alle 600 Lernenden der Schule. Verwechsle sie nicht mit der Gesamtzahl, der Anzahl aller Befragten einer Umfrage.
 
 - **Stichprobe**: Eine Stichprobe ist ein Teil der Gesamtheit, den man wirklich befragt. Man schließt von ihr auf die Gesamtheit.
@@ -71,6 +73,8 @@ Eine große Stichprobe ist nicht automatisch gut. Wenn jede und jeder Lernende d
 Schätzung und keine genaue Zahl.
 
 ### Die 6a im Vergleich mit der Schule
+
+Wenn du prüfen willst, ob eine Stichprobe für alle spricht, vergleichst du sie mit der Gesamtheit. Hier ist das für die 6a möglich, weil wir alle 600 kennen.
 
 **Beispiel: Ein Drittel der Schule kommt zu Fuß?**
 

@@ -55,7 +55,7 @@ Bild: Zwei Boxplots untereinander auf derselben Skala von 0 bis 40 Minuten. Die 
 
 ### Wie ein Boxplot gebaut ist
 
-Ein **Boxplot** zeichnet fünf Werte der geordneten Daten auf einer Skala: den kleinsten Wert, Q1, den Median, Q3
+Wenn du Mitte und Streuung von zwei Klassen auf einen Blick vergleichen willst, brauchst du ein Bild, das die fünf Kennwerte zeigt: den Boxplot. Ein **Boxplot** zeichnet fünf Werte der geordneten Daten auf einer Skala: den kleinsten Wert, Q1, den Median, Q3
 und den größten Wert. Die **Box** reicht von Q1 bis Q3. Der dicke Strich in der Box steht beim Median. Eine Linie
 führt von der Box zum kleinsten Wert, eine zum größten. Die fünf Werte teilen die geordneten Daten in vier **Viertel** mit etwa gleich vielen Werten: von min bis Q1, von Q1 bis zum Median, vom Median bis Q3 und von Q3 bis max.
 
@@ -68,6 +68,8 @@ Bild: Boxplot der Klasse 8b. Die Linie beginnt bei 4 und endet bei 35. Die Box r
 In der Box liegen die mittleren zwei Viertel der Werte, also etwa die Hälfte. Ist die Box oder eine Linie lang, heißt das nicht, dass dort mehr Werte liegen: Jedes Viertel hat etwa gleich viele Werte. Es heißt, dass die Werte dort weiter streuen.
 
 ### Einen Boxplot Schritt für Schritt zeichnen
+
+Wenn du für eine Klasse selbst einen Boxplot brauchst, zeichnest du ihn so:
 
 **Beispiel: Die 8c als Boxplot**
 

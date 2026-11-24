@@ -56,6 +56,8 @@ Interaktiv: Elf Perlen mit den Schulwegzeiten der 8b in Minuten: 4, 5, 7, 8, 10,
 
 ### Die Mitte und die Hälften
 
+Wenn ein einzelner Wert den Mittelwert verzerrt, brauchst du Kennwerte, die weniger davon abhängen. Der Median zeigt die Mitte, die Spannweite und die Quartile zeigen, wie weit die Werte streuen.
+
 - **Median**: Der Median ist der mittlere Wert der Daten, wenn du sie der Größe nach ordnest. Bei gerader Anzahl ist er der Mittelwert der beiden mittleren Werte. In der geordneten Liste stehen links und rechts von der Mitte gleich viele Werte.
 
 - **Spannweite**: Die Spannweite ist der Unterschied zwischen dem größten und dem kleinsten Wert, also größter Wert minus kleinster Wert. Sie zeigt, wie weit die Daten auseinanderliegen.
@@ -68,6 +70,8 @@ Interaktiv: Elf Perlen mit den Schulwegzeiten der 8b in Minuten: 4, 5, 7, 8, 10,
 Werte. Die Spannweite ist $\text{größter Wert} - \text{kleinster Wert}$. Bei gerader Anzahl teilst du die Liste genau in zwei Hälften, bei zwölf Werten je sechs. Kein Wert bleibt übrig. Der Median muss dann kein Wert der Liste sein.
 
 ### Zwei Klassen, zwei Beispiele
+
+Wenn du die Kennwerte für eine Klasse brauchst, gehst du immer so vor: ordnen, die Mitte suchen, die Hälften teilen.
 
 **Beispiel: Die 8b hat elf Werte**
 

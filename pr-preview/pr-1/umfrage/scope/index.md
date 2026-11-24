@@ -3,8 +3,7 @@
 ## Das brauchst du für dieses Kapitel
 
 Diese Seite wiederholt, was das Kapitel voraussetzt: natürliche Zahlen vergleichen und der Größe nach ordnen, Brüche als
-Teil eines Ganzen deuten (Zähler über Nenner) und mit Dezimalzahlen rechnen. Jeder Abschnitt hat einen Kurztest. Wer einen
-Kurztest nicht sicher beantwortet, schaut sich den Baustein auf der Lernlandkarte an.
+Teil eines Ganzen deuten (Zähler über Nenner) und mit Dezimalzahlen rechnen. Der Abschnitt „Kannst du das?“ hat zwei Aufgaben. Wer eine nicht sicher beantwortet, schaut sich den Baustein auf der Lernlandkarte an.
 
 ## Unsere Umfrage – Daten darstellen
 

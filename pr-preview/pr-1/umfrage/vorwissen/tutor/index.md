@@ -22,9 +22,11 @@ Der Lernumfang dieser Seite, mit dem, was dazugehört und was nicht: [Scope](../
 
 ## Wo das Kind gerade ist
 
+- Die erste Nachricht des Kindes nennt diese Seite und je Aufgabe die Nummer, die das Kind gerade vor sich hat, z. B. `?uebung=selbsttest-dezimal`. Schlag die Nummern unten bei den Aufgaben nach. Kommt das Kind mit „Hilfe“, nennt `uebung=` die Aufgabe und `abschnitt=` ihren Abschnitt.
 - Steht in der Nachricht „Die App sagt: …“, hat die App das zur Eingabe des Kindes gemeldet. Setz dort an, ohne es zu wiederholen.
 - Eine Zeile wie „…, Nr. 16: richtig im 2. Versuch.“ kommt von „Zurück“ in der App: Aufgabe, Nummer und wie weit das Kind damit kam.
 - „Ich habe auf … geübt:“ kommt von „Zurück zum Tutor“: diese Seite mit den Nummern, dann je geübter Aufgabe, wie es lief, bei einer falschen mit Eingabe und Meldung der App. Setz bei den falschen an, eine nach der anderen.
+- Jede Nummer hat einen Link: die Adresse der Seite, also dieser Tutor-Seite ohne `tutor/` und ohne `?…`, mit der Nummer und `via=tutor`, z. B. `…/umfrage/vorwissen/?via=tutor#selbsttest-dezimal`. Schick ihn immer als volle Adresse, mit Schema und Host dieser Tutor-Seite (z. B. `https://`). Zum Weiterüben nimm eine andere Nummer der Aufgabe und nenn ihren Text. Sag dazu: „Löse sie in der App und drück dann ‚Zurück‘. Füg die Zeile hier ein.“
 
 ## Besondere Anforderungen
 
@@ -46,11 +48,11 @@ Zahlen vergleichen und ordnen, Brüche und Dezimalzahlen: was du für die Umfrag
 ### Kannst du das schon?
 
 Dieses Kapitel braucht drei Dinge: Zahlen vergleichen und ordnen, Brüche und Dezimalzahlen. Für Tabellen und Diagramme brauchst du das Ordnen von Zahlen, für Häufigkeiten Brüche und für den Mittelwert das Rechnen mit Dezimalzahlen. Zu jedem gibt es eine
-kurze Wiederholung und einen Kurztest. Am Ende steht eine Checkliste.
+kurze Wiederholung. Danach folgen zwei Aufgaben und eine Checkliste.
 
 ### Zahlen vergleichen und ordnen
 
-Ich kann natürliche Zahlen vergleichen, am Zahlenstrahl ablesen und der Größe nach ordnen. Beim **Vergleichen**
+Wenn du Daten in eine Tabelle oder ein Diagramm einträgst, musst du Zahlen vergleichen und der Größe nach ordnen. Ich kann natürliche Zahlen vergleichen, am Zahlenstrahl ablesen und der Größe nach ordnen. Beim **Vergleichen**
 sagst du, welche Zahl größer ist. Beim **Ordnen** stellst du Zahlen der Größe nach hintereinander.
 
 - **Natürliche Zahlen**: Die natürlichen Zahlen sind 0, 1, 2, 3 und immer so weiter.
@@ -65,15 +67,9 @@ Bild: Zahlenstrahl von 0 bis 10 mit den markierten Zahlen 3 und 7. Die 7 liegt w
 
 Welche Zahl ist größer, 385 oder 358? Vergleiche von links: Beide haben 3 Hunderter, 385 hat 8 Zehner, 358 hat 5 Zehner. Also ist 385 größer als 358.
 
-Interaktiv: Kurztest: Welche Zahl ist die größte, 45 007, 40 570, 40 705 oder 40 075? Antwort: 45 007, denn sie hat als einzige 5 Tausender.
-
-Interaktiv: Kurztest: Welche Reihe ist der Größe nach geordnet, die kleinste Zahl zuerst? Antwort: 3099, 3190, 3910, 9013.
-
-Wenn du nicht sicher warst, schau dir den Baustein „Zahlen vergleichen und ordnen“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/) an.
-
 ### Der Bruchbegriff
 
-Ich kann Brüche als Teil eines Ganzen deuten und darstellen. Ein **Bruch** beschreibt einen Teil eines Ganzen, das in
+Wenn du sagen willst, welchen Teil aller Antworten eine Antwort ausmacht, brauchst du Brüche. Ich kann Brüche als Teil eines Ganzen deuten und darstellen. Ein **Bruch** beschreibt einen Teil eines Ganzen, das in
 gleich große Teile geteilt ist. Der **Nenner** sagt, in wie viele gleiche Teile das Ganze geteilt ist. Der **Zähler**
 sagt, wie viele dieser Teile gemeint sind.
 
@@ -89,13 +85,9 @@ Bild: Ein Rechteck in vier gleich große Teile geteilt. Drei Teile sind gefärbt
 
 Das Rechteck ist in 4 gleiche Teile geteilt, 3 sind gefärbt. Der Bruch heißt $\frac{3}{4}$, gesprochen drei Viertel.
 
-Interaktiv: Kurztest: Ein Band ist in 8 gleich lange Stücke geschnitten, 2 sind rot, 4 sind blau, der Rest ist weiß. Antwort: zwei Achtel, denn weiß sind 8 − 2 − 4 = 2 Stücke von 8.
-
-Wenn du nicht sicher warst, schau dir den Baustein „Bruchbegriff“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/brueche-begriff/) an.
-
 ### Rechnen mit Dezimalbrüchen
 
-Ich kann mit Dezimalbrüchen rechnen. Eine **Dezimalzahl** hat ein Komma; man nennt sie auch **Dezimalbruch**. Die Stellen hinter dem Komma sind Zehntel,
+Wenn du einen Mittelwert ausrechnest, entstehen oft Kommazahlen, mit denen du rechnen musst. Ich kann mit Dezimalbrüchen rechnen. Eine **Dezimalzahl** hat ein Komma; man nennt sie auch **Dezimalbruch**. Die Stellen hinter dem Komma sind Zehntel,
 Hundertstel und so weiter. Beim Addieren schreibst du Komma unter Komma, beim Teilen rechnest du wie mit
 ganzen Zahlen und machst Zehntel und Hundertstel, wenn ein Rest bleibt (siehe Beispiel).
 
@@ -107,11 +99,15 @@ Addieren: 3,5 + 1,25. Schreibe 3,50 + 1,25 = 4,75.
 
 Teilen: 35 : 4. 35 : 4 = 8 Rest 3, dann 3 Ganze sind 30 Zehntel, 30 : 4 = 7 Rest 2, dann 20 Hundertstel, 20 : 4 = 5. Also 35 : 4 = 8,75.
 
-Interaktiv: Kurztest: Wie viel ist 3,75 + 2,8? Antwort: 6,55, denn 3,75 + 2,80 ergibt 5 Hundertstel, 15 Zehntel (also 5 Zehntel und einen Übertrag) und 6 Ganze.
+### Kannst du das?
 
-Interaktiv: Kurztest: Wie viel ist 15 : 4? Antwort: 3,75, denn 4 passt 3 Mal in 15 mit Rest 3, dann 30 Zehntel geteilt durch 4 sind 7 Zehntel mit Rest 2, dann 20 Hundertstel geteilt durch 4 sind 5.
+Wenn du prüfen willst, ob du für das Kapitel bereit bist, beantworte diese zwei Aufgaben. Die erste prüft das Rechnen mit Dezimalzahlen, die zweite den Bruchbegriff.
 
-Wenn du nicht sicher warst, schau dir den Baustein „Rechnen mit Dezimalbrüchen“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/dezimalbrueche-rechnen/) an.
+- Aufgabe `selbsttest-dezimal` (unten)
+
+- Aufgabe `selbsttest-bruch` (unten)
+
+Wenn du nicht sicher warst, schau dir den Baustein auf der Lernlandkarte an: [Zahlen vergleichen und ordnen](https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/), [Bruchbegriff](https://lernapps.net/apps/map/mathematik/c/brueche-begriff/) und [Rechnen mit Dezimalbrüchen](https://lernapps.net/apps/map/mathematik/c/dezimalbrueche-rechnen/).
 
 ### Du bist bereit, wenn du …
 
@@ -119,4 +115,29 @@ Wenn du nicht sicher warst, schau dir den Baustein „Rechnen mit Dezimalbrüche
 - Brüche als Teil eines Ganzen deuten und darstellen kannst,
 - mit Dezimalbrüchen rechnen kannst.
 
-Bei einem Punkt unsicher? Lies den Abschnitt oben noch einmal und schau dir den Baustein auf der Lernlandkarte an (Link unter dem Kurztest). Sonst geht es mit der Umfrage der Klasse 6a weiter.
+Bei einem Punkt unsicher? Lies den Abschnitt oben noch einmal und schau dir den Baustein auf der Lernlandkarte an (Links unter den Aufgaben). Sonst geht es mit der Umfrage der Klasse 6a weiter.
+
+### Aufgabe selbsttest-dezimal
+
+- Aufgabe: Wie viel ist 3,75 + 2,8?
+- Antwortformat: eine Zahl eintippen
+- Lösung: 6,55
+- Erklärung: Bei 3,75 + 2,80 ergeben die Hundertstel 5, die Zehntel 7 + 8 = 15 (5 Zehntel und einen Übertrag) und die Ganzen 3 + 2 + 1 = 6. Das Ergebnis ist 6,55.
+- Tipp der App: Schreibe die Zahlen mit Komma unter Komma untereinander und ergänze bei 2,8 eine Null.
+- Typische Fehler und was die App sagt:
+  - 5.83: Du hast die 8 wie 8 Hundertstel gerechnet. 2,8 sind 8 Zehntel, also 2,80. Schreibe 3,75 + 2,80 untereinander.
+  - 6.5: Die 5 Hundertstel von 3,75 fehlen in deinem Ergebnis. Rechne 3,75 + 2,80.
+- Link: [../?via=tutor#selbsttest-dezimal](../?via=tutor#selbsttest-dezimal)
+
+### Aufgabe selbsttest-bruch
+
+- Aufgabe: Ein Band ist in 8 gleich lange Stücke geschnitten. 2 Stücke sind rot, 4 Stücke sind blau, der Rest ist weiß. Welcher Bruchteil des Bandes ist weiß?
+- Antwortformat: eine Antwort wählen
+- Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
+  - ✗ sechs Achtel – Das sind die roten und blauen Stücke zusammen. Gefragt ist der weiße Teil.
+  - ✓ zwei Achtel – Rot und blau sind zusammen 2 + 4 = 6 Stücke. Es bleiben 8 − 6 = 2 Stücke von 8, das sind zwei Achtel.
+  - ✗ zwei Sechstel – Das Ganze ist das ganze Band, also 8 Stücke, nicht nur die 6 gefärbten. Der Nenner ist 8.
+  - ✗ vier Achtel – Das sind nur die blauen Stücke. Gefragt ist der weiße Teil.
+- Lösung: zwei Achtel
+- Erklärung: Der Nenner ist die Zahl aller Stücke, 8. Der Zähler ist die Zahl der weißen Stücke, 8 − 2 − 4 = 2.
+- Link: [../?via=tutor#selbsttest-bruch](../?via=tutor#selbsttest-bruch)

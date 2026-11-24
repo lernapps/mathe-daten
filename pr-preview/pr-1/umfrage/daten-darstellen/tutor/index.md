@@ -57,7 +57,7 @@ Bild: Strichliste der Klasse 6a mit vier Zeilen. Jede Zeile hat Striche in Bünd
 
 ### Von der Strichliste zur Säule
 
-Die Anzahlen schreibst du in eine **Tabelle**: Jede Zeile gehört zu einem Verkehrsmittel, das war die Antwort
+Wenn du anderen zeigen willst, wie oft jede Antwort vorkommt, brauchst du eine Darstellung, die man auf einen Blick versteht. Die Anzahlen schreibst du in eine **Tabelle**: Jede Zeile gehört zu einem Verkehrsmittel, das war die Antwort
 auf die Frage. Aus der Tabelle zeichnest du ein **Säulendiagramm**: Jede Zeile der Tabelle wird eine Säule, und
 die Höhe der Säule ist die Anzahl der Kinder.
 
@@ -81,6 +81,8 @@ Willst du wissen, wie viele Kinder mehr es bei einer Säule sind als bei einer a
 Zahl von der größeren ab.
 
 ### Ein Beispiel Schritt für Schritt
+
+Wenn du eine Antwort selbst von der Strichliste bis zur Säule verfolgen willst, gehst du so vor:
 
 **Beispiel: Die Antwort „Bus“ von der Strichliste zur Säule**
 

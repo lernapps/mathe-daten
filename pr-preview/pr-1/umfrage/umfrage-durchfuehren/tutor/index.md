@@ -53,7 +53,7 @@ Umfrage planen, durchführen und die Antworten in einer Liste aufschreiben.**
 
 ### Von der Frage zur Liste
 
-Eine Umfrage hat vier Schritte. Du überlegst eine **Frage**. Du legst die **Antwortmöglichkeiten** fest, damit
+Wenn du viele Antworten zählen und vergleichen willst, brauchst du eine Umfrage, bei der alle dieselbe Frage mit denselben Antwortmöglichkeiten bekommen. Eine Umfrage hat vier Schritte. Du überlegst eine **Frage**. Du legst die **Antwortmöglichkeiten** fest, damit
 man die Zettel zählen kann. Du sammelst die Zettel ein und erfasst die Antworten in einer **Liste**, zum Beispiel
 mit einer Strichliste. Zum Schluss kontrollierst du, ob die Anzahlen zusammen die Zahl der Zettel ergeben.
 
@@ -63,6 +63,8 @@ Jedes Kind soll **genau eine** passende Antwortmöglichkeit finden. Dafür dürf
 überschneiden, und es darf keine Lücke geben. Eine gute Frage legt außerdem keine Antwort nahe: Nicht „Du fährst doch auch mit dem Rad, oder?“, sondern „Wie kommst du zur Schule?“. Die Zeiten, die die Kinder aufschreiben, brauchst du auf der nächsten Seite.
 
 ### Ein Beispiel für gute Antwortgruppen
+
+Wenn Antworten Zahlen sind, wie die Minuten des Schulwegs, fasst du sie in Gruppen zusammen, damit sich Zettel zählen lassen.
 
 **Beispiel: Die Schulwegzeit in Gruppen**
 
