@@ -71,7 +71,7 @@ Werte. Die Spannweite ist $\text{größter Wert} - \text{kleinster Wert}$. Bei g
 
 ### Zwei Klassen, zwei Beispiele
 
-Wenn du die Kennwerte für eine Klasse brauchst, gehst du immer so vor: ordnen, die Mitte suchen, die Hälften teilen.
+Damit du für jede Klasse zu Median und Quartilen kommst, brauchst du eine feste Reihenfolge: ordnen, die Mitte suchen, die Hälften teilen.
 
 **Beispiel: Die 8b hat elf Werte**
 

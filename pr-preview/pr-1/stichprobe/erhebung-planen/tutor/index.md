@@ -53,8 +53,9 @@ Erhebungsinstrument planen und beurteilen, wie aussagekräftig sie ist.**
 
 ### Was ein guter Erhebungsplan festlegt
 
-Wenn du selbst eine Erhebung machst, entscheidest du vor dem Fragen, wer befragt wird und wie. Das legt der Erhebungsplan fest. Ein **Erhebungsplan** legt fest, wer befragt wird und wie. Er hat vier Teile: die Gesamtheit, die Stichprobe, das
-**Erhebungsinstrument**, zum Beispiel einen Fragebogen mit der Frage und den Antwortmöglichkeiten, und die Aussage.
+Wenn du selbst eine Erhebung machst, entscheidest du vor dem Fragen, wer befragt wird und wie. Das hält ein
+**Erhebungsplan** fest. Er hat vier Teile: die Gesamtheit, die Stichprobe, das **Erhebungsinstrument**, zum
+Beispiel einen Fragebogen mit der Frage und den Antwortmöglichkeiten, und die Aussage.
 
 - **Erhebungsinstrument**: Das Erhebungsinstrument ist das, womit du die Daten erhebst, zum Beispiel ein Fragebogen mit einer neutralen Frage und festen Antwortmöglichkeiten.
 
@@ -72,7 +73,7 @@ Sage darum „ungefähr“ oder „etwa“, nicht „genau“.
 
 ### Der neue Plan der Schülervertretung
 
-Wenn du einen Plan brauchst, kannst du dich an diesem Plan der Schülervertretung orientieren:
+So sieht ein Plan aus, der die Probleme des ersten Plans vermeidet:
 
 **Beispiel: 60 von 600 Lernenden**
 

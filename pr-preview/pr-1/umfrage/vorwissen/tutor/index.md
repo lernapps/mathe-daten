@@ -45,14 +45,14 @@ Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon kön
 
 Zahlen vergleichen und ordnen, Brüche und Dezimalzahlen: was du für die Umfrage der Klasse 6a schon können solltest.
 
-### Kannst du das schon?
+### Wofür diese Seite da ist
 
 Dieses Kapitel braucht drei Dinge: Zahlen vergleichen und ordnen, Brüche und Dezimalzahlen. Für Tabellen und Diagramme brauchst du das Ordnen von Zahlen, für Häufigkeiten Brüche und für den Mittelwert das Rechnen mit Dezimalzahlen. Zu jedem gibt es eine
 kurze Wiederholung. Danach folgen zwei Aufgaben und eine Checkliste.
 
 ### Zahlen vergleichen und ordnen
 
-Wenn du Daten in eine Tabelle oder ein Diagramm einträgst, musst du Zahlen vergleichen und der Größe nach ordnen. Ich kann natürliche Zahlen vergleichen, am Zahlenstrahl ablesen und der Größe nach ordnen. Beim **Vergleichen**
+Wenn du Daten in eine Tabelle oder ein Diagramm einträgst, musst du Zahlen vergleichen und der Größe nach ordnen. Auf der Lernlandkarte steht dafür: „Ich kann natürliche Zahlen vergleichen, am Zahlenstrahl ablesen und der Größe nach ordnen.“ Beim **Vergleichen**
 sagst du, welche Zahl größer ist. Beim **Ordnen** stellst du Zahlen der Größe nach hintereinander.
 
 - **Natürliche Zahlen**: Die natürlichen Zahlen sind 0, 1, 2, 3 und immer so weiter.
@@ -69,7 +69,7 @@ Welche Zahl ist größer, 385 oder 358? Vergleiche von links: Beide haben 3 Hund
 
 ### Der Bruchbegriff
 
-Wenn du sagen willst, welchen Teil aller Antworten eine Antwort ausmacht, brauchst du Brüche. Ich kann Brüche als Teil eines Ganzen deuten und darstellen. Ein **Bruch** beschreibt einen Teil eines Ganzen, das in
+Wenn du sagen willst, welchen Teil aller Antworten eine Antwort ausmacht, brauchst du Brüche. Auf der Lernlandkarte steht dafür: „Ich kann Brüche als Teil eines Ganzen deuten und darstellen.“ Ein **Bruch** beschreibt einen Teil eines Ganzen, das in
 gleich große Teile geteilt ist. Der **Nenner** sagt, in wie viele gleiche Teile das Ganze geteilt ist. Der **Zähler**
 sagt, wie viele dieser Teile gemeint sind.
 
@@ -87,7 +87,7 @@ Das Rechteck ist in 4 gleiche Teile geteilt, 3 sind gefärbt. Der Bruch heißt $
 
 ### Rechnen mit Dezimalbrüchen
 
-Wenn du einen Mittelwert ausrechnest, entstehen oft Kommazahlen, mit denen du rechnen musst. Ich kann mit Dezimalbrüchen rechnen. Eine **Dezimalzahl** hat ein Komma; man nennt sie auch **Dezimalbruch**. Die Stellen hinter dem Komma sind Zehntel,
+Wenn du einen Mittelwert ausrechnest, entstehen oft Kommazahlen, mit denen du rechnen musst. Auf der Lernlandkarte steht dafür: „Ich kann mit Dezimalbrüchen rechnen.“ Eine **Dezimalzahl** hat ein Komma; man nennt sie auch **Dezimalbruch**. Die Stellen hinter dem Komma sind Zehntel,
 Hundertstel und so weiter. Beim Addieren schreibst du Komma unter Komma, beim Teilen rechnest du wie mit
 ganzen Zahlen und machst Zehntel und Hundertstel, wenn ein Rest bleibt (siehe Beispiel).
 
@@ -101,7 +101,7 @@ Teilen: 35 : 4. 35 : 4 = 8 Rest 3, dann 3 Ganze sind 30 Zehntel, 30 : 4 = 7 Rest
 
 ### Kannst du das?
 
-Wenn du prüfen willst, ob du für das Kapitel bereit bist, beantworte diese zwei Aufgaben. Die erste prüft das Rechnen mit Dezimalzahlen, die zweite den Bruchbegriff.
+Wenn du prüfen willst, ob du für das Kapitel bereit bist, beantworte diese zwei Aufgaben. Die erste prüft das Rechnen mit Dezimalzahlen, die zweite den Bruchbegriff. Ob du Zahlen vergleichen und ordnen kannst, siehst du an der Checkliste darunter.
 
 - Aufgabe `selbsttest-dezimal` (unten)
 

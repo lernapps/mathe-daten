@@ -45,9 +45,11 @@ Aus den fünf Werten einen Boxplot zeichnen und an Boxplots ablesen, wie zwei Kl
 
 ### Zwei Klassen auf einen Blick
 
-Noah aus der 8b zeichnet für beide Klassen ein Bild aus den Werten, die du auf der Seite davor bestimmt hast, auf derselben Skala. Ein
-solches Bild heißt **Boxplot**: ein Bild für fünf Werte der geordneten Daten. Eine Linie reicht vom kleinsten bis zum größten Wert, dazwischen liegt eine Box von Q1 bis Q3, und ein dicker Strich in der Box zeigt den Median. **Nach dieser Seite kannst du einen Boxplot zeichnen und aus Boxplots Aussagen über die Daten
-ablesen.**
+Die 8b und die 8c wollen ihre Schulwege vergleichen, aber zwei Listen mit Zahlen sind schwer zu vergleichen. Noah
+aus der 8b zeichnet deshalb für beide Klassen ein Bild aus den Werten, die du auf der Seite davor bestimmt hast, auf
+derselben Skala. Ein solches Bild heißt **Boxplot**. Eine Linie reicht vom kleinsten bis zum größten Wert, dazwischen
+liegt eine Box von Q1 bis Q3, und ein dicker Strich in der Box zeigt den Median. **Nach dieser Seite kannst du einen
+Boxplot zeichnen und aus Boxplots Aussagen über die Daten ablesen.**
 
 Bild: Zwei Boxplots untereinander auf derselben Skala von 0 bis 40 Minuten. Die 8b hat eine breite Box und eine lange Linie nach rechts bis 35. Die 8c hat eine kürzere Box und eine kürzere Linie. Bildunterschrift: Beide Bilder haben dieselbe Skala. Vergleiche, wie weit die Linien und die Boxen reichen.
 
@@ -69,7 +71,7 @@ In der Box liegen die mittleren zwei Viertel der Werte, also etwa die Hälfte. I
 
 ### Einen Boxplot Schritt für Schritt zeichnen
 
-Wenn du für eine Klasse selbst einen Boxplot brauchst, zeichnest du ihn so:
+Damit zwei Klassen vergleichbar werden, zeichnest du beide Boxplots auf derselben Skala. So entsteht der Boxplot der 8c:
 
 **Beispiel: Die 8c als Boxplot**
 

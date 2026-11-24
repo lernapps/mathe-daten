@@ -73,7 +73,7 @@ jedes Kind, wenn alle gleich lang brauchten und die Summe dieselbe bliebe.
 
 ### Ein Beispiel Schritt für Schritt
 
-Wenn du den Mittelwert selbst ausrechnen willst, gehst du so vor:
+Wenn du den Mittelwert ohne Würfel ausrechnen willst, brauchst du eine Rechnung, die immer funktioniert. Hier ist sie:
 
 **Beispiel: Die Schulwegzeiten von fünf Kindern**
 

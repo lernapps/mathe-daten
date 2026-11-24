@@ -60,7 +60,7 @@ mit einer Strichliste. Zum Schluss kontrollierst du, ob die Anzahlen zusammen di
 **Merke: Merke**
 
 Jedes Kind soll **genau eine** passende Antwortmöglichkeit finden. Dafür dürfen sich die Gruppen nicht
-überschneiden, und es darf keine Lücke geben. Eine gute Frage legt außerdem keine Antwort nahe: Nicht „Du fährst doch auch mit dem Rad, oder?“, sondern „Wie kommst du zur Schule?“. Die Zeiten, die die Kinder aufschreiben, brauchst du auf der nächsten Seite.
+überschneiden, und es darf keine Lücke geben. Eine gute Frage legt außerdem keine Antwort nahe: Nicht „Du fährst doch auch mit dem Rad, oder?“, sondern „Wie kommst du zur Schule?“. Mit solchen Zeiten rechnest du auf der nächsten Seite weiter: Dort bestimmst du den Mittelwert.
 
 ### Ein Beispiel für gute Antwortgruppen
 

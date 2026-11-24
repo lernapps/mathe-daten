@@ -57,7 +57,7 @@ Interaktiv: Eine Simulation mit allen 600 Lernenden der Schule: 120 kommen zu Fu
 
 Wenn du etwas über alle wissen willst, aber nicht alle fragen kannst, befragst du nur einen Teil. Ob das für eine Aussage über alle reicht, hängt von der Stichprobe ab.
 
-- **Gesamtheit**: Die Gesamtheit sind alle, über die man etwas wissen will, hier alle 600 Lernenden der Schule. Verwechsle sie nicht mit der Gesamtzahl, der Anzahl aller Befragten einer Umfrage.
+- **Gesamtheit**: Die Gesamtheit sind alle, über die man etwas wissen will, hier alle 600 Lernenden der Schule.
 
 - **Stichprobe**: Eine Stichprobe ist ein Teil der Gesamtheit, den man wirklich befragt. Man schließt von ihr auf die Gesamtheit.
 

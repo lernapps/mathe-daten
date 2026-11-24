@@ -55,7 +55,13 @@ Interaktiv: Ein Säulendiagramm mit drei Säulen: 6a hat 6 Kinder mit Fahrrad, 6
 
 ### Wie du Täuschungen erkennst
 
-Wenn du ein Diagramm in der Zeitung oder in der Werbung siehst, willst du wissen, ob du ihm trauen kannst. Dafür prüfst du drei Dinge. Zeitungen und Werbung zeigen Daten oft so, dass ein kleiner Unterschied groß aussieht. Lies bei einem Diagramm zuerst die Überschrift und die Frage. Schau dann auf die **Achse**: Beginnt sie bei 0? Schau auf die **Zahlen**: Passen die Höhen dazu? Schau zuletzt auf **Bilder**: Sind sie in beide Richtungen vergrößert? Repariert wird so: die Achse bei 0 beginnen lassen, ein Bild gleich groß lassen und für mehr einfach mehr Bilder zeichnen, Zahlen über die Säulen und Namen unter die Säulen schreiben.
+Zeitungen und Werbung zeigen Daten oft so, dass ein kleiner Unterschied groß aussieht. Wenn du ein Diagramm
+siehst, willst du wissen, ob du ihm trauen kannst. Dafür gehst du vier Dinge der Reihe nach durch: Lies zuerst
+die Überschrift und die Frage. Schau dann auf die **Achse**: Beginnt sie bei 0? Schau auf die **Zahlen**: Passen
+die Höhen dazu? Schau zuletzt auf **Bilder**: Sind sie in beide Richtungen vergrößert?
+
+Wenn ein Diagramm täuscht, kannst du es reparieren: Lass die Achse bei 0 beginnen, lass ein Bild gleich groß und
+zeichne für mehr einfach mehr Bilder, und schreibe Zahlen über die Säulen und Namen unter die Säulen.
 
 Bild: Zwei Becher, der linke klein mit der Beschriftung Schuljahr 1 mit 120, der rechte doppelt so breit und doppelt so hoch mit der Beschriftung Schuljahr 2 mit 240. Bildunterschrift: Vergleiche die Zahlen unter den Bechern mit der Größe der Becher.
 
