@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script type="module" crossorigin src="../../assets/index-0b1Xp4Kp.js"></script>
+    <script type="module" crossorigin src="../../assets/index-C7yglwom.js"></script>
     <link rel="modulepreload" crossorigin href="../../assets/tasks-DADUYy52-D5IfZDbd.js">
-    <link rel="stylesheet" crossorigin href="../../assets/index-BKgMJ1l0.css">
+    <link rel="stylesheet" crossorigin href="../../assets/index-CieAblO6.css">
     <title>Boxplot – zwei Klassen im Vergleich – Daten erheben und auswerten</title>
     <meta name="description" content="Aus den fünf Werten einen Boxplot zeichnen und an Boxplots ablesen, wie zwei Klassen sich unterscheiden." />
     <meta name="lernapps-archetype" content="explainer" />
@@ -31,7 +31,6 @@
 <script type="application/json" class="explainer-tutor-prompt">{"start":"Lade ⟦base⟧kennwerte/boxplot/tutor/⟦query⟧ und sei mein Tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../","storage":"mathe-daten","page":{"id":"boxplot","title":"Boxplot – zwei Klassen im Vergleich","exercises":[{"id":"spannweite-sehen","section":"einstieg","numbered":false},{"id":"klassen-vergleichen","section":"uebung","numbered":false},{"id":"median-ablesen","section":"uebung","numbered":false},{"id":"box-laenge","section":"uebung","numbered":true},{"id":"box-anzahl","section":"uebung","numbered":true},{"id":"boxplot-zeichnen","section":"uebung","numbered":false},{"id":"schritte-boxplot","section":"uebung","numbered":false},{"id":"laenge-bedeutung","section":"uebung","numbered":false}],"sections":["einstieg","erklaerung","beispiel","uebung","rueckblick"]},"tutor":"kennwerte/boxplot/tutor/","markdown":"kennwerte/boxplot/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"Ich brauche Hilfe bei einer Lern-Einheit. Ich schreibe Dir gleich, worum es geht.","go":"Mit {name} lernen","done":"✓ Kopiert – jetzt in {name} einfügen","copy":"Text kopieren","copied":"Der Prompt ist kopiert. Füg ihn in den Chat deines KI-Assistenten ein.","failed":"Kopieren ging nicht. Versuch es noch einmal."}</script>
 </div>
 </div>
-
 <nav class="explainer-toc" aria-label="Auf dieser Seite"><p class="explainer-toc-title">Auf dieser Seite</p><ol><li><a href="#einstieg">Zwei Klassen auf einen Blick</a></li><li><a href="#erklaerung">Wie ein Boxplot gebaut ist</a></li><li><a href="#beispiel">Einen Boxplot Schritt für Schritt zeichnen</a></li><li><a href="#uebung">Übung</a></li><li><a href="#rueckblick">Rückblick auf Kapitel 2</a></li></ol></nav>
 <section class="explainer-section">
 <h2 id="einstieg">Zwei Klassen auf einen Blick</h2>
@@ -41,7 +40,7 @@ solches Bild heißt <strong>Boxplot</strong>: ein Bild für fünf Werte der geor
 ablesen.</strong></p></div>
 </div>
 <div class="explainer-block" data-block="einstieg/2" data-block-id="c194fd3f" data-block-type="figure" data-block-order="2">
-<figure class="block-figure"><img src="../../images/boxplot-8b-8c.svg" alt="Zwei Boxplots untereinander auf derselben Skala von 0 bis 40 Minuten. Die 8b hat eine breite Box und eine lange Linie nach rechts bis 35. Die 8c hat eine kürzere Box und eine kürzere Linie." loading="lazy" decoding="async"><figcaption><p>Beide Bilder haben dieselbe Skala. Vergleiche, wie weit die Linien und die Boxen reichen.</p> <span class="block-credit">Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0.</span></figcaption></figure>
+<figure class="block-figure"><div class="block-image-credit block-image-fill"><img src="../../images/boxplot-8b-8c.svg" alt="Zwei Boxplots untereinander auf derselben Skala von 0 bis 40 Minuten. Die 8b hat eine breite Box und eine lange Linie nach rechts bis 35. Die 8c hat eine kürzere Box und eine kürzere Linie." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Beide Bilder haben dieselbe Skala. Vergleiche, wie weit die Linien und die Boxen reichen.</p></figcaption></figure>
 </div>
 <div class="explainer-block" data-block="einstieg/3" data-block-id="485e076d" data-block-type="single-choice" data-block-order="3">
 <div class="explainer-exercise explainer-question" id="spannweite-sehen">
@@ -89,7 +88,7 @@ führt von der Box zum kleinsten Wert, eine zum größten. Die fünf Werte teile
 <dl class="explainer-definition"><dt><dfn id="begriff-boxplot"><a href="../../glossar/#boxplot">Boxplot</a></dfn></dt><dd><p>Ein Boxplot ist ein Bild für fünf Werte der geordneten Daten, den kleinsten Wert, Q1, den Median, Q3 und den größten Wert. Die Box reicht von Q1 bis Q3, ein dicker Strich in der Box steht beim Median.</p></dd></dl>
 </div>
 <div class="explainer-block" data-block="erklaerung/3" data-block-id="f3b084b8" data-block-type="figure" data-block-order="6">
-<figure class="block-figure"><img src="../../images/boxplot-8b-erklaert.svg" alt="Boxplot der Klasse 8b. Die Linie beginnt bei 4 und endet bei 35. Die Box reicht von 7 bis 18, der dicke Strich in der Box steht bei 12." loading="lazy" decoding="async"><figcaption><p>Die beschrifteten Stellen sind die fünf Werte der 8b von der Seite davor. „min“ ist der kleinste Wert, „max“ der größte.</p> <span class="block-credit">Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0.</span></figcaption></figure>
+<figure class="block-figure"><div class="block-image-credit block-image-fill"><img src="../../images/boxplot-8b-erklaert.svg" alt="Boxplot der Klasse 8b. Die Linie beginnt bei 4 und endet bei 35. Die Box reicht von 7 bis 18, der dicke Strich in der Box steht bei 12." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Die beschrifteten Stellen sind die fünf Werte der 8b von der Seite davor. „min“ ist der kleinste Wert, „max“ der größte.</p></figcaption></figure>
 </div>
 <div class="explainer-block" data-block="erklaerung/4" data-block-id="862ffae4" data-block-type="note" data-block-order="7">
 <div class="explainer-box explainer-note">
@@ -125,7 +124,7 @@ führt von der Box zum kleinsten Wert, eine zum größten. Die fünf Werte teile
 <form class="question-form" novalidate>
 <fieldset>
 <legend class="question-text">Welche Aussage über die beiden Boxplots stimmt?</legend>
-<div class="question-material"><figure class="block-figure"><img src="../../images/boxplot-8b-8c.svg" alt="Boxplots der Klassen 8b und 8c auf derselben Skala von 0 bis 40 Minuten. Die Box der 8c ist kürzer als die der 8b." loading="lazy" decoding="async"><figcaption><p>Vergleiche die Boxen und die Linien.</p> <span class="block-credit">Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0.</span></figcaption></figure></div>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit block-image-fill"><img src="../../images/boxplot-8b-8c.svg" alt="Boxplots der Klassen 8b und 8c auf derselben Skala von 0 bis 40 Minuten. Die Box der 8c ist kürzer als die der 8b." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Vergleiche die Boxen und die Linien.</p></figcaption></figure></div>
 <label class="question-option"><input type="radio" name="frage-klassen-vergleichen" value="0"> <span>Am Boxplot sieht man, wie viele Kinder die 8c hat</span></label>
 <label class="question-option"><input type="radio" name="frage-klassen-vergleichen" value="1"> <span>In der 8c braucht ein Kind 35 Minuten</span></label>
 <label class="question-option"><input type="radio" name="frage-klassen-vergleichen" value="2"> <span>In der 8c liegen die mittleren Werte enger beieinander als in der 8b</span></label>
@@ -160,7 +159,7 @@ führt von der Box zum kleinsten Wert, eine zum größten. Die fünf Werte teile
 <form class="question-form" novalidate>
 <fieldset>
 <legend class="question-text">Lies den Median der 8c an der Skala ab. Bis 1 Minute daneben zählt noch als richtig.</legend>
-<div class="question-material"><figure class="block-figure"><img src="../../images/boxplot-8b-8c.svg" alt="Boxplots der Klassen 8b und 8c auf derselben Skala. Bei der 8c steht der dicke Strich in der Box bei einem Wert zwischen 10 und 15." loading="lazy" decoding="async"><figcaption><p>Der dicke Strich in der Box ist der Median.</p> <span class="block-credit">Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0.</span></figcaption></figure></div>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit block-image-fill"><img src="../../images/boxplot-8b-8c.svg" alt="Boxplots der Klassen 8b und 8c auf derselben Skala. Bei der 8c steht der dicke Strich in der Box bei einem Wert zwischen 10 und 15." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Der dicke Strich in der Box ist der Median.</p></figcaption></figure></div>
 <label class="question-number">Deine Antwort <input type="text" inputmode="decimal" autocomplete="off" name="frage-median-ablesen" aria-describedby="frage-median-ablesen-unit"> <span id="frage-median-ablesen-unit">Minuten</span> </label>
 </fieldset>
 <div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
@@ -336,7 +335,7 @@ führt von der Box zum kleinsten Wert, eine zum größten. Die fünf Werte teile
 <span class="explainer-feedback-local">Nur in diesem Browser gespeichert</span>
 <button type="button" class="explainer-feedback-off">Beenden</button>
 </div>
-<script type="application/json" class="explainer-feedback-data">{"storage":"mathe-daten","app":"Daten erheben und auswerten","root":"../../","repository":"lernapps/mathe-daten","revision":"b839687","page":{"title":"Boxplot – zwei Klassen im Vergleich","order":7}}</script>
+<script type="application/json" class="explainer-feedback-data">{"storage":"mathe-daten","app":"Daten erheben und auswerten","root":"../../","repository":"lernapps/mathe-daten","revision":"fa31f19","page":{"title":"Boxplot – zwei Klassen im Vergleich","order":7}}</script>
 </aside>
 </template>
 <nav class="explainer-pager" aria-label="Weiterblättern"><a rel="prev" href="../../kennwerte/median-quartile/">Zurück: Median, Spannweite und Quartile</a><a rel="next" href="../../stichprobe/klein-oder-einseitig/">Weiter: Spricht die Klasse für die ganze Schule?</a></nav>
